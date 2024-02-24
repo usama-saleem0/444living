@@ -449,7 +449,7 @@ header.header nav {
 }
 
 .logo {
-    width: 8%;
+    width: 7%;
 }
 
 .logo img {
@@ -716,6 +716,7 @@ section.Process {
 
 .Process-tital-box h2:hover {
     color: #DED4A2;
+    transform: translateX(25px);
 }
 .Process-btn-box {
     width: 100%;
@@ -913,6 +914,7 @@ section.luxury {
 
 .luxury-list h2:hover {
     color: #DED4A2;
+    transform: translateX(25px);
 }
 
 .luxury-btn-box button {
@@ -1240,6 +1242,97 @@ ul.ul-3 {
 
 
 
+
+
+.input-groups button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0px !important;
+  bottom: 0px !important;
+  background: transparent !important;
+  height: 0px;
+  transition: 0.3s ease-out;
+}
+
+
+
+button{
+    position: relative;
+}
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 25px;
+  bottom: 0px;
+  background: #DED4A2;
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+
+
+button:hover::after {
+  width: 100%;
+}
+
+button svg {
+  transition: 0.9s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+
+.hero-tital button:hover svg {
+  transform: translateX(170px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(150px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(280px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(420px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(140px);
+  color: var(--hovered-color);
+}
+
+
+
+
+button:hover{
+    border-bottom: 1px solid ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1600px){
   .contanair {
     width: 100%;
@@ -1276,7 +1369,7 @@ header.header {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    padding: 15px 0px;
+    padding: 25px 0px;
 }
 .hero-tital span p {
     line-height: 34.89px;
@@ -1756,11 +1849,46 @@ section.contact {
     width: 20px;
     height: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+.hero-tital button:hover svg {
+  transform: translateX(145px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(120px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(230px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(330px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(115px);
+  color: var(--hovered-color);
+}
 }
 
 @media screen and (max-width: 1440px){
   .logo {
-    width: 5%;
+    width: 7%;
 }
 .contanair {
     width: 100%;
@@ -1771,6 +1899,11 @@ section.contact {
 .hamburger svg {
     height: 50px;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 70px 0px 0px 70px;
 }
 .hero-tital span p {
     line-height: 34.89px;
@@ -2212,6 +2345,48 @@ section.contact {
 }
 ul.ul-2 {
     width: 26%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-tital button:hover svg {
+  transform: translateX(120px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(100px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(180px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(280px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(95px);
+  color: var(--hovered-color);
 }
 }
 
