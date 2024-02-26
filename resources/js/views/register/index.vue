@@ -170,6 +170,7 @@ header.loging-header {
     position: absolute;
 }
 
+
 .contanir {
     width: 100%;
 }

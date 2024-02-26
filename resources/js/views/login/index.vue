@@ -176,6 +176,8 @@ export default {
 };
 </script>
 <style scoped>
+
+
 header.loging-header {
     width: 100%;
     padding: 30px 100px;
