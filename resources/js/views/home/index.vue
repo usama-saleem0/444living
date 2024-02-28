@@ -12,7 +12,7 @@
 
         <div class="header-list">
           <div class="loging-btn">
-            <img src="/images/loging-icon.png" alt="">
+            <img src="/images/loging-icon.png" alt="" @click="login_page">
           </div>
 
 
@@ -222,30 +222,41 @@ See All Properties
             <p>444 Living members have achieved the industry’s most exceptional accolades — you can trust they will go above and beyond to offer you best-in-class service and personalized results.</p>
           </div>
 
-          <div class="luxury-img-box">
-            <img src="/images/real-man.png" alt="">
+          <div class="luxury-img-box" >
+            <img src="/images/real-man.png" alt="" v-if="first" class="fade-img">
+            <img src="/images/second.png" alt="" v-if="second" class="fade-img">
+            <img src="/images/third.png" alt="" v-if="third" class="fade-img">
+            <img src="/images/fourth.png" alt="" v-if="fourth" class="fade-img">
+
+
+            
+
           </div>
 
 
           <div class="luxury-box">
-            <div class="luxury-list">
-              <h2>Alex Banter</h2>
+            <div class="luxury-list" >
+              <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1">Alex Banter</h2>
               <p>Realtor</p>
             </div>
 
             <div class="luxury-list">
-              <h2>George Wilson</h2>
+              <h2 @mouseover="handleMouseOver2"
+      @mouseleave="handleMouseLeave2">George Wilson</h2>
               <p>Investor</p>
             </div>
 
 
             <div class="luxury-list">
-              <h2>Cassey Williams</h2>
+              <h2 @mouseover="handleMouseOver3"
+      @mouseleave="handleMouseLeave3">Cassey Williams</h2>
               <p>Investor</p>
             </div>
 
             <div class="luxury-list">
-              <h2>Karrie Langan</h2>
+              <h2 @mouseover="handleMouseOver4"
+      @mouseleave="handleMouseLeave4">Karrie Langan</h2>
               <p>Realtor</p>
             </div>
 
@@ -374,13 +385,99 @@ Submit
 export default {
   name: "Home",
   components: {
+
+  
   
   },
+  data() {
+    return {
+        first : true,
+        fourth: false,
+        third:false,
+        second:false
+    };
+  },
   name: 'SampleComponent',
+
+  methods:{
+
+    login_page(){
+        this.$router.push('login')
+    },
+    handleMouseOver1(){
+        console.log('enter')
+        this.first = true,
+        this.second = false,
+        this.third = false,
+        this.fourth = false
+    },
+
+    handleMouseLeave1(){
+        console.log('leave')
+        // this.first = false
+    },
+
+    handleMouseOver2(){
+        console.log('enter2')
+        this.second = true,
+        this.first = false,
+        
+        this.third = false,
+        this.fourth = false
+    },
+
+    handleMouseLeave2(){
+        console.log('leave2')
+        // this.second = false,
+        // this.first = true
+    },
+
+    handleMouseOver3(){
+        console.log('enter3')
+        this.third = true,
+        this.first = false,
+        this.second = false,
+        
+        this.fourth = false
+    },
+
+    handleMouseLeave3(){
+        console.log('leave3')
+        // this.third = false,
+        // this.first = true
+    },
+    handleMouseOver4(){
+        console.log('enter4')
+        this.fourth = true,
+        this.first = false,
+        this.second = false,
+        this.third = false
+        // this.fourth = false
+    },
+
+    handleMouseLeave4(){
+        console.log('leave4')
+        // this.fourth = false
+    }
+  }
 };
 </script>
 
 <style>
+
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+.fade-img {
+  opacity: 1 !important;
+  transition: opacity 1.5s ease-in-out !important;
+}
+
+
 *{
   padding: 0;
   margin: 0;
@@ -2391,6 +2488,11 @@ ul.ul-2 {
 }
 
 @media screen and (max-width: 1366PX){
+
+    .fade-img {
+  opacity: 1 !important;
+  transition: opacity 1.5s ease-in-out !important;
+}
   .hero-tital h2 {
     line-height: 85px;
     font-size: 70px;
