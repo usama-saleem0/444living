@@ -229,6 +229,15 @@ section.loging-page {
     height: 100vh;
 }
 
+div#carouselExampleIndicators {
+    height: 100% !important;
+}
+
+.carousel-inner {
+    height: 100% !important; 
+}
+
+
 .main-loging {
     width: 100%;
     display: flex;
@@ -345,8 +354,10 @@ section.loging-page {
     border: 1px solid #293857;
 }
 
-.OR-list {width: 100%;}
-
+.OR-list {
+    width: 100%;
+}
+    
 .OR-list p {
     width: 100%;
     text-align: center;
@@ -537,7 +548,10 @@ ol.carousel-indicators {
     align-items: center;
 }
 .loging-salider{
-    width: 41%;
+
+    
+    width: 52%;
+    height: 100vh;
 }
 .loging-logo{
     width: 5%;
@@ -548,6 +562,8 @@ header.loging-header{
     position: absolute;
 }
 ol.carousel-indicators{
+
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -761,7 +777,6 @@ header.loging-header[data-v-72911c7d] {
     line-height: normal;
     font-style: italic;
 }
-
 .form-LogIn h2{
     color: #293857;
     font-family: "Saol Display";
@@ -938,4 +953,6 @@ ol.carousel-indicators {
     margin: 0px !important;
 }
 }
+
+
 </style>

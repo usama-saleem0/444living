@@ -276,6 +276,31 @@ Get To know our top Agents
     </section>
 
 
+    <section class="Happy">
+        <div class="contanairz">
+<div class="slider">
+  <div class="text-container">
+    <div class="text-item"><h2>"I found my dream home within days of signing up. The platform made it so easy to connect with realtors who understood exactly what I was looking for. Highly recommended!"</h2> <span><img src="/images/ej.png" alt=""><p>Emily Johnson, Happy Homeowner</p></span></div>
+
+
+
+
+
+
+    <div class="text-item"><h2>"As a realtor, this platform has been a game-changer for my business. The ability to browse buyer requirements and connect with interested clients has significantly increased my success rate."</h2> <span><img src="/images/jj.png" alt=""><p>John Smith, Realtor</p></span></div>
+
+
+
+    <div class="text-item"><h2>"I was hesitant about investing in real estate, but this platform made the process seamless. I found a group of like-minded investors, and together we've seen incredible returns on our investments."</h2> <span><img src="/images/mb.png" alt=""><p>Michael Brown, Investor</p></span></div>
+    <!-- Add more text items as needed -->
+  </div>
+</div>
+</div>
+    </section>
+
+
+
+
     <section class="contact">
         <div class="main-contact">
           <div class="contact-tital">
@@ -497,6 +522,102 @@ export default {
   /* Define the transition for transforming the SVG */
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.slider {
+      width: 100%;
+      overflow: hidden;
+    }
+    .text-container {
+      display: flex;
+      animation: slide 12s infinite;
+    }
+    .contanairz{
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .text-item {
+      flex: 0 0 100%;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    @keyframes slide {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      20%, 40% {
+        transform: translateX(-100%);
+      }
+      60%, 80% {
+        transform: translateX(-200%);
+      }
+    }
+    section.Happy {
+    width: 100%;
+    padding: 182px 0px 130px 0px;
+    background-color: #202D46;
+    background-image: url(/images/golgol.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.slider {
+    width: 100%;
+  
+}
+
+.text-item {
+    width: 100%;
+
+}
+
+.text-item h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.text-item h2:hover {
+    color: #DED4A2;
+}
+
+.text-item span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 54px;
+    padding-top: 24px;
+
+}
+
+.text-item span p {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+
+
+
+
+
+
 
 .line {
   fill: none;
@@ -1428,8 +1549,6 @@ button:hover{
 
 
 
-
-
 @media screen and (max-width: 1600px){
   .contanair {
     width: 100%;
@@ -1980,6 +2099,27 @@ section.contact {
 .contact-form-btn:hover svg {
   transform: translateX(115px);
   color: var(--hovered-color);
+}
+
+.text-item h2 {
+    font-size: 50px;
+}
+
+.contanairz {
+    max-width: 1400px;
+}
+
+.text-item span p {
+    font-size: 20px;
+}
+
+.text-item span img {
+    width: 5%;
+}
+
+.text-item span {
+    gap: 10px;
+    padding-left: 100px;
 }
 }
 
