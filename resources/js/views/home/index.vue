@@ -601,15 +601,19 @@ export default {
     padding-top: 24px;
 
 }
-
+.text-item span img {
+    width: 5%;
+}
 .text-item span p {
     color: #DED4A2;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0px;
+    background-color: #202D46 ;
+    padding: 10px 0px ;
 }
 
 
@@ -674,7 +678,7 @@ header.header nav {
     width: 100%;
 }
 
-.logo {}
+
 
 .header-list {
     width: 12%;
@@ -2121,6 +2125,9 @@ section.contact {
     gap: 10px;
     padding-left: 100px;
 }
+section.Happy {
+    padding: 165px 0px 100px 0px;
+}
 }
 
 @media screen and (max-width: 1440px){
@@ -2595,7 +2602,21 @@ ul.ul-2 {
 
 
 
+.contanairz {
+    max-width: 1100px;
+}
 
+.text-item h2 {
+    font-size: 44px;
+}
+
+.text-item span p {
+    font-size: 18px;
+}
+
+section.Happy {
+    padding: 155px 0px 90px 0px;
+}
 
 
 
@@ -2767,6 +2788,9 @@ ul.ul-2 {
     font-weight: 400;
     line-height: normal;
     margin: 0px;
+}
+section.Happy {
+    padding: 150px 0px 87px 0px;
 }
 }
 
@@ -3197,6 +3221,20 @@ ul.ul-2 {
     height: 40px;
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.text-item h2 {
+    font-size: 40px;
+}
+
+.text-item span p {
+    font-size: 15px;
+}
+
+section.Happy {
+    padding: 89px 0px 58px 0px;
+}
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -3582,7 +3620,30 @@ ul.ul-2 {
 .logo {
     width: 7%;
 }
+.text-item h2 {
+    font-size: 30px;
+}
 
+.text-item span p {
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+section.Happy {
+    padding: 89px 0px 58px 0px;
+}
+
+
+
+.text-item span {
+    gap: 6px;
+    padding-top: 15px;
+    padding-left: 45px;
+}
+
+section.Happy {
+    padding: 60px 0px 36px 0px;
+}
 }
 
 @media screen and (max-width: 425px){
@@ -4083,5 +4144,14 @@ section.contact {
 .footer-box-2 {
     width: 100%;
 }
+
+
+section.Happy {
+    padding: 18px 0px 5px 0px;
+}
+.text-item span img {
+    width: 10%;
+}
+
 }
 </style>
