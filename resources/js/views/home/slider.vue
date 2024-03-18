@@ -30,19 +30,15 @@
     <div class="image-container" :style="{ transform: 'translateX(' + translateValue + ')' }">
       <div class="image-row" v-for="(row, rowIndex) in imageRows" :key="rowIndex">
         <div class="image-item" v-for="(image, colIndex) in row" :key="colIndex">
-          <img :src="image" :alt="'Image ' + (rowIndex * 3 + colIndex + 1)" :style="{ height: colIndex === currentIndex ? '120%' : '100%' }">
-          <span v-if="colIndex===0"> <h2>House in the center of Los Angelas</h2>
+          <img :src="image" :alt="'Image ' + (rowIndex * 3 + colIndex + 1)" :style="{ height: colIndex === currentIndex ? '120%' : '100%' , opacity: image == '/images/Rectangle4.png' ? '0' : '1'}">
+          <span v-if="colIndex===0 &&  image !== '/images/Rectangle4.png'"> <h2>House in the center of Los Angelas</h2>
            <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p>
           </span>
-          <span v-if="colIndex===1"><h2>House in the center of Los Angelas</h2>
+          <span v-if="colIndex===1 &&  image !== '/images/Rectangle4.png'"><h2>House in the center of Los Angelas</h2>
            <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p></span>
-          <span v-if="colIndex===2"><h2>House in the center of Los Angelas</h2>
+          <span v-if="colIndex===2 &&  image !== '/images/Rectangle4.png'"><h2>House in the center of Los Angelas</h2>
            <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p></span>
-          <span v-if="colIndex===3"><h2>House in the center of Los Angelas</h2>
-           <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p></span>
-          <span v-if="colIndex===4"><h2>House in the center of Los Angelas</h2>
-           <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p></span>
-
+        
          
         </div>
       </div>
@@ -63,7 +59,7 @@ export default {
         "/images/Rectangle1.png",
         "/images/Rectangle2.png",
         "/images/Rectangle3.png",
-        "/images/Rectangle1.png" ,
+        "/images/Rectangle4.png" ,
         "/images/Rectangle2.png",
 
 
@@ -225,6 +221,30 @@ export default {
 
 .image-item span p span {
     padding: 0px 10px;
+}
+
+@media screen and (max-width: 1440px){
+  .carousel-btn-list-1 h2 {
+    
+    font-size: 100px;
+  
+}
+
+.carousel-btns {
+    border: 1px solid #ded4a2;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.image-item {
+    flex: 0 0 20.3333%;
+    height: 50%;
+    box-sizing: border-box;
+}
+.image-row {
+    gap: 100px;
+}
 }
 
 </style>

@@ -147,5 +147,35 @@ button svg {
     margin-left: -40px;
 }
 
+@media screen and (max-width: 1440px){
+  .menu-list h2 a {
+    color: #293857;
+   
+    font-size: 70px;
+    
+}
+
+.contanir {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 1440px){
+  .menu-list h2 a {
+    color: #293857;
+   
+    font-size: 70px;
+    
+}
+
+.contanir {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+}
+
 
 </style>

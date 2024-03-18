@@ -1,5 +1,6 @@
 <template>
-  <div>
+     <transition name="fade" class="fade">
+  <div class="fade-effect">
     <header class="loging-header">
     <div class="contanir">
       <nav class="logaing-nav">
@@ -8,7 +9,7 @@
         </div>
 
         <div class="loging-close-btn">
-          <button>
+          <button @click="backhome">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_206_2853)">
 <g clip-path="url(#clip0_206_2853)">
@@ -139,12 +140,22 @@ Sign In With Google</button>
 
 
   </div>
+</transition>
+
 </template>
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
 export default {
+    
+  mounted() {
+    this.$nextTick(() => {
+      this.$refs.fadeContainer.classList.add('fade-in');
+    });
+  },
+
   methods: {
+    
     async login() {
       try {
         const response = await axios.post("login", {
@@ -171,13 +182,24 @@ export default {
           this.images[nextImage].isActive = true;
         }, 1000); // Adjust the delay as needed
       }, 8000);
+    },
+
+    backhome(){
+        this.$router.push('/')
     }
   },
 };
 </script>
 <style scoped>
-
-
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease-in-out !important; /* Define the transition */
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0 !important; /* Initially set opacity to 0 */
+}
+.fade-in {
+  opacity: 1 !important; /* Set opacity to 1 to reveal the content */
+}
 header.loging-header {
     width: 100%;
     padding: 30px 100px;

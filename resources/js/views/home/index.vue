@@ -12,23 +12,36 @@
 
         <div class="header-list">
           <div class="loging-btn">
-            <img src="/images/loging-icon.png" alt="" @click="login_page">
+            <img src="/images/loging-icon.png" alt="" @click="login_page" style="cursor: pointer;">
           </div>
 
 
-          <div class="header-menu">
+          <div class="header-menu" @click="menus" style="z-index: 1;" v-if="starticon">
             <label class="hamburger">
   <input type="checkbox">
   <svg viewBox="0 0 32 32">
-    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
-    <path class="line" d="M7 16 27 16"></path>
+    <path class="line line-top-bottom" :style="{ stroke: start ? '#ded4a2' :'#293857'}" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+    <path class="line" :style="{stroke:start ? '#ded4a2' :'#293857'}" d="M7 16 27 16"></path>
   </svg>
+</label>
+          </div>
+          <div class="header-menu" @click="dropicon" style="z-index: 1;" v-if="endicon">
+            <label class="hamburger">
+  <input >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="stroke:#293857;"><path style="fill: #293857;" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+ 
 </label>
           </div>
         </div>
       </nav>
     </div>
     </header>
+    <div v-if="end" style="z-index: 0; height: 100%;">
+    <Menu/>
+  </div>
+    <div  v-else>
+
+    
 
     <section class="hero">
       <div class="contanair">
@@ -178,6 +191,9 @@ Sign Up
 
         </div>
     </section>
+<Slider/>
+
+    
 
     <section class="Success">
       <div class="contanair">
@@ -339,6 +355,9 @@ Submit
         </div>
     </section>
 
+    
+    
+
 
     <footer>
       <div class="contanair">
@@ -399,18 +418,26 @@ Submit
         </div>
       </div>
     </footer>
+</div>
+
+
    
 
 
   </div>
+ 
+ 
 </template>
 <script>
 
+import Menu from '../home/menu.vue'
+import Slider from '../home/slider.vue'
 
 export default {
   name: "Home",
   components: {
-
+    Menu,
+    Slider
   
   
   },
@@ -419,12 +446,47 @@ export default {
         first : true,
         fourth: false,
         third:false,
-        second:false
+        second:false,
+        start:true,
+        end:false,
+        cross:false,
+        endicon:false,
+        starticon:true
     };
   },
   name: 'SampleComponent',
 
   methods:{
+
+    menus(){
+        this.start = false
+        this.end = true
+        setTimeout(() => {
+        console.log('ssss');
+        this.endicon = true;
+        this.starticon = false;
+
+      }, 200);
+    },
+
+
+        dropicon(){
+        this.end = false
+        this.start = true
+        console.log('hello');
+
+        setTimeout(() => {
+     
+        this.starticon = true
+        this.endicon = false
+
+      }, 200);
+       
+        // this.start = true
+       
+       
+      
+    },
 
     login_page(){
         this.$router.push('login')
@@ -495,7 +557,14 @@ export default {
 ::-webkit-scrollbar {
   width: 0px;
 }
-
+.line {
+    fill: none;
+    stroke: #293857;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .fade-img {
   opacity: 1 !important;
