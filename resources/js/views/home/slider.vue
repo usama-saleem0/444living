@@ -30,7 +30,7 @@
     <div class="image-container" :style="{ transform: 'translateX(' + translateValue + ')' }">
       <div class="image-row" v-for="(row, rowIndex) in imageRows" :key="rowIndex">
         <div class="image-item" v-for="(image, colIndex) in row" :key="colIndex">
-          <img :src="image" :alt="'Image ' + (rowIndex * 3 + colIndex + 1)" :style="{ height: colIndex === currentIndex ? '120%' : '100%' , opacity: image == '/images/Rectangle4.png' ? '0' : '1'}">
+          <img class="mobile" :src="image" :alt="'Image ' + (rowIndex * 3 + colIndex + 1)" :style="{ height: colIndex === currentIndex ? '120%' : '100%' , opacity: image == '/images/Rectangle4.png' ? '0' : '1'}">
           <span v-if="colIndex===0 &&  image !== '/images/Rectangle4.png'"> <h2>House in the center of Los Angelas</h2>
            <p>12,916 Sq,ft<span><img src="/images/dotspoint.png" alt=""/></span>2 Bathrooms <span><img src="/images/dotspoint.png" alt=""/></span>12,916 Sq,ft</p>
           </span>
@@ -60,7 +60,7 @@ export default {
         "/images/Rectangle2.png",
         "/images/Rectangle3.png",
         "/images/Rectangle4.png" ,
-        "/images/Rectangle2.png",
+        "/images/Rectangle4.png",
 
 
 
@@ -223,6 +223,12 @@ export default {
     padding: 0px 10px;
 }
 
+@media screen and (max-width: 1600px){
+  .carousel-btn-list-1 h2{
+    font-size: 120px;
+  }
+}
+
 @media screen and (max-width: 1440px){
   .carousel-btn-list-1 h2 {
     
@@ -245,6 +251,141 @@ export default {
 .image-row {
     gap: 100px;
 }
+
+.carousel {
+    background-color: #293857;
+    padding: 60px 10px 0px 100px;
 }
+}
+
+@media screen and (max-width: 1024px){
+  .carousel-btn-list-1 h2 {
+    font-size: 80px;
+}
+
+svg {
+    width: 20px;
+}
+
+.carousel-btns {
+    border: 1px solid #ded4a2;
+    border-radius: 50%;
+    padding: 5px 18px;
+    margin-right: 10px;
+}
+
+.carousel-btn-list-2 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+}
+
+@media screen and (max-width: 768px){
+  .carousel-btn-list-1 h2 {
+    font-size: 65px;
+}
+
+.image-item {
+    flex: 0 0 30.3333%;
+    height: 38%;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.carousel-btns {
+    border: 1px solid #ded4a2;
+    border-radius: 50%;
+    padding: 3px 20px;
+    
+}
+
+svg {
+    width: 15px;
+}
+}
+
+@media screen and (max-width: 600px){
+
+  .carousel {
+    background-color: #293857;
+    padding: 50px 10px 0px 10px;
+}
+
+.carousel-btn-list-1 h2 {
+    font-size: 35px;
+}
+
+.carousel-btn-list-1 span p{
+   
+    font-size: 11px;
+   
+}
+
+svg {
+    width: 10px;
+    height: 20px;
+}
+
+.image-item span p {
+  
+    font-size: 14px;
+  
+}
+
+.image-item span h2 {
+   
+    font-size: 18px;
+ 
+}
+
+.carousel-btns {
+    border: 1px solid #ded4a2;
+    border-radius: 50%;
+    padding: 3px 12px;
+}
+.carousel-btn-list-2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn-list-1 span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mobile{
+ 
+    opacity: 1;
+   
+    object-fit: cover;
+    width: 400px;
+
+}
+
+.image-item {
+    flex: 0 0 30.3333%;
+    height: 52%;
+    box-sizing: border-box;
+    width: 62%;
+}
+
+.image-row {
+    gap: 330px;
+}
+
+.carousel-btn-box {
+ 
+    padding-bottom: 10px;
+}
+
+}
+
+
 
 </style>

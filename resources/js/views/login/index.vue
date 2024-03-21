@@ -1,6 +1,6 @@
 <template>
-     <transition name="fade" class="fade">
-  <div class="fade-effect">
+    
+  <div class="fade-in">
     <header class="loging-header">
     <div class="contanir">
       <nav class="logaing-nav">
@@ -10,13 +10,13 @@
 
         <div class="loging-close-btn">
           <button @click="backhome">
-            <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="svgsizeing" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_206_2853)">
 <g clip-path="url(#clip0_206_2853)">
-<path d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
+<path class="svgcolor" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
 </g>
 <g clip-path="url(#clip1_206_2853)">
-<path d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
+<path class="svgcolor" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
 </g>
 </g>
 <defs>
@@ -45,8 +45,8 @@
     </div>
     </header>
 
-<section class="loging-page">
-   <div class="contanir">
+<section class="loging-page fade-in">
+  
     <div class="main-loging">
   <div class="loging-form">
     <div class="form-LogIn">
@@ -98,7 +98,7 @@ Sign In With Google</button>
       </div>
 
 
-      <p>New to 444Living ? Sign Up</p>
+      <p>New to 444Living ?<span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
 
 
 
@@ -135,12 +135,12 @@ Sign In With Google</button>
 </div>
   </div>
 </div>
-   </div>
+ 
 </section>
 
 
   </div>
-</transition>
+
 
 </template>
 <script>
@@ -186,20 +186,34 @@ export default {
 
     backhome(){
         this.$router.push('/')
+    },
+    registering(){
+      this.$router.push('/register')
     }
   },
 };
 </script>
 <style scoped>
+
+.fade-in {
+  animation: fadeIn 1s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s ease-in-out !important; /* Define the transition */
 }
 .fade-enter, .fade-leave-to {
   opacity: 0 !important; /* Initially set opacity to 0 */
 }
-.fade-in {
-  opacity: 1 !important; /* Set opacity to 1 to reveal the content */
-}
+
 header.loging-header {
     width: 100%;
     padding: 30px 100px;
@@ -856,7 +870,13 @@ ol.carousel-indicators{
 }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
+
+  .loging-salider {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15px;
+}
   section.loging-page{
     width: 100%;
     background-color: #DED4A2;
@@ -973,7 +993,24 @@ ol.carousel-indicators {
     left: -20px;
     width: 12%;
     margin: 0px !important;
+    display: none;
 }
+
+.svgcolor{
+  stroke: #293857;
+}
+
+.svgsizeing{
+  width: 40px !important;
+}
+
+
+
+
+  /* .carousel-inner {
+    height: 100px !important;
+} */
+
 }
 
 

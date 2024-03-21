@@ -2,17 +2,17 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Saol+Display&display=swap" rel="stylesheet"/>
 <template>
-  <div>
+  <div class="fade-in">
     <header class="header">
     <div class="contanair">
       <nav>
         <div class="logo">
-          <img src="/images/logo.png" alt=""/>
+          <img src="/images/logo.png" v-if="logo" alt=""/>
         </div>
 
         <div class="header-list">
           <div class="loging-btn">
-            <img src="/images/loging-icon.png" alt="" @click="login_page" style="cursor: pointer;">
+            <img src="/images/loging-icon.png"  alt="" @click="login_page" style="cursor: pointer;">
           </div>
 
 
@@ -36,10 +36,10 @@
       </nav>
     </div>
     </header>
-    <div v-if="end" style="z-index: 0; height: 100%;">
+    <div class="fade-in" v-if="end" style="z-index: 0; height: 100%;">
     <Menu/>
   </div>
-    <div  v-else>
+    <div   v-else>
 
     
 
@@ -238,11 +238,11 @@ See All Properties
             <p>444 Living members have achieved the industry’s most exceptional accolades — you can trust they will go above and beyond to offer you best-in-class service and personalized results.</p>
           </div>
 
-          <div class="luxury-img-box" >
-            <img src="/images/real-man.png" alt="" v-if="first" class="fade-img">
-            <img src="/images/second.png" alt="" v-if="second" class="fade-img">
-            <img src="/images/third.png" alt="" v-if="third" class="fade-img">
-            <img src="/images/fourth.png" alt="" v-if="fourth" class="fade-img">
+          <div class="luxury-img-box fade-in" >
+            <img src="/images/real-man.png" alt="" v-if="first" class=" fade-in">
+            <img src="/images/second.png" alt="" v-if="second" class=" fade-in">
+            <img src="/images/third.png" alt="" v-if="third" class=" fade-in">
+            <img src="/images/fourth.png" alt="" v-if="fourth" class=" fade-in">
 
 
             
@@ -451,7 +451,8 @@ export default {
         end:false,
         cross:false,
         endicon:false,
-        starticon:true
+        starticon:true,
+        logo:true
     };
   },
   name: 'SampleComponent',
@@ -461,6 +462,7 @@ export default {
     menus(){
         this.start = false
         this.end = true
+        this.logo = false
         setTimeout(() => {
         console.log('ssss');
         this.endicon = true;
@@ -473,6 +475,7 @@ export default {
         dropicon(){
         this.end = false
         this.start = true
+        this.logo = true
         console.log('hello');
 
         setTimeout(() => {
@@ -557,6 +560,20 @@ export default {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.fade-in {
+  animation: fadeIn 1s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .line {
     fill: none;
     stroke: #293857;
@@ -2290,7 +2307,7 @@ section.Process {
 .hero {
     background-image: url(/images/Background.png);
     width: 100%;
-    padding: 260px 0px 25px 0px;
+    padding: 160px 0px 25px 0px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2300,7 +2317,7 @@ section.Process {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 120px 0px 15px 0px;
+    padding: 90px 0px 15px 0px;
     border-bottom: 1px solid #ded4a2;
 }
 
@@ -2950,6 +2967,8 @@ section.Happy {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+   
+    /* height: 100vh  */
 }
 .hero-part {
     width: 100%;
@@ -3715,7 +3734,13 @@ section.Happy {
 }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
+
+    .text-item h2 {
+    font-size: 22px;
+}
+
+  
   header.header {
     width: 100%;
     display: flex;
@@ -3799,7 +3824,7 @@ section.Happy {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 60px 0px 10px 0px;
+    padding: 90px 0px 10px 0px;
     border-bottom: 1px solid #ded4a2;
     flex-direction: column;
     align-items: center;
@@ -3826,10 +3851,11 @@ section.Happy {
 .hero {
     background-image: url(/images/Background.png);
     width: 100%;
-    padding: 180px 20px 25px 20px;
+    padding: 320px 20px 25px 20px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 .home-tital img {
     width: 9%;
@@ -3962,7 +3988,7 @@ section.Process {
     width: 10%;
 }
 .main-Success h2 {
-    font-size: 42px;
+    font-size: 34px;
     line-height: 52.23px;
     color: #fff;
     font-weight: 400;
@@ -4013,7 +4039,7 @@ section.curated {
     padding-bottom: 0px;
     margin: 0px;
     line-height: 50px;
-    font-size: 42px;
+    font-size: 34px;
     color: #fff;
     font-family: 'Saol Display';
 }

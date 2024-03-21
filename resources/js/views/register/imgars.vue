@@ -8,14 +8,14 @@
         </div>
 
         <div class="loging-close-btn">
-          <button>
+          <button @click="goback">
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_206_2853)">
 <g clip-path="url(#clip0_206_2853)">
-<path d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
+<path class="paths" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
 </g>
 <g clip-path="url(#clip1_206_2853)">
-<path d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
+<path class="paths" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
 </g>
 </g>
 <defs>
@@ -46,48 +46,168 @@
 <section class="loging-page">
    <div class="contanir">
     <div class="main-loging">
-  <div class="loging-form">
-    <div class="form-LogIn">
-      <h2>Sign Up</h2>
+  <div class="loging-form part2">
+    <div class="form-LogIn ">
+      <h2>Welcoming You as a Buyer</h2>
+      <p>Setup your profile it will take a while....</p>
+      <div class="disk">
 
-      <div class="Login-btn-box">
-        <button>As  Buyer</button>
-        <button>As Realtor</button>
-        <button>As Realtor</button>
-      </div>
-
-
+  
       
-      <div class="loging-input-group">
-        <input type="email" placeholder="Enter your email address*" >
+      <div   class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-12">
+        <div
+      id="image-drop-areas"
+      @dragover="onDragOver"
+      @drop="onDrop"
+      @click="openFileDialog"
+     
+    >
+    <input type="file" id="file-input" ref="fileInput" style="display: none" @change="handleFileChange" accept="image/*">
+      <div class="image-drop-zone" v-if="!imageUrl"  >
+        <!-- <i class="fas fa-plus"></i> -->
+        <img class="imgsize" src="/images/plus.png"/>
+        <p class="fontsizes">Upload Profile</p>
+      
       </div>
+      <div class="image-preview" v-else>
+        <img :src="imageUrl" alt="Uploaded Image" />
+      </div>
+    </div>
+
+  
+  </div>
+
+  <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8 col-12" >
+        <div
+      id="image-drop-area"
+      @dragover="onDragOver"
+      @drop="onDrop"
+      @click="openFileDialog"
+     
+    >
+    <input type="file" id="file-input" ref="fileInput" style="display: none" @change="handleFileChange" accept="image/*">
+      <div class="image-drop-zone" v-if="!imageUrl"  >
+        <img class="imgsizes" src="/images/plus.png"/>
+        <p class="fontsizes">Upload a cover photo</p>
+      
+      </div>
+      <div class="image-preview" v-else>
+        <img :src="imageUrl" alt="Uploaded Image" />
+      </div>
+    </div>
+
+ 
+
+  
+  </div>
+</div>
+
+
+    
+
+
 
       <div class="loging-input-groups">
-        <input type="text" placeholder="Username" >
+        <input type="text" placeholder="First Name" >
 
-        <input type="number" placeholder="Contact Number" >
+        <input type="number" placeholder="Last Name" >
       </div>
-      <div class="loging-input-group">
-        <input type="password" placeholder="Enter your password*" >
+   
+
+      <div class="faster-long">
+        <p style="padding-bottom: 10px;">Select Membership Packages</p>
+ 
+        <div class="faster-long-box">
+
+            <div class="faster-long-list">
+                <h2>Basic </h2>
+                <div class="faster-long-ul">
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="faster-long-list" style="background-color: #DED4A2; border: 1px solid #293857;">
+                <h2 style="color: #293857 !important;">Premium $20 </h2>
+                <div class="faster-long-ul">
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p style="color: black !important">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p style="color: black !important">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+                    <div class="faster-long-li">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M12.8125 3.4375H3.4375V16.5625H16.5625V12.1875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.1875 9.6875L10.3125 12.8125L17.8125 4.6875" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                        <p style="color: black !important">Lorem ipsum dolor sit amet</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
       </div>
 
-      <div class="loging-input-group">
-        <input type="password" placeholder="Re-enter your password" >
-      </div>
+     
       
 
       <div class="btn-loging-long">
-        <button @click="setup">Next</button>
+        <button>Next</button>
       </div>
 
 
 
 
-
-
-      <p>New to 444Living ? <span style="cursor: pointer;" @click="logins">
-        Sign In
-      </span></p>
 
 
 
@@ -134,6 +254,16 @@
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
 export default {
+
+    data() {
+    return {
+        imageUrl: null,
+   
+      
+    };
+
+   
+  },
   methods: {
     async login() {
       try {
@@ -163,19 +293,79 @@ export default {
       }, 8000);
     },
 
-    setup(){
-        this.$router.push('/setup')
-    },
 
-    logins(){
-        this.$router.push('/login')
+    goback(){
+        this.$router.push('/')
     }
   },
 };
 </script>
 <style scoped>
+
+.disk{
+    display: flex;
+    width: 100%;
+}
+
+.fontsizes{
+    font-size: 18px !important;
+}
+
+.imgsize{
+    width:20%
+}
+
+.imgsizes{
+    width: 7%;
+}
+
+#image-drop-area {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #293857;
+   
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#image-drop-areas {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #293857;
+   
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.image-drop-zone {
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+}
+
+.image-drop-zone i {
+  font-size: 35px;
+}
+
+.image-preview img {
+  max-width: 60%;
+  max-height: 200px;
+}
+
 .carousel-inner{
-    height: 100vh;
+    height: 100%;
 }
 header.loging-header {
     width: 100%;
@@ -202,7 +392,7 @@ input:-internal-autofill-selected {
 }
 
 .loging-logo img {
-    width: 100%;
+    width: 85%;
 }
 
 .loging-close-btn {
@@ -441,9 +631,71 @@ ol.carousel-indicators {
     justify-content: space-between;
 }
 
+.faster-long-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faster-long-list {
+    width: 48%;
+    background-color: #293857;
+}
+
+.faster-long {
+    width: 100%;
+}
+
+.faster-long-list h2 {
+    color: #DED4A2 !important;
+    text-align: center;
+    font-family: "Saol Display";
+    font-size: 40px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px solid;
+    padding-top: 20px;
+}
+
+.faster-long-ul {
+    width: 100%;
+    padding: 22px 54px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faster-long-li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px
+}
+
+.faster-long-li p {
+    color: #FFF !important;
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px !important; /* 133.333% */
+    margin: 0px;
+}
 
 
+.faster-long p {
+    width: 100% !important;
+    text-align: left !important;
+}
 
+
+.part2 {
+    width: 44% !important;
+    padding-top: 80px;
+}
 
 
 
@@ -451,6 +703,23 @@ ol.carousel-indicators {
 
 
 @media screen and (max-width: 1600px){
+
+    .loging-logo img{
+        width:100%
+    }
+
+    .fontsizes {
+    font-size: 14px !important;
+}
+
+.fontsizes {
+    font-size: 12px !important;
+}
+
+    .part2 {
+   
+    padding-top: 0px;
+}
   .form-LogIn h2 {
     color: #293857;
     font-family: "Saol Display";
@@ -602,11 +871,85 @@ ol.carousel-indicators{
     width: 14%;
     margin: 0px !important;
 }
+
+.faster-long-li p {
+    font-size: 14px !important;
+}
+
+.faster-long-li p {
+    font-size: 14px !important;
+}
+
+.faster-long-ul {
+    padding: 15px 42px;
+}
+
+.faster-long-list h2 {
+    font-size: 35px !important;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+    padding-top: 15px;
+}
+
+
 }
 
 
 
 @media screen and (max-width: 1440px){
+
+    .imgsize{
+    width:30%
+}
+
+.imgsizes{
+    width: 10%;
+}
+
+#image-drop-area {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #293857;
+   
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#image-drop-areas {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #293857;
+   
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.image-drop-zone {
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+}
+
+.image-drop-zone i {
+  font-size: 35px;
+}
+
+.image-preview img {
+  max-width: 60%;
+  max-height: 200px;
+}
 
     .loging-salider{
     width: 52%;
@@ -721,6 +1064,7 @@ ol.carousel-indicators{
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+    padding-top: 25px;
 }
 .form-LogIn h2{
     color: #293857;
@@ -734,10 +1078,72 @@ ol.carousel-indicators{
     width: 100%;
 }
 }
+@media screen and (max-width: 1366px)
+{
 
+    .imgsize{
+    width:25%
+}
+
+.imgsizes{
+    width: 8%;
+}
+
+
+
+
+
+
+    .faster-long-li p {
+    font-size: 12px !important;
+}
+
+.faster-long-ul {
+    padding: 12px 34px;
+}
+}
 
 @media screen and (max-width: 1024px){
 
+    .faster-long-ul {
+    padding: 10px 10px;
+}
+
+#image-drop-area {
+    width: 100%;
+    height: 70px;
+  
+ 
+}
+.fontsizes {
+    font-size: 9px !important;
+    padding-top: 5px;
+}
+
+.image-drop-zone {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+#image-drop-areas {
+    width: 100%;
+    height: 70px;
+  
+ 
+}
+
+.faster-long-li p {
+    font-size: 9px !important;
+}
+
+.faster-long-list h2 {
+    font-size: 22px !important;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    padding-top: 5px;
+}
     .carousel-inner {
     height: 100%;
 }
@@ -805,7 +1211,7 @@ header.loging-header[data-v-72911c7d] {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 18px;
+    gap: 5px;
     align-items: center;
 }
 .form-LogIn p{
@@ -833,7 +1239,7 @@ header.loging-header[data-v-72911c7d] {
 .form-LogIn h2{
     color: #293857;
     font-family: "Saol Display";
-    font-size: 38px;
+    font-size: 29px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -841,11 +1247,25 @@ header.loging-header[data-v-72911c7d] {
     text-align: center;
     width: 100%;
 }
+
+.part2 {
+    padding-top: 50px;
+}
 }
 
 
 
 @media screen and (max-width: 768px){
+
+    .part2 {
+   width:75% !important;
+}
+
+.form-LogIn{
+  
+    gap: 15px;
+ 
+}
   section.loging-page{
     width: 100%;
     background-color: #DED4A2;
@@ -887,7 +1307,52 @@ ol.carousel-indicators{
 }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
+
+    .loging-close-btn {
+    width: 15%;
+    z-index: 999;
+}
+
+.loging-close-btn svg {
+    width: 40px;
+    
+}
+/* 
+path {
+    stroke: #293857;
+} */
+    .imgsize {
+    width: 8%;
+}
+.paths{
+    stroke: #293857;
+}
+
+.carousel-inner {
+    height: 100%;
+    padding-bottom: 15px;
+}
+    .disk{
+        display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .faster-long-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faster-long-list {
+    width: 100%;
+    background-color: #293857;
+}
   section.loging-page{
     width: 100%;
     background-color: #DED4A2;

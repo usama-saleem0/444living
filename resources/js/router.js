@@ -36,6 +36,20 @@ let router = new Router({
             name: "register",
             component: () => import("./views/register/index.vue")
         },
+
+        {
+            path: "/investor",
+            name: "register",
+            component: () => import("./views/admin/dashborad4.vue")
+        },
+
+
+
+        {
+            path: "/setup",
+            name: "register",
+            component: () => import("./views/register/imgars.vue")
+        },
         {
             path: "/verify/user/:id",
             name: "verify",

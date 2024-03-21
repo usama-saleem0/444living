@@ -9,11 +9,16 @@
   <div class="contanir">
    <div class="main-menu">
     <div class="menu-list">
-      <h2><a href="#">Home</a></h2>
-      <h2><a href="#">Buyers Posts</a></h2>
-      <h2><a href="#">For Buyers</a></h2>
-      <h2><a href="#">For Realtors</a></h2>
-      <h2><a href="#">About Us</a></h2>
+      <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1"><a href="#">Home</a></h2>
+      <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1"><a href="#">Buyers Posts</a></h2>
+      <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1"><a href="#">For Buyers</a></h2>
+      <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1"><a href="#">For Realtors</a></h2>
+      <h2  @mouseover="handleMouseOver1"
+      @mouseleave="handleMouseLeave1"><a href="#">About Us</a></h2>
     </div>
 
     <div class="menu-btn">
@@ -30,6 +35,14 @@
 </svg>
         Contact</button>
     </div>
+
+    <div class="fade-in">
+      <img v-if="img" class="first_image fade-in" src="/images/Rectangle1.png"/>
+      <img v-if="img" class="second_image fade-in" src="/images/Rectangle2.png"/>
+      <img v-if="img" class="third_image fade-in" src="/images/Rectangle3.png"/>
+
+
+    </div>
    </div>
   </div>
 </div>
@@ -39,6 +52,8 @@
   </div>
 </template>
 <script>
+import { method } from 'lodash';
+
 
 
 export default {
@@ -47,14 +62,93 @@ export default {
   
   },
   name: 'SampleComponent',
+
+  data() {
+    return {
+      img:false
+   
+      
+    };
+
+   
+  },
+
+  methods:{
+    handleMouseOver1(){
+        console.log('enter')
+        this.img = true
+      
+    },
+
+    handleMouseLeave1(){
+        console.log('leave')
+        this.img = false
+    },
+  }
 };
 </script>
 
-<style>
+<style scoped>
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.first_image{
+  width: 25%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    /* opacity: 0;
+  transition: opacity 0.5s ease; */
+
+}
+/* .first_image.visible {
+  opacity: 1;
+} */
+
+.second_image{
+  width: 25%;
+    position: absolute;
+    right: 4%;
+    bottom: 25%;
+}
+
+.fade-in {
+  animation: fadeIn 1.5s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease; 
+}
+
+.img.visible {
+  opacity: 1 !important;
+} */
+
+
+
+
+
+.third_image{
+  width: 25%;
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+
 }
 .menu-btn button:hover svg {
   transform: translateX(140px);
@@ -147,7 +241,7 @@ button svg {
     margin-left: -40px;
 }
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1600px){
   .menu-list h2 a {
     color: #293857;
    
@@ -157,7 +251,7 @@ button svg {
 
 .contanir {
     width: 100%;
-    max-width: 1366px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 }
@@ -166,7 +260,7 @@ button svg {
   .menu-list h2 a {
     color: #293857;
    
-    font-size: 70px;
+    font-size: 60px;
     
 }
 
@@ -176,6 +270,71 @@ button svg {
     margin: 0 auto;
 }
 }
+
+
+@media screen and (max-width: 1024px){
+  .menu-list h2 a {
+    color: #293857;
+   
+    font-size: 50px;
+    
+}
+
+.contanir {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 600px){
+  .menu {
+    padding: 20px;
+}
+
+.menu-list h2 a {
+    color: #293857;
+    font-size: 30px;
+}
+
+.menu-btn button {
+   
+    font-size: 18px;
+   
+}
+
+button svg {
+    transition: 0.9s;
+    position: relative;
+    width: 8px;
+    transition-delay: 0.2s;
+}
+
+.menu-btn button:hover {
+    padding: 44px 20px 43px 15px;
+    border-radius: 50%;
+    border: 1px solid;
+    transform: translateY(10px);
+    margin-left: 34px;
+}
+button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 0px;
+    transition: 0.3s ease-out;
+}
+
+.menu-btn button:hover svg {
+  transform: translateX(80px);
+  color: var(--hovered-color);
+}
+}
+
+
 
 
 </style>
