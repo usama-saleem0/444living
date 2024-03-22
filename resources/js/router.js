@@ -40,8 +40,15 @@ let router = new Router({
         {
             path: "/investor",
             name: "register",
-            component: () => import("./views/admin/dashborad4.vue")
+            component: () => import("./views/admin/investorprofile.vue")
         },
+
+        {
+            path: "/investordashoard",
+            name: "register",
+            component: () => import("./views/admin/investordashoboard.vue")
+        },
+
 
 
 

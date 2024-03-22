@@ -1,0 +1,2253 @@
+<template>
+ 
+    <div class="page-1">
+     <div class="contanir" >
+        <div class="main">
+         <!-- <div class="box-1">
+             <div class="new-1">
+                 <div class="rol-1">
+                     <p>Total Income</p>
+                 <h2>$18,627.00</h2>
+                 <div class="new-btn-lid">
+                     <button>
+                         <p>View Details</p>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+   <path d="M2.51273 5.45272C3.05053 5.44321 3.5365 5.41563 4.01914 5.49884C4.07002 5.5074 4.12898 5.47935 4.18272 5.46318C4.44757 5.38329 4.71338 5.37236 4.98299 5.44131C5.21742 5.50122 5.4566 5.44986 5.69388 5.46746C6.06002 5.49456 6.42426 5.39566 6.78803 5.4142C7.08427 5.42942 7.38384 5.42466 7.67818 5.47079C7.82749 5.49409 7.96871 5.50217 8.12135 5.46366C8.2873 5.42229 8.45183 5.52167 8.62396 5.52167C8.81322 5.52167 8.99962 5.56922 9.18126 5.62343C9.38478 5.68382 9.43613 5.86831 9.28778 6.0181C9.06143 6.24682 8.76567 6.34715 8.45944 6.39185C8.20599 6.42894 7.94732 6.45033 7.69197 6.46365C7.42188 6.47744 7.14989 6.57064 6.87599 6.48029C6.82892 6.4646 6.77043 6.46127 6.72288 6.47411C6.40429 6.56161 6.07286 6.50264 5.75189 6.56541C5.65299 6.5849 5.54457 6.57825 5.44376 6.56256C5.30396 6.54068 5.16987 6.54449 5.03673 6.58823C4.8665 6.64434 4.69722 6.57302 4.52651 6.57634C4.3539 6.57967 4.18272 6.58585 4.01914 6.62722C3.76189 6.69284 3.50607 6.65623 3.25547 6.6296C3.02913 6.60583 2.81087 6.6258 2.58786 6.6315C2.37721 6.63721 2.15705 6.65528 1.94973 6.61867C1.71435 6.57682 1.61211 6.36189 1.52604 6.1655C1.44901 5.98957 1.55743 5.85975 1.67583 5.73327C1.85034 5.54639 2.05148 5.44653 2.31064 5.46413C2.39528 5.46983 2.48135 5.45414 2.51416 5.45224L2.51273 5.45272Z" fill="white"/>
+   <path d="M9.13513 9.8451C8.83651 9.84748 8.60731 9.58072 8.65724 9.27068C8.69005 9.06574 8.76518 8.87411 8.89833 8.70768C9.00056 8.57977 9.10422 8.45091 9.18839 8.31111C9.48177 7.82181 9.80322 7.35391 10.1884 6.93166C10.2221 6.89457 10.2497 6.84654 10.2664 6.79899C10.3657 6.51416 10.565 6.2978 10.7595 6.07907C10.8779 5.94593 10.8883 5.84702 10.7533 5.7291C10.5745 5.57265 10.4347 5.39386 10.3353 5.17798C10.2649 5.02582 10.1166 4.93737 10.0082 4.81612C9.85743 4.64731 9.76043 4.44094 9.65439 4.24646C9.50745 3.97685 9.2949 3.76192 9.12229 3.5156C8.94825 3.26739 8.80227 3.00396 8.69671 2.71913C8.67294 2.65493 8.65629 2.58646 8.64964 2.51846C8.63775 2.39008 8.71573 2.31019 8.81607 2.2479C8.91069 2.18894 8.9958 2.21366 9.07949 2.27595C9.24497 2.39911 9.42043 2.5042 9.54882 2.67728C9.71287 2.89792 9.96299 3.0439 10.1052 3.28736C10.4799 3.50086 10.6601 3.88507 10.9159 4.20414C11.0662 4.39149 11.2497 4.55364 11.4261 4.71817C11.5683 4.85083 11.6843 4.99586 11.7357 5.18654C11.7656 5.29733 11.8322 5.38673 11.894 5.48136C12.0414 5.70722 12.0319 5.93737 11.8874 6.16276C11.6739 6.49562 11.497 6.85225 11.2549 7.16703C11.0039 7.49371 10.8375 7.87982 10.545 8.17844C10.3672 8.36008 10.273 8.59356 10.1632 8.81847C10.0115 9.12898 9.83222 9.4238 9.57782 9.66345C9.43755 9.79517 9.30917 9.84415 9.13656 9.84557L9.13513 9.8451Z" fill="white"/>
+ </svg>
+                     </button>
+ 
+                     <button>
+                         <p>Full Report</p>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+   <path d="M2.51273 5.45272C3.05053 5.44321 3.5365 5.41563 4.01914 5.49884C4.07002 5.5074 4.12898 5.47935 4.18272 5.46318C4.44757 5.38329 4.71338 5.37236 4.98299 5.44131C5.21742 5.50122 5.4566 5.44986 5.69388 5.46746C6.06002 5.49456 6.42426 5.39566 6.78803 5.4142C7.08427 5.42942 7.38384 5.42466 7.67818 5.47079C7.82749 5.49409 7.96871 5.50217 8.12135 5.46366C8.2873 5.42229 8.45183 5.52167 8.62396 5.52167C8.81322 5.52167 8.99962 5.56922 9.18126 5.62343C9.38478 5.68382 9.43613 5.86831 9.28778 6.0181C9.06143 6.24682 8.76567 6.34715 8.45944 6.39185C8.20599 6.42894 7.94732 6.45033 7.69197 6.46365C7.42188 6.47744 7.14989 6.57064 6.87599 6.48029C6.82892 6.4646 6.77043 6.46127 6.72288 6.47411C6.40429 6.56161 6.07286 6.50264 5.75189 6.56541C5.65299 6.5849 5.54457 6.57825 5.44376 6.56256C5.30396 6.54068 5.16987 6.54449 5.03673 6.58823C4.8665 6.64434 4.69722 6.57302 4.52651 6.57634C4.3539 6.57967 4.18272 6.58585 4.01914 6.62722C3.76189 6.69284 3.50607 6.65623 3.25547 6.6296C3.02913 6.60583 2.81087 6.6258 2.58786 6.6315C2.37721 6.63721 2.15705 6.65528 1.94973 6.61867C1.71435 6.57682 1.61211 6.36189 1.52604 6.1655C1.44901 5.98957 1.55743 5.85975 1.67583 5.73327C1.85034 5.54639 2.05148 5.44653 2.31064 5.46413C2.39528 5.46983 2.48135 5.45414 2.51416 5.45224L2.51273 5.45272Z" fill="white"/>
+   <path d="M9.13513 9.8451C8.83651 9.84748 8.60731 9.58072 8.65724 9.27068C8.69005 9.06574 8.76518 8.87411 8.89833 8.70768C9.00056 8.57977 9.10422 8.45091 9.18839 8.31111C9.48177 7.82181 9.80322 7.35391 10.1884 6.93166C10.2221 6.89457 10.2497 6.84654 10.2664 6.79899C10.3657 6.51416 10.565 6.2978 10.7595 6.07907C10.8779 5.94593 10.8883 5.84702 10.7533 5.7291C10.5745 5.57265 10.4347 5.39386 10.3353 5.17798C10.2649 5.02582 10.1166 4.93737 10.0082 4.81612C9.85743 4.64731 9.76043 4.44094 9.65439 4.24646C9.50745 3.97685 9.2949 3.76192 9.12229 3.5156C8.94825 3.26739 8.80227 3.00396 8.69671 2.71913C8.67294 2.65493 8.65629 2.58646 8.64964 2.51846C8.63775 2.39008 8.71573 2.31019 8.81607 2.2479C8.91069 2.18894 8.9958 2.21366 9.07949 2.27595C9.24497 2.39911 9.42043 2.5042 9.54882 2.67728C9.71287 2.89792 9.96299 3.0439 10.1052 3.28736C10.4799 3.50086 10.6601 3.88507 10.9159 4.20414C11.0662 4.39149 11.2497 4.55364 11.4261 4.71817C11.5683 4.85083 11.6843 4.99586 11.7357 5.18654C11.7656 5.29733 11.8322 5.38673 11.894 5.48136C12.0414 5.70722 12.0319 5.93737 11.8874 6.16276C11.6739 6.49562 11.497 6.85225 11.2549 7.16703C11.0039 7.49371 10.8375 7.87982 10.545 8.17844C10.3672 8.36008 10.273 8.59356 10.1632 8.81847C10.0115 9.12898 9.83222 9.4238 9.57782 9.66345C9.43755 9.79517 9.30917 9.84415 9.13656 9.84557L9.13513 9.8451Z" fill="white"/>
+ </svg>
+                     </button>
+                 </div>
+                 </div>
+                 <div class="rol-3">
+                     <p>Previous Live</p>
+                     <div class="rol-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+   <g clip-path="url(#clip0_131_632)">
+     <path d="M40 20C40 8.95437 31.0456 0 20 0C8.95437 0 0 8.95437 0 20C0 29.9825 7.31375 38.2567 16.875 39.757V25.7812H11.7969V20H16.875V15.5937C16.875 10.5812 19.8609 7.8125 24.4294 7.8125C26.6175 7.8125 28.9062 8.20312 28.9062 8.20312V13.125H26.3844C23.8998 13.125 23.125 14.6667 23.125 16.2484V20H28.6719L27.7852 25.7812H23.125V39.757C32.6862 38.2567 40 29.9827 40 20Z" fill="#1877F2"/>
+     <path d="M27.7852 25.7812L28.6719 20H23.125V16.2484C23.125 14.6666 23.8998 13.125 26.3844 13.125H28.9062V8.20312C28.9062 8.20312 26.6175 7.8125 24.4292 7.8125C19.8609 7.8125 16.875 10.5813 16.875 15.5938V20H11.7969V25.7812H16.875V39.757C17.9088 39.919 18.9536 40.0003 20 40C21.0464 40.0003 22.0912 39.9191 23.125 39.757V25.7812H27.7852Z" fill="white"/>
+   </g>
+   <defs>
+     <clipPath id="clip0_131_632">
+       <rect width="40" height="40" fill="white"/>
+     </clipPath>
+   </defs>
+ </svg>
+ <div class="rol-para">
+     <h2>March,15 18:02</h2>
+     <p>“Unbox Free Gifts Giveaway................</p>
+ </div>
+                     </div>
+                     <div class="rol-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+   <g clip-path="url(#clip0_131_643)">
+     <path d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z" fill="url(#paint0_radial_131_643)"/>
+     <path d="M30.625 0H9.375C4.19733 0 0 4.19733 0 9.375V30.625C0 35.8027 4.19733 40 9.375 40H30.625C35.8027 40 40 35.8027 40 30.625V9.375C40 4.19733 35.8027 0 30.625 0Z" fill="url(#paint1_radial_131_643)"/>
+     <path d="M20.0014 4.375C15.758 4.375 15.2253 4.39359 13.5588 4.46938C11.8953 4.54563 10.7598 4.80891 9.76641 5.19531C8.73859 5.59438 7.86688 6.12828 6.99844 6.99703C6.12922 7.86562 5.59531 8.73734 5.195 9.76469C4.8075 10.7584 4.54391 11.8944 4.46906 13.557C4.39453 15.2238 4.375 15.7566 4.375 20.0002C4.375 24.2438 4.39375 24.7747 4.46938 26.4412C4.54594 28.1047 4.80922 29.2402 5.19531 30.2336C5.59469 31.2614 6.12859 32.1331 6.99734 33.0016C7.86563 33.8708 8.73734 34.4059 9.76438 34.805C10.7586 35.1914 11.8942 35.4547 13.5573 35.5309C15.2241 35.6067 15.7563 35.6253 19.9995 35.6253C24.2434 35.6253 24.7744 35.6067 26.4409 35.5309C28.1044 35.4547 29.2411 35.1914 30.2353 34.805C31.2627 34.4059 32.1331 33.8708 33.0012 33.0016C33.8705 32.1331 34.4042 31.2614 34.8047 30.2341C35.1887 29.2402 35.4525 28.1044 35.5306 26.4416C35.6055 24.775 35.625 24.2438 35.625 20.0002C35.625 15.7566 35.6055 15.2241 35.5306 13.5573C35.4525 11.8939 35.1887 10.7586 34.8047 9.76516C34.4042 8.73734 33.8705 7.86562 33.0012 6.99703C32.1322 6.12797 31.263 5.59406 30.2344 5.19547C29.2383 4.80891 28.1022 4.54547 26.4387 4.46938C24.772 4.39359 24.2414 4.375 19.9966 4.375H20.0014ZM18.5997 7.19078C19.0158 7.19016 19.48 7.19078 20.0014 7.19078C24.1734 7.19078 24.6678 7.20578 26.3153 7.28063C27.8387 7.35031 28.6656 7.60484 29.2164 7.81875C29.9456 8.10188 30.4655 8.44047 31.012 8.9875C31.5589 9.53438 31.8973 10.0552 32.1813 10.7844C32.3952 11.3344 32.65 12.1613 32.7194 13.6847C32.7942 15.3319 32.8105 15.8266 32.8105 19.9966C32.8105 24.1666 32.7942 24.6614 32.7194 26.3084C32.6497 27.8319 32.3952 28.6587 32.1813 29.2089C31.8981 29.9381 31.5589 30.4573 31.012 31.0039C30.4652 31.5508 29.9459 31.8892 29.2164 32.1725C28.6663 32.3873 27.8387 32.6413 26.3153 32.7109C24.6681 32.7858 24.1734 32.802 20.0014 32.802C15.8292 32.802 15.3347 32.7858 13.6877 32.7109C12.1642 32.6406 11.3373 32.3861 10.7861 32.1722C10.057 31.8889 9.53609 31.5505 8.98922 31.0036C8.44234 30.4567 8.10391 29.9372 7.82 29.2077C7.60609 28.6575 7.35125 27.8306 7.28188 26.3072C7.20703 24.66 7.19203 24.1653 7.19203 19.9927C7.19203 15.8202 7.20703 15.328 7.28188 13.6808C7.35156 12.1573 7.60609 11.3305 7.82 10.7797C8.10328 10.0505 8.44234 9.52969 8.98938 8.98281C9.53625 8.43594 10.057 8.09734 10.7862 7.81359C11.337 7.59875 12.1642 7.34484 13.6877 7.27484C15.1291 7.20969 15.6877 7.19016 18.5997 7.18687V7.19078ZM28.342 9.78516C27.3069 9.78516 26.467 10.6242 26.467 11.6595C26.467 12.6947 27.3069 13.5345 28.342 13.5345C29.3772 13.5345 30.217 12.6947 30.217 11.6595C30.217 10.6244 29.3772 9.78453 28.342 9.78453V9.78516ZM20.0014 11.9759C15.5702 11.9759 11.9773 15.5688 11.9773 20.0002C11.9773 24.4316 15.5702 28.0227 20.0014 28.0227C24.4328 28.0227 28.0244 24.4316 28.0244 20.0002C28.0244 15.5689 24.4325 11.9759 20.0011 11.9759H20.0014ZM20.0014 14.7917C22.8778 14.7917 25.2098 17.1234 25.2098 20.0002C25.2098 22.8766 22.8778 25.2086 20.0014 25.2086C17.1248 25.2086 14.7931 22.8766 14.7931 20.0002C14.7931 17.1234 17.1248 14.7917 20.0014 14.7917Z" fill="white"/>
+   </g>
+   <defs>
+     <radialGradient id="paint0_radial_131_643" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(10.625 43.0808) rotate(-90) scale(39.643 36.8711)">
+       <stop stop-color="#FFDD55"/>
+       <stop offset="0.1" stop-color="#FFDD55"/>
+       <stop offset="0.5" stop-color="#FF543E"/>
+       <stop offset="1" stop-color="#C837AB"/>
+     </radialGradient>
+     <radialGradient id="paint1_radial_131_643" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-6.70016 2.88141) rotate(78.681) scale(17.7206 73.045)">
+       <stop stop-color="#3771C8"/>
+       <stop offset="0.128" stop-color="#3771C8"/>
+       <stop offset="1" stop-color="#6600FF" stop-opacity="0"/>
+     </radialGradient>
+     <clipPath id="clip0_131_643">
+       <rect width="40" height="40" fill="white"/>
+     </clipPath>
+   </defs>
+ </svg>
+ <div class="rol-para">
+     <h2>March,15 18:02</h2>
+     <p>“Unbox Free Gifts Giveaway................</p>
+ </div>
+                     </div>
+                     <div class="rol-card">
+                         <div class="div-1">
+                             <h2>Total Active Couses</h2>
+                             <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+   <path d="M3.23167 9.9416C4.21763 9.92416 5.10858 9.8736 5.99342 10.0261C6.0867 10.0418 6.19479 9.99042 6.29332 9.96077C6.77887 9.81431 7.26619 9.79427 7.76048 9.92068C8.19027 10.0305 8.62876 9.93635 9.06378 9.96862C9.73503 10.0183 10.4028 9.83699 11.0697 9.87098C11.6128 9.89888 12.162 9.89015 12.7017 9.97472C12.9754 10.0174 13.2343 10.0323 13.5141 9.96165C13.8184 9.88581 14.12 10.068 14.4356 10.068C14.7826 10.068 15.1243 10.1552 15.4573 10.2546C15.8304 10.3653 15.9246 10.7035 15.6526 10.9781C15.2376 11.3974 14.6954 11.5814 14.134 11.6633C13.6693 11.7313 13.1951 11.7705 12.7269 11.795C12.2318 11.8202 11.7331 11.9911 11.231 11.8255C11.1447 11.7967 11.0375 11.7906 10.9503 11.8141C10.3662 11.9746 9.75857 11.8664 9.17013 11.9815C8.98881 12.0173 8.79004 12.0051 8.60522 11.9763C8.34892 11.9362 8.10309 11.9432 7.859 12.0234C7.54691 12.1262 7.23657 11.9955 6.9236 12.0016C6.60715 12.0077 6.29332 12.019 5.99342 12.0948C5.52179 12.2151 5.05279 12.148 4.59336 12.0992C4.1784 12.0556 3.77826 12.0922 3.36941 12.1027C2.98321 12.1132 2.57959 12.1463 2.1995 12.0792C1.76797 12.0024 1.58054 11.6084 1.42275 11.2484C1.28152 10.9258 1.48029 10.6878 1.69736 10.4559C2.01729 10.1133 2.38604 9.93025 2.86117 9.96251C3.01634 9.97296 3.17414 9.9442 3.23429 9.94072L3.23167 9.9416Z" fill="#1C1D1E"/>
+   <path d="M15.3727 17.9943C14.8253 17.9987 14.4051 17.5096 14.4966 16.9412C14.5568 16.5655 14.6945 16.2142 14.9386 15.9091C15.126 15.6746 15.3161 15.4383 15.4704 15.182C16.0082 14.285 16.5976 13.4271 17.3037 12.653C17.3656 12.585 17.4161 12.497 17.4467 12.4098C17.6289 11.8876 17.9941 11.4909 18.3507 11.0899C18.5678 10.8459 18.5869 10.6645 18.3394 10.4483C18.0116 10.1615 17.7553 9.83372 17.5731 9.43794C17.4441 9.15898 17.1721 8.99683 16.9733 8.77453C16.6969 8.46505 16.5191 8.0867 16.3247 7.73016C16.0553 7.23587 15.6656 6.84183 15.3492 6.39025C15.0301 5.9352 14.7625 5.45224 14.569 4.93005C14.5254 4.81235 14.4949 4.68682 14.4827 4.56216C14.4609 4.32679 14.6038 4.18033 14.7878 4.06613C14.9613 3.95804 15.1173 4.00336 15.2707 4.11756C15.5741 4.34335 15.8958 4.53601 16.1312 4.85333C16.4319 5.25783 16.8905 5.52546 17.1511 5.97181C17.8381 6.36322 18.1685 7.06761 18.6375 7.65257C18.913 7.99604 19.2494 8.29332 19.5728 8.59496C19.8335 8.83817 20.0462 9.10406 20.1404 9.45364C20.1953 9.65675 20.3174 9.82065 20.4307 9.99414C20.7009 10.4082 20.6835 10.8302 20.4186 11.2434C20.0271 11.8536 19.7028 12.5074 19.259 13.0845C18.7988 13.6834 18.4937 14.3913 17.9575 14.9388C17.6315 15.2718 17.4589 15.6998 17.2575 16.1122C16.9794 16.6814 16.6507 17.2219 16.1843 17.6613C15.9272 17.9028 15.6918 17.9926 15.3754 17.9952L15.3727 17.9943Z" fill="#1C1D1E"/>
+ </svg> 15</p>
+                         </div>
+                         <div class="div-2">
+                             <div class="Enrolled">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+   <path d="M16 17.0001V19.0001H2V17.0001C2 17.0001 2 13.0001 9 13.0001C16 13.0001 16 17.0001 16 17.0001ZM12.5 7.50005C12.5 6.80782 12.2947 6.13113 11.9101 5.55556C11.5256 4.97998 10.9789 4.53138 10.3394 4.26647C9.69985 4.00157 8.99612 3.93226 8.31718 4.0673C7.63825 4.20235 7.01461 4.5357 6.52513 5.02518C6.03564 5.51466 5.7023 6.1383 5.56725 6.81724C5.4322 7.49617 5.50152 8.1999 5.76642 8.83944C6.03133 9.47899 6.47993 10.0256 7.0555 10.4102C7.63108 10.7948 8.30777 11.0001 9 11.0001C9.92826 11.0001 10.8185 10.6313 11.4749 9.97493C12.1313 9.31855 12.5 8.42831 12.5 7.50005ZM15.94 13.0001C16.5547 13.4758 17.0578 14.0805 17.4137 14.7716C17.7696 15.4626 17.9697 16.2233 18 17.0001V19.0001H22V17.0001C22 17.0001 22 13.3701 15.94 13.0001ZM15 4.00005C14.3117 3.99622 13.6385 4.20201 13.07 4.59005C13.6774 5.43879 14.0041 6.45634 14.0041 7.50005C14.0041 8.54377 13.6774 9.56132 13.07 10.4101C13.6385 10.7981 14.3117 11.0039 15 11.0001C15.9283 11.0001 16.8185 10.6313 17.4749 9.97493C18.1313 9.31855 18.5 8.42831 18.5 7.50005C18.5 6.57179 18.1313 5.68156 17.4749 5.02518C16.8185 4.3688 15.9283 4.00005 15 4.00005Z" fill="#FF5757"/>
+ </svg> <p>123 Enrolled Users</p>
+                             </div>
+                             <div class="Reviews">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+   <path d="M21.75 6V18C21.75 18.3978 21.592 18.7794 21.3107 19.0607C21.0294 19.342 20.6478 19.5 20.25 19.5H7.73437L4.72687 22.1353C4.72325 22.1392 4.71916 22.1427 4.71468 22.1456C4.44534 22.3744 4.10341 22.5 3.75 22.5C3.52994 22.4996 3.31265 22.451 3.11343 22.3575C2.85431 22.2381 2.63508 22.0465 2.48195 21.8058C2.32883 21.5651 2.2483 21.2853 2.25 21V6C2.25 5.60218 2.40803 5.22064 2.68934 4.93934C2.97064 4.65804 3.35217 4.5 3.75 4.5H20.25C20.6478 4.5 21.0294 4.65804 21.3107 4.93934C21.592 5.22064 21.75 5.60218 21.75 6Z" fill="#FF5757"/>
+ </svg> <p>100 Reviews</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="rol-card">
+                         <div class="div-1">
+                             <h2>Total Active Couses</h2>
+                             <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+   <path d="M3.23167 9.9416C4.21763 9.92416 5.10858 9.8736 5.99342 10.0261C6.0867 10.0418 6.19479 9.99042 6.29332 9.96077C6.77887 9.81431 7.26619 9.79427 7.76048 9.92068C8.19027 10.0305 8.62876 9.93635 9.06378 9.96862C9.73503 10.0183 10.4028 9.83699 11.0697 9.87098C11.6128 9.89888 12.162 9.89015 12.7017 9.97472C12.9754 10.0174 13.2343 10.0323 13.5141 9.96165C13.8184 9.88581 14.12 10.068 14.4356 10.068C14.7826 10.068 15.1243 10.1552 15.4573 10.2546C15.8304 10.3653 15.9246 10.7035 15.6526 10.9781C15.2376 11.3974 14.6954 11.5814 14.134 11.6633C13.6693 11.7313 13.1951 11.7705 12.7269 11.795C12.2318 11.8202 11.7331 11.9911 11.231 11.8255C11.1447 11.7967 11.0375 11.7906 10.9503 11.8141C10.3662 11.9746 9.75857 11.8664 9.17013 11.9815C8.98881 12.0173 8.79004 12.0051 8.60522 11.9763C8.34892 11.9362 8.10309 11.9432 7.859 12.0234C7.54691 12.1262 7.23657 11.9955 6.9236 12.0016C6.60715 12.0077 6.29332 12.019 5.99342 12.0948C5.52179 12.2151 5.05279 12.148 4.59336 12.0992C4.1784 12.0556 3.77826 12.0922 3.36941 12.1027C2.98321 12.1132 2.57959 12.1463 2.1995 12.0792C1.76797 12.0024 1.58054 11.6084 1.42275 11.2484C1.28152 10.9258 1.48029 10.6878 1.69736 10.4559C2.01729 10.1133 2.38604 9.93025 2.86117 9.96251C3.01634 9.97296 3.17414 9.9442 3.23429 9.94072L3.23167 9.9416Z" fill="#1C1D1E"/>
+   <path d="M15.3727 17.9943C14.8253 17.9987 14.4051 17.5096 14.4966 16.9412C14.5568 16.5655 14.6945 16.2142 14.9386 15.9091C15.126 15.6746 15.3161 15.4383 15.4704 15.182C16.0082 14.285 16.5976 13.4271 17.3037 12.653C17.3656 12.585 17.4161 12.497 17.4467 12.4098C17.6289 11.8876 17.9941 11.4909 18.3507 11.0899C18.5678 10.8459 18.5869 10.6645 18.3394 10.4483C18.0116 10.1615 17.7553 9.83372 17.5731 9.43794C17.4441 9.15898 17.1721 8.99683 16.9733 8.77453C16.6969 8.46505 16.5191 8.0867 16.3247 7.73016C16.0553 7.23587 15.6656 6.84183 15.3492 6.39025C15.0301 5.9352 14.7625 5.45224 14.569 4.93005C14.5254 4.81235 14.4949 4.68682 14.4827 4.56216C14.4609 4.32679 14.6038 4.18033 14.7878 4.06613C14.9613 3.95804 15.1173 4.00336 15.2707 4.11756C15.5741 4.34335 15.8958 4.53601 16.1312 4.85333C16.4319 5.25783 16.8905 5.52546 17.1511 5.97181C17.8381 6.36322 18.1685 7.06761 18.6375 7.65257C18.913 7.99604 19.2494 8.29332 19.5728 8.59496C19.8335 8.83817 20.0462 9.10406 20.1404 9.45364C20.1953 9.65675 20.3174 9.82065 20.4307 9.99414C20.7009 10.4082 20.6835 10.8302 20.4186 11.2434C20.0271 11.8536 19.7028 12.5074 19.259 13.0845C18.7988 13.6834 18.4937 14.3913 17.9575 14.9388C17.6315 15.2718 17.4589 15.6998 17.2575 16.1122C16.9794 16.6814 16.6507 17.2219 16.1843 17.6613C15.9272 17.9028 15.6918 17.9926 15.3754 17.9952L15.3727 17.9943Z" fill="#1C1D1E"/>
+ </svg> 15</p>
+                         </div>
+                         <div class="div-2">
+                             <div class="Enrolled">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M16 11.78L20.24 4.45L21.97 5.45L16.74 14.5L10.23 10.75L5.46 19H22V21H2V3H4V17.54L9.5 8L16 11.78Z" fill="#FF5757"/>
+</svg><p>123 Total Impressions</p>
+                             </div>
+                             <div class="Reviews">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M16.5 6.75H19.572C19.7578 6.75018 19.9369 6.81933 20.0746 6.94403C20.2124 7.06874 20.2989 7.24013 20.3175 7.425L20.775 12H19.266L18.891 8.25H16.5V10.5C16.5 10.6989 16.421 10.8897 16.2803 11.0303C16.1397 11.171 15.9489 11.25 15.75 11.25C15.5511 11.25 15.3603 11.171 15.2197 11.0303C15.079 10.8897 15 10.6989 15 10.5V8.25H8.99999V10.5C8.99999 10.6989 8.92098 10.8897 8.78032 11.0303C8.63967 11.171 8.44891 11.25 8.24999 11.25C8.05108 11.25 7.86032 11.171 7.71966 11.0303C7.57901 10.8897 7.49999 10.6989 7.49999 10.5V8.25H5.10749L3.90749 20.25H12V21.75H3.07799C2.97324 21.7499 2.86967 21.7278 2.77396 21.6853C2.67824 21.6427 2.59251 21.5806 2.52227 21.5028C2.45204 21.4251 2.39887 21.3335 2.36618 21.234C2.33349 21.1345 2.32202 21.0292 2.33249 20.925L3.68249 7.425C3.70107 7.24013 3.78761 7.06874 3.92535 6.94403C4.06308 6.81933 4.24219 6.75018 4.42799 6.75H7.49999V6.2265C7.49999 3.6255 9.50399 1.5 12 1.5C14.496 1.5 16.5 3.6255 16.5 6.2265V6.7515V6.75ZM15 6.75V6.2265C15 4.4355 13.647 3 12 3C10.353 3 8.99999 4.4355 8.99999 6.2265V6.7515H15V6.75ZM19.7205 17.91C19.7889 17.8356 19.8717 17.7757 19.9638 17.7341C20.0559 17.6924 20.1555 17.6699 20.2566 17.6677C20.3577 17.6655 20.4582 17.6838 20.552 17.7215C20.6459 17.7591 20.7311 17.8154 20.8026 17.8868C20.8742 17.9583 20.9305 18.0434 20.9683 18.1372C21.0061 18.231 21.0246 18.3314 21.0225 18.4325C21.0205 18.5336 20.9981 18.6332 20.9566 18.7254C20.9151 18.8176 20.8553 18.9005 20.781 18.969L17.781 21.969C17.6403 22.1096 17.4496 22.1886 17.2507 22.1886C17.0519 22.1886 16.8611 22.1096 16.7205 21.969L13.7205 18.969C13.6489 18.8998 13.5917 18.8171 13.5524 18.7256C13.5131 18.6341 13.4924 18.5356 13.4916 18.4361C13.4907 18.3365 13.5097 18.2377 13.5474 18.1455C13.5851 18.0534 13.6408 17.9696 13.7112 17.8992C13.7816 17.8288 13.8654 17.7731 13.9575 17.7354C14.0497 17.6977 14.1485 17.6787 14.248 17.6796C14.3476 17.6804 14.446 17.7011 14.5375 17.7404C14.629 17.7797 14.7118 17.8369 14.781 17.9085L16.5 19.629V14.25C16.5 14.0511 16.579 13.8603 16.7197 13.7197C16.8603 13.579 17.0511 13.5 17.25 13.5C17.4489 13.5 17.6397 13.579 17.7803 13.7197C17.921 13.8603 18 14.0511 18 14.25V19.629L19.7205 17.9085V17.91Z" fill="#FF5757"/>
+</svg><p>100 Sold</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="new-2">
+                 <div class="short-card">
+                     <p>Active Jobs</p>
+                     <h2>24.9k</h2>
+                     <h3>+11.6% (2817)</h3>
+                 </div>
+                 <div class="short-card">
+                     <p>Completed</p>
+                     <h2>24.9k</h2>
+                     <h3>+11.6% (2817)</h3>
+                 </div>
+                 <div class="short-card">
+                     <p>Paid</p>
+                     <h2>24.9k</h2>
+                     <h3>+11.6% (2817)</h3>
+                 </div>
+                 <div class="short-card">
+                     <p>Un Paid</p>
+                     <h2>24.9k</h2>
+                     <h3>+11.6% (2817)</h3>
+                 </div>
+             </div>
+             <div class="new-3">
+                 <div class="dashbord-card">
+                     <div class="chart-bar">
+                        <div class="col sett">
+
+                            <p class="charttext">Total Impression Report</p>
+
+
+                            <span class="chartdate">Feb 22 - Mar 30</span>
+                        </div>
+               <canvas class="chartsnew" id="myBarChart"></canvas>
+              
+             </div>
+                 </div>
+                 <div class="conting-card">
+                     <h2>OverView</h2>
+                     <div class="divs">
+                         <h2>Total Unique Users</h2>
+                         <h3>20.3k</h3>
+                     </div>
+                     <div class="divs">
+                         <h2>New Unique Users</h2>
+                         <h3>20.3k</h3>
+                     </div>
+                     <div class="divs">
+                         <h2>Engagement Rate</h2>
+                         <h3>8.3 %</h3>
+                     </div>
+                     <div class="divs">
+                         <h2>Total Comments</h2>
+                         <h3>100k</h3>
+                     </div>
+                 </div>
+             </div>
+         </div> -->
+         <Profile/>
+        </div>
+     </div>
+    </div>
+  
+ </template>
+ 
+ <script>
+ import Vue from 'vue'
+ import chartBarDemo from "../../chart/demo/chart-bar-demo";
+
+ import Profile from "./investorprofilecard.vue";
+ export default {
+     name: 'admin',
+ 
+     components: {
+    
+    Profile
+ },
+ 
+     mounted() {
+    
+     chartBarDemo();
+   },
+ 
+ 
+     data () {
+             return {
+                 method:'POST',
+                 model:{},
+                 model:'',
+  
+               
+               
+             }
+         },
+         created(){
+         
+         get('/getuser')
+               .then((res) => {
+                 
+                  this.setData(res)
+ 
+               })
+           
+         }, 
+ 
+         methods:{
+             setData(res) {
+         
+               Vue.set(this.$data, 'model', res.data.data)
+               console.log(res.data.data)
+               
+              
+ 
+             //   console.log(res.data)
+           },
+ 
+             profile(){
+                 this.$router.push('/admin/dashborad4')
+             }
+ 
+         }
+ }
+ </script>
+ 
+ <style scoped>
+ .charttext{
+    color: #000;
+
+font-family: "system-ui";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+padding: 10px 0px 0px 0px;
+ }
+ .sett{
+    padding: 10px 25px;
+ }
+
+ .chartsnew{
+    padding: 0px 0px 25px 0px;
+ }
+
+ .chartdate{
+    color: #1B1C1D;
+
+font-family: fantasy;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+ 
+ .id-box img {
+     width: 47%;
+     border-radius: 50%;
+    
+     max-height: 190px;
+     min-height: 190px;
+     object-fit: cover;
+ }
+ .page-1 {
+     width: 100%;
+     background-color: #F5F3EA;
+     padding: 30px;
+ }
+ 
+ .contanir {
+     width: 100%;
+     max-width: 1600px;
+     margin: 0 auto;
+ }
+ .Sponsorship h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 150% */
+     padding-bottom: 25px;
+     margin: 0px ;
+ }
+ 
+ .card-box {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .cards {
+     border-radius: 16px;
+     border: 2px solid #000;
+     background: #F96;
+     box-shadow: 4px 4px 0px 2px #1B1C1D;
+     width: 30%;
+     height: 100%;
+     flex-shrink: 0;
+ }
+ .main {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center !important;
+   
+ }
+ 
+ .box-1 {
+     height: 100%;
+     background: transparent;
+     width: 67%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     gap: 38px;
+ }
+ 
+ .box-2 {
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+     width: 30%;
+     padding: 30px;
+ }
+ 
+ .Sponsorship {
+     width: 100%;
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 30px 33px ;
+ }
+ .btn-box {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 0px;
+ }
+ 
+ .btn-2 {
+     display: flex;
+     width: 46%;
+     justify-content: space-between;
+ }
+ 
+ .btn-1 {
+     width: 35%;
+     display: flex;
+     align-items: center;
+     gap: 18px;
+ }
+ 
+ .Campaign {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     border-radius: 10px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 12px 20px;
+ }
+ 
+ .Campaign h2 {
+     padding: 0px;
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+ }
+ 
+ .Campaign p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .over-btn {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding: 50px 0px 0px 0px;
+ }
+ 
+ .over-btn button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: inline-flex;
+     padding: 10px 21.25px 10px 20px;
+     justify-content: center;
+     align-items: center;
+     gap: 4.75px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; /* 150% */
+ }
+ 
+ .btn-1 button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 154.75px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+     padding: 10px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; /* 150% */
+ }
+ 
+ button.Add {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F5F3EA;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     color: #000;
+ }
+ 
+ .OverView {
+     width: 100%;
+     padding-top: 75px;
+ }
+ 
+ .OverView h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 92.308% */
+     margin: 0px;
+     padding-bottom: 30px;
+ }
+ 
+ .over-box {
+     width: 100%;
+     display: flex;
+ }
+ 
+ .Over-card h4 {
+     color: #FF5757;
+     font-family: sans-serif;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: 24px; /* 114.286% */
+     margin: 0px;
+ }
+ 
+ .Over-card h4 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 38px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; /* 58.537% */
+     padding-left: 5px;
+ }
+ 
+ .Over-card {
+     width: 25%;
+ }
+ 
+ /* .../ */
+ .pox-1 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px;
+     border-bottom: 1px solid #000;
+ }
+ 
+ .pox-1 h2 {
+     color: #000;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: 24px; /* 150% */
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .top-btn {
+     width: 49%;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .top-btn button {
+     border: none;
+     background: transparent;
+ }
+ 
+ .pox-2 {
+     width: 100%;
+     padding: 20px;
+ }
+ 
+ .pox-2 p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: -0.96px;
+     margin: 0px;
+ }
+ 
+ .pox-2 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px; /* 150% */
+     padding: 15px 0px;
+ }
+ 
+ .pox-box {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     gap: 10px 0px;
+ }
+ 
+ .yes {
+     width: 50%;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+ }
+ 
+ 
+ 
+ .pox-3 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     padding: 25px 0px 0px 0px;
+ }
+ 
+ .pox-3 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 0px 0px 0px 0px;
+ }
+ 
+ .pox-3 p {
+     color: #000;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px; /* 150% */
+     width: 40%;
+ }
+ 
+ 
+ 
+ .pox-3 h2 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+ }
+ 
+ 
+ button.llo {
+     color: #fff;
+ }
+ 
+ 
+ 
+ /* .../ */
+ 
+ 
+ 
+ 
+ 
+ .box-2 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+ }
+ 
+ .id-box {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 70px 0px 120px 0px;
+ }
+ 
+ .id-box h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 26px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     margin: 0px;
+     padding: 20px 0px 4px 0px;
+ }
+ 
+ .id-box h3 {color: #000;
+     font-family: system-ui !important;
+     font-size: 16px;font-style: normal;font-weight: 500;line-height: normal;}
+ 
+ .titel-box {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 20px;
+ }
+ 
+ .id-titel {
+     display: flex;
+     align-items: center;
+     width: 30%;
+     justify-content: space-between;
+ }
+ 
+ .id-titel p {
+     color: #000;
+     font-family: system-ui !important;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .contact-box {
+     width: 100%;
+     display: none !important;
+     justify-content: space-around;
+     align-items: center;
+     padding-bottom: 40px;
+ }
+ 
+ .contact {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 15px;
+ }
+ 
+ .contact p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .para-box {
+     width: 100%;
+     border-top: 1px solid #F96;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .para-box p {
+     color: #000;
+     text-align: center;
+     font-family: system-ui !important;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 150% */
+     margin: 0px;
+     padding: 32px 0px 44px 0px;
+ }
+ 
+ .para-box button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 154.75px;
+     height: 44px;
+     padding: 10px 18px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+      /* 150% */
+ }
+ 
+ .para-box button p {
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; /* 150% */
+     padding: 0px;
+ }
+ 
+ .new-1 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .new-2 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .new-3 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .rol-1 {
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     flex-shrink: 0;
+     width: 36%;
+     padding: 32px;
+ }
+ 
+ .rol-1 p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 150% */
+     margin: 0px;
+     padding-bottom: 12px;
+ }
+ 
+ .rol-1 h2 {
+     color: #1B1C1D;
+     font-family: fantasy;
+     font-size: 66px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     letter-spacing: 3px;
+     letter-spacing: 3px;
+ }
+ 
+ .new-btn-lid {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .new-btn-lid  button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 154.75px;
+     height: 44px;
+     padding: 10px 18px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+ }
+ 
+ .new-btn-lid button p {
+     margin: 0px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ .rol-3 {
+     width: 62%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 24px;
+ }
+ 
+ .rol-3 p {
+     margin: 0px;
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     width: 100%;
+ }
+ 
+ .rol-card {
+     width: 48%;
+     border-radius: 10px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px 15px;
+     flex-wrap: wrap;
+ }
+ 
+ .rol-para h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .rol-para {
+     width: 84%;
+ }
+ 
+ .rol-para p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .div-1 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .div-1 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     margin: 0px;
+     width: 80%;
+ }
+ 
+ .div-1 p {
+     width: 20%;
+ }
+ 
+ .div-2 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 15px;
+ }
+ 
+ .Enrolled {
+     display: flex;
+     align-items: center;
+     width: 58%;
+ }
+ 
+ .Enrolled {}
+ 
+ .Reviews {
+     width: 40%;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .short-card {
+     width: 24%;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 18px 25px;
+ }
+ 
+ .short-card p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 150% */
+     margin: 0px;
+ }
+ 
+ .short-card h2 {
+    color: #1B1C1D !important;
+    font-family: fantasy !important;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding: 12px 0px 5px 0px;
+}
+ 
+ .short-card h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0px;
+ }
+ .dashbord-card {
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     height: 417px;
+     flex-shrink: 0;
+     width: 64%;
+     border-radius: 20px 0px 0px 20px;
+ }
+ 
+ .conting-card {
+     height: 417px;
+     flex-shrink: 0;
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     width: 35%;
+     padding: 42px 40px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 0px 20px 20px 0px;
+ }
+ 
+ .conting-card h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px; /* 92.308% */
+     width: 100%;
+     margin: 0px;
+ }
+ 
+ .divs {
+     width: 48%;
+ }
+ 
+ .divs h2 {
+     color: #F96;
+     font-family: sans-serif;
+     font-size: 21px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: 24px; /* 114.286% */
+     margin: 0px;
+ }
+ 
+ .divs h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 41px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; /* 58.537% */
+     margin: 0px;
+     padding-top: 20px;
+ }
+ @media screen and (max-width: 1600px){
+    .chartsnew {
+    padding: 0px 0px 50px 0px;
+}
+   .contanir {
+     width: 100%;
+     max-width: 1440px;
+     margin: 0 auto;
+ }
+ .dashbord-card {
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     height: 400px;
+     flex-shrink: 0;
+     width: 64%;
+     border-radius: 20px 0px 0px 20px;
+ }
+ .divs h2 {
+     color: #F96;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: 24px;
+     margin: 0px;
+ }
+ .divs h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 38px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     margin: 0px;
+     padding-top: 12px;
+ }
+ .rol-1 h2 {
+     color: #1B1C1D;
+     font-family: fantasy;
+     font-size: 55px;
+     font-style: normal;
+     font-weight: 1000;
+     line-height: normal;
+     text-align: center;
+     letter-spacing: 3px;
+ }
+ .new-btn-lid button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 130px;
+     height: 38px;
+     padding: 10px 18px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+ }
+ .new-btn-lid button p {
+     margin: 0px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     margin: 0px;
+     padding: 0px;
+ }
+ .rol-1 {
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     flex-shrink: 0;
+     width: 36%;
+     padding: 30px;
+ }
+ .rol-3 {
+     width: 62%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 15px;
+ }
+ .rol-card svg {
+     width: 26px;
+     height: 25px;
+ }
+ 
+ .rol-3 p {
+     margin: 0px;
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     width: 100%;
+ }
+ .rol-para p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ .pox-1 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 12px;
+     border-bottom: 1px solid #000;
+ }
+ .top-btn button {
+     border: none;
+     background: transparent;
+     padding: 4px;
+ }
+ .yes {
+     width: 50%;
+     display: flex;
+     align-items: center;
+     gap: 2px;
+ }
+ .pox-3 h2 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+ }
+ .div-1 p {
+     width: 20%;
+ }
+ .short-card h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 38px;
+     font-style: normal;
+     font-weight: 1000;
+     line-height: normal;
+     margin: 0px;
+     padding: 5px 0px 0px 0px;
+ }
+ .conting-card {
+     height: 400px;
+     flex-shrink: 0;
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     width: 35%;
+     padding: 15px 25px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 0px 20px 20px 0px;
+ }
+ .id-box {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 35px 0px 70px 0px;
+ }
+ .short-card {
+     width: 24%;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 14px 20px;
+ }
+ .pox-3 p {
+  
+     color: #000;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+     width: 40%;
+ }
+ .pox-3 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 17px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 0px 0px 0px 0px;
+ }
+ .btn-1 button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 154.75px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+     padding: 8px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+ }
+ .btn-2 {
+     display: flex;
+     width: 50%;
+     justify-content: space-between;
+ }
+ .id-titel {
+     display: flex;
+     align-items: center;
+     width: 32%;
+     justify-content: space-between;
+ }
+ .over-btn button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: inline-flex;
+     padding: 8px 21.25px 8px 20px;
+     justify-content: center;
+     align-items: center;
+     gap: 4.75px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+ }
+ .Over-card h4 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 35px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     padding-left: 5px;
+ }
+ .Over-card h4 {
+     color: #FF5757;
+     font-family: sans-serif;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: 24px;
+     margin: 0px;
+ }
+ .para-box button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 154.75px;
+     height: 42px;
+     padding: 10px 18px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+ }
+ button.Add {
+     border-radius: 6px;
+     border: 1px solid #000 !important;
+     background: #F5F3EA !important;
+     box-shadow: 2px 2px 0px 0px #1B1C1D !important; 
+     color: #000 !important;
+ }
+ }
+ 
+ @media screen and (max-width: 1440px){
+
+    .chartsnew {
+    padding: 0px 0px 50px 0px;
+}
+ 
+     .id-box h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+ }
+   .contanir {
+     width: 100%;
+     max-width: 1170px;
+     margin: 0 auto;
+ }
+ .div-1 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     margin: 0px;
+     width: 80%;
+ }
+ .rol-para h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .rol-3 p {
+     margin: 0px;
+     color: #000;
+     font-family: sans-serif;
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     width: 100%;
+ }
+ .rol-1 h2 {
+     color: #1B1C1D;
+     font-family: fantasy;
+     font-size: 38px;
+     font-style: normal;
+     font-weight: 1000;
+     line-height: normal;
+     text-align: center;
+     letter-spacing: 3px;
+ }
+ .new-btn-lid button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 110px;
+     height: 34px;
+     padding: 10px 0px;
+     justify-content: center;
+     align-items: center;
+     gap: 4px;
+     flex-shrink: 0;
+ }
+ .div-1 svg {
+     width: 20px;
+     height: 20px;
+ }
+ .div-1 p {
+     width: 20%;
+     font-size: 12px;
+ }
+ .rol-para p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ .Reviews p {
+     font-size: 10px;
+ }
+ .Enrolled p {
+     font-size: 10px;
+ }
+ .div-2 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 3px;
+ }
+ .short-card p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     margin: 0px;
+ }
+ .short-card h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 30px;
+     font-style: normal;
+     font-weight: 1000;
+     line-height: normal;
+     margin: 0px;
+     padding: 0px 0px 0px 0px;
+ }
+ .short-card {
+     width: 24%;
+     border-radius: 15px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 12px 20px;
+ }
+ .dashbord-card {
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     height: 405px;
+     flex-shrink: 0;
+     width: 64%;
+     border-radius: 20px 0px 0px 20px;
+ }
+ .conting-card {
+    height: 405px;
+     flex-shrink: 0;
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     width: 35%;
+     padding: 15px 25px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 0px 20px 20px 0px;
+ }
+ .box-1 {
+     height: 100%;
+     background: transparent;
+     width: 67%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     gap: 30px;
+ }
+ .divs h2 {
+     color: #F96;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: 24px;
+     margin: 0px;
+ }
+ .divs h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     margin: 0px;
+     padding-top: 10px;
+ }
+ .conting-card {
+    height: 405px;
+     flex-shrink: 0;
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     width: 35%;
+     padding: 12px 15px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 0px 20px 20px 0px;
+ }
+ .id-box {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 40px 0px 65px 0px;
+ }
+ .rol-1 {
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     flex-shrink: 0;
+     width: 36%;
+     padding: 20px;
+ }
+ .pox-2 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 20px;
+     padding: 12px 0px;
+ }
+ .Sponsorship {
+     width: 100%;
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 30px 20px;
+ }
+ .OverView {
+     width: 100%;
+     padding-top: 60px;
+ }
+ .OverView h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     margin: 0px;
+     padding-bottom: 20px;
+ }
+ .Over-card h4 {
+     color: #FF5757;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: 24px;
+     margin: 0px;
+ }
+ .Over-card h4 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 28px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+     padding-left: 0px;
+ }
+ .over-btn {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding: 40px 0px 0px 0px;
+ }
+ .over-btn button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: inline-flex;
+     padding: 7px 16.25px 7px 15px;
+     justify-content: center;
+     align-items: center;
+     gap: 4.75px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+ }
+ .top-btn button {
+     border: none;
+     background: transparent;
+     padding: 4px;
+     display: flex;
+     align-items: center;
+ }
+ .top-btn button svg {
+     width: 15px;
+     height: 15px;
+ }
+ .top-btn {
+     width: 42%;
+     display: flex;
+     align-items: center;
+ }
+ .pox-1 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 8px;
+     border-bottom: 1px solid #000;
+ }
+ .top-btn button span {
+     font-size: 12px;
+ }
+ .pox-1 h2 {
+     color: #000;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: 24px;
+     margin: 0px;
+     padding: 0px;
+ }
+ .pox-2 {
+     width: 100%;
+     padding: 10px;
+ }
+ .pox-2 p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: -0.96px;
+     margin: 0px;
+ }
+ .pox-3 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 0px 0px 0px 0px;
+     width: 58%;
+ }
+ .pox-3 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     padding: 15px 0px;
+ }
+ 
+ .pox-box {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     gap: 5px 0px;
+ }
+ .cards {
+     border-radius: 16px;
+     border: 2px solid #000;
+     background: #F96;
+     box-shadow: 4px 4px 0px 2px #1B1C1D;
+     width: 30%;
+     height: 100%;
+     flex-shrink: 0;
+ }
+ .yes p {
+     font-size: 14px;
+ }
+ .pox-3 h2 span {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+ }
+ .pox-3 p {
+     color: #000;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+     width: 44%;
+     margin: 0px;
+     padding: 0px;
+ }
+ .btn-1 button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 130.75px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+     padding: 6px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+ }
+ .btn-2 {
+     display: flex;
+     width: 52%;
+     justify-content: space-between;
+ }
+ .Campaign {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     border-radius: 10px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 8px 10px;
+ }
+ .Campaign svg {
+     width: 30px;
+     height: 30px;
+ }
+ .id-box {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 50px 0px 80px 0px;
+ }
+ /* .id-box img {
+     width: 40%;
+ } */
+ 
+ .id-box img {
+     width: 50%;
+     border-radius: 50%;
+    
+     max-height: 150px;
+     min-height: 150px;
+     object-fit: cover;
+ }
+ .id-box h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     margin: 0px;
+     padding: 15px 0px 2px 0px;
+ }
+ .contact {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 5px;
+ }
+ .contact p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0px;
+ }
+ .id-titel p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .id-titel svg {
+     width: 18px;
+     height: 18px;
+ }
+ .contact-box {
+     width: 100%;
+     display: none;
+     justify-content: space-around;
+     align-items: center;
+     padding-bottom: 15px;
+ }
+ .para-box p {
+     color: #000;
+     text-align: center;
+     font-family: system-ui;
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     margin: 0px;
+     padding: 25px 0px 25px 0px;
+ }
+ .para-box button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: flex;
+     width: 144.75px;
+     height: 38px;
+     padding: 10px 18px;
+     justify-content: center;
+     align-items: center;
+     gap: 7.647px;
+     flex-shrink: 0;
+ }
+ .main {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+ .box-2 {
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+     width: 30%;
+     padding: 24px;
+ }
+ }
+ @media screen and (max-width: 1024px){
+   .page-1 {
+     width: 100%;
+     background-color: #F5F3EA;
+     padding: 40px;
+ }
+ .main {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 55px 0px;
+ }
+ .box-1 {
+   height: 100%;
+     background: transparent;
+     width: 100%;
+ }
+ .box-2 {
+     height: 720px;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+     width: 42%;
+     padding: 24px;
+ }
+ .btn-2 {
+     display: flex;
+     width: 44%;
+     justify-content: space-between;
+ }
+ }
+ @media screen and (max-width: 768px){
+   .cards {
+     border-radius: 16px;
+     border: 2px solid #000;
+     background: #F96;
+     box-shadow: 4px 4px 0px 2px #1B1C1D;
+     width: 44%;
+     height: 100%;
+     flex-shrink: 0;
+ }
+ .new-1 {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column;
+ }
+ .rol-1 {
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     flex-shrink: 0;
+     width: 45%;
+     padding: 20px;
+ }
+ .rol-3 {
+     width: 75%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 15px;
+     gap: 15px;
+ }
+ .card-box {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
+     gap: 31px;
+ }
+ .btn-box {
+     width: 100%;
+     display: flex;
+     align-items: stretch;
+     justify-content: space-between;
+     padding: 30px 0px 0px 0px ; 
+     flex-direction: column;
+     gap: 25px;
+ }
+ 
+ .btn-2 {
+     display: flex;
+     width: 60%;
+     justify-content: space-between;
+ }
+ .box-2 {
+     height: 720px;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+     width: 58%;
+     padding: 24px;
+ }
+ .Sponsorship {
+     width: 100%;
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 30px 20px;
+ }
+ }
+ @media screen and (max-width: 425px){
+     .short-card h3 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .id-titel p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 8px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+ .contact p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 10px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0px;
+ }
+ 
+ .rol-1 p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: 24px;
+     margin: 0px;
+     padding-bottom: 12px;
+ }
+ 
+ 
+   .page-1 {
+     width: 100%;
+     background-color: #F5F3EA;
+     padding: 20px;
+ }
+ .rol-card svg {
+     width: 20px;
+     height: 20px;
+ }
+ .yes {
+     width: 50%;
+     display: flex;
+     align-items: center;
+     gap: 2px;
+     justify-content: center;
+ }
+ .cards {
+     border-radius: 16px;
+     border: 2px solid #000;
+     background: #F96;
+     box-shadow: 4px 4px 0px 2px #1B1C1D;
+     width: 85%;
+     height: 100%;
+     flex-shrink: 0;
+ }
+ .btn-box {
+     width: 100%;
+     display: flex;
+     padding: 30px 0px 0px 0px;
+     flex-direction: column;
+     gap: 25px ;
+     align-content: center;
+     align-items: center;
+ }
+ .btn-1 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     gap: 18px;
+     justify-content: center;
+ }
+ .btn-2 {
+     display: flex;
+     width: 60%;
+     flex-direction: column;
+     gap: 12px;
+ }
+ .over-box {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px 0px;
+ }
+ .Over-card {
+     width: 50%;
+ }
+ .OverView {
+     width: 100%;
+     padding-top: 40px;
+ }
+ .over-btn button {
+     border-radius: 6px;
+     border: 1px solid #000;
+     background: #F96;
+     box-shadow: 2px 2px 0px 0px #1B1C1D;
+     display: inline-flex;
+     padding: 6px 16.25px 6px 15px;
+     justify-content: center;
+     align-items: center;
+     gap: 4.75px;
+     color: #FFF;
+     text-align: center;
+     font-family: sans-serif;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px;
+ }
+ .over-btn {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding: 30px 0px 0px 0px;
+ }
+ .box-2 {
+     height: 100%;
+     flex-shrink: 0;
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
+     width: 90%;
+ }
+ .id-box {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 0px 50px 0px;
+ }
+ .rol-1 {
+     border-radius: 20px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     flex-shrink: 0;
+     width: 100%;
+     padding: 20px;
+ }
+ .new-btn-lid {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+ }
+ .rol-3 {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding-top: 15px;
+     gap: 10px;
+ }
+ .rol-card {
+     width: 48%;
+     border-radius: 10px;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 12px 10px;
+     flex-wrap: wrap;
+ }
+ .rol-para h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ .rol-para p {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 8px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     margin: 0px;
+ }
+ .div-1 h2 {
+     color: #000;
+     font-family: sans-serif;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     margin: 0px;
+     width: 80%;
+ }
+ .div-1 svg {
+     width: 15px;
+     height: 15px;
+ }
+ .Enrolled p {
+     font-size: 7px;
+ }
+ .Reviews p {
+     font-size: 7px;
+ }
+ .Enrolled svg {
+     width: 18px;
+     height: 18px;
+ }
+ .Reviews svg {
+     width: 18px;
+     height: 18px;
+ }
+ .new-2 {
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 30px;
+ }
+ .short-card {
+     width: 42%;
+     background: #FFF;
+     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+     padding: 12px 20px;
+ }
+ .new-3 {
+     width: 100%;
+     display: flex;
+
+     flex-direction: column;
+     align-items: center;
+     gap: 28px;
+ }
+ .dashbord-card {
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     height: 100%;
+     flex-shrink: 0;
+     width: 90%;
+     border-radius: 20px;
+ }
+ .conting-card {
+     height: 350px;
+     flex-shrink: 0;
+     background: #FFF;
+     box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
+     width: 76%;
+     padding: 12px 15px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 20px;
+ }
+ }
+ </style>

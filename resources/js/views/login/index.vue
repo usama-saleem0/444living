@@ -71,7 +71,7 @@
       </div>
 
       <div class="btn-loging-long">
-        <button>Log In</button>
+        <button @click="mainpage">Log In</button>
       </div>
 
       <div class="OR-list">
@@ -155,6 +155,11 @@ export default {
   },
 
   methods: {
+
+    mainpage(){
+      this.$router.push('/investor')
+
+    },
     
     async login() {
       try {

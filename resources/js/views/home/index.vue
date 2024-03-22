@@ -2317,7 +2317,7 @@ section.Process {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 90px 0px 15px 0px;
+    padding: 120px 0px 15px 0px;
     border-bottom: 1px solid #ded4a2;
 }
 

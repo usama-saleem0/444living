@@ -394,6 +394,9 @@ ul.ul-list li a {
 }
 @media screen and (max-width: 1440px){
 
+  a#alertsDropdown {
+    width: 90%;
+}
   .topbar {
     height: 4.375rem !important;
    

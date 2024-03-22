@@ -230,6 +230,14 @@ export default {
 }
 
 @media screen and (max-width: 1440px){
+
+  .carousel-btn-list-2 {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
   .carousel-btn-list-1 h2 {
     
     font-size: 100px;
