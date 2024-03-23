@@ -1431,6 +1431,21 @@ p.id-list-2 {
     gap: 5px;
 }
 
+input.inputtype {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+p.godashborad {
+    font-size: 16px;
+}
+
+svg.setsvgleft {
+    width: 28px;
+    height: 28px;
+}
+
 .Townhomes-para h2 {
     font-size: 25px;
 }
@@ -1476,6 +1491,41 @@ section.Townhomes {
 .TopListing-tital p {
     font-size: 16px;
 }
+
+
+input.inputtype {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 14px;
+}
+
+p.godashborad {
+    font-size: 14px;
+}
+
+svg.setsvgleft {
+    width: 25px;
+    height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .TopListing-tital {
     padding: 80px 55px;
