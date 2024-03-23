@@ -1089,6 +1089,699 @@ button:hover{
     border-bottom: 1px solid ;
 }
 
+section.TopListing {
+    width: 100%;
+    background-color: #DED4A2;
+    padding: 70px 0px;
+    
+}
+
+.main-TopListing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contanirz {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.TopListing-tital {
+    width: 100%;
+    background-image: url(/images/bulding.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 146px 88px;
+}
+
+.hello-bu:hover svg {
+    transform: translateX(210px);
+    color: var(--hovered-color);
+}
+
+.hello-bu {
+    justify-content: flex-start !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.TopListing-tital h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding: 8px 0px 24px 0px;
+}
+
+.TopListing-tital p {
+    color: #A2A2A4;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 46%;
+    margin: 0px;
+}
+
+.contanirzs {
+    width: 100%;
+    max-width: 1430px;
+    margin: 0 auto;
+}
+
+.TopListing-boxing {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #293857;
+    padding: 40px;
+    position: absolute;
+    bottom: -55px;
+    border: 2px solid #ded4a2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Looking-input {
+    width: 32%;
+}
+
+.Location-input {
+    width: 22%;
+}
+/* 
+input {
+  outline: none;
+} */
+
+
+.Explore-btn {
+    width: 15%;
+}
+
+select#cars {}
+
+.type-input {
+    width: 21%;
+}
+
+.input {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    padding: 14px;
+    border: 1px solid #ded4a2;
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.type-input select {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    padding: 14px;
+    border: 1px solid #ded4a2;
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.type-input select option{
+color: #000;
+}
+
+.Explore-btn button {
+    width: 100%;
+    padding: 17px 0px;
+    background-color: #ded4a2;
+    border: 1px solid #ded4a2;
+    color: #293857;
+    font-family: AktivGrotesk-Regular;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.Explore-btn button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+
+
+section.George {
+    width: 100%;
+    background-color: #ded4a2;
+    padding: 50px 0px;
+}
+
+.main-George {
+    width: 100%;
+}
+
+.George-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.George-search input {
+    border: 1px solid #293857;
+    padding: 40px 35px;
+    color: #293857;
+    font-family: AktivGrotesk-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.George-search svg {
+    position: absolute;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.George-box {
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #202d46;
+}
+
+.George-card 
+{    display: flex;
+    width: 24%;
+    height: 510px;
+    padding: 25px 58px 25px 25px;
+    border-radius: 10px;
+    background-image: url(/images/cardbg.png);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.George-card p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.George-card img {
+    width: 40%;
+}
+section.id-detail {
+    width: 100%;
+    background-color: #ded4a2;
+}
+
+.main-id-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-box-1 {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+.detail-box-2 {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.detail-card-box {
+    width: 100%;
+    background-color: #202d46;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.id-list-1 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.id-list-1 span {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.id-list-1 span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.id-list-1 span img {
+    width: 30%;
+}
+
+.id-list-1 span svg {
+    width: 30px;
+    height: 30px;
+}
+
+p.id-list-2 {
+    margin: 0px;
+    color: #A2A2A4;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+.id-list-3 {
+    width: 100%;
+}
+
+.id-list-3 img {
+    width: 100%;
+}
+
+.id-list-4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.id-list-5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.id-list-4 img {
+    width: 15%;
+}
+
+.id-list-5 p {
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.id-list-6 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ded4a2;
+}
+
+.favourites-card {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 37px  0px;
+}
+
+.favourites-card svg {
+    width: 30px;
+    height: 30px;
+}
+
+.favourites-card p {
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.add-border {border-right: 1px solid #ded4a2;border-left: 1px solid #ded4a2;}
+
+
+
+.tital-2-box {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    padding: 24px 0px 16px 0px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #293857;
+}
+
+.tital-2-box h2 {
+    color: #293857;
+    font-family: "Saol Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.Realtor-card {
+    width: 100%;
+    border: 2px solid #293857;
+    background: #DED4A2;
+    padding: 35px 45px;
+}
+
+.Realtor-1-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Realtor-logo img {
+    width: 100%;
+}
+
+.Realtor-1-list span h3 {
+    color: #000;
+    font-family: "Saol Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.Realtor-1-list span h5 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Realtor-logo {
+    width: 30%;
+}
+
+.Realtor-1-list svg {
+    width: 35px;
+    height: 35px;
+}
+
+.Realtor-2-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.childe-Realtor {
+    width: 32%;
+    text-align: center;
+}
+
+.childe-Realtor h2 {
+    color: #000;
+    font-family: "Saol Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.childe-Realtor h2 span {
+    font-weight: 200;
+    color: #595151;
+}
+
+.childe-Realtor p {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.fil-border {border-right: 1px solid #202d46;border-left: 1px solid #202d46;}
+
+.Realtor-3-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Realtor-3-list button {
+    width: 75%;
+    background: #293857;
+    color: #FFF;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    border: 1px solid #202d46;
+    padding: 6px 0px;
+}
+
+.Realtor-3-list svg {
+    width: 52px;
+    height: 52px;
+}
+
+.Realtor-bt {
+    width: 100%;
+}
+
+.Realtor-bt button {
+    width: 100%;
+    border: 1px solid #202d46;
+    background-color: #202d46;
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 17px 0px;
+}
+.Realtor-bt button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+
+.Realtor-3-list button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+
+section.Townhomes {
+    width: 100%;
+    background-color: #ded4a2;
+    padding: 92px 0px;
+}
+
+.main-Townhomes {
+    width: 100%;
+}
+
+.Townhomes-tital {
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #293857;
+}
+
+.Townhomes-card-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+
+.Townhomes-card-1 {
+    width: 30%;
+    background-color: #202d46;
+}
+
+.Townhomes-tital h2 {
+    color: #293857;
+    font-family: "Saol Display";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Townhomes-img {
+    width: 100%;
+}
+
+.Townhomes-img img {
+    width: 100%;
+}
+
+.ts-si {
+    width: 100%;
+    padding: 20px 22px;
+}
+
+.Townhomes-rs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Townhomes-rs span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Townhomes-rs span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.Townhomes-rs span p {
+    margin: 0px;
+    color: #DED4A2;
+    font-family: AktivGrotesk-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Townhomes-rs h4 {
+    color: #DED4A2;
+    font-family: "Saol Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.Townhomes-para {
+    width: 100%;
+    padding: 16px 0px;
+}
+
+.Townhomes-para h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.Townhomes-para p {
+    color: #A2A2A4;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+button.white {
+    background: #ded4a2;
+    border: 1px solid #ded4a2;
+    color: #202d46;
+    width: 80%;
+    padding: 10px 0px;
+}
 
 
 
@@ -1677,6 +2370,227 @@ section.contact {
 section.Happy {
     padding: 165px 0px 100px 0px;
 }
+
+.contanirz {
+    max-width: 1440px;
+}
+
+.contanirzs {
+    max-width: 1200px;
+}
+
+.TopListing-tital h2 {
+    font-size: 58px;
+    padding: 5px 0px 18px 0px;
+}
+
+.hello-bu:hover svg {
+    transform: translateX(170px);
+}
+
+.TopListing-tital p {
+    font-size: 18px;
+}
+
+.TopListing-boxing {
+    width: 83%;
+    padding: 25px;
+}
+
+input {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.type-input select {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.Explore-btn button {padding: 12px 0px;font-size: 18px;}
+
+.TopListing-tital {
+    padding: 110px 60px;
+}
+
+section.TopListing {
+    padding: 60px 0px;
+}
+
+.George-search input {
+    padding: 25px 30px;
+}
+
+.George-search svg {
+    right: 30px;
+    width: 28px;
+    height: 28px;
+}
+
+.George-box {
+    padding: 30px 0px;
+}
+
+.George-card {
+    height: 400px;
+    padding: 20px 54px 20px 20px;
+}
+
+.George-card p {
+    margin: 0px;
+    font-size: 32px;
+}
+
+section.George {
+    padding: 40px 0px;
+}
+
+.detail-card-box {
+    gap: 20px;
+    padding: 30px 30px 0px 30px;
+}
+
+p.id-list-2 {
+    font-size: 18px;
+}
+
+.id-list-1 span p {
+    font-size: 22px;
+}
+
+.id-list-1 span svg {
+    width: 28px;
+    height: 28px;
+}
+
+.id-list-1 span {
+    gap: 15px;
+}
+
+.id-list-5 p {
+    font-size: 18px;
+}
+
+.favourites-card p {
+    font-size: 18px;
+}
+
+.favourites-card svg {
+    width: 25px;
+    height: 25px;
+}
+
+.favourites-card {
+    gap: 15px;
+    padding: 30px 0px;
+}
+
+.detail-box-1 {
+    gap: 20px;
+}
+
+.tital-2-box h2 {
+    font-size: 25px;
+}
+
+.detail-box-2 {
+    gap: 20px;
+}
+
+.Realtor-card {
+    padding: 20px 25px;
+}
+
+.Realtor-logo {
+    width: 25%;
+}
+
+.Realtor-1-list span h3 {
+    font-size: 18px;
+}
+
+.Realtor-1-list span h5 {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.Realtor-1-list svg {
+    width: 30px;
+    height: 30px;
+}
+
+.childe-Realtor h2 {
+    font-size: 25px;
+}
+
+.Realtor-3-list button {
+    font-size: 14px;
+    padding: 8px 0px;
+}
+
+.Realtor-3-list svg {
+    width: 50px;
+    height: 50px;
+}
+
+.Realtor-bt button {
+    font-size: 18px;
+    padding: 12px 0px;
+}
+
+.tital-2-box {
+    padding: 20px 0px 12px 0px;
+}
+
+.Townhomes-tital h2 {
+    font-size: 38px;
+}
+
+.Townhomes-rs h4 {
+    font-size: 24px;
+}
+
+.Townhomes-rs span svg {
+    width: 15px;
+    height: 15px;
+}
+
+.Townhomes-rs span {
+    gap: 5px;
+}
+
+.Townhomes-para h2 {
+    font-size: 25px;
+}
+
+.Townhomes-para p {
+    font-size: 14px;
+}
+
+.Townhomes-para {
+    padding: 12px 0px;
+}
+
+.Realtor-3-list svg {
+    width: 45px;
+    height: 45px;
+}
+
+section.Townhomes {
+    padding: 65px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 1440px){
@@ -2195,6 +3109,180 @@ section.Happy {
   transform: translateX(95px);
   color: var(--hovered-color);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contanirz {
+    max-width: 1300px;
+}
+
+.contanirzs {
+    max-width: 1100px;
+}
+
+.TopListing-boxing {
+    width: 85%;
+    padding: 20px;
+}
+
+.TopListing-tital h2 {
+    font-size: 48px;
+    padding: 5px 0px 14px 0px;
+}
+
+.TopListing-tital p {
+    font-size: 16px;
+}
+
+.TopListing-tital {
+    padding: 80px 55px;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.type-input select {
+    font-size: 14px;
+}
+
+.Explore-btn button {
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+section.TopListing {
+    padding: 40px 0px;
+}
+
+.George-search input {
+    padding: 15px 50px 15px 15px;
+}
+
+.George-search svg {
+    right: 25px;
+    width: 24px;
+    height: 24px;
+}
+
+section.George {
+    padding: 50px 0px 40px 0px;
+}
+
+.George-box {
+    padding: 24px 0px;
+}
+
+.George-card {}
+
+.George-card {
+    height: 320px;
+    padding: 15px 35px 15px 15px;
+}
+
+.George-card img {
+    width: 32%;
+}
+
+.George-card p {
+    font-size: 28px;
+}
+
+.detail-card-box {
+    gap: 15px;
+    padding: 25px 25px 0px 25px;
+}
+
+p.id-list-2 {
+    font-size: 16px;
+}
+
+.id-list-1 span p {
+    font-size: 20px;
+}
+
+.id-list-1 span svg {
+    width: 24px;
+    height: 24px;
+}
+
+.id-list-1 span {
+    gap: 10px;
+}
+
+.favourites-card p {
+    font-size: 16px;
+}
+
+.favourites-card svg {
+    width: 22px;
+    height: 22px;
+}
+
+.favourites-card {
+    gap: 10px;
+    padding: 24px 0px;
+}
+
+.Townhomes-tital h2 {
+    font-size: 32px;
+}
+
+.Townhomes-card-box {
+    padding: 24px 0px;
+}
+
+.Townhomes-rs h4 {
+    font-size: 20px;
+}
+
+.Townhomes-para h2 {
+    font-size: 20px;
+}
+
+.Realtor-3-list button {
+    font-size: 12px;
+    padding: 5px 0px;
+}
+
+.Realtor-3-list svg {
+    width: 41px;
+    height: 41px;
+}
+
+.childe-Realtor p {
+    font-size: 8px;
+}
+
+.Realtor-bt button {
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 1366PX){
@@ -2341,6 +3429,15 @@ section.Happy {
 section.Happy {
     padding: 150px 0px 87px 0px;
 }
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2784,7 +3881,160 @@ ul.ul-2 {
 section.Happy {
     padding: 89px 0px 58px 0px;
 }
+.contanirz {
+    max-width: 900px;
+}
 
+.contanirzs {
+    max-width: 770px;
+}
+
+.TopListing-tital h2 {
+    font-size: 42px;
+}
+
+.TopListing-tital p {
+    font-size: 14px;
+    width: 50%;
+}
+
+.TopListing-tital {
+    padding: 70px 35px;
+}
+
+.Explore-btn button {
+    padding: 8px 0px;
+    font-size: 12px;
+}
+
+.type-input select {
+    font-size: 12px;
+    padding:  8px;
+}
+
+input {
+    padding: 8px;
+    font-size: 12px;
+}
+
+section.George {
+    padding: 40px 0px 30px 0px;
+}
+
+.George-card {
+    height: 255px;
+    padding: 10px 24px 10px 10px;
+}
+
+.George-card p {
+    font-size: 24px;
+}
+
+p {}
+
+.detail-card-box {
+    gap: 14px;
+    padding: 20px 20px 0px 20px;
+}
+
+.favourites-card p {
+    font-size: 14px;
+}
+
+.id-list-5 p {
+    font-size: 16px;
+}
+
+.favourites-card svg {
+    width: 20px;
+    height: 20px;
+}
+
+.detail-box-2 {
+    width: 27%;
+}
+
+.Realtor-card {
+    padding: 10px 10px;
+}
+
+.childe-Realtor h2 {
+    font-size: 20px;
+}
+
+.Realtor-3-list button {
+    font-size: 10px;
+    padding: 5px 0px;
+    width: 72%;
+}
+
+.Realtor-3-list svg {
+    width: 46px;
+    height: 46px;
+}
+
+.Realtor-1-list span h3 {
+    font-size: 16px;
+}
+
+.Realtor-1-list span h5 {
+    font-size: 12px;
+}
+
+.Realtor-1-list svg {
+    width: 25px;
+    height: 25px;
+}
+
+.Realtor-bt button {
+    font-size: 12px;
+    padding: 8px 0px;
+}
+
+.tital-2-box {
+    padding: 15px 0px 10px 0px;
+}
+
+.Townhomes-tital h2 {
+    font-size: 30px;
+    margin: 0px;
+    padding-bottom: 6px;
+}
+
+.Townhomes-card-1 {
+    width: 32%;
+}
+
+.ts-si {
+    padding: 12px 10px;
+}
+
+.Townhomes-rs h4 {
+    font-size: 15px;
+}
+
+.Townhomes-rs span p {
+    font-size: 12px;
+}
+
+.Townhomes-para h2 {
+    font-size: 18px;
+}
+
+.Townhomes-para p {
+    font-size: 12px;
+}
+
+.Realtor-3-list svg {
+}
+
+button.white {
+    padding: 7px 0px;
+}
+
+section.Townhomes {
+    padding: 40px 0px;
+}
 
 }
 
@@ -3195,6 +4445,83 @@ section.Happy {
 section.Happy {
     padding: 60px 0px 36px 0px;
 }
+
+section {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.TopListing-tital h2 {
+    font-size: 34px;
+}
+
+.TopListing-tital p {
+    font-size: 12px;
+    width: 55%;
+}
+
+.TopListing-tital {
+    padding: 55px 25px;
+}
+
+.TopListing-boxing {
+    padding: 15px;
+    bottom: -30px;
+}
+
+section.George {
+    padding: 25px 0px 25px 0px;
+}
+
+.George-search input {
+    padding: 12px 39px 12px 12px;
+    font-size: 12px;
+}
+
+.George-card {
+    height: 230px;
+    padding: 8px 20px 8px 8px;
+}
+
+.George-card p {
+    font-size: 20px;
+}
+
+.tital-2-box h2 {
+    font-size: 20px;
+}
+
+.main-id-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px 0px;
+}
+
+.detail-box-1 {
+    width: 75%;
+}
+
+.detail-box-2 {
+    width: 35%;
+}
+
+.Townhomes-tital h2 {
+    font-size: 24px;
+}
+
+.Townhomes-card-box {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Townhomes-card-1 {
+    width: 50%;
+}
+
+img {}
 }
 
 @media screen and (max-width: 600px){
@@ -3710,5 +5037,117 @@ section.Happy {
 .text-item span img {
     width: 10%;
 }
+.TopListing-boxing {
+    width: 100%;
+    bottom: -114px;
+    flex-wrap: wrap;
+    gap: 12px 0px;
+    border: 2px solid #293857;
+}
 
+.TopListing-tital p {
+    width: 100%;
+}
+
+.Looking-input {
+    width: 48%;
+}
+
+.Location-input {
+    width: 48%;
+}
+
+.type-input {
+    width: 48%;
+}
+
+.Explore-btn {
+    width: 48%;
+}
+
+section.TopListing {
+    padding: 40px 0px 130px 0px;
+}
+
+.George-box {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0px;
+}
+
+.George-card {
+    width: 75%;
+    padding: 12px 20px 12px 12px;
+}
+
+.detail-box-1 {
+    width: 100%;
+    gap: 12px;
+}
+
+.favourites-card p {
+    font-size: 10px;
+}
+
+.favourites-card {
+    width: 32%;
+    gap: 5px;
+    padding: 18px 0px;
+}
+
+.favourites-card svg {
+    width: 15px;
+    height: 15px;
+}
+
+.id-list-5 p {
+    font-size: 12px;
+}
+
+p.id-list-2 {
+    font-size: 12px;
+}
+
+.id-list-1 span p {
+    font-size: 18px;
+}
+
+.id-list-1 span svg {
+    width: 20px;
+    height: 20px;
+}
+
+.id-list-1 span {
+    gap: 5px;
+}
+
+.detail-box-2 {
+    width: 75%;
+}
+
+.main-id-detail {
+    gap: 15px 0px;
+}
+
+section.Townhomes {
+    padding: 25px 0px;
+}
+
+.Townhomes-tital h2 {
+    font-size: 22px;
+}
+
+.Townhomes-card-box {
+    gap: 15px;
+    padding: 20px 0px;
+}
+
+.Townhomes-card-1 {
+    width: 75%;
+}
+
+button.white {
+    padding: 7px 0px;
+    font-size: 12px;
+}
 }
