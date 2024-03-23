@@ -2582,7 +2582,20 @@ section.Townhomes {
 
 
 
+input.inputtype {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
 
+p.godashborad {
+    font-size: 16px;
+}
+
+svg.setsvgleft {
+    width: 28px;
+    height: 28px;
+}
 
 
 

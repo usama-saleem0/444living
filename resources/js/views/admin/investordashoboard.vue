@@ -108,12 +108,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -186,12 +184,12 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
+
+
 </div>
 </div>
         </div>
@@ -265,12 +263,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -344,12 +340,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -423,12 +417,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -501,12 +493,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -579,12 +569,10 @@
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -1527,7 +1515,7 @@ line-height: normal;
  .short-card {
      width: 24%;
      border-radius: 0px !important;
-     background: #DED4A2;
+     background: #DED4A2 !important;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 18px 25px;
  }
@@ -1574,9 +1562,9 @@ line-height: normal;
  .conting-card {
      height: 417px;
      flex-shrink: 0;
-     background: #DED4A2;
+     background: #DED4A2 !important;
      box-shadow: 4px 0px 24px 0px rgba(0, 0, 0, 0.25);
-     width: 68%;
+     width: 68% !important;
      padding: 0px !important;
      display: flex;
      flex-wrap: wrap;
@@ -1620,6 +1608,14 @@ line-height: normal;
      margin: 0px;
      padding-top: 20px;
  }
+
+button::after{
+    left: 0px;
+}
+button{
+    border: none;
+}
+
  @media screen and (max-width: 1600px){
     .chartsnew {
     padding: 0px 0px 50px 0px;
@@ -1637,6 +1633,7 @@ line-height: normal;
      width: 64%;
      border-radius: 20px 0px 0px 20px;
  }
+
  .divs h2 {
      color: #F96;
      font-family: sans-serif;
@@ -1795,9 +1792,8 @@ line-height: normal;
  .short-card {
      width: 24%;
      border-radius: 20px;
-     background: #FFF;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
-     padding: 14px 20px;
+     padding: 30px 20px;
  }
  .pox-3 p {
   
@@ -1907,6 +1903,11 @@ line-height: normal;
      box-shadow: 2px 2px 0px 0px #1B1C1D !important; 
      color: #000 !important;
  }
+ .box-1 {
+
+     gap: 30px;
+ }
+
  }
  
  @media screen and (max-width: 1440px){
@@ -1925,7 +1926,7 @@ line-height: normal;
  }
    .contanir {
      width: 100%;
-     max-width: 1170px;
+     max-width: 1300px;
      margin: 0 auto;
  }
  .div-1 h2 {
@@ -2033,10 +2034,8 @@ line-height: normal;
  }
  .short-card {
      width: 24%;
-     border-radius: 15px;
-     background: #FFF;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
-     padding: 12px 20px;
+     padding: 30px 20px;
  }
  .dashbord-card {
      background: #FFF;
@@ -2062,13 +2061,18 @@ line-height: normal;
  .box-1 {
      height: 100%;
      background: transparent;
-     width: 67%;
+     width: 65%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
      justify-content: space-between;
-     gap: 30px;
+     gap: 35px;
  }
+
+
+.inputclass {
+    padding: 15px;
+}
  .divs h2 {
      color: #F96;
      font-family: sans-serif;
@@ -2441,7 +2445,7 @@ line-height: normal;
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-     width: 30%;
+     width: 33% !important;
      padding: 24px;
  }
  }
