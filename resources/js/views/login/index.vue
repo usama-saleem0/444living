@@ -185,7 +185,7 @@ export default {
        
 
          
-        this.$router.push('/investor')
+        this.$router.push('/homepages')
         }, 3000);
 
     },

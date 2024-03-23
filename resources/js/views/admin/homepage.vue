@@ -5,6 +5,53 @@
 
   
     <div>
+      
+        <header class="header">
+    <div class="contanair">
+      <nav>
+        <div class="logo">
+          <img src="/images/logo-header.png"  alt=""/>
+        </div>
+
+        <div class="maxwidths">
+            <input type="text" placeholder="What are you looking for..."class="inputtype"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="setsvgleft">
+  <path d="M30.0518 27.6952L37.1902 34.8318L34.8318 37.1902L27.6952 30.0518C25.0397 32.1805 21.7368 33.3383 18.3335 33.3335C10.0535 33.3335 3.3335 26.6135 3.3335 18.3335C3.3335 10.0535 10.0535 3.3335 18.3335 3.3335C26.6135 3.3335 33.3335 10.0535 33.3335 18.3335C33.3383 21.7368 32.1805 25.0397 30.0518 27.6952ZM26.7085 26.4585C28.8237 24.2833 30.0049 21.3675 30.0002 18.3335C30.0002 11.8885 24.7785 6.66683 18.3335 6.66683C11.8885 6.66683 6.66683 11.8885 6.66683 18.3335C6.66683 24.7785 11.8885 30.0002 18.3335 30.0002C21.3675 30.0049 24.2833 28.8237 26.4585 26.7085L26.7085 26.4585Z" fill="#293857"/>
+</svg>
+          </div>
+
+        <div class="zerowidth">
+            <p class="godashborad">
+              Dashboard
+            </p>
+          </div>
+
+        <div class="header-list">
+          
+          <div class="loging-btn">
+            <img src="/images/circum_login.png"  alt="" @click="login_page" style="cursor: pointer;">
+          </div>
+
+
+          <div class="header-menu" @click="menus" style="z-index: 1;" >
+            <label class="hamburger">
+  <input type="checkbox">
+  <svg viewBox="0 0 32 32">
+    <path class="line line-top-bottom" style="stroke: #293857;" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+    <path class="line" style="stroke: #293857;" d="M7 16 27 16"></path>
+  </svg>
+</label>
+          </div>
+         
+        </div>
+      </nav>
+    </div>
+    </header>
+      
+     
+
+     
+     
 
       <section class="TopListing">
         <div class="contanirz">
@@ -1005,6 +1052,7 @@ Top Listing’s
         </div>
       </div>
     </footer>
+  
 
 
 
@@ -1141,7 +1189,57 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
+
+input.inputtype {
+    border: 1px solid #293857 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+}
+
+p.godashborad {
+    color: #293857;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.zerowidth{
+  width: 0%;
+  padding-top: 10px
+
+}
+svg.setsvgleft {
+    position: absolute;
+    right: 120px;
+}
+
+.maxwidths{
+  width:65%;
+  position: relative;
+  display: flex;
+    align-items: center;
+}
+
+/* .header-list {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+} */
+header.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative !important;
+    padding: 16px 0px 0px 0px !important;
+    background-color: #DED4A2 !important;
+}
 
 
 @media screen and (max-width: 1600px){
