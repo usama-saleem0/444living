@@ -33,14 +33,14 @@ export default function chartBarDemo() {
     var myBarChart = new Chart(ctx, {
         type: "bar",
         data: {
-            labels: ["January", "February", "March", "April", "May", "June"],
+            labels: ["January", "February", "March"],
             datasets: [
                 {
                     label: "Revenue",
-                    backgroundColor: "#4e73df",
+                    backgroundColor: "#293857",
                     hoverBackgroundColor: "#2e59d9",
-                    borderColor: "#4e73df",
-                    data: [4215, 5312, 6251, 7841, 9821, 14984]
+                    borderColor: "#293857",
+                    data: [50, 160, 120]
                 }
             ]
         },
@@ -74,12 +74,12 @@ export default function chartBarDemo() {
                     {
                         ticks: {
                             min: 0,
-                            max: 15000,
+                            max: 200,
                             maxTicksLimit: 5,
                             padding: 10,
                             // Include a dollar sign in the ticks
                             callback: function(value, index, values) {
-                                return "$" + number_format(value);
+                                return  number_format(value);
                             }
                         },
                         gridLines: {
@@ -113,8 +113,8 @@ export default function chartBarDemo() {
                             chart.datasets[tooltipItem.datasetIndex].label ||
                             "";
                         return (
-                            datasetLabel +
-                            ": $" +
+                           
+                           
                             number_format(tooltipItem.yLabel)
                         );
                     }

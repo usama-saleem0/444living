@@ -14,6 +14,7 @@ let router = new Router({
             name: "home",
             component: () => import("./views/home/index.vue")
         },
+        
 
         {
             path: "/hello",
@@ -49,6 +50,19 @@ let router = new Router({
             component: () => import("./views/admin/investordashoboard.vue")
         },
 
+        {
+            path: "/pastpost",
+            name: "register",
+            component: () => import("./views/admin/pastpost.vue")
+        },
+
+        
+        {
+            path: "/toprealtors",
+            name: "register",
+            component: () => import("./views/admin/toprealtors.vue")
+        },
+
 
 
 
@@ -56,6 +70,12 @@ let router = new Router({
             path: "/setup",
             name: "register",
             component: () => import("./views/register/imgars.vue")
+        },
+
+        {
+            path: "/loader",
+            name: "register",
+            component: () => import("./views/admin/loader.vue")
         },
         {
             path: "/verify/user/:id",
@@ -170,10 +190,10 @@ let router = new Router({
             path: "/admin/tables",
             name: "tables",
             component: () => import("./views/admin/tables.vue"),
-            meta: {
-                requiresAuth: true,
-                layout: AdminLayout
-            }
+            // meta: {
+            //     requiresAuth: true,
+            //     layout: AdminLayout
+            // }
         }
     ]
 });

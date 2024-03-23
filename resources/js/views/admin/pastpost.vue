@@ -48,593 +48,159 @@
              </div>
              <div class="bordersbot">
                 <span class="overview">
-                Property Overview
+                    Past Posts
              </span>
+             </div>
+
+             <div class="postscroll">
+                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3">
+                        <img src="/images/Rectangle23.png" alt=""/>
+                    </div>
+
+                    <div class="col-6 topset">
+                        <span class="sq240">
+                            240 Sq.yd Villa Required
+                        </span>
+                        <p class="lorem">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
+                        </p>
+                    </div>
+
+                    <div class="col-3 text-right topset colgap">
+                        <span class="posted">
+                            Posted: 2:49am,Thursday 
+                        </span>
+                        <p>
+                            <span class="rights100" style="color: white;">
+
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
+</svg>100    </span>
+
+<span style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
+</svg>100
+</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3">
+                        <img src="/images/Rectangle23.png" alt=""/>
+                    </div>
+
+                    <div class="col-6 topset">
+                        <span class="sq240">
+                            240 Sq.yd Villa Required
+                        </span>
+                        <p class="lorem">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
+                        </p>
+                    </div>
+
+                    <div class="col-3 text-right topset colgap">
+                        <span class="posted">
+                            Posted: 2:49am,Thursday 
+                        </span>
+                        <p>
+                            <span class="rights100" style="color: white;">
+
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
+</svg>100    </span>
+
+<span style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
+</svg>100
+</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3">
+                        <img src="/images/Rectangle23.png" alt=""/>
+                    </div>
+
+                    <div class="col-6 topset">
+                        <span class="sq240">
+                            240 Sq.yd Villa Required
+                        </span>
+                        <p class="lorem">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
+                        </p>
+                    </div>
+
+                    <div class="col-3 text-right topset colgap">
+                        <span class="posted">
+                            Posted: 2:49am,Thursday 
+                        </span>
+                        <p>
+                            <span class="rights100" style="color: white;">
+
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
+</svg>100    </span>
+
+<span style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
+</svg>100
+</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3">
+                        <img src="/images/Rectangle23.png" alt=""/>
+                    </div>
+
+                    <div class="col-6 topset">
+                        <span class="sq240">
+                            240 Sq.yd Villa Required
+                        </span>
+                        <p class="lorem">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
+                        </p>
+                    </div>
+
+                    <div class="col-3 text-right topset colgap">
+                        <span class="posted">
+                            Posted: 2:49am,Thursday 
+                        </span>
+                        <p>
+                            <span class="rights100" style="color: white;">
+
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
+</svg>100    </span>
+
+<span style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
+</svg>100
+</span>
+                        </p>
+                    </div>
+                </div>
+
+             
              </div>
              
           
-             <div class="new-3">
-                 <div class="dashbord-card">
-                     <div class="chart-bar">
-                        <div class="col text-center sett">
-
-                            <p class="charttext">Sunset Villa, Los Angeles</p>
-
-
-                           
-                        </div>
-               <canvas class="chartsnew" id="myBarChart"></canvas>
-              
-             </div>
-                 </div>
-                 <div class="conting-card">
-                    <Tables/>
-                   
-                 </div>
-                 
-             </div>
          </div> 
          <Profile/>
         </div>
-        <br>
-        <div class="bordersbot">
-                <span class="overview">
-                Property Overview
-             </span>
-             </div>
-             <br>
-        <div style="display: flex;
-    overflow-x: scroll;">
-
-            
-    <div class="" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-   
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
- 
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    
-    <div class="" style="    display: flex;
-    flex-direction: row;">
-    <div class="carousel-item active" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-    </div>
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    
-    <div class="" style="    display: flex;
-    flex-direction: row;">
-    <div class="carousel-item active" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-    </div>
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    
-    <div class="" style="    display: flex;
-    flex-direction: row;">
-    <div class="carousel-item active" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-    </div>
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    <div class="" style="    display: flex;
-    flex-direction: row;">
-    <div class="carousel-item active" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-    </div>
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-    <div class="" style="    display: flex;
-    flex-direction: row;">
-    <div class="carousel-item active" >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-<div class="col-8">
-    <button class="contac">
-    Contact Realtor
-</button>
-</div>
-<div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-</button>
-</div>
-</div>
-        </div>
-
-        
-
-        
-    </div>
-
-    <div class="carousel-item " >
-        <div class="slide-card">
-            <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
-                <div class="icon-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-</svg>
-                </div>
-               
-            </div>
-            <div class="row pt-4">
-
-           
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-            </button>
-            </div>
-        </div>
-           
-         
-        </div>
-
-        
-
-        
-    </div>
-
-    </div>
-
-        </div>
+       
      </div>
     </div>
   
@@ -705,6 +271,54 @@
  </script>
  
  <style scoped>
+
+ .postscroll{
+    overflow-y: scroll;
+    height: 440px;
+ }
+ .colgap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+
+ .topset{
+    padding: 20px;
+ }
+
+ .lorem{
+    color: #A2A2A4;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+ }
+
+ .posted{
+    color: #A2A2A4;
+font-family: sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+
+ .sq240{
+
+    color: #DED4A2;
+font-family: sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+ }
+
+ .rights100{
+    padding-right: 20px;
+ }
  .imger {
     width: 100%;
     display: flex;

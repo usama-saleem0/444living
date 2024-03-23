@@ -1,6 +1,8 @@
 <template>
-    
-  <div class="fade-in">
+    <div>
+
+   
+  <div class="fade-in" v-if="first">
     <header class="loging-header">
     <div class="contanir">
       <nav class="logaing-nav">
@@ -141,12 +143,32 @@ Sign In With Google</button>
 
   </div>
 
+  <Loader v-if="second"/>
+</div>
+
 
 </template>
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
+import Loader from "../admin/loader.vue"
 export default {
+  components: {
+   
+    Loader
+  
+  
+  },
+  data() {
+    return {
+        first : true,
+      
+        second:false,
+      
+    };
+  },
+
+
     
   mounted() {
     this.$nextTick(() => {
@@ -157,7 +179,14 @@ export default {
   methods: {
 
     mainpage(){
-      this.$router.push('/investor')
+      this.first = false
+        this.second = true
+      setTimeout(() => {
+       
+
+         
+        this.$router.push('/investor')
+        }, 3000);
 
     },
     
@@ -267,7 +296,7 @@ section.loging-page {
     width: 100%;
     background-color: #DED4A2;
     padding: 0px 0px 0px 100px;
-    height: 100vh;
+    height: 100%;
 }
 
 div#carouselExampleIndicators {

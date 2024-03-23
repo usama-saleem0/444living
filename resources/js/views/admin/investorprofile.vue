@@ -193,9 +193,7 @@
                     </div>
                     <div class="mine-card">
                         <img class="imgss" src="/images/map.png"/>
-                        <!-- <div class="Jobs-card">
-                         
-                        </div> -->
+                       
                        
                     </div>
                     <div class="col pt-2">
