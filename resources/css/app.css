@@ -9,3 +9,3706 @@ body {
     background-image: url(/images/SplashScreen.png) !important;
     background-size: cover !important;
   }
+
+
+
+
+
+
+
+ 
+
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.fade-in {
+  animation: fadeIn 1s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.line {
+    fill: none;
+    stroke: #293857;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-img {
+  opacity: 1 !important;
+  transition: opacity 1.5s ease-in-out !important;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 80px;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.slider {
+      width: 100%;
+      overflow: hidden;
+    }
+    .text-container {
+      display: flex;
+      animation: slide 12s infinite;
+    }
+    .contanairz{
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    .text-item {
+      flex: 0 0 100%;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    @keyframes slide {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      20%, 40% {
+        transform: translateX(-100%);
+      }
+      60%, 80% {
+        transform: translateX(-200%);
+      }
+    }
+    section.Happy {
+    width: 100%;
+    padding: 182px 0px 130px 0px;
+    background-color: #202D46;
+    background-image: url(/images/golgol.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.slider {
+    width: 100%;
+  
+}
+
+.text-item {
+    width: 100%;
+
+}
+
+.text-item h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.text-item h2:hover {
+    color: #DED4A2;
+}
+
+.text-item span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 54px;
+    padding-top: 24px;
+
+}
+.text-item span img {
+    width: 5%;
+}
+.text-item span p {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+    background-color: #202D46 ;
+    padding: 10px 0px ;
+}
+
+
+
+
+
+
+
+
+.line {
+  fill: none;
+  stroke: #ded4a2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+.hero{
+  background-image: url(/images/Background.png);
+    width: 100%;
+    padding: 360px 0px 38px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header.header {
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 30px 0px;
+}
+
+header.header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 7%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
+.header-list {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.loging-btn {
+    width: 25%;
+}
+
+.loging-btn img {
+    width: 100%;
+}
+
+.header-menu {
+    width: 50%;
+}
+
+
+.contanair {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.main-hero {
+    width: 100%;
+}
+
+.hero-tital {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-tital span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+
+.hero-tital span svg {
+    width: 55px;
+    height: 55px;
+}
+
+.hero-tital h2 {
+    line-height: 131px;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+   font-family: 'Saol Display';
+    padding: 10px 240px  26px 240px;
+    margin: 0px;
+}
+
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+   font-family:sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.hero-tital button svg {
+    width: 24px;
+    height: 24px;
+}
+
+section.home {
+    width: 100%;
+    background-color: #293857;
+    padding: 100px 0px 0px 0px;
+}
+
+.main-home {
+    width: 100%;
+}
+
+.home-tital {
+    width: 100%;
+    padding: 60px 0px 40px 0px;
+}
+
+.home-tital h3 {
+    line-height: 23.26px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #DED4A2;
+   font-family:sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.home-tital h2 {
+    text-align: center;
+    line-height: 174.23px;
+    font-size: 130px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 10px 0px 30px 0px;
+    margin: 0px;
+}
+
+.home-tital p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 23.26px;
+    font-weight: 400;
+   font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 510px;
+    margin: 0px;
+}
+.home-contars {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contars-1 {
+    width: 55%;
+    padding: 133px 0px 180px 0px;
+}
+
+.contars-2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    border-left: 2px solid;
+    border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    padding: 133px 0px 180px 0px;
+}
+
+.contars-1 h2 {
+    font-size: 310px;
+    line-height: 345.1px;
+    font-weight: 400;
+   font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+
+.contars-1 p {font-size: 30px;color: #fff;font-weight: 400;margin: 0px;}
+
+.contars-list {
+    width: 100%;
+    text-align: center;
+}
+
+.contars-list h2 {
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 144px;
+    color: #ded4a2;
+    margin: 0px;
+   font-family: 'Saol Display';
+}
+
+.contars-list p {
+    font-size: 30px;
+    color: #fff;
+   font-family: sans-serif;
+   margin: 0px;
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 100px 0px 0px 100px;
+}
+
+.main-Process {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Process-tital-box {
+    width: 28%;
+}
+
+.Process-img-box {
+    width: 64%;
+}
+
+.Process-img-box img {
+    width: 100%;
+}
+
+.Process-img-box h2 {
+    font-size: 100px;
+    line-height: 131px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+
+.Process-img-box p {
+    font-size: 20px;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 145px;
+    padding-top: 20px;
+    padding-bottom: 105px;
+    margin: 0px;
+}
+
+.Process-tital-box span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 40px;
+}
+
+.Process-tital-box span p {
+    line-height: 131px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #DED4A2;
+}
+
+.Process-tital-box h2 {
+    padding-top: 60px;
+    margin: 0px;
+    line-height: 117.9px;
+    font-size: 90px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+
+.Process-tital-box h2:hover {
+    color: #DED4A2;
+    transform: translateX(25px);
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.Process-btn-box button svg {
+    width: 24px;
+    height: 24px;
+}
+section.Success {
+    width: 100%;
+    padding: 226px  0px;
+}
+
+.main-Success {
+    width: 100%;
+    text-align: center;
+}
+
+.main-Success h2 {
+    font-size: 133px;
+    line-height: 174.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+}
+
+.Success{
+  background-image: url(/images/background2.png);
+  width: 100%;
+    padding: 226px  0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.curated {
+    width: 100%;
+    background-color: #202D46;
+}
+
+.main-curated {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0px;
+}
+
+.curated-img {
+    width: 50%;
+}
+
+.curated-tital {width: 50%;display: flex;flex-direction: column;align-items: center;gap: 85px;}
+
+.curated-img img {
+    width: 100%;
+}
+
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 75px;
+    margin: 0px;
+    line-height: 131px;
+    font-size: 100px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.curated-tital button svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+section.luxury {
+    width: 100%;
+    background-color: #293857;
+    padding: 190px 0px 84px 0px;
+}
+
+.main-luxury {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px 55px;
+}
+
+.luxury-img-box {
+    width: 42%;
+}
+
+.luxury-tital {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.luxury-box {
+    width: 54%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.luxury-btn-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 100px;
+    line-height: 131px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+
+.luxury-tital p {
+    text-align: center;
+    font-size: 20px;
+    color: #A2A2A4;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 42%;
+    padding: 0px 24px;
+    margin: 0px;
+}
+
+.luxury-img-box img {
+    width: 100%;
+}
+
+.luxury-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+
+.luxury-list h2 {
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 117.9px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+
+.luxury-list p {
+    margin: 0px;
+    line-height: 23.26px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #DED4A2;
+}
+
+.luxury-list h2:hover {
+    color: #DED4A2;
+    transform: translateX(25px);
+}
+
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.luxury-btn-box button svg {
+    width: 24px;
+    height: 24px;
+}
+
+section.contact {
+    width: 100%;
+    background-color: #293857;
+    padding: 120px 0px ;
+}
+
+.main-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-tital {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.contact-img {
+    width: 50%;
+}
+
+.contact-img img {
+    width: 100%;
+}
+
+.form{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+ .form h2 {
+    font-size: 80px;
+    line-height: 104.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+}
+
+.form-group {
+    width: 100%;
+    margin: 0px;
+}
+
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 38px 38px 38px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+}
+
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 38px 38px 38px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+    height: 193px;
+}
+
+.contact-form-btn button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.contact-form-btn button svg {
+    width: 24px;
+    height: 24px;
+}
+.contact-form-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 0px 0px;
+    border-top: 1px solid #ded4a2;
+}
+footer {
+    width: 100%;
+    background: #202D46;
+}
+
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 180px 0px 70px 0px;
+}
+
+.footer-box-1 {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+}
+
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.input-groups {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.input-groups input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 40px 40px 40px 0px;
+    color: #DED4A2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input-groups button {position: absolute;background: transparent;border: none;}
+
+.input-groups button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-box-2 {
+    width: 44%;
+}
+
+.footer-list1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-number {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.footer-img {
+    width: 15%;
+}
+
+.footer-img img {
+    width: 100%;
+}
+
+.footer-number a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer-list2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.footer-list2 ul {margin: 0px;list-style: none;display: flex;flex-direction: column;align-items: flex-start;gap: 18px;padding-top: 52px;}
+
+ul.ul-1 {
+    width: 24%;
+}
+
+ul.ul-2 {
+    width: 24%;
+}
+
+ul.ul-3 {
+    width: 15%;
+}
+
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 204px 0px 20px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+
+.part-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    width: 54%;
+}
+
+.part-list img {
+    width: 10%;
+}
+
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.part-input-box {
+    width: 28%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.part-input-box input {
+  width: 100%;
+    background: transparent;
+    border: none;
+    color: #6F6F6F;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px 20px 20px 0px;
+    outline: none;
+}
+
+.part-input-box button {
+    background: transparent;
+    border: 2px solid #6F6F6F;
+    padding: 16px;
+    border-radius: 35px;
+}
+
+.part-input-box button svg {
+    width: 28px;
+    height: 28px;
+}
+
+
+
+
+
+.input-groups button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0px !important;
+  bottom: 0px !important;
+  background: transparent !important;
+  height: 0px;
+  transition: 0.3s ease-out;
+}
+
+
+
+button{
+    position: relative;
+}
+button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 25px;
+  bottom: 0px;
+  background: #DED4A2;
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+
+
+button:hover::after {
+  width: 100%;
+}
+
+button svg {
+  transition: 0.9s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+
+.hero-tital button:hover svg {
+  transform: translateX(170px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(150px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(280px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(420px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(140px);
+  color: var(--hovered-color);
+}
+
+
+
+
+button:hover{
+    border-bottom: 1px solid ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1600px){
+  .contanair {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.logo {
+    width: 7%;
+}
+.hamburger svg {
+    height: 55px;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.loging-btn {
+    width: 23%;
+}
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0px 50px 0px;
+}
+.header-list {
+    width: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+header.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 25px 0px;
+}
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.hero-tital span svg {
+    width: 44px;
+    height: 44px;
+}
+.hero-tital h2 {
+    line-height: 120px;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 240px 20px 240px;
+    margin: 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.hero-tital button svg {
+    width: 20px;
+    height: 20px;
+}
+.hero {
+    background-image: url(/images/Background.png);
+    width: 100%;
+    padding: 324px 0px 30px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 10px;
+}
+.part-list img {
+    width: 9%;
+}
+.part-input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #6F6F6F;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 15px 15px 0px;
+    outline: none;
+}
+.part-input-box button {
+    background: transparent;
+    border: 2px solid #6F6F6F;
+    padding: 10px 12px;
+    border-radius: 50px;
+}
+.part-input-box button svg {
+    width: 20px;
+    height: 20px;
+}
+.hero-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 0px 18px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+.home-tital h3 {
+    line-height: 23.26px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #DED4A2;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 132.23px;
+    font-size: 115px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 10px 0px 20px 0px;
+    margin: 0px;
+}
+.home-tital p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 400px;
+    margin: 0px;
+}
+.home-tital {
+    width: 100%;
+    padding: 40px 0px 30px 0px;
+}
+.contars-1 h2 {
+    font-size: 280px;
+    line-height: 320.1px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 p {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+}
+.contars-list h2 {
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 130px;
+    color: #ded4a2;
+    margin: 0px;
+    font-family: 'Saol Display';
+}
+.contars-list p {
+    font-size: 24px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.contars-2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    border-left: 2px solid;
+    -o-border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    padding: 110px 0px 120px 0px;
+}
+.contars-1 {
+    width: 55%;
+    padding: 110px 0px 120px 0px;
+}
+.Process-img-box h2 {
+    font-size: 90px;
+    line-height: 120px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.Process-img-box p {
+    font-size: 18px;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 44px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    margin: 0px;
+}
+.Process-tital-box span p {
+    line-height: 120px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #DED4A2;
+}
+.Process-tital-box span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 30px;
+}
+.Process-tital-box h2 {
+    padding-top: 50px;
+    margin: 0px;
+    line-height: 105.9px;
+    font-size: 80px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30.89px;
+    color: #DED4A2;
+}
+.Process-btn-box button svg {
+    width: 20px;
+    height: 20px;
+}
+.main-Success h2 {
+    font-size: 118px;
+    line-height: 145.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+}
+section.Success {
+    width: 100%;
+    padding: 174px 0px;
+}
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0px;
+    line-height: 110px;
+    font-size: 90px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+.curated-tital {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 68px;
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+
+.curated-tital button svg {
+    width: 20px;
+    height: 20px;
+}
+.main-curated {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 0px;
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 90px;
+    line-height: 110px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+section.luxury {
+    width: 100%;
+    background-color: #293857;
+    padding: 130px 0px 70px 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 18px;
+    color: #A2A2A4;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 42%;
+    padding: 0px 24px;
+    margin: 0px;
+}
+.main-luxury {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px 55px;
+}
+.luxury-list h2 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 95px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.luxury-list p {
+    margin: 0px;
+    line-height: 23.26px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #DED4A2;
+}
+.luxury-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.luxury-btn-box button svg {
+    width: 20px;
+    height: 20px;
+}
+section.contact {
+    width: 100%;
+    background-color: #293857;
+    padding: 90px 0px;
+}
+.form h2 {
+    font-size: 70px;
+    line-height: 104.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+}
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 28px 28px 28px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 16.26px;
+    outline: none;
+}
+.form {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 28px 28px 28px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+    height: 155px;
+}
+.contact-tital {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 46px;
+}
+.contact-form-btn button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.89px;
+    color: #DED4A2;
+}
+.contact-form-btn button svg {
+    width: 20px;
+    height: 20px;
+}
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+.footer-number a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+.footer-img {
+    width: 14%;
+}
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-list2 ul {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 40px;
+}
+.input-groups input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 30px 30px 30px 0px;
+    color: #DED4A2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.input-groups button svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.hero-tital button:hover svg {
+  transform: translateX(145px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(120px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(230px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(330px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(115px);
+  color: var(--hovered-color);
+}
+
+.text-item h2 {
+    font-size: 50px;
+}
+
+.contanairz {
+    max-width: 1400px;
+}
+
+.text-item span p {
+    font-size: 20px;
+}
+
+.text-item span img {
+    width: 5%;
+}
+
+.text-item span {
+    gap: 10px;
+    padding-left: 100px;
+}
+section.Happy {
+    padding: 165px 0px 100px 0px;
+}
+}
+
+@media screen and (max-width: 1440px){
+  .logo {
+    width: 7%;
+}
+.contanair {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.hamburger svg {
+    height: 50px;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 70px 0px 0px 70px;
+}
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.hero-tital span svg {
+    width: 35px;
+    height: 35px;
+}
+.hero-tital h2 {
+    line-height: 106px;
+    font-size: 75px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 240px 20px 240px;
+    margin: 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 8px;
+}
+.part-input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #6F6F6F;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 12px 12px 0px;
+    outline: none;
+}
+.part-input-box button {
+    background: transparent;
+    border: 2px solid #6F6F6F;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+.hero {
+    background-image: url(/images/Background.png);
+    width: 100%;
+    padding: 160px 0px 25px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 0px 15px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+
+.home-tital h3 {
+    line-height: 23.26px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #DED4A2;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 110.23px;
+    font-size: 105px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 8px 0px 15px 0px;
+    margin: 0px;
+}
+.home-tital {
+    width: 100%;
+    padding: 24px 0px 24px 0px;
+}
+.home-tital p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 345px;
+    margin: 0px;
+}
+.contars-1 h2 {
+    font-size: 230px;
+    line-height: 274.1px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+}
+.contars-list h2 {
+    font-size: 110px;
+    font-weight: 400;
+    line-height: 105px;
+    color: #ded4a2;
+    margin: 0px;
+    font-family: 'Saol Display';
+}
+.Process-img-box h2 {
+    font-size: 80px;
+    line-height: 120px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.Process-tital-box span p {
+    line-height: 120px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #DED4A2;
+}
+.Process-img-box p {
+    font-size: 16px;
+    line-height: 20.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 44px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+.Process-tital-box h2 {
+    padding-top: 40px;
+    margin: 0px;
+    line-height: 95px;
+    font-size: 70px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+.Process-tital-box span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30.89px;
+    color: #DED4A2;
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-Success h2 {
+    font-size: 100px;
+    line-height: 105.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+section.Success {
+    width: 100%;
+    padding: 150px 0px;
+}
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 0px;
+    line-height: 100px;
+    font-size: 80px;
+    color: #fff;
+    font-family: 'Saol Display';
+    
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.curated-tital {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+.main-curated {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 0px;
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 16px;
+    color: #A2A2A4;
+    line-height: 20.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 42%;
+    padding: 0px 14px;
+    margin: 0px;
+}
+.luxury-tital {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.luxury-box {
+    width: 52%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.luxury-list h2 {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.luxury-list p {
+    margin: 0px;
+    line-height: 23.26px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #DED4A2;
+}
+.luxury-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.main-luxury {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px 21px;
+}
+section.luxury {
+    width: 100%;
+    background-color: #293857;
+    padding: 100px 0px 50px 0px;
+}
+.form h2 {
+    font-size: 60px;
+    line-height: 80.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+}
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 20px 20px 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 16.26px;
+    outline: none;
+}
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 20px 20px 20px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+    height: 130px;
+}
+.contact-form-btn button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29.89px;
+    color: #DED4A2;
+}
+.contact-form-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 0px 0px;
+    border-top: 1px solid #ded4a2;
+}
+section.contact {
+    width: 100%;
+    background-color: #293857;
+    padding: 70px 0px;
+}
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+.footer-number a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+.footer-number {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.input-groups input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 24px 24px 24px 0px;
+    color: #DED4A2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ul.ul-2 {
+    width: 26%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contanairz {
+    max-width: 1100px;
+}
+
+.text-item h2 {
+    font-size: 44px;
+}
+
+.text-item span p {
+    font-size: 18px;
+}
+
+section.Happy {
+    padding: 155px 0px 90px 0px;
+}
+
+
+
+
+.hero-tital button:hover svg {
+  transform: translateX(120px);
+  color: var(--hovered-color);
+}
+
+.Process-btn-box button:hover svg {
+  transform: translateX(100px);
+  color: var(--hovered-color);
+}
+
+.curated-tital button:hover svg {
+  transform: translateX(180px);
+  color: var(--hovered-color);
+}
+
+.luxury-btn-box button:hover svg {
+  transform: translateX(280px);
+  color: var(--hovered-color);
+}
+
+
+.contact-form-btn:hover svg {
+  transform: translateX(95px);
+  color: var(--hovered-color);
+}
+}
+
+@media screen and (max-width: 1366PX){
+
+    .fade-img {
+  opacity: 1 !important;
+  transition: opacity 1.5s ease-in-out !important;
+}
+  .hero-tital h2 {
+    line-height: 85px;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 240px 20px 240px;
+    margin: 0px;
+}
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 94px 0px 30px 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 110.23px;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 8px 0px 15px 0px;
+    margin: 0px;
+}
+.contars-1 h2 {
+    font-size: 205px;
+    line-height: 240.1px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+}
+.contars-list h2 {
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 105px;
+    color: #ded4a2;
+    margin: 0px;
+    font-family: 'Saol Display';
+}
+.contars-list p {
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.Process-tital-box h2 {
+    padding-top: 40px;
+    margin: 0px;
+    line-height: 95px;
+    font-size: 65px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+.Process-img-box h2 {
+    font-size: 75px;
+    line-height: 120px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.main-Success h2 {
+    font-size: 95px;
+    line-height: 105.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 0px;
+    line-height: 100px;
+    font-size: 75px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 75px;
+    line-height: 100px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.luxury-list h2 {
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 80px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+section.Happy {
+    padding: 150px 0px 87px 0px;
+}
+}
+
+
+@media screen and (max-width: 1024px){
+  .contanair {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.hero-tital span svg {
+    width: 30px;
+    height: 30px;
+}
+.hero-tital h2 {
+  line-height: 70px;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 90px 15px 90px;
+    margin: 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 8px;
+}
+.part-input-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #6F6F6F;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 10px 10px 0px;
+    outline: none;
+}
+.part-input-box button svg {
+    width: 14px;
+    height: 14px;
+}
+.part-input-box button {
+    background: transparent;
+    border: 2px solid #6F6F6F;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+.hero {
+    background-image: url(/images/Background.png);
+    width: 100%;
+    padding: 180px 0px 25px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    /* height: 100vh  */
+}
+.hero-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 0px 15px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+.home-tital h3 {
+    line-height: 23.26px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #DED4A2;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 80.23px;
+    font-size: 75px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 8px 0px 15px 0px;
+    margin: 0px;
+}
+.home-tital p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 23.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 200px;
+    margin: 0px;
+}
+.contars-1 h2 {
+    font-size: 145px;
+    line-height: 200.1px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+}
+.contars-list h2 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #ded4a2;
+    margin: 0px;
+    font-family: 'Saol Display';
+}
+.contars-list p {
+    font-size: 16px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.contars-2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-left: 2px solid;
+    -o-border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    padding: 110px 0px 120px 0px;
+}
+.Process-img-box h2 {
+    font-size: 65px;
+    line-height: 120px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.Process-img-box p {
+    font-size: 14px;
+    line-height: 17.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 44px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 60px 0px 0px 50px;
+}
+.Process-tital-box h2 {
+    padding-top: 20px;
+    margin: 0px;
+    line-height: 78px;
+    font-size: 52px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.89px;
+    color: #DED4A2;
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-Success h2 {
+    font-size: 85px;
+    line-height: 105.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+section.Success {
+    width: 100%;
+    padding: 120px 0px;
+}
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 45px;
+    margin: 0px;
+    line-height: 78px;
+    font-size: 65px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 65px;
+    line-height: 78px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 14px;
+    color: #A2A2A4;
+    line-height: 20.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 50%;
+    padding: 0px 14px;
+    margin: 0px;
+}
+.main-luxury {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px 18px;
+}
+.luxury-list h2 {
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 70px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.luxury-list p {
+    margin: 0px;
+    line-height: 23.26px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #DED4A2;
+}
+.luxury-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ded4a2;
+}
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+section.contact {
+    width: 100%;
+    background-color: #293857;
+    padding: 45px 0px;
+}
+.form h2 {
+    font-size: 50px;
+    line-height: 80.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+}
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 15px 14px 14px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 16.26px;
+    outline: none;
+}
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 15px 15px 15px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+    height: 90px;
+}
+.contact-form-btn button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29.89px;
+    color: #DED4A2;
+}
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+.footer-number a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-list2 ul {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 25px;
+}
+ul.ul-2 {
+    width: 31%;
+}
+.input-groups input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 18px 18px 18px 0px;
+    color: #DED4A2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-box-1 {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 0px 25px 0px;
+}
+.hamburger svg {
+    height: 40px;
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-item h2 {
+    font-size: 40px;
+}
+
+.text-item span p {
+    font-size: 15px;
+}
+
+section.Happy {
+    padding: 89px 0px 58px 0px;
+}
+
+
+}
+
+@media screen and (max-width: 768px){
+  .contanair {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.hero-tital span p {
+    line-height: 34.89px;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.hero-tital span svg {
+    width: 25px;
+    height: 25px;
+}
+.hero-tital h2 {
+    line-height: 60px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 65px 15px 65px;
+    margin: 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 8px;
+}
+.home-tital h3 {
+    line-height: 23.26px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #DED4A2;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 54.23px;
+    font-size: 55px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 8px 0px 12px 0px;
+    margin: 0px;
+}
+.home-tital p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 95px;
+    margin: 0px;
+}
+.home-tital {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+.contars-1 h2 {
+    font-size: 120px;
+    line-height: 155.1px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #DED4A2;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+}
+.contars-list h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #ded4a2;
+    margin: 0px;
+    font-family: 'Saol Display';
+}
+
+.contars-1 {
+    width: 55%;
+    padding: 45px 0px 45px 0px;
+}
+.contars-list p {
+    font-size: 14px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.contars-2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-left: 2px solid;
+    -o-border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    padding: 45px 0px 45px 0px;
+}
+.Process-tital-box {
+    width: 44%;
+}
+.Process-tital-box span p {
+    line-height: 70px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #DED4A2;
+}
+.Process-img-box h2 {
+    font-size: 50px;
+    line-height: 75px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+
+.Process-img-box p {
+    font-size: 12px;
+    line-height: 16.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+.Process-tital-box h2 {
+    padding-top: 25px;
+    margin: 0px;
+    line-height: 80px;
+    font-size: 44px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 40px 0px 0px 35px;
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30.89px;
+    color: #DED4A2;
+}
+.footer-box-1 h2 {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 0px;
+}
+.main-Success h2 {
+    font-size: 65px;
+    line-height: 70.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+section.Success {
+    width: 100%;
+    padding: 102px 0px;
+}
+.curated-tital h2 {
+    width: 100%;
+    border-bottom: 1px solid #DED4A2;
+    text-align: center;
+    padding-bottom: 45px;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 55px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+.curated-tital {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.main-curated {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 55px;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 12px;
+    color: #A2A2A4;
+    line-height: 18.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 56%;
+    padding: 0px 14px;
+    margin: 0px;
+}
+.luxury-list h2 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.luxury-list p {
+    margin: 0px;
+    line-height: 23.26px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #DED4A2;
+}
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+section.luxury {
+    width: 100%;
+    background-color: #293857;
+    padding: 70px 0px 40px 0px;
+}
+.form h2 {
+    font-size: 40px;
+    line-height: 50.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+}
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 15px 14px 14px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 16.26px;
+    outline: none;
+}
+.contact-form-btn button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29.89px;
+    color: #DED4A2;
+}
+.footer-number a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+.footer-list2 ul li {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+ul.ul-2 {
+    width: 34%;
+}
+.input-groups input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 14px 14px 14px 0px;
+    color: #DED4A2;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0px 20px 0px;
+}
+.loging-btn {
+    width: 30%;
+}
+.header-list {
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.logo {
+    width: 7%;
+}
+.text-item h2 {
+    font-size: 30px;
+}
+
+.text-item span p {
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+section.Happy {
+    padding: 89px 0px 58px 0px;
+}
+
+
+
+.text-item span {
+    gap: 6px;
+    padding-top: 15px;
+    padding-left: 45px;
+}
+
+section.Happy {
+    padding: 60px 0px 36px 0px;
+}
+}
+
+@media screen and (max-width: 600px){
+
+    .text-item h2 {
+    font-size: 22px;
+}
+
+  
+  header.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 15px 20px;
+}
+.header-list {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.logo {
+    width: 14%;
+}
+.hero-tital span p {
+    line-height: 30px;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 0px;
+    font-weight: 400;
+    color: #DED4A2;
+}
+.hero-tital span svg {
+    width: 22px;
+    height: 22px;
+}
+.hero-tital span {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.hero-tital h2 {
+    line-height: 40px;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Saol Display';
+    padding: 5px 0px 15px 0px;
+    margin: 0px;
+}
+.hero-tital button {
+    background-color: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.hero-tital button svg {
+    width: 18px;
+    height: 18px;
+}
+.part-list span p {
+    color: #FFF;
+    font-family: "Saol Display";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 0;
+}
+.part-list span h3 {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    padding-top: 5px;
+}
+.hero-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0px 10px 0px;
+    border-bottom: 1px solid #ded4a2;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.part-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+    width: 100%;
+}
+.part-list img {
+    width: 10%;
+}
+.part-input-box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.hero {
+    background-image: url(/images/Background.png);
+    width: 100%;
+    padding: 320px 20px 25px 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.home-tital img {
+    width: 9%;
+}
+.home-tital h2 {
+    text-align: center;
+    line-height: 38.23px;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    color: #fff;
+    padding: 8px 0px 12px 0px;
+    margin: 0px;
+}
+.home-tital p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 15.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #A2A2A4;
+    padding: 0px 0px;
+    margin: 0px;
+}
+.home-contars {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.contars-1 p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0px;
+    text-align: center;
+}
+.contars-1 {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+.contars-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid;
+    -o-border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    gap: 24px;
+    border-left: 2px solid;
+    -o-border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    border-image: linear-gradient(to bottom, rgb(222 212 162 / 0%), #ded4a2) 1;
+    padding: 40px 0px 40px 0px;
+}
+section.home {
+    width: 100%;
+    background-color: #293857;
+    padding: 50px 20px 0px 20px;
+}
+.main-Process {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Process-tital-box {
+    width: 100%;
+}
+.Process-img-box {
+    width: 100%;
+}
+.Process-tital-box span p {
+    line-height: 0px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #DED4A2;
+}
+.Process-tital-box span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 0px;
+}
+.Process-tital-box h2 {
+    padding-top: 25px;
+    margin: 0px;
+    line-height: 50px;
+    font-size: 40px;
+    color: #A2A2A4;
+    font-family: 'Saol Display';
+    transition: 0.3s;
+}
+.Process-btn-box {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Process-img-box h2 {
+    font-size: 42px;
+    line-height: 60px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.main-Process {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+section.Process {
+    width: 100%;
+    background-color: #202D46;
+    padding: 50px 0px 0px 20px;
+}
+.Process-img-box h2 {
+    font-size: 34px;
+    line-height: 60px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+    font-weight: 400;
+}
+.main-Success h2 img {
+    width: 10%;
+}
+.main-Success h2 {
+    font-size: 34px;
+    line-height: 52.23px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Saol Display';
+    margin: 0px;
+
+}
+section.curated {
+    width: 100%;
+    background-color: #202D46;
+    padding: 0px 20px;
+}
+.curated-img {
+    width: 100%;
+}
+.curated-tital {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34.89px;
+    color: #DED4A2;
+    border-bottom: 1px solid #ded4a2;
+    width: 100%;
+    padding-bottom: 24px;
+}
+.main-curated {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+    gap: 44px;
+}
+.curated-tital h2 {
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding-bottom: 0px;
+    margin: 0px;
+    line-height: 50px;
+    font-size: 34px;
+    color: #fff;
+    font-family: 'Saol Display';
+}
+section.Success {
+    width: 100%;
+    padding: 60px 20px;
+}
+.luxury-tital h2 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 44px;
+    color: #fff;
+    font-family: 'Saol Display';
+    margin: 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 12px;
+    color: #A2A2A4;
+    line-height: 18.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 90%;
+    padding: 0px 14px;
+    margin: 0px;
+}
+.luxury-tital p {
+    text-align: center;
+    font-size: 12px;
+    color: #A2A2A4;
+    line-height: 18.26px;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 90%;
+    padding: 0px 14px;
+    margin: 0px;
+}
+.luxury-img-box {
+    width: 100%;
+}
+.luxury-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+.main-luxury {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.luxury-list h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 29px;
+    font-family: 'Saol Displa';
+    color: #A2A2A4;
+    margin: 0px;
+    transition: 0.3s;
+}
+.Process-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30.89px;
+    color: #DED4A2;
+}
+.Process-btn-box button svg {
+    width: 18px;
+    height: 18px;
+}
+.curated-tital button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 34.89px;
+    color: #DED4A2;
+    border-bottom: 1px solid #ded4a2;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.curated-tital button svg {
+    width: 18px;
+    height: 18px;
+}
+.luxury-btn-box button {
+    background: transparent;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 34.89px;
+    color: #DED4A2;
+}
+.luxury-btn-box button svg {
+    width: 18px;
+    height: 18px;
+}
+section.luxury {
+    width: 100%;
+    background-color: #293857;
+    padding: 45px 20px 29px 20px;
+}
+.main-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.contact-img {
+    width: 100%;
+}
+.contact-form-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    border-top: none;
+}
+.contact-tital {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+section.contact {
+    width: 100%;
+    background-color: #293857;
+    padding: 35px 20px;
+}
+.form h2 {
+    font-size: 32px;
+    line-height: 50.8px;
+    color: #fff;
+    font-family: 'Saol Displa';
+    margin: 0px;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 10px 10px 10px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 16.26px;
+    outline: none;
+}
+.form-group textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ded4a2;
+    padding: 10px 10px 10px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #ded4a2;
+    line-height: 23.26px;
+    outline: none;
+    height: 70px;
+}
+.main-footer-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 20px 20px 20px;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+.footer-box-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.footer-box-2 {
+    width: 100%;
+}
+
+
+section.Happy {
+    padding: 18px 0px 5px 0px;
+}
+.text-item span img {
+    width: 10%;
+}
+
+}

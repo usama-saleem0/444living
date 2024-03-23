@@ -191,6 +191,8 @@ Sign Up
 
         </div>
     </section>
+
+    
 <Slider/>
 
     
@@ -418,6 +420,9 @@ Submit
         </div>
       </div>
     </footer>
+
+
+
 </div>
 
 
@@ -553,7 +558,7 @@ export default {
 };
 </script>
 
-<style>
+<!-- <style>
 
 
 
@@ -4249,4 +4254,4 @@ section.Happy {
 }
 
 }
-</style>
+</style> -->

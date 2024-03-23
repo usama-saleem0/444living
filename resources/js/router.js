@@ -64,6 +64,14 @@ let router = new Router({
         },
 
 
+        
+        {
+            path: "/homepages",
+            name: "register",
+            component: () => import("./views/admin/homepage.vue")
+        },
+
+
 
 
         {
