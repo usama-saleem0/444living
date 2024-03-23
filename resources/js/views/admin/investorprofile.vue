@@ -218,21 +218,19 @@
                 </div>
                
             </div>
-            <div class="row pt-4">
+            <div class="row pt-4  sharo-bhai">
 
            
-<div class="col-8">
+<div class="col-7">
     <button class="contac">
     Contact Realtor
 </button>
 </div>
 <div class="col-4">
-    <button class="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-<rect width="46" height="34" fill="#293857"/>
-<path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+  <rect width="46" height="34" fill="#293857"/>
+  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-</button>
 </div>
 </div>
         </div>
@@ -254,23 +252,21 @@
                 </div>
                
             </div>
-            <div class="row pt-4">
+            <div class="row pt-4  sharo-bhai">
 
            
-            <div class="col-8">
-                <button class="contac">
-                Contact Realtor
-            </button>
-            </div>
-            <div class="col-4">
-                <button class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+<div class="col-7">
+    <button class="contac">
+    Contact Realtor
+</button>
+</div>
+<div class="col-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
-            </button>
-            </div>
-        </div>
+</div>
+</div>
            
             <!-- <p>Lorem ipsum dolor sit amet</p> -->
         </div>
@@ -496,11 +492,23 @@ color: #293857;
     line-height: 24px;
 }
 
+.arrow::after{
+    position: relative;
+    left: 0px;
+}
 .arrow{
     background: #293857;
     width: 100%;
     justify-content: center;
     align-items: center;
+    border:none;
+}
+button::after{
+
+    left: 0px;
+}
+button{
+    border:none;
 }
 
 .member{
@@ -1047,7 +1055,12 @@ button.llo {
     font-weight: 400;
     line-height: normal;
 }
-
+.sharo-bhai {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
 .slide-card p {
     color: #000;
     font-family: sans-serif;

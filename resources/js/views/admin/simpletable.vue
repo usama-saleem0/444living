@@ -164,7 +164,7 @@ tbody {
     font-weight: 500;
 }
 th {
-    padding: 10px;
+    padding: 8px;
 }
 
 td {
@@ -178,5 +178,14 @@ thead {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+@media screen and (max-width: 1440px){
+    td {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
 }
 </style>

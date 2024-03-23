@@ -450,7 +450,7 @@ padding-right: 5px;
     font-size: 12px !important;
     font-style: normal !important;
     font-weight: 400 !important;
-    line-height: 0px !important;
+    line-height: 10px !important;
     margin: auto 0 !important;
     padding-top: 5px !important ;
 }
@@ -866,8 +866,8 @@ button.llo {
 .id-box {
    width: 100%;
    display: flex;
-   flex-direction: row;
-   align-content: flex-start;
+   flex-direction: row !important;
+   align-content: flex-start  !important;
    padding: 20px 30px 0px 0px;
 }
 
@@ -880,6 +880,13 @@ button.llo {
     line-height: normal;
    margin: 0px;
    padding: 4px 0px 4px 0px;
+}
+button{
+   border: none;
+}
+
+button::after{
+   left: 0PX;
 }
 
 .id-box h3 {color: #000;
@@ -1463,9 +1470,8 @@ button.llo {
 .id-box {
    width: 100%;
    display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 35px 0px 70px 0px;
+
+   padding: 25px 0px 25px 0px;
 }
 .short-card {
    width: 24%;
@@ -1737,7 +1743,7 @@ button.Add {
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
-   gap: 30px;
+   gap: 35px;
 }
 .divs h2 {
    color: #F96;
@@ -2012,16 +2018,25 @@ button.Add {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 50px 0px 80px 0px;
+   padding: 25px 0px 25px 0px;
+}
+.pragraph {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px !important;
+    padding-top: 8px;
 }
 
-
 .id-box img {
-   width: 50%;
+   width: 20%;
    border-radius: 50%;
   
-   max-height: 150px;
-   min-height: 150px;
+   max-height: 110px;
+   min-height: 110px;
    object-fit: cover;
 }
 .id-box h2 {
