@@ -76,11 +76,11 @@
         
          <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-3 go-this-pic" >
+            <div class="col-2 col-md-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-6 setp">
+            <div class="col-7 col-md-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -89,7 +89,7 @@
               </p>
 
       </div>
-      <div class="col-3">
+      <div class="col-3 col-md-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -164,14 +164,14 @@
          </div>
 
 
-
-    <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
+  
+         <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-3 go-this-pic" >
+            <div class="col-2 col-md-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-6 setp">
+            <div class="col-7 col-md-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -180,7 +180,7 @@
               </p>
 
       </div>
-      <div class="col-3">
+      <div class="col-3 col-md-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -253,15 +253,14 @@
 
 
          </div>
-
-
-    <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
+  
+         <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-3 go-this-pic" >
+            <div class="col-2 col-md-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-6 setp">
+            <div class="col-7 col-md-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -270,7 +269,7 @@
               </p>
 
       </div>
-      <div class="col-3">
+      <div class="col-3 col-md-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -452,10 +451,10 @@ padding-right: 5px;
   padding: 10px 20px 10px 20px;
 
 }
-
+/* 
 .go-this-pic img{
    width: 100%;
-}
+} */
 
 .setp{
   padding-top: 15px;
@@ -1641,7 +1640,9 @@ button.Add {
    line-height: normal;
    margin: 0px;
 }
-
+.go-this-pic img{
+   width: 100%;
+}
 .rol-3 p {
    margin: 0px;
    color: #000;
@@ -2145,7 +2146,9 @@ button.Add {
    padding: 24px;
    /* min-height: 730px; */
 }
-
+.col-2.col-md-3.go-this-pic {
+    padding-right: 0px;
+}
 
 .setp {
     padding: 0px;
@@ -2179,8 +2182,12 @@ button.Add {
    border-radius: 20px;
    background: #FFF;
    box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-   width: 42%;
+   width: 60% !important;
    padding: 24px;
+}
+
+.box-2 {
+    width: 55% !important;
 }
 .btn-2 {
    display: flex;
@@ -2263,6 +2270,11 @@ button.Add {
    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
    padding: 30px 20px;
 }
+p.pragraph {
+    display: flex;
+    align-items: center;
+}
+
 }
 @media screen and (max-width: 425px){
    .short-card h3 {
@@ -2406,7 +2418,7 @@ button.Add {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 30px 0px 50px 0px;
+   padding: 10px 0px 10px 0px;
 }
 .rol-1 {
    border-radius: 20px;
@@ -2531,6 +2543,110 @@ button.Add {
    align-items: center;
    justify-content: space-between;
    border-radius: 20px;
+}
+}
+
+
+@media screen and (max-width: 375px){
+   .id-box h2{
+
+    font-size: 18px;
+
+}
+.pragraph{
+
+    font-size: 9px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+p.pragraph svg {
+    width: 10px;
+    height: 10px;
+}
+
+.para-box p {
+    padding: 10px 0px 10px 0px;
+}
+
+.para-boxs p {
+    padding: 10px 0px 10px 0px;
+    font-size: 15px;
+}
+
+.id-box img {
+    max-height: 60px;
+    min-height: 60px;
+}
+
+.investorbutton {
+    height: 30px;
+    padding: 5px 8px;
+}
+
+.investorbutton {
+    height: 20px;
+    padding: 5px 5px;
+    font-size: 8px;
+    gap: 2px;
+}
+
+.toppadding {
+    padding-top: 10px;
+}
+
+.box-2 {
+    padding: 10px;
+}
+
+span {}
+
+.col-7.col-md-6.setp span {
+    font-size: 14px;
+}
+
+.para-boxs p {
+}
+
+.col-7.col-md-6.setp span p {}
+
+p.requesttext {
+    font-size: 10px !important;
+    padding-top: 0px !important;
+}
+
+.chatbutton {
+    height: 20px;
+    padding: 3px 5px 5px 5px;
+}
+
+.spanchat {
+    font-size: 10px;
+}
+
+.chatbutton svg {
+    width: 10px;
+    height: 10px;
+}
+
+button.chatbutton.arrowpadding {
+    padding: 0px !important;
+}
+
+p.requesttext {
+    font-size: 8px !important;
+}
+
+.rights100{
+    padding-right: 16px;
+    font-size: 10px;
+}
+span.rights100 svg {
+    width: 15px;
+    height: 15px;
 }
 }
 </style>

@@ -53,12 +53,13 @@
              </div>
 
              <div class="postscroll">
-              <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3 hello-bhai">
+
+                    <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
-                    <div class="col-6 topset">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  col-12 topset byby-top">
                         <span class="sq240">
                             240 Sq.yd Villa Required
                         </span>
@@ -67,7 +68,7 @@
                         </p>
                     </div>
 
-                    <div class="col-3 text-right topset colgap">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-right topset colgap">
                         <span class="posted">
                             Posted: 2:49am,Thursday 
                         </span>
@@ -88,12 +89,12 @@
                     </div>
                 </div>
 
-              <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3 hello-bhai">
+                    <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
-                    <div class="col-6 topset">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  col-12 topset byby-top">
                         <span class="sq240">
                             240 Sq.yd Villa Required
                         </span>
@@ -102,7 +103,7 @@
                         </p>
                     </div>
 
-                    <div class="col-3 text-right topset colgap">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-right topset colgap">
                         <span class="posted">
                             Posted: 2:49am,Thursday 
                         </span>
@@ -123,12 +124,12 @@
                     </div>
                 </div>
 
-                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3 hello-bhai">
+                      <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
-                    <div class="col-6 topset">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  col-12 topset byby-top">
                         <span class="sq240">
                             240 Sq.yd Villa Required
                         </span>
@@ -137,7 +138,7 @@
                         </p>
                     </div>
 
-                    <div class="col-3 text-right topset colgap">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-right topset colgap">
                         <span class="posted">
                             Posted: 2:49am,Thursday 
                         </span>
@@ -158,12 +159,12 @@
                     </div>
                 </div>
 
-                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3 hello-bhai">
+                    <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
-                    <div class="col-6 topset">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12  col-12 topset byby-top">
                         <span class="sq240">
                             240 Sq.yd Villa Required
                         </span>
@@ -172,7 +173,7 @@
                         </p>
                     </div>
 
-                    <div class="col-3 text-right topset colgap">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 text-right topset colgap">
                         <span class="posted">
                             Posted: 2:49am,Thursday 
                         </span>
@@ -192,7 +193,6 @@
                         </p>
                     </div>
                 </div>
-
              
              </div>
              
@@ -1227,7 +1227,9 @@ line-height: normal;
      line-height: 24px; /* 114.286% */
      margin: 0px;
  }
- 
+ .hello-bhai img {
+    width: 100%;
+}
  .divs h3 {
      color: #000;
      font-family: sans-serif;
@@ -2146,7 +2148,7 @@ span.rights100 svg {
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-     width: 42%;
+     width: 50% !important;
      padding: 24px;
  }
  .btn-2 {
@@ -2154,6 +2156,9 @@ span.rights100 svg {
      width: 44%;
      justify-content: space-between;
  }
+ .setp{
+    padding: 14px 0px 0px 0px;
+}
  }
  @media screen and (max-width: 768px){
    .cards {
@@ -2461,7 +2466,7 @@ span.rights100 svg {
      align-items: center;
      justify-content: center;
      flex-wrap: wrap;
-     gap: 30px;
+     gap: 15px;
  }
  .short-card {
      width: 42%;
@@ -2498,5 +2503,48 @@ span.rights100 svg {
      justify-content: space-between;
      border-radius: 20px;
  }
+
+ .byby-top {
+    padding-top: 20px !important;
+}
+.colgap{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.colgap p {
+    margin: 0px;
+}
+.main{
+  
+    gap: 15px 0px;
+}
+.byby-top p {
+    margin: 0px;
+}
+
+
+.box-2 {
+    width: 100% !important;
+}
+
+.inputclass {
+    padding: 10px 60px 10px 10px ;
+}
+
+.setsvg {
+    width: 20px;
+    height: 20px;
+}
+.overview {
+    font-size: 20px;
+}
+
+.sq240 {
+    font-size: 18px;
+}
+
  }
  </style>

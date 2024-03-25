@@ -778,6 +778,8 @@ h2.topreal {
     font-size: 10px;
     padding: 2px 0px;
 }
+
+
 .box-1 {
      height: 100%;
      background: transparent;
@@ -808,7 +810,53 @@ h2.topreal {
      background: transparent;
      width: 100%;
  }
+ .box-2 {
+    width: 50% !important;
+}
+
+h2.topreal {
+    font-size: 24px;
+}
+
+span.topspan {
+    font-size: 16px;
+}
+
+ }
 
 
+ @media screen and (max-width: 768px){
+  h2.topreal {
+    font-size: 20px;
+}
+
+span.topspan {
+    font-size: 14px;
+}
+
+.Realtor-3-list svg {
+    width: 40px;
+    height: 40px;
+}
+
+.box-1 {
+    gap: 24px;
+}
+ }
+
+
+ 
+ @media screen and (max-width: 425px){
+  .nazar-ts {
+    width: 100%;
+}
+
+.box-2 {
+    width: 100% !important;
+}
+
+.main {
+    gap: 15px 0px;
+}
  }
 </style>
