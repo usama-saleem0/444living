@@ -21,7 +21,7 @@
           </div>
 
         <div class="zerowidth">
-            <p class="godashborad">
+            <p class="godashborad" @click="dashboard">
               Dashboard
             </p>
           </div>
@@ -1069,6 +1069,7 @@ Top Listing’s
 
 import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
+import dashboard from './dashboard.vue';
 
 export default {
   name: "Home",
@@ -1109,83 +1110,15 @@ export default {
     },
 
 
-        dropicon(){
-        this.end = false
-        this.start = true
-        this.logo = true
-        console.log('hello');
-
-        setTimeout(() => {
-     
-        this.starticon = true
-        this.endicon = false
-
-      }, 200);
-       
-        // this.start = true
-       
-       
-      
-    },
 
     login_page(){
         this.$router.push('login')
     },
-    handleMouseOver1(){
-        console.log('enter')
-        this.first = true,
-        this.second = false,
-        this.third = false,
-        this.fourth = false
-    },
-
-    handleMouseLeave1(){
-        console.log('leave')
-        // this.first = false
-    },
-
-    handleMouseOver2(){
-        console.log('enter2')
-        this.second = true,
-        this.first = false,
-        
-        this.third = false,
-        this.fourth = false
-    },
-
-    handleMouseLeave2(){
-        console.log('leave2')
-        // this.second = false,
-        // this.first = true
-    },
-
-    handleMouseOver3(){
-        console.log('enter3')
-        this.third = true,
-        this.first = false,
-        this.second = false,
-        
-        this.fourth = false
-    },
-
-    handleMouseLeave3(){
-        console.log('leave3')
-        // this.third = false,
-        // this.first = true
-    },
-    handleMouseOver4(){
-        console.log('enter4')
-        this.fourth = true,
-        this.first = false,
-        this.second = false,
-        this.third = false
-        // this.fourth = false
-    },
-
-    handleMouseLeave4(){
-        console.log('leave4')
-        // this.fourth = false
+    dashboard(){
+      this.$router.push('/investordashoard')
     }
+
+  
   }
 };
 </script>
@@ -1205,6 +1138,7 @@ p.godashborad {
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer !important;
 }
 
 .zerowidth{

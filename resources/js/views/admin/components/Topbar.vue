@@ -362,6 +362,7 @@ line-height: 24px; /* 133.333% */
     justify-content: space-between;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
+    border-bottom: 1px solid  #ded4a2;
 }
 
 h2.heads {
@@ -391,6 +392,13 @@ ul.ul-list li a {
     font-size: 15px;
   
 }
+
+
+.topbar {
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
 }
 @media screen and (max-width: 1440px){
 
@@ -400,8 +408,8 @@ ul.ul-list li a {
   .topbar {
     height: 4.375rem !important;
    
-    padding-left: 75px !important;
-    padding-right: 75px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 
 ul.ul-list li a{
@@ -469,8 +477,8 @@ ul.ul-list li a{
     justify-content: space-between;
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
 }
 .heads[data-v-7bfd2830][data-v-7bfd2830] {
     color: rgb(0, 0, 0);

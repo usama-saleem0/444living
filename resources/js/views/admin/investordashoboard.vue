@@ -880,6 +880,7 @@ line-height: normal;
      display: flex;
      justify-content: space-between;
      align-items: center !important;
+     padding-top: 50px;
    
  }
  

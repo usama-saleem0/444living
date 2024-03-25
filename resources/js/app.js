@@ -11,6 +11,8 @@ import "./axios";
 import store from "./vuex";
 import Toasted from "vue-toasted";
 import Chart from "chart.js";
+import "../css/app.css"
+
 
 window.Vue = require("vue").default;
 Vue.use(Toasted);
