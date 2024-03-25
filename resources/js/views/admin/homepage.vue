@@ -319,19 +319,6 @@ Top Listing’s
 
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
           
 <div class="detail-card-box">
 
@@ -415,6 +402,8 @@ Top Listing’s
                 <h2>Top Realtors</h2>
               </div>
 
+              <div class="ahtishamchoro">
+               
 
 
               <div class="Realtor-card">
@@ -678,6 +667,7 @@ Top Listing’s
 
                 </div>
               </div>
+            </div>
 
               <div class="Realtor-bt">
                 <button>Explore Now </button>
@@ -690,10 +680,11 @@ Top Listing’s
 
               
               <div class="tital-2-box">
-                <h2>Top Realtors</h2>
+                <h2>Top Investor</h2>
               </div>
 
-
+              <div class="ahtishamchoro">
+                
 
               <div class="Realtor-card">
                 <div class="Realtor-1-list">
@@ -798,6 +789,7 @@ Top Listing’s
 
                 </div>
               </div>
+            </div>
 
 
 
@@ -1123,6 +1115,13 @@ export default {
 };
 </script>
 <style scoped>
+
+.ahtishamchoro{
+ width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 input.inputtype {
     border: 1px solid #293857 !important;
@@ -1750,6 +1749,37 @@ section.Townhomes {
 }
 
 @media screen and (max-width: 768px){
+
+  .header-menu {
+    width: 50%;
+    display: none;
+}
+
+header.header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+svg.setsvgleft {
+    position: absolute;
+    right: 60px;
+}
+
+  .ahtishamchoro{
+ width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: scroll
+}
+
+  .George-box {
+    padding: 24px 0px;
+    overflow-x: scroll;
+}
   section {
     padding-right: 30px !important;
     padding-left: 30px !important;
@@ -1809,7 +1839,14 @@ section.George {
 }
 
 .detail-box-2 {
-    width: 35%;
+    width: 75%;
+}
+
+.Realtor-card {
+    padding: 20px 25px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .Townhomes-tital h2 {
@@ -1817,18 +1854,37 @@ section.George {
 }
 
 .Townhomes-card-box {
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    overflow-x: scroll;
 }
 
 .Townhomes-card-1 {
-    width: 50%;
+  width: 100%;
+    min-width: 365px;
+    max-width: 365px 
 }
 
 img {}
 }
 
 @media screen and (max-width: 600px){
+  .logo img {
+    width: 90%;
+}
+
+.zerowidth {
+    width: 0%;
+    padding-top: 13px;
+}
+
+  header.header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+}
   .TopListing-boxing {
     width: 100%;
     bottom: -114px;
@@ -1862,14 +1918,18 @@ section.TopListing {
 }
 
 .George-box {
-    flex-direction: column;
+  flex-direction: row;
     gap: 12px;
     padding: 20px 0px;
+    overflow-x: scroll;
+
 }
 
 .George-card {
-    width: 75%;
+    width: 100%;
     padding: 12px 20px 12px 12px;
+    max-width: 225px !important;
+    min-width: 225px;
 }
 
 .detail-box-1 {
@@ -1914,7 +1974,7 @@ p.id-list-2 {
 }
 
 .detail-box-2 {
-    width: 75%;
+    width: 100%;
 }
 
 .main-id-detail {
@@ -1930,12 +1990,18 @@ section.Townhomes {
 }
 
 .Townhomes-card-box {
-    gap: 15px;
+  gap: 15px;
     padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
 }
 
 .Townhomes-card-1 {
-    width: 75%;
+    /* width: 75%; */
+    width: 100%;
+    min-width: 365px;
+    max-width: 365px;
 }
 
 button.white {

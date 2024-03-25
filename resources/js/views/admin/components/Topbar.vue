@@ -10,21 +10,24 @@
     "
  style="background: transparent !important;" >
     <!-- Sidebar Toggle (Topbar) -->
-    <button
+    <!-- <button
       id="sidebarToggleTop"
-      class="btn btn-link d-md-none rounded-circle mr-3"
+      class="btn btn-link d-md-none rounded-circle mr-3 "
+      @click="toggleTopbar"
     >
       <i class="fa fa-bars"></i>
-    </button>
+    </button> -->
+   
+      
 
     <!-- Topbar Search -->
    <img class="images" src="/images/logo.png"/>
    <h2 class="heads">Welcome Alex!! Resume Your Buyer Journey</h2>
+  
 
-
-  <ul class="ul-list">
+  <ul class="ul-list" >
     <li>
-      <router-link class="nav-link" to="/">
+      <router-link class="nav-link" to="/investordashoard">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Dashboard</a></router-link
         >
@@ -32,13 +35,13 @@
    
       <li >
       
-      <router-link class="nav-link" to="/Branddashoboard">
+      <router-link class="nav-link" to="/homepages">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Explore</a></router-link
         >
       </li>
     <li>
-      <router-link class="nav-link" to="/sponsorship">
+      <router-link class="nav-link" to="/toprealtors">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Realtors</a></router-link
         >
@@ -46,9 +49,47 @@
     </li>
 
     <li>
-      <router-link class="nav-link" to="/sponsorship">
+      <router-link class="nav-link" to="/pastpost">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
-          <a href="#">Chat</a></router-link
+          <a href="#">Recent Post</a></router-link
+        >
+      
+    </li>
+   
+
+     
+
+  </ul>
+
+
+  <ul  class=" listing dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+          aria-labelledby="searchDropdown">
+    <li>
+      <router-link class="nav-link" to="/investordashoard">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Dashboard</a></router-link
+        >
+      </li>
+   
+      <li >
+      
+      <router-link class="nav-link" to="/homepages">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Explore</a></router-link
+        >
+      </li>
+    <li>
+      <router-link class="nav-link" to="/toprealtors">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Top Realtors</a></router-link
+        >
+      
+    </li>
+
+    <li>
+      <router-link class="nav-link" to="/pastpost">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Recent Post</a></router-link
         >
       
     </li>
@@ -60,6 +101,65 @@
     <!-- Topbar Navbar -->
     <ul class="navbar-nav">
       <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+
+      <li class="nav-item dropdown no-arrow d-sm-none">
+        <a
+          class="nav-link dropdown-toggle btn btn-link d-md-none rounded-circle mr-3"
+          href="#"
+          id="searchDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+        <i class="fas fa-bars fa-fw"></i>
+
+        </a>
+        <!-- Dropdown - Messages -->
+        <div
+          class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+          style="background-color: #ded4a2;"
+          aria-labelledby="searchDropdown"
+        >
+        <ul style="padding: 10px;">
+    <li>
+      <router-link class="nav-link" to="/investordashoard">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#" class="nava">Dashboard</a></router-link
+        >
+      </li>
+   
+      <li >
+      
+      <router-link class="nav-link" to="/homepages">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#" class="nava">Explore</a></router-link
+        >
+      </li>
+    <li>
+      <router-link class="nav-link" to="/toprealtors">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#" class="nava">Top Realtors</a></router-link
+        >
+      
+    </li>
+
+    <li>
+      <router-link class="nav-link" to="/pastpost">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#" class="nava">Recent Post</a></router-link
+        >
+      
+    </li>
+   
+
+     
+
+  </ul>
+        </div>
+      </li>
+
+
       <li class="nav-item dropdown no-arrow d-sm-none">
         <a
           class="nav-link dropdown-toggle"
@@ -75,6 +175,7 @@
         <!-- Dropdown - Messages -->
         <div
           class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+          style="background-color: #ded4a2;"
           aria-labelledby="searchDropdown"
         >
           <form class="form-inline mr-auto w-100 navbar-search">
@@ -122,6 +223,7 @@
             shadow
             animated--grow-in
           "
+          style="background-color: #ded4a2;"
           aria-labelledby="alertsDropdown"
         >
           <h6 class="dropdown-header">Alerts Center</h6>
@@ -203,6 +305,7 @@
         <!-- Dropdown - User Information -->
         <div
           class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+          style="background-color: #ded4a2;"
           aria-labelledby="userDropdown"
         >
 
@@ -236,6 +339,7 @@
         </div>
       </li>
     </ul>
+
     
   </div>
   
@@ -247,12 +351,21 @@ import { mapGetters } from "vuex";
 
 export default {
   name: "Topbar",
+  data() {
+    return {
+      isTopbarVisible: false
+    };
+  },
  
 
   computed: {
     ...mapGetters(["user"]),
   },
   methods: {
+
+    toggleTopbar() {
+      this.isTopbarVisible = !this.isTopbarVisible;
+    },
     logout() {
       localStorage.removeItem("token");
       this.$store.dispatch("user", null);
@@ -280,6 +393,14 @@ export default {
 
 
 <style scoped>
+
+.listing{
+  display: none
+}
+
+.show{
+  display: flex;
+}
 
 .fonts{
   color: #FFF;
@@ -503,6 +624,19 @@ ul.ul-list li a{
 }
 
  
+}
+
+@media screen and (max-width: 600px){
+  ul.ul-list {
+    display: none !important;
+}
+
+.nava{
+  color: #293857;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 }
 
 </style>
