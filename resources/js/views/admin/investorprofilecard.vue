@@ -76,11 +76,11 @@
         
          <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-2" >
+            <div class="col-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-8 setp">
+            <div class="col-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -89,7 +89,7 @@
               </p>
 
       </div>
-      <div class="col-2">
+      <div class="col-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -162,13 +162,16 @@
 
 
          </div>
-         <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
+
+
+
+    <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-2" >
+            <div class="col-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-8 setp">
+            <div class="col-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -177,7 +180,7 @@
               </p>
 
       </div>
-      <div class="col-2">
+      <div class="col-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -250,13 +253,15 @@
 
 
          </div>
-         <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
+
+
+    <div style="width: 100%; background-color: #293857; margin-bottom: 10px;">
           <div class="row" style="padding-top: 5px">
-            <div class="col-2" >
+            <div class="col-3 go-this-pic" >
               <img src=/images/requestprofile.png alt=""/>
 
             </div> 
-            <div class="col-8 setp">
+            <div class="col-6 setp">
               <span>
                 Christiana Adams
               </span>
@@ -265,7 +270,7 @@
               </p>
 
       </div>
-      <div class="col-2">
+      <div class="col-3">
         <p class="requesttext" style="color: #DED4A2 !important;">
           22min Ago
         </p>
@@ -338,6 +343,9 @@
 
 
          </div>
+
+
+
         </div>
         
 
@@ -438,6 +446,10 @@ padding-right: 5px;
 .rowpadding {
   padding: 10px 20px 10px 20px;
 
+}
+
+.go-this-pic img{
+   width: 100%;
 }
 
 .setp{
@@ -2023,12 +2035,12 @@ button.Add {
 .pragraph {
     color: #000;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0px !important;
-    padding-top: 8px;
+    padding-top: 4x;
 }
 
 .id-box img {
@@ -2128,6 +2140,14 @@ button.Add {
    padding: 24px;
    /* min-height: 730px; */
 }
+
+
+.setp {
+    padding: 0px;
+}
+.p.requesttext{
+   padding: 10px 0px 0px 0px  !important
+}
 }
 @media screen and (max-width: 1024px){
  .page-1 {
@@ -2162,6 +2182,7 @@ button.Add {
    width: 44%;
    justify-content: space-between;
 }
+
 }
 @media screen and (max-width: 768px){
  .cards {
