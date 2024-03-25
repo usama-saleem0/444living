@@ -102,7 +102,7 @@
                   </span>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
+  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 2.box-22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
                   </svg>
 
                 </div>
@@ -765,24 +765,32 @@ h2.topreal {
      max-width: 1170px;
      margin: 0 auto;
  }
-
+ .box-2{
+  width: 32% !important;
+ }
 .main {
      width: 100%;
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
  }
-
+ .Realtor-3-list button {
+    font-size: 10px;
+    padding: 2px 0px;
+}
 .box-1 {
      height: 100%;
      background: transparent;
-     width: 67%;
+     width: 65%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
      justify-content: space-between;
      gap: 30px;
  }
+ .nazar-ts {
+    width: 30%;
+}
  }
 
  @media screen and (max-width: 1024px){

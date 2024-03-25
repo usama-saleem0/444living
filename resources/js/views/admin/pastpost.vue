@@ -53,8 +53,8 @@
              </div>
 
              <div class="postscroll">
-                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3">
+              <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
@@ -79,7 +79,42 @@
   <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
 </svg>100    </span>
 
-<span style="color: white;">
+<span   class="rights100" style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
+</svg>100
+</span>
+                        </p>
+                    </div>
+                </div>
+
+              <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
+                    <div class="col-3 hello-bhai">
+                        <img src="/images/Rectangle23.png" alt=""/>
+                    </div>
+
+                    <div class="col-6 topset">
+                        <span class="sq240">
+                            240 Sq.yd Villa Required
+                        </span>
+                        <p class="lorem">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
+                        </p>
+                    </div>
+
+                    <div class="col-3 text-right topset colgap">
+                        <span class="posted">
+                            Posted: 2:49am,Thursday 
+                        </span>
+                        <p>
+                            <span class="rights100" style="color: white;">
+
+                           
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
+</svg>100    </span>
+
+<span   class="rights100" style="color: white;">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
 </svg>100
@@ -89,7 +124,7 @@
                 </div>
 
                 <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3">
+                    <div class="col-3 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
@@ -114,7 +149,7 @@
   <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
 </svg>100    </span>
 
-<span style="color: white;">
+<span   class="rights100" style="color: white;">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
 </svg>100
@@ -124,7 +159,7 @@
                 </div>
 
                 <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3">
+                    <div class="col-3 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
                     </div>
 
@@ -149,42 +184,7 @@
   <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
 </svg>100    </span>
 
-<span style="color: white;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
-</svg>100
-</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
-                    <div class="col-3">
-                        <img src="/images/Rectangle23.png" alt=""/>
-                    </div>
-
-                    <div class="col-6 topset">
-                        <span class="sq240">
-                            240 Sq.yd Villa Required
-                        </span>
-                        <p class="lorem">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper pharetra ligula finibus malesuada. Nullam vitae diam viverra, vehicula ligula vitae, eleifend mi. Suspendisse tempus eros eu ligula aliquam
-                        </p>
-                    </div>
-
-                    <div class="col-3 text-right topset colgap">
-                        <span class="posted">
-                            Posted: 2:49am,Thursday 
-                        </span>
-                        <p>
-                            <span class="rights100" style="color: white;">
-
-                           
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M12 23C11.7348 23 11.4804 22.8946 11.2929 22.7071C11.1054 22.5196 11 22.2652 11 22V19H7C6.46957 19 5.96086 18.7893 5.58579 18.4142C5.21071 18.0391 5 17.5304 5 17V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H21C21.5304 5 22.0391 5.21071 22.4142 5.58579C22.7893 5.96086 23 6.46957 23 7V17C23 17.5304 22.7893 18.0391 22.4142 18.4142C22.0391 18.7893 21.5304 19 21 19H16.9L13.2 22.71C13 22.89 12.76 23 12.5 23H12ZM3 15H1V3C1 2.46957 1.21071 1.96086 1.58579 1.58579C1.96086 1.21071 2.46957 1 3 1H19V3H3V15Z" fill="#DED4A2"/>
-</svg>100    </span>
-
-<span style="color: white;">
+<span   class="rights100" style="color: white;">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 12.27 18.6 15.36 13.45 20.03L12 21.35Z" fill="#DED4A2"/>
 </svg>100
@@ -283,7 +283,7 @@
  }
 
  .topset{
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
  }
 
  .lorem{
@@ -374,6 +374,10 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
+}
+
+.col-3.hello-bhai img {
+    width: 100%;
 }
 
 .slide-card {
@@ -1521,6 +1525,46 @@ line-height: normal;
      box-shadow: 2px 2px 0px 0px #1B1C1D !important; 
      color: #000 !important;
  }
+
+
+
+ .sq240 {
+    font-size: 20px;
+}
+
+.lorem {
+    font-size: 12px;
+}
+
+.posted {
+    font-size: 14px;
+}
+
+span.rights100 svg {
+    width: 20px;
+    height: 20px;
+}
+
+.rights {
+    padding-right: 16px;
+    font-size: 10px !important;
+}
+
+.rights100 {
+    padding-right: 16px;
+    font-size: 14px;
+}
+
+.inputclass {
+    padding: 18px;
+}
+
+.setsvg {
+    width: 28px;
+    height: 28px;
+}
+
+
  }
  
  @media screen and (max-width: 1440px){
@@ -1676,7 +1720,7 @@ line-height: normal;
  .box-1 {
      height: 100%;
      background: transparent;
-     width: 67%;
+     width: 65%;
      display: flex;
      flex-wrap: wrap;
      align-items: center;
@@ -2058,6 +2102,24 @@ line-height: normal;
      width: 30%;
      padding: 24px;
  }
+
+
+ .inputclass {
+    padding: 14px;
+}
+
+.setsvg {
+    width: 25px;
+    height: 25px;
+}
+
+.box-2 {
+    width: 32% !important;
+}
+
+.posted {
+    font-size: 12px;
+}
  }
  @media screen and (max-width: 1024px){
    .page-1 {

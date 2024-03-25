@@ -1128,6 +1128,7 @@ input.inputtype {
     border: 1px solid #293857 !important;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 70px;
     width: 90%;
 }
 
@@ -1411,7 +1412,9 @@ section.Townhomes {
 .contanirzs {
     max-width: 1100px;
 }
-
+.TopListing-boxing{
+  bottom: -40px;
+}
 .TopListing-boxing {
     width: 85%;
     padding: 20px;
@@ -1587,6 +1590,8 @@ p.id-list-2 {
     padding: 10px 0px;
 }
 }
+
+
 @media screen and (max-width: 1024px){
   .contanirz {
     max-width: 900px;
