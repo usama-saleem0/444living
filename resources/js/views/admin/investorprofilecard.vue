@@ -19,7 +19,7 @@
            </div>
 
            <div class="col-4">
-            <button class="investorbutton">
+            <button class="investorbutton" @click="profilepage">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
   <g clip-path="url(#clip0_201_1191)">
     <path d="M5.01536 13.125L3.90703 11.2583L1.80703 10.7917L2.0112 8.63333L0.582031 7L2.0112 5.36667L1.80703 3.20833L3.90703 2.74167L5.01536 0.875L6.9987 1.72083L8.98203 0.875L10.0904 2.74167L12.1904 3.20833L11.9862 5.36667L13.4154 7L11.9862 8.63333L12.1904 10.7917L10.0904 11.2583L8.98203 13.125L6.9987 12.2792L5.01536 13.125ZM6.3862 9.07083L9.68203 5.775L8.86536 4.92917L6.3862 7.40833L5.13203 6.18333L4.31536 7L6.3862 9.07083Z" fill="#DED4A2"/>
@@ -392,6 +392,11 @@ export default {
        }, 
 
        methods:{
+
+         profilepage(){
+            this.$router.push('/investor')
+
+         },
            setData(res) {
        
              Vue.set(this.$data, 'model', res.data.data)
