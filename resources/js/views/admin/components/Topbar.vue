@@ -399,7 +399,7 @@ export default {
 }
 
 .show{
-  display: flex;
+  display: block;
 }
 
 .fonts{

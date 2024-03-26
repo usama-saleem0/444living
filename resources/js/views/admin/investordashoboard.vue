@@ -662,16 +662,16 @@
                
              }
          },
-         created(){
+        //  created(){
          
-         get('/getuser')
-               .then((res) => {
+        //  get('/getuser')
+        //        .then((res) => {
                  
-                  this.setData(res)
+        //           this.setData(res)
  
-               })
+        //        })
            
-         }, 
+        //  }, 
  
          methods:{
              setData(res) {
@@ -1536,7 +1536,7 @@ line-height: normal;
     font-family: Saol Display !important;
     font-size: 46px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400 !important;
     line-height: normal;
     margin: 0px;
     padding: 12px 0px 5px 0px;

@@ -21,7 +21,7 @@
           </div>
 
         <div class="zerowidth">
-            <p class="godashborad" @click="dashboard">
+            <p class="godashborad" @click="investor_profile">
               Dashboard
             </p>
           </div>
@@ -1106,8 +1106,12 @@ export default {
     login_page(){
         this.$router.push('login')
     },
-    dashboard(){
-      this.$router.push('/investordashoard')
+    dashboards(){
+      this.$router.push('investordashoard')
+    },
+
+    investor_profile(){
+      this.$router.push('investor')
     }
 
   
