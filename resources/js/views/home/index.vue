@@ -4254,4 +4254,32 @@ section.Happy {
 }
 
 }
+
+@media screen and (max-width: 400px){
+    .hero-tital span p {
+    font-size: 10px;
+}
+
+.hero-tital h2 {
+    font-size: 34px;
+}
+
+h2 {}
+
+.home-tital h2 {
+    font-size: 32px;
+}
+
+.carousel-btn-list-1 span p {
+    font-size: 8px;
+}
+
+.luxury-tital h2 {
+    font-size: 28px;
+    line-height: 30px;
+}
+
+}
+
+
 </style>
