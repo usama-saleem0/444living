@@ -424,6 +424,7 @@ export default {
   height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;
+  width:100% !important
 }
 
 .chatbutton{

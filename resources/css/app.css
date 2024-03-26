@@ -256,6 +256,10 @@ header.header nav {
     margin: 0 auto;
 }
 
+.main {
+   padding-top: 10px !important;
+}
+
 .main-hero {
     width: 100%;
 }

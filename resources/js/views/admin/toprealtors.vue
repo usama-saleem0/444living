@@ -28,8 +28,7 @@
 
             </div>
 
-            <div style="display: flex;
-    flex-wrap: wrap;  gap: 20px; width: 100%; height: 72vh; overflow-y: scroll;">
+            <div class="khasomai">
 
     <div class="nazar-ts">
         
@@ -624,6 +623,15 @@
  </script>
  
  <style scoped>
+
+ .khasomai{
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: 72vh;
+    overflow-y: scroll;
+ }
  span.topspan {
     color: #FFF;
     font-family: sans-serif;
@@ -772,7 +780,7 @@ h2.topreal {
      width: 100%;
      display: flex;
      justify-content: space-between;
-     align-items: flex-start;
+     align-items: flex-start !important;
  }
  .Realtor-3-list button {
     font-size: 10px;
@@ -795,7 +803,39 @@ h2.topreal {
 }
  }
 
+ @media screen and (max-width: 1366px){
+  .khasomai{
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+ }
+
+ .box-1 {
+    height: 100%;
+    background: transparent;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 30px;
+}
+ }
+
  @media screen and (max-width: 1024px){
+
+  .khasomai{
+  display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: 72vh;
+    overflow-y: scroll;
+ }
     .main {
      width: 100%;
      display: flex;
