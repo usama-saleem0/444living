@@ -301,7 +301,7 @@
     </div>
   
  </template>
- 
+    
  <script>
  import Vue from 'vue'
  import chartBarDemo from "../../chart/demo/chart-bar-demo";
@@ -367,7 +367,6 @@
  </script>
  
  <style scoped>
-
  .postscroll{
     overflow-y: scroll;
     height: 765px;
@@ -379,8 +378,6 @@
     flex-direction: column;
     gap: 30px;
  }
-
-
  .lorem{
     color: #000;
     font-family: sans-serif;
@@ -390,7 +387,6 @@
     line-height: normal;
 
  }
-
  .posted{
     color: #A2A2A4;
 font-family: sans-serif;
@@ -399,7 +395,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
  }
-
  .sq240{
 
     color: #DED4A2;
@@ -410,7 +405,6 @@ font-weight: 400;
 line-height: normal;
 
  }
-
  .rights100{
     padding-right: 20px;
  }
@@ -420,11 +414,9 @@ line-height: normal;
     align-items: center;
     justify-content: space-between;
 }
-
 .imger img {
     width: 32%;
 }
-
 .imger h2 {
     color: #000;
     font-family: "Saol Display";
@@ -433,7 +425,6 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
-
 .slide-card p {
     color: #000;
     font-family: sans-serif;
@@ -445,16 +436,12 @@ line-height: normal;
     margin: 0px;
     padding: 30px 30px 30px 0px;
 }
-
-
-
 .arrow{
     background: #293857;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-
 .contac{
     background: #293857;
     display: flex;
@@ -470,11 +457,9 @@ line-height: normal;
     font-weight: 400;
     line-height: 24px;
 }
-
 .col-3.hello-bhai img {
     width: 100%;
 }
-
 .slide-card {
     width: 380px;
     height: 100% !important;
@@ -484,24 +469,20 @@ line-height: normal;
     border-radius: 0px !important;
     padding: 34px 47px 33px 48px;
 }
-
  .toppadds{
     padding-left: 10px;
     padding-top: 25px;
  }
-
  .setsvg{
     position: absolute;
     right: 20px;
  }
-
  .inputclass{
     width: 100%;
     padding: 25px;
     background-color: transparent;
     border: 1px solid #DED4A2;
  }
-
  .bordersbot{
     width: 100%;
     border-bottom: 1px solid #DED4A2;
@@ -510,7 +491,6 @@ line-height: normal;
     align-items: center;
     justify-content: space-between;
  }
-
  .overview{
     margin: auto 0;
     color: #DED4A2;
@@ -520,7 +500,6 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
  }
-
  .overviews{
     margin: auto 0;
     color: #DED4A2;
@@ -543,11 +522,9 @@ padding: 10px 0px 0px 0px;
  .sett{
     padding: 10px 25px;
  }
-
  .chartsnew{
     padding: 0px 0px 25px 0px;
  }
-
  .chartdate{
     color: #1B1C1D;
 
@@ -557,7 +534,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
  }
- 
  .id-box img {
      width: 47%;
      border-radius: 50%;
@@ -571,7 +547,6 @@ line-height: normal;
      background-color: #293857 !important;
      padding: 30px;
  }
- 
  .contanir {
      width: 100%;
      max-width: 1600px;
@@ -587,13 +562,11 @@ line-height: normal;
      padding-bottom: 25px;
      margin: 0px ;
  }
- 
  .card-box {
      width: 100%;
      display: flex;
      justify-content: space-between;
  }
- 
  .cards {
      border-radius: 16px;
      border: 2px solid #000;
@@ -612,7 +585,6 @@ line-height: normal;
 
    
  }
- 
  .box-1 {
      height: 100%;
      background: transparent;
@@ -623,7 +595,6 @@ line-height: normal;
      justify-content: space-between;
      gap: 25px;
  }
- 
  .box-2 {
      height: 100%;
      flex-shrink: 0;
@@ -633,7 +604,6 @@ line-height: normal;
      width: 30%;
      padding: 30px;
  }
- 
  .Sponsorship {
      width: 100%;
      height: 100%;
@@ -650,20 +620,17 @@ line-height: normal;
      justify-content: space-between;
      padding: 30px 0px;
  }
- 
  .btn-2 {
      display: flex;
      width: 46%;
      justify-content: space-between;
  }
- 
  .btn-1 {
      width: 35%;
      display: flex;
      align-items: center;
      gap: 18px;
  }
- 
  .Campaign {
      display: flex;
      align-items: center;
@@ -673,7 +640,6 @@ line-height: normal;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 12px 20px;
  }
- 
  .Campaign h2 {
      padding: 0px;
      color: #000;
@@ -683,7 +649,6 @@ line-height: normal;
      font-weight: 500;
      line-height: normal;
  }
- 
  .Campaign p {
      color: #000;
      font-family: sans-serif;
@@ -693,14 +658,12 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
  .over-btn {
      width: 100%;
      display: flex;
      justify-content: center;
      padding: 50px 0px 0px 0px;
  }
- 
  .over-btn button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -719,7 +682,6 @@ line-height: normal;
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
  .btn-1 button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -740,7 +702,6 @@ line-height: normal;
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
  button.Add {
      border-radius: 6px;
      border: 1px solid #000;
@@ -748,12 +709,10 @@ line-height: normal;
      box-shadow: 2px 2px 0px 0px #1B1C1D;
      color: #000;
  }
- 
  .OverView {
      width: 100%;
      padding-top: 75px;
  }
- 
  .OverView h2 {
      color: #000;
      font-family: sans-serif;
@@ -764,12 +723,10 @@ line-height: normal;
      margin: 0px;
      padding-bottom: 30px;
  }
- 
  .over-box {
      width: 100%;
      display: flex;
  }
- 
  .Over-card h4 {
      color: #FF5757;
      font-family: sans-serif;
@@ -779,7 +736,6 @@ line-height: normal;
      line-height: 24px; /* 114.286% */
      margin: 0px;
  }
- 
  .Over-card h4 span {
      color: #000;
      font-family: sans-serif;
@@ -789,11 +745,9 @@ line-height: normal;
      line-height: 24px; /* 58.537% */
      padding-left: 5px;
  }
- 
  .Over-card {
      width: 25%;
  }
- 
  /* .../ */
  .pox-1 {
      width: 100%;
@@ -803,7 +757,6 @@ line-height: normal;
      padding: 20px;
      border-bottom: 1px solid #000;
  }
- 
  .pox-1 h2 {
      color: #000;
      text-align: center;
@@ -815,23 +768,19 @@ line-height: normal;
      margin: 0px;
      padding: 0px;
  }
- 
  .top-btn {
      width: 49%;
      display: flex;
      align-items: center;
  }
- 
  .top-btn button {
      border: none;
      background: transparent;
  }
- 
  .pox-2 {
      width: 100%;
      padding: 20px;
  }
- 
  .pox-2 p {
      color: #000;
      font-family: sans-serif;
@@ -842,7 +791,6 @@ line-height: normal;
      letter-spacing: -0.96px;
      margin: 0px;
  }
- 
  .pox-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -851,7 +799,6 @@ line-height: normal;
      line-height: 24px; /* 150% */
      padding: 15px 0px;
  }
- 
  .pox-box {
      width: 100%;
      display: flex;
@@ -860,16 +807,12 @@ line-height: normal;
      justify-content: space-between;
      gap: 10px 0px;
  }
- 
  .yes {
      width: 50%;
      display: flex;
      align-items: center;
      gap: 5px;
  }
- 
- 
- 
  .pox-3 {
      width: 100%;
      display: flex;
@@ -877,7 +820,6 @@ line-height: normal;
      align-items: flex-end;
      padding: 25px 0px 0px 0px;
  }
- 
  .pox-3 h2 {
      color: #000;
      font-family: sans-serif;
@@ -887,7 +829,6 @@ line-height: normal;
      line-height: normal;
      padding: 0px 0px 0px 0px;
  }
- 
  .pox-3 p {
      color: #000;
      text-align: center;
@@ -898,9 +839,6 @@ line-height: normal;
      line-height: 24px; /* 150% */
      width: 40%;
  }
- 
- 
- 
  .pox-3 h2 span {
      color: #000;
      font-family: sans-serif;
@@ -909,20 +847,10 @@ line-height: normal;
      font-weight: 600;
      line-height: normal;
  }
- 
- 
  button.llo {
      color: #fff;
  }
- 
- 
- 
  /* .../ */
- 
- 
- 
- 
- 
  .box-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -931,7 +859,6 @@ line-height: normal;
      font-weight: 500;
      line-height: normal;
  }
- 
  .id-box {
      width: 100%;
      display: flex;
@@ -939,7 +866,6 @@ line-height: normal;
      align-items: center;
      padding: 70px 0px 120px 0px;
  }
- 
  .id-box h2 {
      color: #000;
      font-family: sans-serif;
@@ -950,11 +876,10 @@ line-height: normal;
      margin: 0px;
      padding: 20px 0px 4px 0px;
  }
- 
  .id-box h3 {color: #000;
      font-family: system-ui !important;
-     font-size: 16px;font-style: normal;font-weight: 500;line-height: normal;}
- 
+     font-size: 16px;font-style: normal;font-weight: 500;line-height: normal;
+ }
  .titel-box {
      width: 100%;
      display: flex;
@@ -962,14 +887,12 @@ line-height: normal;
      align-items: center;
      padding-bottom: 20px;
  }
- 
  .id-titel {
      display: flex;
      align-items: center;
      width: 30%;
      justify-content: space-between;
  }
- 
  .id-titel p {
      color: #000;
      font-family: system-ui !important;
@@ -989,14 +912,12 @@ line-height: normal;
      align-items: center;
      padding-bottom: 40px;
  }
- 
  .contact {
      display: flex;
      align-items: center;
      justify-content: space-between;
      gap: 15px;
  }
- 
  .contact p {
      color: #000;
      font-family: sans-serif;
@@ -1006,7 +927,6 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
  .para-box {
      width: 100%;
      border-top: 1px solid #F96;
@@ -1016,7 +936,6 @@ line-height: normal;
      align-items: center;
      flex-direction: column;
  }
- 
  .para-box p {
      color: #000;
      text-align: center;
@@ -1028,7 +947,6 @@ line-height: normal;
      margin: 0px;
      padding: 32px 0px 44px 0px;
  }
- 
  .para-box button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -1044,7 +962,6 @@ line-height: normal;
      flex-shrink: 0;
       /* 150% */
  }
- 
  .para-box button p {
      color: #FFF;
      text-align: center;
@@ -1055,20 +972,17 @@ line-height: normal;
      line-height: 24px; /* 150% */
      padding: 0px;
  }
- 
  .new-1 {
      width: 100%;
      display: flex;
      justify-content: space-between;
  }
- 
  .new-2 {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
  }
- 
  .new-3 {
      width: 100%;
      display: flex;
@@ -1081,7 +995,6 @@ line-height: normal;
     justify-content: flex-end;
     gap: 20px;
 }
-
 span.Filter p {
     color: #FFF;
     font-family: sans-serif;
@@ -1091,7 +1004,6 @@ span.Filter p {
     line-height: 24px; /* 133.333% */
     margin: 0px;
 }
-
 span.Filter svg {
     width: 30px;
     height: 30px;
@@ -1104,7 +1016,6 @@ span.Filter svg {
      width: 36%;
      padding: 32px;
  }
- 
  .rol-1 p {
      color: #000;
      font-family: sans-serif;
@@ -1115,7 +1026,6 @@ span.Filter svg {
      margin: 0px;
      padding-bottom: 12px;
  }
- 
  .rol-1 h2 {
      color: #1B1C1D;
      font-family: fantasy;
@@ -1126,14 +1036,12 @@ span.Filter svg {
      letter-spacing: 3px;
      letter-spacing: 3px;
  }
- 
  .new-btn-lid {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
  }
- 
  .new-btn-lid  button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -1148,7 +1056,6 @@ span.Filter svg {
      gap: 7.647px;
      flex-shrink: 0;
  }
- 
  .new-btn-lid button p {
      margin: 0px;
      color: #FFF;
@@ -1161,7 +1068,6 @@ span.Filter svg {
      margin: 0px;
      padding: 0px;
  }
- 
  .rol-3 {
      width: 62%;
      display: flex;
@@ -1170,7 +1076,6 @@ span.Filter svg {
      justify-content: space-between;
      padding-top: 24px;
  }
- 
  .rol-3 p {
      margin: 0px;
      color: #000;
@@ -1181,7 +1086,6 @@ span.Filter svg {
      line-height: normal;
      width: 100%;
  }
- 
  .rol-card {
      width: 48%;
      border-radius: 10px;
@@ -1193,7 +1097,6 @@ span.Filter svg {
      padding: 10px 15px;
      flex-wrap: wrap;
  }
- 
  .rol-para h2 {
      color: #000;
      font-family: sans-serif;
@@ -1203,11 +1106,9 @@ span.Filter svg {
      line-height: normal;
      margin: 0px;
  }
- 
  .rol-para {
      width: 84%;
  }
- 
  .rol-para p {
      color: #000;
      font-family: sans-serif;
@@ -1217,14 +1118,12 @@ span.Filter svg {
      line-height: normal;
      margin: 0px;
  }
- 
  .div-1 {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-around;
  }
- 
  .div-1 h2 {
      color: #000;
      font-family: sans-serif;
@@ -1235,11 +1134,9 @@ span.Filter svg {
      margin: 0px;
      width: 80%;
  }
- 
  .div-1 p {
      width: 20%;
  }
- 
  .div-2 {
      width: 100%;
      display: flex;
@@ -1247,21 +1144,16 @@ span.Filter svg {
      justify-content: space-between;
      padding-top: 15px;
  }
- 
  .Enrolled {
      display: flex;
      align-items: center;
      width: 58%;
  }
- 
- .Enrolled {}
- 
  .Reviews {
      width: 40%;
      display: flex;
      align-items: center;
  }
- 
  .short-card {
      width: 24%;
      border-radius: 0px !important;
@@ -1269,7 +1161,6 @@ span.Filter svg {
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25) !important;
      padding: 18px 25px;
  }
- 
  .short-card p {
      color: #000;
      font-family: sans-serif;
@@ -1279,7 +1170,6 @@ span.Filter svg {
      line-height: 24px; /* 150% */
      margin: 0px;
  }
- 
  .short-card h2 {
     color: #1B1C1D !important;
     font-family: Saol Display !important;
@@ -1289,8 +1179,7 @@ span.Filter svg {
     line-height: normal;
     margin: 0px;
     padding: 12px 0px 5px 0px;
-}
- 
+ }
  .short-card h3 {
      color: #000;
      font-family: sans-serif;
@@ -1308,7 +1197,6 @@ span.Filter svg {
      width: 30% !important;
      border-radius: 0px 0px 0px 0px !important;
  }
- 
  .conting-card {
      height: 417px;
      flex-shrink: 0;
@@ -1322,7 +1210,6 @@ span.Filter svg {
      justify-content: space-between;
      border-radius: 0px 0px 0px 0px !important;
  }
- 
  .conting-card h2 {
      color: #000;
      font-family: sans-serif;
@@ -1333,11 +1220,9 @@ span.Filter svg {
      width: 100%;
      margin: 0px;
  }
- 
  .divs {
      width: 48%;
  }
- 
  .divs h2 {
      color: #F96;
      font-family: sans-serif;
@@ -1360,23 +1245,21 @@ span.Filter svg {
      margin: 0px;
      padding-top: 20px;
  }
-
  .color-change {
     width: 100%;
     background-color: #ded4a2;
     padding: 20px 10px 10px 20px;
     border: 1px solid #293857 !important;
 }
-
 .home {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.Bedroom {display: flex;align-items: center;gap: 5px;}
-
+.Bedroom {
+display: flex;align-items: center;gap: 5px;
+}
 .Bedroom p {
     color: #000;
     font-family: sans-serif;
@@ -1386,12 +1269,10 @@ span.Filter svg {
     line-height: normal;
     margin: 0px;
 }
-
 .Bedroom svg {
     width: 18px;
     height: 18px;
 }
-
 p.dispaly-iteam {
     width: 100%;
     display: flex;
@@ -1403,9 +1284,9 @@ p.dispaly-iteam {
     color: #000;
     font-size: 14px;
 }
-
-.bold {font-weight: bold;}
-
+.bold {
+font-weight: bold;
+}
 p.hello-buddy {
     padding: 8px 0px;
 }
@@ -1420,7 +1301,6 @@ p.dispaly-iteam span {
     gap: 20px;
     padding-bottom: 20px;
 }
-
 .postscroll-ka-tital h2 {
     color: #000;
     font-family: sans-serif;
@@ -1429,6 +1309,7 @@ p.dispaly-iteam span {
     font-weight: bold;
     line-height: normal;
 }
+
  @media screen and (max-width: 1600px){
     .chartsnew {
     padding: 0px 0px 50px 0px;
@@ -1776,7 +1657,6 @@ span.Filter p {
     padding: 24px;
 }
  }
- 
  @media screen and (max-width: 1440px){
 
     .chartsnew {
