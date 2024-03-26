@@ -188,4 +188,27 @@ thead {
     font-size: 12px;
 }
 }
+
+
+
+@media screen and (max-width: 600px){
+    th {
+    padding: 5px;
+    font-size: 10px;
+}
+
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+td img {
+    width: 24%;
+}
+
+tbody {
+    line-height: 30px;
+}
+}
 </style>

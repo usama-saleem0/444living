@@ -2475,7 +2475,7 @@ button{
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-     width: 42%;
+     width: 50% !important;
      padding: 24px;
  }
  .btn-2 {
@@ -2483,6 +2483,38 @@ button{
      width: 44%;
      justify-content: space-between;
  }
+
+ .box-2 {}
+
+.slide-card {
+    width: 300px;
+    padding: 20px 35px 20px 35px;
+}
+
+.imger h2 {
+    font-size: 20px;
+}
+
+.imger img {
+    width: 25%;
+}
+
+.overview {
+    font-size: 20px;
+}
+
+.icon-box svg {
+    width: 30px;
+    height: 30px;
+}
+.contac {
+    padding: 4px 10px 4px 10px;
+    font-size: 14px;
+}
+.bordersbot { 
+    border-bottom: 1px solid #DED4A2;
+    padding: 5px;
+}
  }
  @media screen and (max-width: 768px){
    .cards {
@@ -2558,6 +2590,18 @@ button{
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 30px 20px;
  }
+
+ .new-3 {flex-direction: column-reverse;}
+
+.dashbord-card {
+    width: 70% !important;
+}
+
+.conting-card {
+    width: 100% !important;
+}
+
+
  }
  @media screen and (max-width: 425px){
      .short-card h3 {
@@ -2827,5 +2871,39 @@ button{
      justify-content: space-between;
      border-radius: 20px;
  }
+
+ .new-3 {flex-direction: column-reverse;}
+
+.dashbord-card {
+    width: 70% !important;
+}
+
+.conting-card {
+    width: 100% !important;
+}
+
+.box-1 {}
+
+.new-3 {}
+
+.new-2 {
+    gap: 10px;
+}
+
+.dashbord-card {
+    width: 100% !important;
+}
+
+.main {
+    gap: 20px 0px;
+}
+
+.box-2 {
+    width: 100% !important;
+}
+
+.chartsnew {
+    padding: 0px 0px 72px 0px;
+}
  }
  </style>
