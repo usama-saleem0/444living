@@ -886,7 +886,7 @@ span.topspan {
 
 
  
- @media screen and (max-width: 425px){
+ @media screen and (max-width: 600px){
   .nazar-ts {
     width: 100%;
 }
