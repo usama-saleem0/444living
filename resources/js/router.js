@@ -56,6 +56,13 @@ let router = new Router({
             component: () => import("./views/admin/pastpost.vue")
         },
 
+
+        {
+            path: "/mypost",
+            name: "register",
+            component: () => import("./views/admin/mypost.vue")
+        },
+
         
         {
             path: "/toprealtors",
