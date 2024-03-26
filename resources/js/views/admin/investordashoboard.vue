@@ -2603,7 +2603,7 @@ button{
 
 
  }
- @media screen and (max-width: 425px){
+ @media screen and (max-width: 600px){
      .short-card h3 {
      color: #000;
      font-family: sans-serif;
