@@ -68,6 +68,11 @@
 
              <div class="postscroll">
 
+                <div class="postscroll-ka-tital">
+                    <h2>Published Listings</h2>
+                    <h2>Featured Listings</h2>
+                </div>
+
                 <div class="row color-change" style="border-bottom: 1px solid #DED4A2;     margin-bottom: 20px;">
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 hello-bhai">
                         <img src="/images/Rectangle23.png" alt=""/>
@@ -1408,6 +1413,22 @@ p.dispaly-iteam span {
     padding: 0px !important;
     color: #000 !important;
 }
+.postscroll-ka-tital {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.postscroll-ka-tital h2 {
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
  @media screen and (max-width: 1600px){
     .chartsnew {
     padding: 0px 0px 50px 0px;
@@ -2738,6 +2759,18 @@ span.Filter {
 }
 p.dispaly-iteam {
     align-items: flex-start;
+}
+
+.postscroll-ka-tital {
+
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.postscroll-ka-tital h2 {
+
+font-size: 12px;
+
 }
  }
  </style>
