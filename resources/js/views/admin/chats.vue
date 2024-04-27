@@ -447,6 +447,8 @@
      color: gray;
      padding-bottom: 15px;
  }
+
+ 
  .rounded_image{
    /* width: 15%; */
     
@@ -459,6 +461,9 @@
        padding: 20px;
        border: 1px solid #ccc;
      } */
+
+
+
      .chat-box {
        
      height: 500px;
@@ -472,6 +477,7 @@
      padding: 10px;
      width: 101%;
      }
+
      .coloum{
        background-color: #ded4a2 !important;
      border-radius: 20px;
@@ -530,6 +536,7 @@
      max-width: 1600px;
      margin: 0 auto;
  }
+
  .Sponsorship h2 {
      color: #000;
      font-family: sans-serif;
@@ -556,6 +563,7 @@
      height: 369px;
      flex-shrink: 0;
  }
+
  .main {
      width: 100%;
      display: flex;
@@ -588,6 +596,7 @@
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 30px 33px ;
  }
+
  .btn-box {
      width: 100%;
      display: flex;
@@ -738,8 +747,7 @@
  .Over-card {
      width: 25%;
  }
- 
- /* .../ */
+
  .pox-1 {
      width: 100%;
      display: flex;
@@ -813,8 +821,6 @@
      gap: 5px;
  }
  
- .yes {}
- 
  .pox-3 {
      width: 100%;
      display: flex;
@@ -843,8 +849,6 @@
      line-height: 24px; /* 150% */
      width: 40%;
  }
- 
- 
  
  .pox-3 h2 span {
      color: #000;
@@ -891,6 +895,7 @@
      align-items: center;
      padding: 20px 0px 25px 0px;
  }
+
  h2.chat-para {
      color: #000;
      font-family: sans-serif;
@@ -899,7 +904,6 @@
      font-weight: bold;
      line-height: normal;
  }
- 
  
  .id-box h2 {
      color: #000;
@@ -912,7 +916,10 @@
      padding: 20px 0px 4px 0px;
  }
  
- .id-box h3 {color: #000;font-family: sans-serif;font-size: 12px;font-style: normal;font-weight: 500;line-height: normal;}
+ .id-box h3 {
+    color: #000;font-family: sans-serif;font-size: 12px;font-style: normal;font-weight: 500;line-height: normal;
+
+}
  
  .titel-box {
      width: 100%;

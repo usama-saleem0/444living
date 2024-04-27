@@ -9,7 +9,7 @@
 
              <h2>{{ user.username }}</h2>
              <p class="pragraph">
-              @{{ user.username }}
+              {{ user.username }}
              </p>
              <p class="pragraph">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -2051,7 +2051,7 @@ button.Add {
 .pragraph {
     color: #000;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
