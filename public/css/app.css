@@ -17190,6 +17190,7 @@ a.close.disabled {
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+  
   .carousel-item {
     transition: none;
   }
@@ -17216,18 +17217,21 @@ a.close.disabled {
   transition-property: opacity;
   transform: none;
 }
+
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
   z-index: 1;
   opacity: 1;
 }
+
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
   z-index: 0;
   opacity: 0;
   transition: opacity 0s 0.6s;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
@@ -17250,6 +17254,7 @@ a.close.disabled {
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
 .carousel-control-next {
@@ -17302,6 +17307,7 @@ a.close.disabled {
   margin-left: 15%;
   list-style: none;
 }
+
 .carousel-indicators li {
   box-sizing: content-box;
   flex: 0 1 auto;
@@ -17318,6 +17324,7 @@ a.close.disabled {
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators li {
     transition: none;

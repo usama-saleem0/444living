@@ -377,10 +377,15 @@
    background: #1b1b1b; 
  }
  
+
+ 
  .hhh{
    color: black;
      font-weight: bold;
  }
+
+
+
  .sp{
    color: #ded4a2 !important;
     
@@ -448,7 +453,7 @@
      padding-bottom: 15px;
  }
 
- 
+
  .rounded_image{
    /* width: 15%; */
     
