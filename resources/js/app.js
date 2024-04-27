@@ -13,6 +13,8 @@ import Toasted from "vue-toasted";
 import Chart from "chart.js";
 import "../css/app.css"
 
+const moment = require('moment');
+
 
 window.Vue = require("vue").default;
 Vue.use(Toasted);

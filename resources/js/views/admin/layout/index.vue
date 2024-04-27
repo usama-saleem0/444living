@@ -2,7 +2,7 @@
   <!-- Page Wrapper -->
   <div id="wrapper">
     <!-- Sidebar -->
-    <Sidebar />
+    <!-- <Sidebar /> -->
 
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
@@ -13,30 +13,16 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div>
           <router-view></router-view>
         </div>
         <!-- /.container-fluid -->
       </div>
-      <!-- End of Main Content -->
-
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2021</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
+  
     </div>
     <!-- End of Content Wrapper -->
   </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-
-  <!-- Logout Modal-->
+ 
 </template>
 
 <script>
@@ -44,6 +30,8 @@ import sbadmin2 from "../../../sb-admin-2.js";
 import axios from "axios";
 import { mapGetters } from "vuex";
 import Topbar from "../components/Topbar";
+
+
 import Sidebar from "../components/Sidebar";
 
 export default {
@@ -60,3 +48,13 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+
+#wrapper #content-wrapper {
+    background-color: #293857 !important;
+    width: 100%;
+    overflow-x: hidden;
+}
+</style>

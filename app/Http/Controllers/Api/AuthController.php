@@ -17,6 +17,7 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request)
     {
+        
         try {
             if (Auth::attempt($request->only('email', 'password'))) {
                 /** @var User $user */

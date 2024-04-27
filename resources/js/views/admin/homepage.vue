@@ -1111,7 +1111,7 @@ export default {
     },
 
     investor_profile(){
-      this.$router.push('investor')
+      this.$router.push('profilescreen')
     }
 
   

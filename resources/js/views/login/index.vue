@@ -61,11 +61,11 @@
       </div>
 
       <div class="loging-input-group">
-        <input type="email" placeholder="Email *">
+        <input type="email" placeholder="Email *" v-model="email">
       </div>
 
       <div class="loging-input-group">
-        <input type="password" placeholder="Your Password *" >
+        <input type="password" placeholder="Your Password *" v-model="password">
       </div>
 
       <div class="Forgot-box">
@@ -73,7 +73,7 @@
       </div>
 
       <div class="btn-loging-long">
-        <button @click="mainpage">Log In</button>
+        <button @click="login">Log In</button>
       </div>
 
       <div class="OR-list">
@@ -164,6 +164,8 @@ export default {
         first : true,
       
         second:false,
+        email:'',
+        password:''
       
     };
   },
@@ -191,6 +193,7 @@ export default {
     },
     
     async login() {
+      // console.log('ghemdy');
       try {
         const response = await axios.post("login", {
           email: this.email,
@@ -198,7 +201,15 @@ export default {
         });
         localStorage.setItem("token", response.data.token);
         this.$store.dispatch("user", response.data.user);
-        this.$router.push("/admin");
+        this.first = false
+        this.second = true
+        // this.$router.push("/homepages");
+        setTimeout(() => {
+       
+
+         
+       this.$router.push('/homepages')
+       }, 3000);
       } catch (error) {
         notify.authError(error);
       }

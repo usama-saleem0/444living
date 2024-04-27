@@ -17,6 +17,13 @@ let router = new Router({
         
 
         {
+            path: "/ifram",
+            name: "home",
+            component: () => import("./views/admin/iframe.vue")
+        },
+        
+
+        {
             path: "/hello",
             name: "home",
             component: () => import("./views/home/menu.vue")
@@ -44,11 +51,23 @@ let router = new Router({
             component: () => import("./views/admin/investorprofile.vue")
         },
 
+
         {
-            path: "/investordashoard",
+            path: "/realtorprofile/:id",
             name: "register",
-            component: () => import("./views/admin/investordashoboard.vue")
+            component: () => import("./views/admin/realtorprofile.vue")
         },
+        // {
+        //     path: "/profile",
+        //     name: "register",
+        //     component: () => import("./views/admin/investorprofile.vue")
+        // },
+
+        // {
+        //     path: "/investordashoard",
+        //     name: "register",
+        //     component: () => import("./views/admin/investordashoboard.vue")
+        // },
 
         {
             path: "/realtordashoard",
@@ -56,11 +75,11 @@ let router = new Router({
             component: () => import("./views/admin/realtordashoboard.vue")
         },
 
-        {
-            path: "/pastpost",
-            name: "register",
-            component: () => import("./views/admin/pastpost.vue")
-        },
+        // {
+        //     path: "/pastpost",
+        //     name: "register",
+        //     component: () => import("./views/admin/pastpost.vue")
+        // },
 
 
         {
@@ -70,25 +89,25 @@ let router = new Router({
         },
 
         
-        {
-            path: "/toprealtors",
-            name: "register",
-            component: () => import("./views/admin/toprealtors.vue")
-        },
+        // {
+        //     path: "/toprealtors",
+        //     name: "register",
+        //     component: () => import("./views/admin/toprealtors.vue")
+        // },
 
 
         
-        {
-            path: "/homepages",
-            name: "register",
-            component: () => import("./views/admin/homepage.vue")
-        },
+        // {
+        //     path: "/homepages",
+        //     name: "register",
+        //     component: () => import("./views/admin/homepage.vue")
+        // },
 
 
 
 
         {
-            path: "/setup",
+            path: "/setup/:id",
             name: "register",
             component: () => import("./views/register/imgars.vue")
         },
@@ -126,6 +145,77 @@ let router = new Router({
                 layout: AdminLayout
             }
         },
+
+
+        {
+            path: "/homepages",
+            name: "register",
+            component: () => import("./views/admin/homepage.vue"),
+            meta: {
+                requiresAuth: true,
+                
+               
+            }
+        },
+
+
+        {
+            path: "/profilescreen",
+            name: "admin",
+            component: () => import("./views/admin/profilescreen.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+
+        {
+            path: "/toprealtors",
+            name: "register",
+            component: () => import("./views/admin/toprealtors.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+        {
+            path: "/pastpost",
+            name: "register",
+            component: () => import("./views/admin/pastpost.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+        {
+            path: "/investordashoard",
+            name: "register",
+            component: () => import("./views/admin/investordashoboard.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+
+        {
+            path: "/chats",
+            name: "chats",
+            component: () => import("./views/admin/chats.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
         {
             path: "/admin/components/buttons",
             name: "buttons",

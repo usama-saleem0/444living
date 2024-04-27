@@ -6,7 +6,7 @@
         <div class="loging-logo">
           <img src="/images/logo-header.png" alt="">
         </div>
-
+      
         <div class="loging-close-btn">
           <button>
             <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,33 +51,33 @@
       <h2>Sign Up</h2>
 
       <div class="Login-btn-box">
-        <button>As  Buyer</button>
-        <button>As Realtor</button>
-        <button>As Realtor</button>
+        <button @click="accountype('Buyer')">As  Buyer</button>
+        <button @click="accountype('Realtor')">As Realtor</button>
+        <button @click="accountype('Investor')">As Investor</button>
       </div>
 
 
       
       <div class="loging-input-group">
-        <input type="email" placeholder="Enter your email address*" >
+        <input type="email" placeholder="Enter your email address*" v-model="email">
       </div>
 
       <div class="loging-input-groups">
-        <input type="text" placeholder="Username" >
+        <input type="text" placeholder="Username" v-model="username">
 
-        <input type="number" placeholder="Contact Number" >
+        <input type="number" placeholder="Contact Number" v-model="number">
       </div>
       <div class="loging-input-group">
-        <input type="password" placeholder="Enter your password*" >
+        <input type="password" placeholder="Enter your password*" v-model="password">
       </div>
 
       <div class="loging-input-group">
-        <input type="password" placeholder="Re-enter your password" >
+        <input type="password" placeholder="Re-enter your password" v-model="password_confirm">
       </div>
       
 
       <div class="btn-loging-long">
-        <button @click="setup">Next</button>
+        <button @click="save">Next</button>
       </div>
 
 
@@ -133,7 +133,24 @@
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
+
+import { get , byMethod} from '../lib/api';
 export default {
+
+    data() {
+    return {
+        form: {},
+      method: 'POST',
+        username: "",
+        number:"",
+      email: "",
+      password: "",
+      password_confirm: "",
+      type: "",
+
+      isLoading: false,
+    };
+  },
   methods: {
     async login() {
       try {
@@ -148,6 +165,88 @@ export default {
         notify.authError(error);
       }
     },
+
+
+    accountype(e){
+        this.type = e;
+
+        console.log(this.type);
+
+    },
+
+    // register() {
+    //   this.isLoading = true;
+    //   try {
+    //     var response =  axios.post("register", {
+    //         username: this.username,
+    //       number: this.number,
+    //       email: this.email,
+    //       type: this.type,
+    //       password: this.password,
+
+    //       password_confirm: this.password_confirm,
+    //     });
+
+    //     this.isLoading = false;
+
+    //     console.log(response);
+
+    //     // if (response.data.must_verify_email) {
+    //     //   this.$router.push(`/verify/user/${response.data.id}`);
+    //     // } else {
+    //     //     console.log('abcbcbcbbc');
+            
+    //     //   let message =
+    //     //     "Your account has been created successfully. Please Log in.";
+    //     //   let toast = Vue.toasted.show(message, {
+    //     //     theme: "toasted-primary",
+    //     //     position: "top-right",
+    //     //     duration: 5000,
+    //     //   });
+    //     //   this.$router.push("/login");
+    //     // }
+    //   } catch (error) {
+    //     notify.authError(error);
+    //     this.isLoading = false;
+    //   }
+    // },
+
+
+    save(){
+
+
+this.form.username = this.username;
+this.form.number = this.number;
+this.form.email = this.email;
+this.form.type = this.type;
+this.form.password = this.password;
+this.form.password_confirm = this.password_confirm;
+
+
+// console.log(this.form);
+
+
+
+
+        byMethod(this.method, 'register' , this.form)
+            .then((res) => {
+                console.log('data',res);
+
+
+                if(res.data && res.data.saved) {
+                    this.$router.push(`/setup/${res.data.user.id}`);
+                }
+            })
+            .catch((error) => {
+                if(error.response.status === 422) {
+                    this.errors = error.response.data.errors
+                }
+                this.isProcessing = false
+            })
+
+},
+
+
     startImageSlideshow() {
       setInterval(() => {
         const totalImages = this.images.length;

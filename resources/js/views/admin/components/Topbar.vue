@@ -234,9 +234,9 @@
               </div>
             </div>
             <div>
-              <div class="small text-gray-500">December 12, 2019</div>
-              <span class="font-weight-bold"
-                >A new monthly report is ready to download!</span
+              
+              <span class="font-weight-bold" @click="chats"
+                >Check Recent Chats</span
               >
             </div>
           </a>
@@ -288,14 +288,14 @@
           <img 
           class="img-profile new_image"
             
-            src="images/character.png"
+            src="/images/character.png"
           />
           <div>
             <span class="fonts">
-            Alex Smith
+           {{ user.username }}
           </span>
           <p>
-            Buyer
+            {{ user.type }}
           </p>
           
           </div>
@@ -373,7 +373,7 @@ export default {
     },
 
     chats(){
-      // this.$router.push('/chat')
+      this.$router.push('/chats')
     },
 
     back(){

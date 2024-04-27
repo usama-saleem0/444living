@@ -1,7 +1,7 @@
 <template>
  
     <div class="page-1">
-        <Header/>
+        <!-- <Header/> -->
      <div class="contanir" >
         <div class="main">
         <div class="box-1">
@@ -30,17 +30,19 @@
 
             <div class="khasomai">
 
-    <div class="nazar-ts">
+    <div class="nazar-ts" v-for="item in model">
         
         <div class="Realtor-card">
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
                     
-                    <img src="/images/alex.png" alt="">
+                    <!-- <img src="/images/alex.png" alt=""> -->
+                    <img :src="'/profile/' + item.profile" alt="">
+
                   </div>
 
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
+                  <span><h3>{{ item.username }}</h3>
+                   <h5>@{{ item.username }}</h5>
                   </span>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -72,8 +74,8 @@
                 </div>
 
                 <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+                  <button  @click="contact(item)">Contact Realtor</button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none" @click="realtorprofile(item)" style="cursor: pointer;">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
@@ -86,465 +88,14 @@
     </div>
 
 
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
+   
 
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 2.box-22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
+   
 
-                </div>
 
 
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-
-
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-
-
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
-
-
-
-    
-    <div class="nazar-ts">
-        
-        <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 </h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 </h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-    </div>
-
+  
 
         </div>
              
@@ -565,7 +116,8 @@
  import Tables from "../admin/simpletable.vue"
 
  import Profile from "./investorprofilecard.vue";
- import Header from "../admin/components/Topbar.vue"
+ import Header from "../admin/components/Topbar.vue";
+ import { get , byMethod} from '../lib/api';
  export default {
      name: 'admin',
  
@@ -594,7 +146,7 @@
          },
          created(){
          
-         get('/getuser')
+         get('/toprealtor')
                .then((res) => {
                  
                   this.setData(res)
@@ -604,6 +156,24 @@
          }, 
  
          methods:{
+
+          realtorprofile(e){
+                this.$router.push(`/realtorprofile/${e.id}`)
+             },
+ 
+
+          contact(e){
+                console.log(e);
+
+                
+                this.$router.push({
+            name: 'chats', 
+            params: { id: JSON.stringify(e) },
+            });
+            
+
+            },
+
              setData(res) {
          
                Vue.set(this.$data, 'model', res.data.data)

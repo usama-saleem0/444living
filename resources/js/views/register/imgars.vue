@@ -56,21 +56,21 @@
       
       <div   class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-12">
         <div
-      id="image-drop-areas"
-      @dragover="onDragOver"
-      @drop="onDrop"
-      @click="openFileDialog"
+        id="image-drop-area-2"
+    @dragover="onDragOver2"
+    @drop="onDrop2"
+    @click="openFileDialog2"
      
     >
-    <input type="file" id="file-input" ref="fileInput" style="display: none" @change="handleFileChange" accept="image/*">
-      <div class="image-drop-zone" v-if="!imageUrl"  >
+    <input type="file"  id="file-input-2" ref="fileInput2" style="display: none" @change="handleFileChange2" accept="image/*">
+      <div class="image-drop-zone" v-if="!imageUrl2"  >
         <!-- <i class="fas fa-plus"></i> -->
         <img class="imgsize" src="/images/plus.png"/>
         <p class="fontsizes">Upload Profile</p>
       
       </div>
       <div class="image-preview" v-else>
-        <img :src="imageUrl" alt="Uploaded Image" />
+        <img :src="imageUrl2" alt="Uploaded Image" />
       </div>
     </div>
 
@@ -103,14 +103,15 @@
 </div>
 
 
+
     
 
 
 
       <div class="loging-input-groups">
-        <input type="text" placeholder="First Name" >
+        <input type="text" placeholder="First Name" v-model="firstname">
 
-        <input type="number" placeholder="Last Name" >
+        <input type="text" placeholder="Last Name" v-model="lastname">
       </div>
    
 
@@ -202,7 +203,7 @@
       
 
       <div class="btn-loging-long">
-        <button>Next</button>
+        <button @click="save">Next</button>
       </div>
 
 
@@ -253,18 +254,107 @@
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
+
+
+import { get , byMethod} from '../lib/api';
 export default {
 
     data() {
     return {
         imageUrl: null,
+     
+         file: null,
+         file2: null,
+    imageUrl2: null,
+    lastname:'',
+    firstname:'',
+    method: 'POST',
    
       
     };
 
    
   },
+
+  created() {
+    // console.log(this.$route.params.id);
+    this.user_id = this.$route.params.id;
+   
+   
+
+  },
   methods: {
+
+    handleFileChange(event) {
+      this.file = event.target.files[0];
+      this.imageUrl = URL.createObjectURL(this.file);
+      
+    },
+    onDragOver(event) {
+      event.preventDefault();
+    },
+    onDrop(event) {
+      event.preventDefault();
+      this.file = event.dataTransfer.files[0];
+      this.imageUrl = URL.createObjectURL(this.file);
+    },
+    openFileDialog() {
+        
+    //   document.getElementById('file-input').click();
+    this.$refs.fileInput.click();
+    },
+
+
+    handleFileChange2(event) {
+    this.file2 = event.target.files[0];
+    this.imageUrl2 = URL.createObjectURL(this.file2);
+  },
+  onDragOver2(event) {
+    event.preventDefault();
+  },
+  onDrop2(event) {
+    event.preventDefault();
+    this.file2 = event.dataTransfer.files[0];
+    this.imageUrl2 = URL.createObjectURL(this.file2);
+  },
+  openFileDialog2() {
+    this.$refs.fileInput2.click();
+  },
+
+
+
+  save(){
+
+    const formData = new FormData();
+    formData.append('profile', this.file2); 
+    formData.append('cover', this.file); 
+
+    formData.append('firstname', this.firstname);
+    formData.append('lastname', this.lastname);
+    formData.append('user_id', this.user_id);
+    console.log(formData);
+
+
+    
+                
+    byMethod(this.method, '/profileregister' , formData)
+                     .then((res) => {
+                       
+                         if(res.data && res.data.saved) {
+                            this.$router.push('/login');
+                         
+                         }
+                     })
+                     .catch((error) => {
+                         if(error.response.status === 422) {
+                             this.errors = error.response.data.errors
+                         }
+                         this.isProcessing = false
+                     })
+
+  },
+
+    
     async login() {
       try {
         const response = await axios.post("login", {
@@ -333,6 +423,21 @@ export default {
     user-select: none;
 }
 
+
+#image-drop-area-2 {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #293857;
+   
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #image-drop-areas {
     width: 100%;
     height: 100px;
@@ -360,8 +465,9 @@ export default {
 }
 
 .image-preview img {
-  max-width: 60%;
-  max-height: 200px;
+  max-width: 100% !important;
+  max-height: 110px !important;
+  min-height: 95px;
 }
 
 .carousel-inner{
