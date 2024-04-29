@@ -31,11 +31,7 @@
                 </div>
                 <div class="list-btn">
                     <div class="buttons">
-                       
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7 9H5C3.93913 9 2.92172 9.42143 2.17157 10.1716C1.42143 10.9217 1 11.9391 1 13V31C1 32.0609 1.42143 33.0783 2.17157 33.8284C2.92172 34.5786 3.93913 35 5 35H23C24.0609 35 25.0783 34.5786 25.8284 33.8284C26.5786 33.0783 27 32.0609 27 31V29" stroke="#DED4A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 5.00021L31 11.0002M33.77 8.17021C34.5577 7.38252 35.0002 6.31418 35.0002 5.20021C35.0002 4.08625 34.5577 3.01791 33.77 2.23021C32.9823 1.44252 31.914 1 30.8 1C29.686 1 28.6177 1.44252 27.83 2.23021L11 19.0002V25.0002H17L33.77 8.17021Z" stroke="#DED4A2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+       
 
                      
                         
@@ -212,8 +208,10 @@
     <div class="carousel-item active" >
         <div class="slide-card">
             <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
+                <!-- <img src="/images/alex.png" alt=""> -->
+                <img :src="'/profile/' + one.profile" alt="">
+
+                <h2>{{ one.username }}</h2>
                 <div class="icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
@@ -225,12 +223,12 @@
 
            
 <div class="col-7">
-    <button class="contac">
+    <button class="contac" @click="contact(one)">
     Contact Realtor
 </button>
 </div>
 <div class="col-4">
-    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none" @click="realtorprofile(one)"  style="cursor: pointer;">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
@@ -243,11 +241,13 @@
         
     </div>
 
-    <div class="carousel-item " >
+    <div class="carousel-item " v-for="item in model">
         <div class="slide-card">
             <div class="imger">
-                <img src="/images/alex.png" alt="">
-                <h2>Alex Smith</h2>
+                <!-- <img src="/images/alex.png" alt=""> -->
+                <img :src="'/profile/' + item.profile" alt="">
+
+                <h2>{{ item.username }}</h2>
                 <div class="icon-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
@@ -259,19 +259,19 @@
 
            
 <div class="col-7">
-    <button class="contac">
+    <button class="contac" @click="contact(item)">
     Contact Realtor
 </button>
 </div>
 <div class="col-4">
-    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none" @click="realtorprofile(item)" style="cursor: pointer;">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
 </div>
 </div>
            
-            <!-- <p>Lorem ipsum dolor sit amet</p> -->
+           
         </div>
 
         
@@ -286,14 +286,7 @@
 
     
   </div>
-  <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
+ 
 </div>
                     </div>
                 </div>
@@ -314,6 +307,7 @@ import Vue from 'vue'
 // import { get , byMethod} from '../admin/components/lib/api';
 // import Edit from "./entreform.vue";
 import { mapGetters } from "vuex";
+import { get , byMethod} from '../lib/api';
 import Header from "../admin/components/Topbar.vue"
 
 export default {
@@ -334,6 +328,7 @@ export default {
 
                 model:'',
                 count:0,
+                one:{}
 
                
                
@@ -348,82 +343,71 @@ export default {
   },
 
      
-//         created(){
+        created(){
 
 
-            
-
-//             this.id = this.$route.params.id;
          
-//                 get('/getprofile?id='+this.id)
-//               .then((res) => {
+                get('/toprealtor')
+              .then((res) => {
                 
-//                  this.setData(res)
+                 this.setData(res)
 
-//               })
+              })
+
+
+
+              this.ontrealtor()
          
         
        
           
-//         }, 
+        }, 
 
-//         methods:{
+        methods:{
 
-//             hiring(){
-//                 this.$router.push(`/allmerchandises/${this.id}`)
-//             },
 
-//             chat(){
+            realtorprofile(e){
+                this.$router.push(`/realtorprofile/${e.id}`)
+             },
 
-//                 this.$router.push({
-//   name: 'chats', 
-//   params: { id: JSON.stringify(this.model) },
-// });
-                  
-//             },
 
-//             openModal() {
-     
-//      $('#popup-box').modal('show');
-     
-     
-//    },
-//    closeModal() {
-//    console.log('avcd');
+            contact(e){
+                console.log(e);
 
-//    this.shows = false;
-//    $('#popup-box').modal('hide');
-
-//    get('/getprofile?id='+this.id)
-//               .then((res) => {
                 
-//                  this.setData(res)
+                this.$router.push({
+            name: 'chats', 
+            params: { id: JSON.stringify(e) },
+            });
+            
 
-//               });
-     
-    
-//    },
+            },
 
-//             editform(){
-//                 this.$router.push('/entrefrom');
-//             },
-//             setData(res) {
+
+            ontrealtor(){
+                get('/onerealtor')
+              .then((res) => {
+                Vue.set(this.$data, 'one', res.data.data)
+                
+                
+
+              })
+         
+
+            },
+
+            setData(res) {
         
-//               Vue.set(this.$data, 'model', res.data.data)
-//               Vue.set(this.$data, 'ancd', res.data.data.package)
-
-//               if (Array.isArray(this.ancd) && this.ancd.length > 0) {
-  
-//   this.count = 1;
-// }
+              Vue.set(this.$data, 'model', res.data.data)
+      
              
             
             
-//           },
+          },
 
           
 
-//         }
+        }
     }
 </script>
 

@@ -38,6 +38,8 @@ Route::group(['middleware' => ['auth:api']], function () {
 
     Route::get('pastpost', [PostController::class, 'pastpost']);
     Route::get('toprealtor', [RealtorController::class, 'toprealtor']);
+    Route::get('onerealtor', [RealtorController::class, 'onerealtor']);
+
 
     Route::get('getchat', [ChatController::class, 'getchat']);
 
