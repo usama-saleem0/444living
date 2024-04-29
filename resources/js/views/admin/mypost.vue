@@ -426,8 +426,10 @@ line-height: normal;
     right: -5px;
 }
 
-.go-this-pic img {height: 100%;object-fit: cover;}
-.col-2.col-md-3.col-lg-2.col-xl-2.go-this-pic {}
+.go-this-pic img {
+    height: 100%;object-fit: cover;
+}
+
 
 .go-this-pic {
     width: 40px !important;
@@ -445,8 +447,6 @@ line-height: normal;
 .setp {
     padding-left: 20px !important;
 }
-
-.id-box {}
 
 .setp {
     padding-left: 15px !important;
