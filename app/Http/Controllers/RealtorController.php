@@ -18,6 +18,16 @@ class RealtorController extends Controller
     }
 
 
+
+
+    public function onerealtor(){
+        $data = User::where('type', 'Realtor')
+        ->orderBy('created_at', 'desc')
+        ->first();
+        return response()->json(['data' => $data]);
+    }
+
+
     public function emails(){
 
         $data = Email::first();

@@ -48,10 +48,19 @@
       
     </li>
 
-    <li>
+    <li v-if="user && user.type === 'Buyer'">
       <router-link class="nav-link" to="/pastpost">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Recent Post</a></router-link
+        >
+      
+    </li>
+
+
+    <li v-if="user && user.type === 'Investor'">
+      <router-link class="nav-link" to="/chats">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Chats</a></router-link
         >
       
     </li>
@@ -86,7 +95,16 @@
       
     </li>
 
-    <li>
+    <li v-if="user && user.type === 'Buyer'">
+      <router-link class="nav-link" to="/pastpost">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Recent Post</a></router-link
+        >
+      
+    </li>
+
+
+    <li v-if="user && user.type === 'Investor'">
       <router-link class="nav-link" to="/pastpost">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Recent Post</a></router-link
@@ -144,10 +162,19 @@
       
     </li>
 
-    <li>
+    <li   v-if="user && user.type === 'Buyer'">
       <router-link class="nav-link" to="/pastpost">
-          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+         
           <a href="#" class="nava">Recent Post</a></router-link
+        >
+      
+    </li>
+
+
+    <li >
+      <router-link class="nav-link" to="/chats">
+         
+          <a href="#" class="nava">Chats</a></router-link
         >
       
     </li>
@@ -240,29 +267,8 @@
               >
             </div>
           </a>
-          <a class="dropdown-item d-flex align-items-center" href="#">
-            <div class="mr-3">
-              <div class="icon-circle bg-success">
-                <i class="fas fa-donate text-white"></i>
-              </div>
-            </div>
-            <div>
-              <div class="small text-gray-500">December 7, 2019</div>
-              $290.29 has been deposited into your account!
-            </div>
-          </a>
-          <a class="dropdown-item d-flex align-items-center" href="#">
-            <div class="mr-3">
-              <div class="icon-circle bg-warning">
-                <i class="fas fa-exclamation-triangle text-white"></i>
-              </div>
-            </div>
-            <div>
-              <div class="small text-gray-500">December 2, 2019</div>
-              Spending Alert: We've noticed unusually high spending for your
-              account.
-            </div>
-          </a>
+         
+       
           <a class="dropdown-item text-center small text-gray-500" href="#"
             >Show All Alerts</a
           >
@@ -285,10 +291,17 @@
           aria-expanded="false"
         >
          
-          <img 
+          <!-- <img 
           class="img-profile new_image"
             
             src="/images/character.png"
+          /> -->
+
+
+          <img 
+          class="img-profile new_image"
+            
+            :src="'/profile/' + user.profile"
           />
           <div>
             <span class="fonts">
@@ -412,8 +425,9 @@ line-height: 24px; /* 150% */
 }
 
 .new_image{
-    height: 5rem !important;
-    width: 5rem !important;
+    height: 3rem !important;
+    width: 3rem !important;
+    margin-right: 10px !important;
 
 }
 
