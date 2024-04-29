@@ -403,7 +403,7 @@ duration: 5000,
     padding-left: 20px !important;
 }
 
-.id-box {}
+
 
 .setp {
     padding-left: 15px !important;
@@ -517,6 +517,7 @@ font-weight: 500;
 line-height: 24px;
 padding: 10px 0px 0px 0px;
  }
+
  .sett{
     padding: 10px 25px;
  }
@@ -543,6 +544,7 @@ line-height: normal;
      min-height: 190px;
      object-fit: cover;
  }
+
  .page-1 {
      width: 100%;
      background-color: #293857 !important;
@@ -554,6 +556,7 @@ line-height: normal;
      max-width: 1600px;
      margin: 0 auto;
  }
+ 
  .Sponsorship h2 {
      color: #000;
      font-family: sans-serif;
