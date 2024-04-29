@@ -536,6 +536,7 @@ line-height: normal;
     width: 100%;
     height: 871px;
     flex-shrink: 0;
+    gap: 24px;
     border-radius: 0px !important;
     background: #293857 !important;
     /* box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25); */
@@ -562,6 +563,8 @@ line-height: normal;
     align-items: flex-start;
     justify-content: space-between;
     padding: 25px 0px 15px 0px;
+    gap: 24px
+    ;
     /* border-bottom: 2px solid #f96; */
     border-bottom: 2px solid #DED4A2 !important;
 
@@ -974,13 +977,13 @@ button.llo {
     margin: 0px;
 }
 .slide-card {
-    width: 380px;
+    width: 320px;
     height: 100% !important;
     border: 2px solid #293857 !important;
     background: #DED4A2 !important;
     box-shadow: none !important;
     border-radius: 0px !important;
-    padding: 34px 47px 33px 48px;
+    padding: 30px;
 }
 
 .run-card {
@@ -990,8 +993,6 @@ button.llo {
     justify-content: center;
 }
 
-
-
 .imger {
     width: 100%;
     display: flex;
@@ -1000,8 +1001,43 @@ button.llo {
 }
 
 .imger img {
-    width: 32%;
+    border-radius: 50px;
+    height: 65px;
+    object-fit: cover;
+    width: 24% !important;
 }
+
+.go-this-pic {
+    height: 44px;
+    right: -5px;
+}
+
+.go-this-pic img {
+height: 100%;object-fit: cover;
+}
+
+.go-this-pic {
+    width: 40px !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    min-height: 42px !important;
+    padding-left: 20px !important;
+}
+
+.go-this-pic img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.setp {
+    padding-left: 20px !important;
+}
+
+
+.setp {
+    padding-left: 15px !important;
+}
+
 
 .imger h2 {
     color: #000;
@@ -1011,12 +1047,14 @@ button.llo {
     font-weight: 400;
     line-height: normal;
 }
+
 .sharo-bhai {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
+
 .slide-card p {
     color: #000;
     font-family: sans-serif;
@@ -1028,6 +1066,7 @@ button.llo {
     margin: 0px;
     padding: 30px 30px 30px 0px;
 }
+
 @media screen and (max-width: 1600px){
 
     .member {
@@ -1194,7 +1233,6 @@ button.llo {
     box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
 }
 }
-
 @media screen and (max-width: 1440px){
 
     .tops{
@@ -1273,7 +1311,7 @@ button.llo {
     height: 20px;
 }
 .list-btn {
-    width: 34%;
+    width: 44%;
 }
 .list-titel p {
     color: #000;
@@ -1559,7 +1597,6 @@ div#carouselExampleControls {
     padding: 20px 10px;
 }
 }
-
 @media screen and (max-width: 1366px){
     .upgardebutton {
   
@@ -1865,7 +1902,7 @@ div#carouselExampleControls {
     display: flex;
     justify-content: space-between;
 }
-.list-2[data-v-fdc95946] {
+.list-2 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1874,14 +1911,14 @@ div#carouselExampleControls {
     gap: 30px;
     padding: 20px 0px;
 }
-.mine-card[data-v-fdc95946] {
+.mine-card {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 18px;
 }
-.Jobs-cards[data-v-fdc95946] {
+.Jobs-cards {
     display: inline-flex;
     height: 88px;
     padding: 6px 30px 6px 8px;
@@ -1894,7 +1931,7 @@ div#carouselExampleControls {
     background: #FFF;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
 }
-.run-card h2[data-v-fdc95946] {
+.run-card h2 {
     color: #000;
     font-family: sans-serif;
     font-size: 16px;
@@ -1904,9 +1941,8 @@ div#carouselExampleControls {
     padding: 20px 0px 10px 0px;
 }
 }
-
 @media screen and (max-width: 425px){
-    .more-card[data-v-fdc95946] {
+    .more-card {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1915,15 +1951,15 @@ div#carouselExampleControls {
     gap: 20px;
 }
 
-.list-titel[data-v-fdc95946] {
+.list-titel {
     width: 100%;
     padding-top: 18px;
 }
-.list-btn[data-v-fdc95946] {
+.list-btn {
     width: 100%;
     padding-top: 20px;
 }
-.list-1 img[data-v-fdc95946] {
+.list-1 img {
     width: 30%;
     position: relative;
     z-index: 1;
@@ -1938,7 +1974,7 @@ div#carouselExampleControls {
 
     object-fit: cover;
 }
-.list-1[data-v-fdc95946] {
+.list-1 {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1947,14 +1983,14 @@ div#carouselExampleControls {
     border-bottom: 2px solid #f96;
     flex-direction: column;
 }
-.list-id[data-v-fdc95946] {
+.list-id {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 0px 0px 5px 0px;
 }
-.cards[data-v-fdc95946] {
+.cards {
     border-radius: 16px;
     border: 2px solid #000;
     background: #F96;
@@ -1963,7 +1999,7 @@ div#carouselExampleControls {
     height: 100%;
     flex-shrink: 0;
 }
-.salider-card[data-v-fdc95946] {
+.salider-card {
     height: 100%;
     flex-shrink: 0;
     border: 2px solid #F96;
@@ -1976,4 +2012,5 @@ div#carouselExampleControls {
     border-radius: 15px;
 }
 }
+
 </style>

@@ -37,10 +37,15 @@
     <input type="text" placeholder="Add Details" class="inputclass" v-model="form.postdetials"/>
     
 </div>
-<div class="col text-right" v-if="imageUrl">
-    <span class="overview" style="text-decoration: underline" @click="savepost">
+<div class="col text-right my-right" v-if="imageUrl">
+    <button>
+        <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
+</svg>
+        <span class="overview" style="text-decoration: underline" @click="savepost">
                     Post
              </span>
+    </button>
 </div>
              
              <div class="new-2">
@@ -344,7 +349,64 @@ duration: 5000,
 }
 
 .imger img {
-    width: 32%;
+    border-radius: 50px;
+    height: 65px;
+    object-fit: cover;
+    width: 24% !important;
+}
+
+.go-this-pic {
+    height: 44px;
+    right: -5px;
+}
+
+.go-this-pic img {height: 100%;object-fit: cover;}
+
+.col-2.col-md-3.col-lg-2.col-xl-2.go-this-pic {}
+
+.go-this-pic {
+    width: 40px !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    min-height: 42px !important;
+    padding-left: 20px !important;
+}
+.col.text-right.my-rightbutton {
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.col.text-right {
+}
+
+.col.text-right.my-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.col.text-right.my-right button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col.text-right.my-right button span {text-decoration: none !important;}
+.go-this-pic img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.setp {
+    padding-left: 20px !important;
+}
+
+.id-box {}
+
+.setp {
+    padding-left: 15px !important;
 }
 
 .imger h2 {
@@ -394,13 +456,13 @@ duration: 5000,
 }
 
 .slide-card {
-    width: 380px;
+    width: 320px;
     height: 100% !important;
     border: 2px solid #293857 !important;
     background: #DED4A2 !important;
     box-shadow: none !important;
     border-radius: 0px !important;
-    padding: 34px 47px 33px 48px;
+    padding:30px;
 }
 
  .toppadds{
@@ -524,6 +586,7 @@ line-height: normal;
      justify-content: space-between;
      align-items: center !important;
      padding-top: 50px;
+     gap: 24px;
    
  }
  
@@ -2131,7 +2194,7 @@ button{
 
 .slide-card {
     width: 300px;
-    padding: 20px 35px 20px 35px;
+    padding: 20px 30px 20px 3px;
 }
 
 .imger h2 {

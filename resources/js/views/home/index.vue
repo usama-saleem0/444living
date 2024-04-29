@@ -1553,6 +1553,25 @@ ul.ul-3 {
     height: 28px;
 }
 
+.part-input-box button:hover svg {
+  transform: translateX(none);
+  color: var(--hovered-color);
+}
+
+.part-input-box button:hover{
+    border-bottom:none !important; 
+}
+.part-input-box button::after {
+    position: relative;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px;
+    background: transparent;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
 
 
 

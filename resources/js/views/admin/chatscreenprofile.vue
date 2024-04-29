@@ -8,8 +8,8 @@
            <div class="col-6">
 
              <h2>{{ user.username }}</h2>
-             <p class="pragraph">
-              {{ user.username }}
+             <p class="pragraphok">
+              @{{ user.username }}
              </p>
              <p class="pragraph">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -285,6 +285,12 @@ span.Christiana {
     flex-shrink: 0;
     background: #DED4A2;
 }
+
+.spanchat svg {
+    width: 20px;
+    height: 20px;
+}
+
 .spanchat{
   color: #293857;
 text-align: center;
@@ -304,7 +310,30 @@ padding-right: 5px;
 .go-this-pic img{
    width: 100%;
 } */
+.col-2.col-md-3.col-lg-2.col-xl-2.go-this-pic {}
 
+.go-this-pic {
+    width: 40px !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    min-height: 42px !important;
+    padding-left: 20px !important;
+}
+
+.go-this-pic img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.setp {
+    padding-left: 20px !important;
+}
+p.pragraphok {
+    margin: 0px;
+    font-size: 20px !important;
+    color:  #000 !important;
+}
+.id-box {}
 .setp{
   padding-top: 15px;
 }
@@ -345,15 +374,28 @@ padding-right: 5px;
 .pragraph{
   color: #000;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0px !important;
     padding-top: 8px;
-
+}
+.pragraph svg {
+    width: 15px;
+    min-width: 15px;
+    max-width: 15px;
+    height: 15px;
+    min-height: 15px;
+    max-height: 15px;
 }
 
+p.pragraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
 .id-box img {
   width: 25%;
     border-radius: 0% !important;
@@ -404,6 +446,7 @@ padding-right: 5px;
    width: 100%;
    display: flex;
    justify-content: space-between;
+   gap: 24px;
  
 }
 
@@ -1489,6 +1532,11 @@ button.Add {
    line-height: normal;
    margin: 0px;
 }
+p.pragraphok {
+    margin: 0px;
+    font-size: 16px !important;
+    color:  #000 !important;
+}
 .go-this-pic img{
    width: 100%;
 }
@@ -1998,10 +2046,20 @@ button.Add {
 .col-2.col-md-3.go-this-pic {
     padding-right: 0px;
 }
-
+.chatbutton{
+  display: flex;
+    width: 100%;
+    height: 34px;
+    padding: 5px 15px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #DED4A2;
+}
 .setp {
     padding: 0px;
 }
+
 .p.requesttext{
    padding: 10px 0px 0px 0px  !important
 }

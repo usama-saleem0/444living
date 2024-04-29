@@ -435,6 +435,17 @@ div#carouselExampleIndicators {
     border: 1px solid #293857;
 }
 
+.btn-loging-long button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
 .OR-list {
     width: 100%;
 }
@@ -494,6 +505,17 @@ div#carouselExampleIndicators {
     color: #ded4a2;
 }
 
+
+.Login-btn-box button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
 ol.carousel-indicators img {
     width: 100% !important;
 }

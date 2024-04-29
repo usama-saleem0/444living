@@ -436,7 +436,16 @@
      margin-bottom: 12px;
      font-size: x-large;
  }
- 
+ .buttonsss::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
  .buttonss{
    
    border: none;
@@ -574,6 +583,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
+     gap: 24px;
  }
  
  .box-1 {

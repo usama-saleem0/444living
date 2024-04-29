@@ -896,10 +896,44 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .imger img {
-    width: 32%;
+    border-radius: 50px;
+    height: 65px;
+    object-fit: cover;
+    width: 24% !important;
 }
+
+.go-this-pic {
+    height: 44px;
+    right: -5px;
+}
+
+.go-this-pic img {height: 100%;object-fit: cover;}
+
+.col-2.col-md-3.col-lg-2.col-xl-2.go-this-pic {}
+
+.go-this-pic {
+    width: 40px !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    min-height: 42px !important;
+    padding-left: 20px !important;
+}
+
+.go-this-pic img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.setp {
+    padding-left: 20px !important;
+}
+
+.id-box {}
+.setp {
+    padding-left: 15px !important;
+}
+
 
 .imger h2 {
     color: #000;
@@ -948,13 +982,13 @@
 }
 
 .slide-card {
-    width: 380px;
+    width: 320px;
     height: 100% !important;
     border: 2px solid #293857 !important;
     background: #DED4A2 !important;
     box-shadow: none !important;
     border-radius: 0px !important;
-    padding: 34px 47px 33px 48px;
+    padding:30px;
 }
 
  .toppadds{
@@ -1075,6 +1109,7 @@ line-height: normal;
  .main {
      width: 100%;
      display: flex;
+     gap: 24px;
      justify-content: space-between;
      align-items: center !important;
      padding-top: 50px;
@@ -2686,7 +2721,7 @@ button{
 
 .slide-card {
     width: 300px;
-    padding: 20px 35px 20px 35px;
+    padding: 20px 30px 20px 30px;
 }
 
 .imger h2 {
