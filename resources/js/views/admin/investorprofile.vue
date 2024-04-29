@@ -614,13 +614,15 @@ line-height: normal;
 
 .list-1 img {
     width: 12%;
+    min-width: 12%;
+    max-width: 12%;
+    height: 150px;
     position: relative;
     z-index: 1;
     margin-top: -125px;
     margin-left: 20px;
-   
-    max-height: 232px;
-    min-height: 232px;
+    max-height: 150px;
+    min-height: 150px;
     border-radius: 0px !important;
     -o-object-fit: cover;
     object-fit: cover;
@@ -628,7 +630,7 @@ line-height: normal;
 
 
 .list-titel {
-    width: 50%;
+    width: 48% ;
 }
 
 .list-titel span {
@@ -750,6 +752,7 @@ button.Hire {
     box-shadow: 2px 2px 0px 0px #1B1C1D;
     color: #fff;
 }
+
 .pox-1 {
     width: 100%;
     display: flex;
@@ -791,14 +794,6 @@ button.Hire {
 }
 
 .pox-2 p {
-    /* color: #000;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.96px;
-    margin: 0px; */
     color: #293857;
 font-family: sans-serif;
 font-size: 25px;
@@ -879,6 +874,8 @@ line-height: normal;
     justify-content: center !important;
     align-items: center !important;
 }
+
+
 .pox-3 h2 span {
     color: #000;
     font-family: sans-serif;
@@ -892,6 +889,8 @@ line-height: normal;
 button.llo {
     color: #fff;
 }
+
+
 .cards {
     /* border-radius: 16px; */
     /* border: 2px solid #000; */
@@ -905,12 +904,14 @@ button.llo {
     box-shadow: none !important;
 
 }
+
 .more-card {
     width: 70%;
     display: flex;
     justify-content: space-between;
     padding-top: 15px
 }
+
 .more-card {
     width: 70%;
     display: flex;
@@ -936,6 +937,7 @@ button.llo {
     align-items: center;
     justify-content: space-between;
 }
+
 .mine-card {
     width: 100%;
     display: flex;
@@ -966,9 +968,11 @@ button.llo {
     line-height: 24px; /* 150% */
     margin: 0px;
 }
+
 .Jobs-card p span {
     color: green;
 }
+
 .Jobs-card h2 {
     color: #000;
     font-family: sans-serif;
@@ -978,6 +982,8 @@ button.llo {
     line-height: normal;
     margin: 0px;
 }
+
+
 .Jobs-cards {
     display: inline-flex;
     height: 144px;
@@ -992,6 +998,7 @@ button.llo {
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
 }
 
+
 .Jobs-cards p {
     color: #000;
     font-family: sans-serif;
@@ -1001,6 +1008,8 @@ button.llo {
     line-height: 24px; /* 150% */
     margin: 0px;
 }
+
+
 .run-card h2 {
     color: #000;
     font-family: sans-serif;
@@ -1009,6 +1018,8 @@ button.llo {
     font-weight: bold;
     line-height: 24px;
 }
+
+
 .Jobs-cards h2 {
     color: #000;
     font-family: sans-serif;
@@ -1018,6 +1029,8 @@ button.llo {
     line-height: normal;
     margin: 0px;
 }
+
+
 .slide-card {
     width: 320px;
     height: 100% !important;
@@ -1027,6 +1040,7 @@ button.llo {
     border-radius: 0px !important;
     padding:30px;
 }
+
 
 .run-card {
     width: 100% !important;
@@ -1056,8 +1070,10 @@ button.llo {
     right: -5px;
 }
 
-.go-this-pic img {height: 100%;object-fit: cover;}
-.col-2.col-md-3.col-lg-2.col-xl-2.go-this-pic {}
+.go-this-pic img {
+    height: 100%;object-fit: cover;
+}
+
 
 .go-this-pic {
     width: 40px !important;
@@ -1074,10 +1090,6 @@ button.llo {
 
 .setp {
     padding-left: 20px !important;
-}
-
-.id-box {}
-.setp {
 }
 
 .setp {
@@ -1348,7 +1360,7 @@ button.llo {
     margin: 0px;
 }
 .list-titel {
-    width: 50%;
+    width: 40%;
 }
 .list-id span svg {
     width: 20px;
@@ -1381,15 +1393,16 @@ button.llo {
 }
 .list-1 img {
     width: 11%;
+    min-width: 11%;
+    max-width: 11%;
     position: relative;
     z-index: 1;
     margin-top: -80px;
-
-  
+    height: 120px;
     margin-top: -80px;
     border-radius: 50%;
-    max-height: 149px;
-    min-height: 149px;
+    max-height: 120px;
+    min-height: 120px;
 
     object-fit: cover;
 }
@@ -1998,16 +2011,18 @@ div#carouselExampleControls {
 }
 .list-1 img{
     width: 30%;
+    min-width: 30%;
+    max-width: 30%;
     position: relative;
     z-index: 1;
     margin-top: -85px;
-   
+    height: 100px;
     position: relative;
     z-index: 1;
     margin-top: -80px;
     border-radius: 50%;
-    max-height: 115px;
-    min-height: 115px;
+    max-height: 100px;
+    min-height: 100px;
 
     object-fit: cover;
 }

@@ -824,7 +824,9 @@
  }
  </script>
  
- <style scoped>
+<style scoped>
+
+
  .slide{
     width: 100%;
     padding: 10px 0px 10px 10px;
@@ -1417,15 +1419,7 @@ line-height: normal;
  button.llo {
      color: #fff;
  }
- 
- 
- 
- /* .../ */
- 
- 
- 
- 
- 
+
  .box-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -1527,7 +1521,7 @@ line-height: normal;
      font-size: 16px;
      font-style: normal;
      font-weight: 500;
-     line-height: 24px; /* 150% */
+     line-height: 24px;
      margin: 0px;
      padding: 32px 0px 44px 0px;
  }
@@ -1545,7 +1539,6 @@ line-height: normal;
      align-items: center;
      gap: 7.647px;
      flex-shrink: 0;
-      /* 150% */
  }
  
  .para-box button p {
@@ -1555,7 +1548,7 @@ line-height: normal;
      font-size: 16px;
      font-style: normal;
      font-weight: 700;
-     line-height: 24px; /* 150% */
+     line-height: 24px; 
      padding: 0px;
  }
  
@@ -1594,7 +1587,7 @@ line-height: normal;
      font-size: 16px;
      font-style: normal;
      font-weight: 500;
-     line-height: 24px; /* 150% */
+     line-height: 24px; 
      margin: 0px;
      padding-bottom: 12px;
  }
@@ -1759,7 +1752,7 @@ line-height: normal;
      font-size: 16px;
      font-style: normal;
      font-weight: 500;
-     line-height: 24px; /* 150% */
+     line-height: 24px;
      margin: 0px;
  }
  
@@ -1813,7 +1806,7 @@ line-height: normal;
      font-size: 26px;
      font-style: normal;
      font-weight: 500;
-     line-height: 24px; /* 92.308% */
+     line-height: 24px; 
      width: 100%;
      margin: 0px;
  }
@@ -1828,7 +1821,7 @@ line-height: normal;
      font-size: 21px;
      font-style: normal;
      font-weight: bold;
-     line-height: 24px; /* 114.286% */
+     line-height: 24px; 
      margin: 0px;
  }
  
@@ -1838,7 +1831,7 @@ line-height: normal;
      font-size: 41px;
      font-style: normal;
      font-weight: 700;
-     line-height: 24px; /* 58.537% */
+     line-height: 24px; 
      margin: 0px;
      padding-top: 20px;
  }

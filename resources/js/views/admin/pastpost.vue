@@ -1,5 +1,6 @@
 <template>
- 
+
+    
     <div class="page-1">
         <!-- <Header/> -->
      <div class="contanir" >

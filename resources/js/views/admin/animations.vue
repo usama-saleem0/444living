@@ -23,6 +23,8 @@
               <code>.animated--grow-in</code>
             </div>
             <div class="small mb-1">Navbar Dropdown Example:</div>
+
+
             <nav class="navbar navbar-expand navbar-light bg-light mb-4">
               <a class="navbar-brand" href="#">Navbar</a>
               <ul class="navbar-nav ml-auto">
@@ -38,6 +40,8 @@
                   >
                     Dropdown
                   </a>
+
+
                   <div
                     class="dropdown-menu dropdown-menu-right animated--grow-in"
                     aria-labelledby="navbarDropdown"
@@ -47,15 +51,21 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
+
+
                 </li>
               </ul>
             </nav>
+
+
             <p class="mb-0 small">
               Note: This utility animates the CSS transform property, meaning it
               will override any existing transforms on an element being
               animated! In this theme, the grow in animation is only being used
               on dropdowns within the navbar.
             </p>
+
+
           </div>
         </div>
       </div>
@@ -133,7 +143,9 @@
 </template>
 
 <script>
+
 export default {
   name: "Animations",
 };
+
 </script>
