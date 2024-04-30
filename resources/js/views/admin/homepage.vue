@@ -1,12 +1,11 @@
-
-
 <link href="https://fonts.googleapis.com/css2?family=Saol+Display&display=swap" rel="stylesheet"/>
+
+
 <template>
 
-  
-    <div>
+<div>
       
-        <header class="header">
+    <header class="header">
     <div class="contanair">
       <nav>
         <div class="logo">
@@ -47,13 +46,8 @@
       </nav>
     </div>
     </header>
-      
-     
-
-     
-     
-
-      <section class="TopListing">
+  
+    <section class="TopListing">
         <div class="contanirz">
 
 
@@ -106,9 +100,9 @@ Top Listing’s
         </div>
 
       
-      </section>
+    </section>
     
-      <section class="George">
+    <section class="George">
         <div class="contanirzs">
 
 
@@ -123,32 +117,38 @@ Top Listing’s
           </div>
 
           <div class="George-box">
-            <div class="George-card">
-              <img src="/images/exportimg.png" alt="">
+
+            <div class="George-card facebook-card">
+              <div class="facebook-dp">
+                <img src="/images/cardbg.png" alt="">
+            </div>
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+              </button>
+              <div class="facebook-paa">
+                <p style="color: #202d46;">George Walker</p>
+              </div>
+            </div>
+
+     <div class="George-card">
+              <img src="/images/exportimg.png" alt="" class="Walker">
+              <img src="/images/cardbg.png" alt="" class="George">
 
 
               <p>George Walker</p>
             </div>
 
-            <div class="George-card">
-              <img src="/images/exportimg.png" alt="">
+     <div class="George-card">
+              <img src="/images/exportimg.png" alt="" class="Walker">
+              <img src="/images/cardbg.png" alt="" class="George">
 
 
               <p>George Walker</p>
             </div>
 
-
-            <div class="George-card">
-              <img src="/images/exportimg.png" alt="">
-
-
-              <p>George Walker</p>
-            </div>
-
-
-
-            <div class="George-card">
-              <img src="/images/exportimg.png" alt="">
+     <div class="George-card">
+              <img src="/images/exportimg.png" alt="" class="Walker">
+              <img src="/images/cardbg.png" alt="" class="George">
 
 
               <p>George Walker</p>
@@ -160,10 +160,9 @@ Top Listing’s
         </div>
 
       </div>
-      </section>
+    </section>
 
-
-      <section class="id-detail">
+    <section class="id-detail">
         <div class="contanirzs">
           <div class="main-id-detail">
             <div class="detail-box-1">
@@ -800,10 +799,9 @@ Top Listing’s
 
           </div>
         </div>
-      </section>
+    </section>
     
-
-      <section class="Townhomes">
+    <section class="Townhomes">
         <div class="contanirzs">
           <div class="main-Townhomes">
 
@@ -981,10 +979,8 @@ Top Listing’s
             </div>
           </div>
         </div>
-      </section>
+    </section>
     
-
-
     <footer>
       <div class="contanair">
         <div class="main-footer-1">
@@ -1045,18 +1041,11 @@ Top Listing’s
       </div>
     </footer>
   
-
-
-
 </div>
 
-
-   
-
-
- 
- 
 </template>
+
+
 <script>
 
 import Menu from '../home/menu.vue'
@@ -1118,15 +1107,15 @@ export default {
   }
 };
 </script>
-<style scoped>
 
+
+<style scoped>
 .ahtishamchoro{
  width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 input.inputtype {
     border: 1px solid #293857 !important;
     padding-top: 20px;
@@ -1134,7 +1123,6 @@ input.inputtype {
     padding-right: 70px;
     width: 90%;
 }
-
 p.godashborad {
     color: #293857;
     font-family: sans-serif;
@@ -1144,17 +1132,27 @@ p.godashborad {
     line-height: 24px;
     cursor: pointer !important;
 }
-
 .zerowidth{
   width: 0%;
   padding-top: 10px
 
 }
+
+.facebook-card button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background:transparent;
+    height: 0px;
+    transition: 0.3s ease-out;
+}
+
 svg.setsvgleft {
     position: absolute;
     right: 120px;
 }
-
 .maxwidths{
   width:65%;
   position: relative;
@@ -1162,13 +1160,6 @@ svg.setsvgleft {
     align-items: center;
 }
 
-/* .header-list {
-    width: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
-} */
 header.header {
     width: 100%;
     display: flex;
@@ -1178,8 +1169,80 @@ header.header {
     padding: 16px 0px 0px 0px !important;
     background-color: #DED4A2 !important;
 }
+img.Walker {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+}
+.George-card p {
+    z-index: 1;
+    position: absolute;
+    bottom: 44px;
+    text-align: center;
+    width: 100%;
+}
+img.George {
+    width: 100% !important;
+    height: 100%;
+}
 
 
+.facebook-card {
+    /* width: 24%;
+    height: 510px; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 4px solid #202d46;
+}
+
+.facebook-paa {
+    height: 34%;
+    background: #ded4a2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-dp {
+    width: 100%;
+    height: 66%;
+}
+
+.facebook-dp img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+}
+
+.facebook-card button {
+    position: absolute;
+    top: 61%;
+    padding: 20px 21px;
+    border-radius: 50px;
+    background-color: #293857;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ded4a2;
+}
+
+/* .facebook-paa p {} */
+
+.facebook-card button svg {
+    font-size: 15px;
+    fill: #ded4a2;
+    width: 22px;
+    height: 22px;
+}
 @media screen and (max-width: 1600px){
   .contanirz {
     max-width: 1440px;
@@ -1243,7 +1306,11 @@ section.TopListing {
 
 .George-card {
     height: 400px;
-    padding: 20px 54px 20px 20px;
+    padding:0px;
+}
+.facebook-card button {
+    top: 55%;
+    padding: 12px 12px;
 }
 
 .George-card p {
@@ -1405,8 +1472,6 @@ section.Townhomes {
     padding: 65px 0px;
 }
 }
-
-
 @media screen and (max-width: 1440px){
   .contanirz {
     max-width: 1300px;
@@ -1507,11 +1572,9 @@ section.George {
     padding: 24px 0px;
 }
 
-.George-card {}
-
 .George-card {
     height: 320px;
-    padding: 15px 35px 15px 15px;
+    padding: 0px;
 }
 
 .George-card img {
@@ -1593,8 +1656,6 @@ p.id-list-2 {
     padding: 10px 0px;
 }
 }
-
-
 @media screen and (max-width: 1024px){
   .contanirz {
     max-width: 900px;
@@ -1638,7 +1699,7 @@ section.George {
 
 .George-card {
     height: 255px;
-    padding: 10px 24px 10px 10px;
+    padding:0px;
 }
 
 .George-card p {
@@ -1751,7 +1812,6 @@ section.Townhomes {
     padding: 40px 0px;
 }
 }
-
 @media screen and (max-width: 768px){
 
   .header-menu {
@@ -1818,13 +1878,22 @@ section.George {
 
 .George-card {
     height: 230px;
-    padding: 8px 20px 8px 8px;
+    padding: 0px;
 }
 
 .George-card p {
     font-size: 20px;
 }
 
+.facebook-card button svg {
+    width: 15px;
+    height: 15px;
+}
+
+.facebook-card button {
+    top: 55%;
+    padding: 8px 8px;
+}
 .tital-2-box h2 {
     font-size: 20px;
 }
@@ -1871,7 +1940,6 @@ section.George {
 
 img {}
 }
-
 @media screen and (max-width: 600px){
   .logo img {
     width: 90%;
@@ -1931,7 +1999,7 @@ section.TopListing {
 
 .George-card {
     width: 100%;
-    padding: 12px 20px 12px 12px;
+    padding:0px;
     max-width: 225px !important;
     min-width: 225px;
 }
