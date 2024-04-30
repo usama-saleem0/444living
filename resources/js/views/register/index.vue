@@ -52,9 +52,12 @@
       <h2>Sign Up</h2>
 
       <div class="Login-btn-box">
-        <button @click="accountype('Buyer')">As  Buyer</button>
-        <button @click="accountype('Realtor')">As Realtor</button>
-        <button @click="accountype('Investor')">As Investor</button>
+        <button @click="accountype('Buyer' , 1)" :style="{ backgroundColor: buttonColor,   color:textcolor }" >As  Buyer</button>
+        <button @click="accountype('Realtor' , 2)" :style="{ backgroundColor: buttonColor1,   color:textcolor1 }">As Realtor</button>
+        <button @click="accountype('Investor' , 3)" :style="{ backgroundColor: buttonColor2,   color:textcolor2 }">As Investor</button>
+
+
+      
       </div>
 
 
@@ -152,6 +155,12 @@ export default {
       type: "",
 
       isLoading: false,
+      buttonColor:'#ded4a2',
+        textcolor:'#293857',
+        buttonColor1:'#ded4a2',
+        textcolor1:'#293857',
+        buttonColor2:'#ded4a2',
+        textcolor2:'#293857'
     };
   },
   methods: {
@@ -170,12 +179,56 @@ export default {
     },
 
 
-    accountype(e){
+
+    accountype(e, num){
         this.type = e;
+      if(num == 1){
+        this.buttonColor = '#293857'
+        this.textcolor = '#ded4a2'
 
-        console.log(this.type);
+        this.buttonColor1 = '#ded4a2'
+        this.textcolor1 = '#293857'
 
+        this.buttonColor2 = '#ded4a2'
+        this.textcolor2 = '#293857'
+
+      }
+
+
+      if(num == 2){
+        this.buttonColor1 = '#293857'
+        this.textcolor1 = '#ded4a2'
+
+        this.buttonColor = '#ded4a2'
+        this.textcolor = '#293857'
+
+        this.buttonColor2 = '#ded4a2'
+        this.textcolor2 = '#293857'
+
+      }
+
+
+      if(num == 3){
+        this.buttonColor2 = '#293857'
+        this.textcolor2 = '#ded4a2'
+
+        this.buttonColor = '#ded4a2'
+        this.textcolor = '#293857'
+
+        this.buttonColor1 = '#ded4a2'
+        this.textcolor1 = '#293857'
+
+      }
     },
+
+
+
+    // accountype(e){
+    //     this.type = e;
+
+    //     console.log(this.type);
+
+    // },
 
     // register() {
     //   this.isLoading = true;

@@ -195,12 +195,17 @@
                        
                        
                     </div>
-                    <div class="col pt-2">
+                    <div class="col pt-2" v-if="user.type === 'Investor' || user.type === 'Buyer'">
                         <span class="trust">Trusted Realtors</span>
 
                     </div>
 
-                    <div class="run-card">
+                    <div class="col pt-2" v-if="user.type === 'Realtor'">
+                        <span class="trust">Top Investors</span>
+
+                    </div>
+
+                    <div  class="run-card">
                        
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" style="    display: flex;
@@ -287,7 +292,12 @@
     
   </div>
  
-</div>
+                    </div>
+
+
+                 
+
+               
                     </div>
                 </div>
             </div>
@@ -357,6 +367,9 @@ export default {
 
 
               this.ontrealtor()
+
+
+              
          
         
        

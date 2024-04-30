@@ -7,17 +7,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RealtorController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\InvestorController;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+
 
 Route::post('login', [Api\AuthController::class, 'login']);
 Route::post('register', [Api\RegisterController::class, 'register']);
@@ -35,11 +27,27 @@ Route::group(['middleware' => ['auth:api']], function () {
 
     Route::post('posting', [PostController::class, 'posting']);
     Route::post('buyerposting', [PostController::class, 'buyerposting']);
+    Route::post('realtorposting', [PostController::class, 'realtorposting']);
+    Route::post('postcommit', [PostController::class, 'postcommit']);
+
+
 
     Route::get('pastpost', [PostController::class, 'pastpost']);
+    Route::get('pastlisting', [PostController::class, 'pastlisting']);
+    Route::get('getposts', [PostController::class, 'getposts']);
+    Route::get('getlisting', [PostController::class, 'getlisting']);
+
+
+
     Route::get('toprealtor', [RealtorController::class, 'toprealtor']);
+    Route::get('explorerealtor', [RealtorController::class, 'explorerealtor']);
+
     Route::get('onerealtor', [RealtorController::class, 'onerealtor']);
 
+
+    Route::get('topinvestor', [InvestorController::class, 'topinvestor']);
+    Route::get('exploreinvestor', [InvestorController::class, 'exploreinvestor']);
+    
 
     Route::get('getchat', [ChatController::class, 'getchat']);
 
@@ -47,10 +55,5 @@ Route::group(['middleware' => ['auth:api']], function () {
 
     Route::get('recentchat', [ChatController::class, 'recentchat']);
     Route::get('getprofile', [ProfileController::class, 'getprofile']);
-
-
-
-
-
 
 });

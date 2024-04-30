@@ -52,11 +52,7 @@ let router = new Router({
         },
 
 
-        {
-            path: "/realtorprofile/:id",
-            name: "register",
-            component: () => import("./views/admin/realtorprofile.vue")
-        },
+     
         // {
         //     path: "/profile",
         //     name: "register",
@@ -69,11 +65,7 @@ let router = new Router({
         //     component: () => import("./views/admin/investordashoboard.vue")
         // },
 
-        {
-            path: "/realtordashoard",
-            name: "register",
-            component: () => import("./views/admin/realtordashoboard.vue")
-        },
+      
 
         // {
         //     path: "/pastpost",
@@ -82,11 +74,7 @@ let router = new Router({
         // },
 
 
-        {
-            path: "/mypost",
-            name: "register",
-            component: () => import("./views/admin/mypost.vue")
-        },
+      
 
         
         // {
@@ -97,11 +85,11 @@ let router = new Router({
 
 
         
-        // {
-        //     path: "/homepages",
-        //     name: "register",
-        //     component: () => import("./views/admin/homepage.vue")
-        // },
+        {
+            path: "/homepages",
+            name: "register",
+            component: () => import("./views/admin/homepage.vue")
+        },
 
 
 
@@ -170,6 +158,29 @@ let router = new Router({
             }
         },
 
+        {
+            path: "/profile/:id",
+            name: "register",
+            component: () => import("./views/admin/realtorprofile.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+
+        {
+            path: "/realtorprofile/:id",
+            name: "register",
+            component: () => import("./views/admin/realtorprofile.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
 
         {
             path: "/toprealtors",
@@ -182,10 +193,46 @@ let router = new Router({
             }
         },
 
+
+        {
+            path: "/mypost",
+            name: "register",
+            component: () => import("./views/admin/mypost.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+
+        {
+            path: "/topinvestors",
+            name: "register",
+            component: () => import("./views/admin/topinvestors.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
         {
             path: "/pastpost",
             name: "register",
             component: () => import("./views/admin/pastpost.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+               
+            }
+        },
+
+
+        {
+            path: "/realtordashoard",
+            name: "register",
+            component: () => import("./views/admin/realtordashoboard.vue"),
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout

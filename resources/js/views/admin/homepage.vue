@@ -168,10 +168,10 @@ Top Listing’s
             <div class="detail-box-1">
 
               
-              <div class="detail-card-box">
+              <div class="detail-card-box" v-for="posting in getposter">
 
                 <div class="id-list-1">
-                  <span><img src="/images/detaillogo.png" alt=""><p>John Realtor <br>1 hr</p></span>
+                  <span><img src="/images/detaillogo.png" alt=""><p>{{posting.user ? posting.user.username:''}} ({{posting.user ? posting.user.type:''}})<br>{{ dated(posting.created_at) }}</p></span>
 
                   <span>
 
@@ -190,29 +190,24 @@ Top Listing’s
                   </span>
                 </div>
 
-                <p class="id-list-2">Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive tools for posting requirements, browsing listings, and discovering lucrative investment opportunities. Join us to unlock a world of possibilities in real estate."
+                <p class="id-list-2">{{posting.postdetails}}
                 </p>
 
 
                 <div class="id-list-3">
-                  <img src="/images/manigar.png" alt="">
+                  <!-- <img src="/images/manigar.png" alt=""> -->
+                  <img :src="'/post/' + posting.postpic" alt="">
+
                 </div>
 
 
-                <!-- <div class="id-list-4">
-                  <img src="/images/mani1.png" alt="">
-                  <img src="/images/mani2.png" alt="">
-                  <img src="/images/mani3.png" alt="">
-                  <img src="/images/mani1.png" alt="">
-                  <img src="/images/mani2.png" alt="">
-                  <img src="/images/mani3.png" alt="">
-                </div> -->
+          
 
                 <div class="id-list-5">
                 <p>10 Comments</p>
               </div>
 
-              <div class="id-list-6">
+              <div class="id-list-6" style="cursor: pointer;">
                 <div class="favourites-card">
                   <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
   <path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
@@ -220,7 +215,7 @@ Top Listing’s
 <p>Add To favourites</p>
                 </div>
 
-                <div class="favourites-card  add-border">
+                <div class="favourites-card  add-border" @click="showcomments(posting.id)" >
                   <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27" fill="none">
   <path d="M26.35 9.40852C27.5833 9.40852 28.766 9.90414 29.638 10.7864C30.5101 11.6686 31 12.8651 31 14.1128V18.817C31 20.0647 30.5101 21.2612 29.638 22.1434C28.766 23.0257 27.5833 23.5213 26.35 23.5213V25.0361C26.35 26.6982 24.4342 27.6062 23.1725 26.5414L19.5889 23.5213H15.5C14.2667 23.5213 13.084 23.0257 12.212 22.1434C11.3399 21.2612 10.85 20.0647 10.85 18.817V14.1128C10.85 12.8651 11.3399 11.6686 12.212 10.7864C13.084 9.90414 14.2667 9.40852 15.5 9.40852H26.35ZM21.7 0C22.9333 0 24.116 0.495626 24.988 1.37785C25.8601 2.26006 26.35 3.45661 26.35 4.70426V6.27234H13.95C12.3057 6.27234 10.7287 6.93318 9.56594 8.10947C8.40321 9.28576 7.75 10.8812 7.75 12.5447V18.817C7.75 20.4541 8.37 21.9469 9.3868 23.0634L7.75 24.3053C6.4728 25.2744 4.65 24.3524 4.65 22.7372V20.3851C3.41674 20.3851 2.234 19.8895 1.36195 19.0073C0.489909 18.1251 0 16.9285 0 15.6809V4.70426C0 3.45661 0.489909 2.26006 1.36195 1.37785C2.234 0.495626 3.41674 0 4.65 0H21.7Z" fill="#DED4A2"/>
 </svg>
@@ -234,165 +229,24 @@ Top Listing’s
                   <p>Share</p>
                 </div>
 
+              
+              </div>
+             <div style="width: 100%; margin-bottom: 10px;" v-if="comment_section && key_index == posting.id" class="hello-buddy">
+
+              <input type="text" placeholder="Add Comments" v-model="form.commit">
+
+              <svg data-v-0eb19326="" xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none" style="cursor: pointer;" @click="postcomments(posting.id , posting.user.id)"><path data-v-0eb19326="" d="M1.66667 0C1.66667 1.23667 2.88833 3.08333 4.125 4.63333C5.715 6.63333 7.615 8.37833 9.79333 9.71C11.4267 10.7083 13.4067 11.6667 15 11.6667C13.4067 11.6667 11.425 12.625 9.79333 13.6233C7.615 14.9567 5.715 16.7017 4.125 18.6983C2.88833 20.25 1.66667 22.1 1.66667 23.3333" stroke="#DED4A2" stroke-width="2"></path></svg>
+              </div>
+
 
               </div>
 
 
 
-              </div>
-
-
-
-
-                        
-              <div class="detail-card-box">
-
-<div class="id-list-1">
-  <span><img src="/images/detaillogo.png" alt=""><p>John Realtor <br>1 hr</p></span>
-
-  <span>
-
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<path d="M15.9998 28.4667L14.0665 26.7067C7.19984 20.48 2.6665 16.36 2.6665 11.3333C2.6665 7.21333 5.89317 4 9.99984 4C12.3198 4 14.5465 5.08 15.9998 6.77333C17.4532 5.08 19.6798 4 21.9998 4C26.1065 4 29.3332 7.21333 29.3332 11.3333C29.3332 16.36 24.7998 20.48 17.9332 26.7067L15.9998 28.4667Z" fill="#DED4A2"/>
-    </svg>
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="25" viewBox="0 0 7 25" fill="none">
-<circle cx="3.05557" cy="3.05557" r="3.05557" fill="#DED4A2"/>
-<circle cx="3.05557" cy="12.4999" r="3.05557" fill="#DED4A2"/>
-<circle cx="3.05557" cy="21.9442" r="3.05557" fill="#DED4A2"/>
-    </svg>
-
-
-  </span>
-</div>
-
-<p class="id-list-2">Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive tools for posting requirements, browsing listings, and discovering lucrative investment opportunities. Join us to unlock a world of possibilities in real estate."
-</p>
-
-
-<div class="id-list-3">
-  <img src="/images/manigar.png" alt="">
-</div>
-
-
-<div class="id-list-4">
-  <img src="/images/mani1.png" alt="">
-  <img src="/images/mani2.png" alt="">
-  <img src="/images/mani3.png" alt="">
-  <img src="/images/mani1.png" alt="">
-  <img src="/images/mani2.png" alt="">
-  <img src="/images/mani3.png" alt="">
-</div>
-
-<div class="id-list-5">
-<p>10 Comments</p>
-</div>
-
-<div class="id-list-6">
-<div class="favourites-card">
-  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
-<path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
-</svg>
-<p>Add To favourites</p>
-</div>
-
-<div class="favourites-card  add-border">
-  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27" fill="none">
-<path d="M26.35 9.40852C27.5833 9.40852 28.766 9.90414 29.638 10.7864C30.5101 11.6686 31 12.8651 31 14.1128V18.817C31 20.0647 30.5101 21.2612 29.638 22.1434C28.766 23.0257 27.5833 23.5213 26.35 23.5213V25.0361C26.35 26.6982 24.4342 27.6062 23.1725 26.5414L19.5889 23.5213H15.5C14.2667 23.5213 13.084 23.0257 12.212 22.1434C11.3399 21.2612 10.85 20.0647 10.85 18.817V14.1128C10.85 12.8651 11.3399 11.6686 12.212 10.7864C13.084 9.90414 14.2667 9.40852 15.5 9.40852H26.35ZM21.7 0C22.9333 0 24.116 0.495626 24.988 1.37785C25.8601 2.26006 26.35 3.45661 26.35 4.70426V6.27234H13.95C12.3057 6.27234 10.7287 6.93318 9.56594 8.10947C8.40321 9.28576 7.75 10.8812 7.75 12.5447V18.817C7.75 20.4541 8.37 21.9469 9.3868 23.0634L7.75 24.3053C6.4728 25.2744 4.65 24.3524 4.65 22.7372V20.3851C3.41674 20.3851 2.234 19.8895 1.36195 19.0073C0.489909 18.1251 0 16.9285 0 15.6809V4.70426C0 3.45661 0.489909 2.26006 1.36195 1.37785C2.234 0.495626 3.41674 0 4.65 0H21.7Z" fill="#DED4A2"/>
-</svg>
-<p>Comment</p>
-</div>
-
-<div class="favourites-card">
-  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
-<path d="M18.9444 6.93333V0L31 12.1333L18.9444 24.2667V17.3333C10.3333 17.3333 4.30556 19.9333 0 26L1.37778 20.8L1.72222 20.1067C3.10355 16.524 5.44407 13.3964 8.48411 11.0711C11.5241 8.74578 15.1448 7.31355 18.9444 6.93333Z" fill="#DED4A2"/>
-</svg>
-  <p>Share</p>
-</div>
-
 
 </div>
 
-
-
-</div>
-
-          
-<div class="detail-card-box">
-
-<div class="id-list-1">
-  <span><img src="/images/detaillogo.png" alt=""><p>John Realtor <br>1 hr</p></span>
-
-  <span>
-
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-<path d="M15.9998 28.4667L14.0665 26.7067C7.19984 20.48 2.6665 16.36 2.6665 11.3333C2.6665 7.21333 5.89317 4 9.99984 4C12.3198 4 14.5465 5.08 15.9998 6.77333C17.4532 5.08 19.6798 4 21.9998 4C26.1065 4 29.3332 7.21333 29.3332 11.3333C29.3332 16.36 24.7998 20.48 17.9332 26.7067L15.9998 28.4667Z" fill="#DED4A2"/>
-    </svg>
-
-    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="25" viewBox="0 0 7 25" fill="none">
-<circle cx="3.05557" cy="3.05557" r="3.05557" fill="#DED4A2"/>
-<circle cx="3.05557" cy="12.4999" r="3.05557" fill="#DED4A2"/>
-<circle cx="3.05557" cy="21.9442" r="3.05557" fill="#DED4A2"/>
-    </svg>
-
-
-  </span>
-</div>
-
-<p class="id-list-2">Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive tools for posting requirements, browsing listings, and discovering lucrative investment opportunities. Join us to unlock a world of possibilities in real estate."
-</p>
-
-
-<!-- <div class="id-list-3">
-  <img src="/images/manigar.png" alt="">
-</div>
-
-
-<div class="id-list-4">
-  <img src="/images/mani1.png" alt="">
-  <img src="/images/mani2.png" alt="">
-  <img src="/images/mani3.png" alt="">
-  <img src="/images/mani1.png" alt="">
-  <img src="/images/mani2.png" alt="">
-  <img src="/images/mani3.png" alt="">
-</div> -->
-
-<div class="id-list-5">
-<p>10 Comments</p>
-</div>
-
-<div class="id-list-6">
-<div class="favourites-card">
-  <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
-<path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
-</svg>
-<p>Add To favourites</p>
-</div>
-
-<div class="favourites-card  add-border">
-  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 31 27" fill="none">
-<path d="M26.35 9.40852C27.5833 9.40852 28.766 9.90414 29.638 10.7864C30.5101 11.6686 31 12.8651 31 14.1128V18.817C31 20.0647 30.5101 21.2612 29.638 22.1434C28.766 23.0257 27.5833 23.5213 26.35 23.5213V25.0361C26.35 26.6982 24.4342 27.6062 23.1725 26.5414L19.5889 23.5213H15.5C14.2667 23.5213 13.084 23.0257 12.212 22.1434C11.3399 21.2612 10.85 20.0647 10.85 18.817V14.1128C10.85 12.8651 11.3399 11.6686 12.212 10.7864C13.084 9.90414 14.2667 9.40852 15.5 9.40852H26.35ZM21.7 0C22.9333 0 24.116 0.495626 24.988 1.37785C25.8601 2.26006 26.35 3.45661 26.35 4.70426V6.27234H13.95C12.3057 6.27234 10.7287 6.93318 9.56594 8.10947C8.40321 9.28576 7.75 10.8812 7.75 12.5447V18.817C7.75 20.4541 8.37 21.9469 9.3868 23.0634L7.75 24.3053C6.4728 25.2744 4.65 24.3524 4.65 22.7372V20.3851C3.41674 20.3851 2.234 19.8895 1.36195 19.0073C0.489909 18.1251 0 16.9285 0 15.6809V4.70426C0 3.45661 0.489909 2.26006 1.36195 1.37785C2.234 0.495626 3.41674 0 4.65 0H21.7Z" fill="#DED4A2"/>
-</svg>
-<p>Comment</p>
-</div>
-
-<div class="favourites-card">
-  <svg xmlns="http://www.w3.org/2000/svg" width="31" height="26" viewBox="0 0 31 26" fill="none">
-<path d="M18.9444 6.93333V0L31 12.1333L18.9444 24.2667V17.3333C10.3333 17.3333 4.30556 19.9333 0 26L1.37778 20.8L1.72222 20.1067C3.10355 16.524 5.44407 13.3964 8.48411 11.0711C11.5241 8.74578 15.1448 7.31355 18.9444 6.93333Z" fill="#DED4A2"/>
-</svg>
-  <p>Share</p>
-</div>
-
-
-</div>
-
-
-
-</div>
-
-            </div>
+           
             <div class="detail-box-2">
 
 
@@ -405,15 +259,17 @@ Top Listing’s
                
 
 
-              <div class="Realtor-card">
+              <div class="Realtor-card" v-for="item1 in realtor">
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
                     
-                    <img src="/images/alex.png" alt="">
+                    <!-- <img src="/images/alex.png" alt=""> -->
+                    <img :src="'/profile/' + item1.profile" alt="" style="border-radius: 50px;">
+
                   </div>
 
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
+                  <span><h3>{{item1.username}}</h3>
+                   <h5>@{{item1.username}}</h5>
                   </span>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -445,218 +301,7 @@ Top Listing’s
                 </div>
 
                 <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-
-
-              <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-
-
-              <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-
-
-              <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-
-              <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
+                  <button @click="contact(item1)">Contact Realtor</button>
                   <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
@@ -667,6 +312,10 @@ Top Listing’s
                 </div>
               </div>
             </div>
+
+
+
+           
 
               <div class="Realtor-bt">
                 <button>Explore Now </button>
@@ -685,15 +334,17 @@ Top Listing’s
               <div class="ahtishamchoro">
                 
 
-              <div class="Realtor-card">
+              <div class="Realtor-card" v-for="item2 in investor">
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
                     
-                    <img src="/images/alex.png" alt="">
+                    <!-- <img src="/images/alex.png" alt=""> -->
+                    <img :src="'/profile/' + item2.profile" alt="">
+
                   </div>
 
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
+                  <span><h3>{{item2.username}}</h3>
+                   <h5>{{item2.username}}</h5>
                   </span>
 
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -725,60 +376,7 @@ Top Listing’s
                 </div>
 
                 <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
-  <rect width="46" height="34" fill="#293857"/>
-  <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
-</svg>
-
-
-
-                </div>
-              </div>
-
-
-
-              <div class="Realtor-card">
-                <div class="Realtor-1-list">
-                  <div class="Realtor-logo">
-                    
-                    <img src="/images/alex.png" alt="">
-                  </div>
-
-                  <span><h3>Alex Smith</h3>
-                   <h5>@Alex Smith</h5>
-                  </span>
-
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-  <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
-                  </svg>
-
-                </div>
-
-
-                <div class="Realtor-2-list">
-
-                  <div class="childe-Realtor">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Properties</p>
-                  </div>
-
-
-                  <div class="childe-Realtor fil-border">
-                    <h2>120 <span>+</span></h2>
-                    <p>Total Sold</p>
-                  </div>
-
-
-
-                  <div class="childe-Realtor">
-                    <h2>4.5<span></span></h2>
-                    <p>Rating</p>
-                  </div>
-                </div>
-
-                <div class="Realtor-3-list">
-                  <button>Contact Realtor</button>
+                  <button @click="contact(item2)">Contact Realtor</button>
                   <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
@@ -792,6 +390,7 @@ Top Listing’s
 
 
 
+           
               <div class="Realtor-bt">
                 <button>Explore Now </button>
               </div>
@@ -799,7 +398,12 @@ Top Listing’s
 
           </div>
         </div>
-    </section>
+
+       
+      </section>
+
+
+     
     
     <section class="Townhomes">
         <div class="contanirzs">
@@ -808,12 +412,13 @@ Top Listing’s
             <div class="Townhomes-tital">
             <h2>Top Listing</h2>
             </div>
-            <div class="Townhomes-card-box">
-              <div class="Townhomes-card-1">
+            <div class="Townhomes-card-box" >
+              <div class="Townhomes-card-1" v-for="listin in getlistings">
 
 
                 <div class="Townhomes-img">
-                  <img src="/images/Townhomes.png" alt="">
+                  <!-- <img src="/images/Townhomes.png" alt=""> -->
+                  <img :src="'/post/' + listin.postpic" />
                 </div>
                 <div class="ts-si">
                   <div class="Townhomes-rs">
@@ -844,13 +449,13 @@ Top Listing’s
 </div>
 
 <div class="Townhomes-para">
-<h2>Boulder Pointe Townhomes</h2>
-<p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, </p>
+<h2>{{listin.posttitle}}</h2>
+<p>{{listin.postdetails}} </p>
 </div>
 
 
 <div class="Realtor-3-list">
-<button class="white">Contact Realtor</button>
+<button class="white" @click="contact(listin.user)">Contact Realtor</button>
 <svg xmlns="http://www.w3.org/2000/svg" width="46" height="41" viewBox="0 0 46 41" fill="none">
 <rect width="46" height="41" fill="#DED4A2"/>
 <path d="M33 13C33 12.4477 32.5523 12 32 12L23 12C22.4477 12 22 12.4477 22 13C22 13.5523 22.4477 14 23 14L31 14L31 22C31 22.5523 31.4477 23 32 23C32.5523 23 33 22.5523 33 22L33 13ZM15.7071 30.7071L32.7071 13.7071L31.2929 12.2929L14.2929 29.2929L15.7071 30.7071Z" fill="#202D46"/>
@@ -865,115 +470,7 @@ Top Listing’s
 
 
 
-              <div class="Townhomes-card-1">
-
-
-<div class="Townhomes-img">
-  <img src="/images/Townhomes.png" alt="">
-</div>
-<div class="ts-si">
-  <div class="Townhomes-rs">
-
-
-<span>
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-<path d="M15.833 5.83268H9.16634V11.666H2.49967V4.16602H0.833008V16.666H2.49967V14.166H17.4997V16.666H19.1663V9.16602C19.1663 8.28196 18.8152 7.43411 18.19 6.80899C17.5649 6.18387 16.7171 5.83268 15.833 5.83268ZM5.83301 10.8327C6.49605 10.8327 7.13194 10.5693 7.60078 10.1004C8.06962 9.63161 8.33301 8.99572 8.33301 8.33268C8.33301 7.66964 8.06962 7.03376 7.60078 6.56492C7.13194 6.09607 6.49605 5.83268 5.83301 5.83268C5.16997 5.83268 4.53408 6.09607 4.06524 6.56492C3.5964 7.03376 3.33301 7.66964 3.33301 8.33268C3.33301 8.99572 3.5964 9.63161 4.06524 10.1004C4.53408 10.5693 5.16997 10.8327 5.83301 10.8327Z" fill="#DED4A2"/>
-</svg>
-<p>4 Bedroom</p>
-</span>
-
-
-
-<span>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M4.49854 0C4.77408 0.0881757 5.06591 0.14292 5.32183 0.270377C5.9514 0.585052 6.34593 1.10658 6.52128 1.789C6.54549 1.88345 6.5814 1.92398 6.67784 1.94739C7.72282 2.20147 8.4576 3.13337 8.4672 4.20903C8.46845 4.36407 8.4672 4.51953 8.4672 4.68334C6.90161 4.68334 5.34813 4.68334 3.7959 4.68334C3.64685 3.4773 4.23886 2.3026 5.57524 1.93109C5.48632 1.48645 5.0371 1.0322 4.53611 0.979544C4.05808 0.929397 3.56628 0.915606 3.08992 0.97035C2.3852 1.05142 1.90801 1.64609 1.90592 2.35985C1.90216 3.746 1.90467 5.13216 1.90467 6.51831C1.90467 6.58016 1.90467 6.64201 1.90467 6.71472C1.59238 6.71472 1.28887 6.71472 0.966982 6.71472C0.966982 6.65747 0.966982 6.60189 0.966982 6.54631C0.966982 5.1706 0.966565 3.7949 0.966982 2.41919C0.9674 1.17721 1.75061 0.24405 2.97511 0.0254915C2.99432 0.0221484 3.01143 0.00877578 3.02939 0C3.5191 0 4.00882 0 4.49854 0Z" fill="#DED4A2"/>
-<path d="M15.9997 8.75844C15.9128 8.92184 15.8473 9.10195 15.7346 9.24487C15.5843 9.43585 15.3617 9.53322 15.1183 9.53614C14.4787 9.54366 13.8391 9.53823 13.1991 9.5374C13.1899 9.5374 13.1808 9.53029 13.1641 9.52319C13.1641 8.91348 13.1641 8.30085 13.1641 7.66356C13.2154 7.66356 13.2701 7.66356 13.3244 7.66356C13.8341 7.66356 14.3443 7.67986 14.8532 7.65896C15.3709 7.63765 15.816 7.80773 15.9997 8.44544C15.9997 8.54991 15.9997 8.65439 15.9997 8.75844Z" fill="#DED4A2"/>
-<path d="M13.1502 10.4863C13.7852 10.4863 14.3981 10.4863 15.0089 10.4863C15.016 10.4968 15.0268 10.5051 15.0268 10.5135C15.021 11.0919 15.0523 11.6736 14.9989 12.2473C14.9016 13.2929 14.3664 14.0911 13.4942 14.6669C13.4596 14.6899 13.4241 14.7121 13.3894 14.7346C13.3853 14.7376 13.3828 14.7426 13.3702 14.7576C13.5685 14.9436 13.7681 15.1304 13.9568 15.3076C13.7113 15.5533 13.4955 15.7698 13.2679 15.9975C13.0174 15.7447 12.7482 15.4768 12.4847 15.2035C12.4163 15.1321 12.3545 15.1137 12.2539 15.1291C12.0697 15.158 11.881 15.1697 11.694 15.1701C9.23039 15.1726 6.76678 15.1726 4.30317 15.1697C4.10611 15.1693 3.90947 15.1367 3.712 15.1304C3.65438 15.1287 3.57924 15.1488 3.53916 15.1872C3.29451 15.4217 3.05821 15.664 2.81857 15.9035C2.78266 15.9394 2.74467 15.9737 2.71628 16.0004C2.49627 15.781 2.28293 15.5679 2.05289 15.3389C2.24869 15.1584 2.44951 14.9728 2.65909 14.7794C2.4708 14.6419 2.30965 14.5378 2.16436 14.4158C1.40536 13.7768 1.00332 12.9578 0.972425 11.9661C0.956978 11.4776 0.96992 10.9878 0.96992 10.4893C3.47111 10.4893 5.96227 10.4893 8.46555 10.4893C8.46555 10.9519 8.46555 11.4086 8.46555 11.8762C10.0311 11.8762 11.5846 11.8762 13.1502 11.8762C13.1502 11.4178 13.1502 10.9611 13.1502 10.4863Z" fill="#DED4A2"/>
-<path d="M8.4572 9.54083C8.40459 9.54083 8.36368 9.54083 8.32235 9.54083C5.87502 9.54083 3.42727 9.54124 0.979939 9.54041C0.413822 9.54041 -0.0070089 9.12753 8.84459e-05 8.58677C0.00635081 8.09867 0.398792 7.69081 0.886004 7.66573C0.922325 7.66406 0.959065 7.66406 0.995386 7.66406C3.43228 7.66406 5.86959 7.66406 8.30648 7.66406C8.35283 7.66406 8.39917 7.66406 8.45678 7.66406C8.4572 8.2884 8.4572 8.90521 8.4572 9.54083Z" fill="#DED4A2"/>
-<path d="M12.2164 10.9422C11.275 10.9422 10.3503 10.9422 9.41383 10.9422C9.41132 10.887 9.40673 10.8369 9.40673 10.7868C9.40631 9.77043 9.4059 8.75411 9.40673 7.7378C9.40715 7.1143 9.79667 6.72649 10.4221 6.72566C10.7189 6.72524 11.0157 6.72022 11.3126 6.72775C11.7906 6.73986 12.2064 7.1214 12.2127 7.59697C12.2265 8.70564 12.2164 9.81557 12.2164 10.9422Z" fill="#DED4A2"/>
-</svg>
-<p>3 Bathroom</p>
-</span>
-
-<h4>$7000</h4>
-
-</div>
-
-<div class="Townhomes-para">
-<h2>Boulder Pointe Townhomes</h2>
-<p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, </p>
-</div>
-
-
-<div class="Realtor-3-list">
-<button class="white">Contact Realtor</button>
-<svg xmlns="http://www.w3.org/2000/svg" width="46" height="41" viewBox="0 0 46 41" fill="none">
-<rect width="46" height="41" fill="#DED4A2"/>
-<path d="M33 13C33 12.4477 32.5523 12 32 12L23 12C22.4477 12 22 12.4477 22 13C22 13.5523 22.4477 14 23 14L31 14L31 22C31 22.5523 31.4477 23 32 23C32.5523 23 33 22.5523 33 22L33 13ZM15.7071 30.7071L32.7071 13.7071L31.2929 12.2929L14.2929 29.2929L15.7071 30.7071Z" fill="#202D46"/>
-</svg>
-
-
-
-</div>
-</div>
-
-</div>
-
-
-<div class="Townhomes-card-1">
-
-
-<div class="Townhomes-img">
-  <img src="/images/Townhomes.png" alt="">
-</div>
-<div class="ts-si">
-  <div class="Townhomes-rs">
-
-
-<span>
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-<path d="M15.833 5.83268H9.16634V11.666H2.49967V4.16602H0.833008V16.666H2.49967V14.166H17.4997V16.666H19.1663V9.16602C19.1663 8.28196 18.8152 7.43411 18.19 6.80899C17.5649 6.18387 16.7171 5.83268 15.833 5.83268ZM5.83301 10.8327C6.49605 10.8327 7.13194 10.5693 7.60078 10.1004C8.06962 9.63161 8.33301 8.99572 8.33301 8.33268C8.33301 7.66964 8.06962 7.03376 7.60078 6.56492C7.13194 6.09607 6.49605 5.83268 5.83301 5.83268C5.16997 5.83268 4.53408 6.09607 4.06524 6.56492C3.5964 7.03376 3.33301 7.66964 3.33301 8.33268C3.33301 8.99572 3.5964 9.63161 4.06524 10.1004C4.53408 10.5693 5.16997 10.8327 5.83301 10.8327Z" fill="#DED4A2"/>
-</svg>
-<p>4 Bedroom</p>
-</span>
-
-
-
-<span>
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-<path d="M4.49854 0C4.77408 0.0881757 5.06591 0.14292 5.32183 0.270377C5.9514 0.585052 6.34593 1.10658 6.52128 1.789C6.54549 1.88345 6.5814 1.92398 6.67784 1.94739C7.72282 2.20147 8.4576 3.13337 8.4672 4.20903C8.46845 4.36407 8.4672 4.51953 8.4672 4.68334C6.90161 4.68334 5.34813 4.68334 3.7959 4.68334C3.64685 3.4773 4.23886 2.3026 5.57524 1.93109C5.48632 1.48645 5.0371 1.0322 4.53611 0.979544C4.05808 0.929397 3.56628 0.915606 3.08992 0.97035C2.3852 1.05142 1.90801 1.64609 1.90592 2.35985C1.90216 3.746 1.90467 5.13216 1.90467 6.51831C1.90467 6.58016 1.90467 6.64201 1.90467 6.71472C1.59238 6.71472 1.28887 6.71472 0.966982 6.71472C0.966982 6.65747 0.966982 6.60189 0.966982 6.54631C0.966982 5.1706 0.966565 3.7949 0.966982 2.41919C0.9674 1.17721 1.75061 0.24405 2.97511 0.0254915C2.99432 0.0221484 3.01143 0.00877578 3.02939 0C3.5191 0 4.00882 0 4.49854 0Z" fill="#DED4A2"/>
-<path d="M15.9997 8.75844C15.9128 8.92184 15.8473 9.10195 15.7346 9.24487C15.5843 9.43585 15.3617 9.53322 15.1183 9.53614C14.4787 9.54366 13.8391 9.53823 13.1991 9.5374C13.1899 9.5374 13.1808 9.53029 13.1641 9.52319C13.1641 8.91348 13.1641 8.30085 13.1641 7.66356C13.2154 7.66356 13.2701 7.66356 13.3244 7.66356C13.8341 7.66356 14.3443 7.67986 14.8532 7.65896C15.3709 7.63765 15.816 7.80773 15.9997 8.44544C15.9997 8.54991 15.9997 8.65439 15.9997 8.75844Z" fill="#DED4A2"/>
-<path d="M13.1502 10.4863C13.7852 10.4863 14.3981 10.4863 15.0089 10.4863C15.016 10.4968 15.0268 10.5051 15.0268 10.5135C15.021 11.0919 15.0523 11.6736 14.9989 12.2473C14.9016 13.2929 14.3664 14.0911 13.4942 14.6669C13.4596 14.6899 13.4241 14.7121 13.3894 14.7346C13.3853 14.7376 13.3828 14.7426 13.3702 14.7576C13.5685 14.9436 13.7681 15.1304 13.9568 15.3076C13.7113 15.5533 13.4955 15.7698 13.2679 15.9975C13.0174 15.7447 12.7482 15.4768 12.4847 15.2035C12.4163 15.1321 12.3545 15.1137 12.2539 15.1291C12.0697 15.158 11.881 15.1697 11.694 15.1701C9.23039 15.1726 6.76678 15.1726 4.30317 15.1697C4.10611 15.1693 3.90947 15.1367 3.712 15.1304C3.65438 15.1287 3.57924 15.1488 3.53916 15.1872C3.29451 15.4217 3.05821 15.664 2.81857 15.9035C2.78266 15.9394 2.74467 15.9737 2.71628 16.0004C2.49627 15.781 2.28293 15.5679 2.05289 15.3389C2.24869 15.1584 2.44951 14.9728 2.65909 14.7794C2.4708 14.6419 2.30965 14.5378 2.16436 14.4158C1.40536 13.7768 1.00332 12.9578 0.972425 11.9661C0.956978 11.4776 0.96992 10.9878 0.96992 10.4893C3.47111 10.4893 5.96227 10.4893 8.46555 10.4893C8.46555 10.9519 8.46555 11.4086 8.46555 11.8762C10.0311 11.8762 11.5846 11.8762 13.1502 11.8762C13.1502 11.4178 13.1502 10.9611 13.1502 10.4863Z" fill="#DED4A2"/>
-<path d="M8.4572 9.54083C8.40459 9.54083 8.36368 9.54083 8.32235 9.54083C5.87502 9.54083 3.42727 9.54124 0.979939 9.54041C0.413822 9.54041 -0.0070089 9.12753 8.84459e-05 8.58677C0.00635081 8.09867 0.398792 7.69081 0.886004 7.66573C0.922325 7.66406 0.959065 7.66406 0.995386 7.66406C3.43228 7.66406 5.86959 7.66406 8.30648 7.66406C8.35283 7.66406 8.39917 7.66406 8.45678 7.66406C8.4572 8.2884 8.4572 8.90521 8.4572 9.54083Z" fill="#DED4A2"/>
-<path d="M12.2164 10.9422C11.275 10.9422 10.3503 10.9422 9.41383 10.9422C9.41132 10.887 9.40673 10.8369 9.40673 10.7868C9.40631 9.77043 9.4059 8.75411 9.40673 7.7378C9.40715 7.1143 9.79667 6.72649 10.4221 6.72566C10.7189 6.72524 11.0157 6.72022 11.3126 6.72775C11.7906 6.73986 12.2064 7.1214 12.2127 7.59697C12.2265 8.70564 12.2164 9.81557 12.2164 10.9422Z" fill="#DED4A2"/>
-</svg>
-<p>3 Bathroom</p>
-</span>
-
-<h4>$7000</h4>
-
-</div>
-
-<div class="Townhomes-para">
-<h2>Boulder Pointe Townhomes</h2>
-<p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, </p>
-</div>
-
-
-<div class="Realtor-3-list">
-<button class="white">Contact Realtor</button>
-<svg xmlns="http://www.w3.org/2000/svg" width="46" height="41" viewBox="0 0 46 41" fill="none">
-<rect width="46" height="41" fill="#DED4A2"/>
-<path d="M33 13C33 12.4477 32.5523 12 32 12L23 12C22.4477 12 22 12.4477 22 13C22 13.5523 22.4477 14 23 14L31 14L31 22C31 22.5523 31.4477 23 32 23C32.5523 23 33 22.5523 33 22L33 13ZM15.7071 30.7071L32.7071 13.7071L31.2929 12.2929L14.2929 29.2929L15.7071 30.7071Z" fill="#202D46"/>
-</svg>
-
-
-
-</div>
-</div>
-
-</div>
-
+ 
 
 
             </div>
@@ -1051,6 +548,8 @@ Top Listing’s
 import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
 import dashboard from './dashboard.vue';
+import { mapGetters } from "vuex";
+import { get , byMethod} from '../lib/api';
 
 export default {
   name: "Home",
@@ -1071,12 +570,197 @@ export default {
         cross:false,
         endicon:false,
         starticon:true,
-        logo:true
+        logo:true,
+        realtor:[],
+        investor:[],
+        getposter:[],
+        getlistings:[],
+        hoursDifference:0,
+        addcomments:'',
+        comment_section:false,
+        key_index:0,
+        form:{},
+        method:'POST',
+
     };
   },
   name: 'SampleComponent',
 
+  computed: {
+    ...mapGetters(["user"]),
+  },
+
+  created(){
+         
+       
+
+               this.Investors();
+
+               this.Realtors();
+
+               this.Getposting();
+               this.Getlisting();
+           
+         }, 
+ 
+
+
   methods:{
+
+
+    postcomments(e, user){
+      this.form.commit_id = e
+      this.form.user_id = user
+
+      byMethod(this.method, '/postcommit' , this.form)
+                            .then((res) => {
+                            
+                                console.log(res)
+                                if(res.data && res.data.saved) {
+                                    
+                                    this.form = {};
+                                    this.comment_section = false
+
+                                    let message =
+            "Successfully Post Comments.";
+          let toast = Vue.toasted.show(message, {
+            theme: "toasted-primary",
+            position: "top-right",
+            duration: 5000,
+          });
+
+                                
+                                }
+                            })
+                            .catch((error) => {
+                                if(error.response.status === 422) {
+                                    this.errors = error.response.data.errors
+                                }
+                                this.isProcessing = false
+                            })
+
+    },
+
+    showcomments(e){
+      this.key_index = e
+      this.comment_section = ! this.comment_section
+
+    },
+
+
+    dated(e){
+      // const createdAtDate = new Date(e);
+        
+      //   const now = new Date();
+        
+      //   const timeDiffInHours = (now - createdAtDate) / (1000 * 60 * 60);
+        
+      //    let hoursDifference = Math.floor(timeDiffInHours);
+      //           return hoursDifference
+
+      const createdAtDate = new Date(e);
+  // Get the current time
+  const now = new Date();
+  // Calculate the difference in milliseconds between now and the created_at time
+  const timeDiffInMilliseconds = now - createdAtDate;
+  // Convert milliseconds to hours
+  const hoursDifference = Math.floor(timeDiffInMilliseconds / (1000 * 60 * 60));
+  // Calculate the remaining minutes
+  const remainingMinutes = Math.floor((timeDiffInMilliseconds % (1000 * 60 * 60)) / (1000 * 60));
+  // Format the time
+  const formattedTime = `${hoursDifference} hours and ${remainingMinutes} minutes ago`;
+  console.log(formattedTime)
+
+  const moment = require('moment');
+                let formattedDate = moment(e).format("h:mma, DD dddd");
+                console.log(formattedDate)
+  // Return an object containing the hours difference and formatted time
+  
+  if(hoursDifference > 0 && hoursDifference < 24){
+
+    return hoursDifference
+  }
+
+  if(hoursDifference < 0  ){
+
+return remainingMinutes
+}
+else {
+  return formattedDate
+
+}
+   
+  
+            },
+
+
+    
+    investorprofile(e){
+                this.$router.push(`/profile/${e.id}`)
+             },
+ 
+
+          contact(e){
+                console.log(e);
+
+                
+                this.$router.push({
+            name: 'chats', 
+            params: { id: JSON.stringify(e) },
+            });
+            
+
+            },
+
+    Getlisting(){
+      get('/getlisting')
+               .then((res) => {
+                Vue.set(this.$data, 'getlistings', res.data.data)
+                 
+                 
+ 
+               })
+    },
+
+    Getposting(){
+      get('/getposts')
+               .then((res) => {
+                Vue.set(this.$data, 'getposter', res.data.data)
+                 
+                 
+ 
+               })
+    },
+
+    Investors(){
+      
+         
+         get('/exploreinvestor')
+               .then((res) => {
+                Vue.set(this.$data, 'investor', res.data.data)
+                 
+                 
+ 
+               })
+
+          
+    },
+
+
+    Realtors(){
+      
+         
+      get('/explorerealtor')
+            .then((res) => {
+
+              Vue.set(this.$data, 'realtor', res.data.data)
+              
+              
+
+            })
+
+
+        },
 
     menus(){
         this.start = false
@@ -1100,7 +784,13 @@ export default {
     },
 
     investor_profile(){
-      this.$router.push('profilescreen')
+
+     
+        this.$router.push('profilescreen')
+     
+
+
+   
     }
 
   
