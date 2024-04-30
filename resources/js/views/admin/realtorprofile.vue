@@ -447,7 +447,11 @@ color: #293857;
     font-weight: 400;
     line-height: 24px;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .arrow::after{
     position: relative;
     left: 0px;

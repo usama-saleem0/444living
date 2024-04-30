@@ -384,8 +384,6 @@
      font-weight: bold;
  }
 
-
-
  .sp{
    color: #ded4a2 !important;
     

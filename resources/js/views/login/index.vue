@@ -288,7 +288,11 @@ nav.logaing-nav {
     width: 5%;
     z-index: 999;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .loging-close-btn button {
     background: transparent;
     border: none;

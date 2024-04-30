@@ -524,7 +524,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .carder{
     width: 515px;
     height: 177px;

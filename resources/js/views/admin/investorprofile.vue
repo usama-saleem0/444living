@@ -453,7 +453,11 @@ font-weight: 400;
 line-height: 24px; /* 150% */
 
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .upgardebutton{
     background: #DED4A2;
     display: flex;

@@ -175,4 +175,9 @@ export default {
 </script>
 
 <style>
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 </style>

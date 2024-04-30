@@ -371,7 +371,11 @@ section.loging-page {
     gap: 40px;
     align-items: center;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .form-LogIn h2 {
     color: #293857;
     font-family: "Saol Display";
@@ -441,7 +445,6 @@ section.loging-page {
     line-height: normal;
     font-style: italic;
 }
-
 .btn-loging-long {
     width: 100%;
 }

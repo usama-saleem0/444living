@@ -354,7 +354,11 @@ duration: 5000,
     object-fit: cover;
     width: 24% !important;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .go-this-pic {
     height: 44px;
     right: -5px;

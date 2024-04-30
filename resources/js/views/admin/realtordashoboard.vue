@@ -853,7 +853,11 @@
     font-weight: 600;
     line-height: normal;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
  .dots{
     padding-bottom: 10px;
  }

@@ -12,6 +12,7 @@
           <i class="fas fa-laugh-wink"></i>
         </div>
         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        
       </router-link>
 
       <!-- Divider -->
@@ -145,6 +146,7 @@
       <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
       </div>
+
     </ul>
     <!-- End of Sidebar -->
 </template>
