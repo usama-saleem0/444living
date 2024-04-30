@@ -55,9 +55,9 @@
       <h2>Log In </h2>
 
       <div class="Login-btn-box">
-        <button>As  Buyer</button>
-        <button>As Realtor</button>
-        <button>As Realtor</button>
+        <button :style="{ backgroundColor: buttonColor,   color:textcolor }" @click="setcolor(1)">As  Buyer</button>
+        <button :style="{ backgroundColor: buttonColor1,   color:textcolor1 }" @click="setcolor(2)">As Realtor</button>
+        <button :style="{ backgroundColor: buttonColor2,   color:textcolor2 }" @click="setcolor(3)">As Investor</button>
       </div>
 
       <div class="loging-input-group">
@@ -165,7 +165,13 @@ export default {
       
         second:false,
         email:'',
-        password:''
+        password:'',
+        buttonColor:'#ded4a2',
+        textcolor:'#293857',
+        buttonColor1:'#ded4a2',
+        textcolor1:'#293857',
+        buttonColor2:'#ded4a2',
+        textcolor2:'#293857'
       
     };
   },
@@ -179,6 +185,46 @@ export default {
   },
 
   methods: {
+
+    setcolor(e){
+      if(e == 1){
+        this.buttonColor = '#293857'
+        this.textcolor = '#ded4a2'
+
+        this.buttonColor1 = '#ded4a2'
+        this.textcolor1 = '#293857'
+
+        this.buttonColor2 = '#ded4a2'
+        this.textcolor2 = '#293857'
+
+      }
+
+
+      if(e == 2){
+        this.buttonColor1 = '#293857'
+        this.textcolor1 = '#ded4a2'
+
+        this.buttonColor = '#ded4a2'
+        this.textcolor = '#293857'
+
+        this.buttonColor2 = '#ded4a2'
+        this.textcolor2 = '#293857'
+
+      }
+
+
+      if(e == 3){
+        this.buttonColor2 = '#293857'
+        this.textcolor2 = '#ded4a2'
+
+        this.buttonColor = '#ded4a2'
+        this.textcolor = '#293857'
+
+        this.buttonColor1 = '#ded4a2'
+        this.textcolor1 = '#293857'
+
+      }
+    },
 
     mainpage(){
       this.first = false
@@ -208,7 +254,9 @@ export default {
        
 
          
-       this.$router.push('/homepages')
+       this.$router.push('/homepages').then(() => {
+    window.location.reload();
+});
        }, 3000);
       } catch (error) {
         notify.authError(error);

@@ -26,8 +26,16 @@
   
 
   <ul class="ul-list" >
-    <li>
+    <li v-if="user && user.type === 'Investor'">
       <router-link class="nav-link" to="/investordashoard">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Dashboard</a></router-link
+        >
+      </li>
+
+
+      <li v-if="user && user.type === 'Realtor'">
+      <router-link class="nav-link" to="/realtordashoard">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Dashboard</a></router-link
         >
@@ -40,10 +48,35 @@
           <a href="#">Explore</a></router-link
         >
       </li>
-    <li>
+    <li  v-if="user && user.type === 'Investor'">
       <router-link class="nav-link" to="/toprealtors">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Realtors</a></router-link
+        >
+      
+    </li>
+
+    <li  v-if="user && user.type === 'Buyer'">
+      <router-link class="nav-link" to="/toprealtors">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Top Realtors</a></router-link
+        >
+      
+    </li>
+
+
+    <li v-if="user && user.type === 'Realtor'">
+      <router-link class="nav-link" to="/topinvestors">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Top Investor</a></router-link
+        >
+      
+    </li>
+
+    <li v-if="user && user.type === 'Realtor'">
+      <router-link class="nav-link" to="/mypost">
+          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+          <a href="#">Top Listing</a></router-link
         >
       
     </li>

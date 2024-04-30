@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\User;
 
-class Buyerpost extends Model
+class Realtorpost extends Model
 {
     use HasFactory;
+
 
     public function User()
     {
