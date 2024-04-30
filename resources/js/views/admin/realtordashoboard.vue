@@ -1410,7 +1410,7 @@ button::after{
     left: 0px;
 }
 button{
-    border: none;
+    border: none !important;
 }
 
  @media screen and (max-width: 1600px){
