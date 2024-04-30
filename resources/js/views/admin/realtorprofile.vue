@@ -509,7 +509,11 @@ color: #293857;
     font-weight: 400;
     line-height: 24px;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .arrow::after{
     position: relative;
     left: 0px;
@@ -634,21 +638,22 @@ line-height: normal;
 
 .list-1 img {
     width: 12%;
+    min-width: 12%;
+    max-width: 12%;
     position: relative;
     z-index: 1;
     margin-top: -125px;
     margin-left: 20px;
-   
-    max-height: 232px;
-    min-height: 232px;
+   height: 150px;
+    max-height: 150px;
+    min-height: 150px;
     border-radius: 0px !important;
     -o-object-fit: cover;
     object-fit: cover;
 }
 
-
 .list-titel {
-    width: 50%;
+    width: 48%;
 }
 
 .list-titel span {
@@ -1095,11 +1100,9 @@ height: 100%;object-fit: cover;
     padding-left: 20px !important;
 }
 
-
 .setp {
     padding-left: 15px !important;
 }
-
 
 .imger h2 {
     color: #000;
@@ -1366,7 +1369,7 @@ height: 100%;object-fit: cover;
     margin: 0px;
 }
 .list-titel {
-    width: 50%;
+    width: 40%;
 }
 .list-id span svg {
     width: 20px;
@@ -1399,16 +1402,16 @@ height: 100%;object-fit: cover;
 }
 .list-1 img {
     width: 11%;
+    min-width: 11%;
+    max-width: 11%;
     position: relative;
     z-index: 1;
     margin-top: -80px;
-
-  
+    height: 120px;
     margin-top: -80px;
     border-radius: 50%;
-    max-height: 149px;
-    min-height: 149px;
-
+    max-height: 120px;
+    min-height: 120px;
     object-fit: cover;
 }
 .list-titel p {
@@ -2023,16 +2026,18 @@ div#carouselExampleControls {
 }
 .list-1 img {
     width: 30%;
+    max-width: 30%;
+    min-width: 30%;
     position: relative;
     z-index: 1;
     margin-top: -85px;
-   
+   height: 100px;
     position: relative;
     z-index: 1;
     margin-top: -80px;
     border-radius: 50%;
-    max-height: 115px;
-    min-height: 115px;
+    max-height: 100px;
+    min-height: 100px;
 
     object-fit: cover;
 }

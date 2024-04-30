@@ -8,14 +8,14 @@
         </div>
       
         <div class="loging-close-btn">
-          <button>
-            <svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button @click="backhome">
+            <svg class="svgsizeing" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_206_2853)">
 <g clip-path="url(#clip0_206_2853)">
-<path d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
+<path class="svgcolor" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6"/>
 </g>
 <g clip-path="url(#clip1_206_2853)">
-<path d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
+<path class="svgcolor" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6"/>
 </g>
 </g>
 <defs>
@@ -37,6 +37,7 @@
 </clipPath>
 </defs>
 </svg>
+
           </button>
         </div>
       </nav>
@@ -133,6 +134,8 @@
 
   </div>
 </template>
+
+
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
@@ -314,7 +317,9 @@ this.form.password_confirm = this.password_confirm;
         }, 1000); // Adjust the delay as needed
       }, 8000);
     },
-
+    backhome(){
+        this.$router.push('/')
+    },
     setup(){
         this.$router.push('/setup')
     },
@@ -325,6 +330,8 @@ this.form.password_confirm = this.password_confirm;
   },
 };
 </script>
+
+
 <style scoped>
 .carousel-inner{
     height: 100vh;
@@ -369,6 +376,17 @@ input:-internal-autofill-selected {
     width: 100%;
 }
 
+.loging-close-btn button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
 .loging-close-btn button img {
     width: 100%;
 }
@@ -406,7 +424,11 @@ section.loging-page {
     gap: 40px;
     align-items: center;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .form-LogIn h2 {
     color: #293857;
     font-family: "Saol Display";
@@ -476,9 +498,18 @@ section.loging-page {
     line-height: normal;
     font-style: italic;
 }
-
 .btn-loging-long {
     width: 100%;
+}
+.btn-loging-long button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
 }
 
 .btn-loging-long button {
@@ -495,11 +526,26 @@ section.loging-page {
     border: 1px solid #293857;
 }
 
-.OR-list {width: 100%;}
+.btn-loging-long button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.OR-list {
+    width: 100%;
+}
+
 .loging-close-btn svg {
     width: 100%;
     height: 80px;
 }
+
 .OR-list p {
     width: 100%;
     text-align: center;
@@ -569,7 +615,6 @@ ol.carousel-indicators {
     width: 14%;
     margin: 0px !important;
 }
-
 
 .loging-input-groups input {
     width: 48%;
@@ -756,8 +801,6 @@ ol.carousel-indicators{
 }
 }
 
-
-
 @media screen and (max-width: 1440px){
 
     .loging-salider{
@@ -887,7 +930,6 @@ ol.carousel-indicators{
 }
 }
 
-
 @media screen and (max-width: 1024px){
 
     .carousel-inner {
@@ -994,8 +1036,6 @@ header.loging-header[data-v-72911c7d] {
     width: 100%;
 }
 }
-
-
 
 @media screen and (max-width: 768px){
   section.loging-page{
@@ -1174,4 +1214,7 @@ ol.carousel-indicators {
     margin: 0px !important;
 }
 }
+
+
 </style>
+

@@ -1453,7 +1453,9 @@ footer {
     align-items: stretch;
 }
 
-.footer-list2 ul {margin: 0px;list-style: none;display: flex;flex-direction: column;align-items: flex-start;gap: 18px;padding-top: 52px;}
+.footer-list2 ul {
+    margin: 0px;list-style: none;display: flex;flex-direction: column;align-items: flex-start;gap: 18px;padding-top: 52px;
+}
 
 ul.ul-1 {
     width: 24%;
@@ -1508,6 +1510,7 @@ ul.ul-3 {
     margin: 0;
 }
 
+
 .part-list span h3 {
     color: #DED4A2;
     font-family: sans-serif;
@@ -1519,6 +1522,7 @@ ul.ul-3 {
     padding-top: 10px;
 }
 
+
 .part-input-box {
     width: 28%;
     position: relative;
@@ -1526,6 +1530,7 @@ ul.ul-3 {
     justify-content: flex-end;
     align-items: center;
 }
+
 
 .part-input-box input {
   width: 100%;
@@ -1548,19 +1553,24 @@ ul.ul-3 {
     border-radius: 35px;
 }
 
+
 .part-input-box button svg {
     width: 28px;
     height: 28px;
 }
+
 
 .part-input-box button:hover svg {
   transform: translateX(none);
   color: var(--hovered-color);
 }
 
+
 .part-input-box button:hover{
     border-bottom:none !important; 
 }
+
+
 .part-input-box button::after {
     position: relative;
     content: "";
@@ -1592,6 +1602,7 @@ ul.ul-3 {
 button{
     position: relative;
 }
+
 button::after {
   position: absolute;
   content: "";
@@ -1616,7 +1627,6 @@ button svg {
   transition-delay: 0.2s;
 }
 
-
 .hero-tital button:hover svg {
   transform: translateX(170px);
   color: var(--hovered-color);
@@ -1637,14 +1647,10 @@ button svg {
   color: var(--hovered-color);
 }
 
-
 .contact-form-btn:hover svg {
   transform: translateX(140px);
   color: var(--hovered-color);
 }
-
-
-
 
 button:hover{
     border-bottom: 1px solid ;

@@ -336,7 +336,11 @@ nav.logaing-nav {
     width: 5%;
     z-index: 999;
 }
-
+.carousel-item {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
 .loging-close-btn button {
     background: transparent;
     border: none;
@@ -579,6 +583,17 @@ ol.carousel-indicators {
     margin: 0px !important;
 }
 
+  .loging-close-btn button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
 
 
 
@@ -745,7 +760,7 @@ ol.carousel-indicators{
     align-items: center;
     transition: 0.3s;
 }
-.loging-close-btn svg[data-v-72911c7d] {
+.loging-close-btn svg {
     width: 100%;
     height: 42px;
 }
@@ -849,7 +864,7 @@ section.loging-page {
     padding: 0px 0px 0px 45px;
     height: 100vh;
 }
-header.loging-header[data-v-72911c7d] {
+header.loging-header {
     width: 100%;
     padding: 12px 45px;
     position: absolute;
@@ -962,7 +977,7 @@ header.loging-header[data-v-72911c7d] {
 .loging-form{
     width: 75%;
 }
-.loging-close-btn[data-v-72911c7d] {
+.loging-close-btn {
     width: 8%;
     z-index: 999;
 }
@@ -1026,7 +1041,7 @@ header.loging-header{
     align-items: center;
     transition: 0.3s;
 }
-.loging-close-btn[data-v-72911c7d] {
+.loging-close-btn {
     width: 14%;
     z-index: 999;
 }

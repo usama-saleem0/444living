@@ -138,6 +138,8 @@
     </div>
 </template>
 
+
+
 <script>
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
@@ -149,6 +151,8 @@ export default {
     }
 }
 </script>
+
+
 <style scoped>
 
 .table-responsive {
@@ -211,4 +215,4 @@ tbody {
     line-height: 30px;
 }
 }
-</style>
+</style> 

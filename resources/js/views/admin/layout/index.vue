@@ -20,7 +20,7 @@
       </div>
   
     </div>
-    <!-- End of Content Wrapper -->
+
   </div>
  
 </template>

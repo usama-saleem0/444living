@@ -1317,13 +1317,13 @@ section.George {
 {    display: flex;
     width: 24%;
     height: 510px;
-    padding: 25px 58px 25px 25px;
+    padding: 0px;
     border-radius: 10px;
-    background-image: url(/images/cardbg.png);
+    /* background-image: url(/images/cardbg.png); */
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-
+position: relative;
 }
 
 .George-card p {
@@ -2437,7 +2437,7 @@ section.TopListing {
 
 .George-card {
     height: 400px;
-    padding: 20px 54px 20px 20px;
+    padding: 0px;
 }
 
 .George-card p {
@@ -3211,7 +3211,7 @@ section.George {
 
 .George-card {
     height: 320px;
-    padding: 15px 35px 15px 15px;
+    padding: 0px;
 }
 
 .George-card img {
@@ -3940,7 +3940,7 @@ section.George {
 
 .George-card {
     height: 255px;
-    padding: 10px 24px 10px 10px;
+    padding: 0p;
 }
 
 .George-card p {
@@ -4512,7 +4512,7 @@ section.George {
 
 .George-card {
     height: 230px;
-    padding: 8px 20px 8px 8px;
+    padding:0px;
 }
 
 .George-card p {
@@ -5109,7 +5109,7 @@ section.TopListing {
 
 .George-card {
     width: 75%;
-    padding: 12px 20px 12px 12px;
+    padding:0px;
 }
 
 .detail-box-1 {
