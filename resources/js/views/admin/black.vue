@@ -135,6 +135,7 @@ section.black-screen {
     font-weight: 600;
     color: #998f8f;
 }
+
 .black-post img {
     height: 100%;
     object-fit: cover;
@@ -167,11 +168,9 @@ section.black-screen {
 @media screen and (max-width: 768px){
   .black-post {
     width: 65%;
-    
+}
 }
 
-
-}
 @media screen and (max-width: 600px){
   .black-post {
     width: 100%;
@@ -186,4 +185,5 @@ section.black-screen {
     width: 20px;
 }
 }
-</style>
+
+</style> 
