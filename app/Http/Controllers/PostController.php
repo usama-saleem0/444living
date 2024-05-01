@@ -7,6 +7,7 @@ use App\Models\Investorpost;
 use App\Models\Buyerpost;
 use App\Models\Realtorpost;
 use App\Models\Comment;
+use App\Models\Story;
 
 
 class PostController extends Controller
@@ -146,6 +147,43 @@ class PostController extends Controller
         return response()->json(['saved' => true]);
 
 
+    }
+
+
+    public function poststory(Request $request){
+
+       $exist = Story::where('user_id' , auth()->user()->id)->first();
+
+       if($exist){
+
+        $exist->delete();
+
+       }
+      
+        $filename = $request->file('image')->getClientOriginalName();
+        $imagePath =  $request->file('image')->move(public_path('story'), $filename);
+       
+     
+        $data = new Story;
+       
+        $data->user_id = $request->user_id;
+
+        $data->story = $filename;
+        
+        $data->save();
+
+        return response()->json(['saved' => true]);
+
+
+    }
+
+
+    public function getstory(){
+        $data = Story::with('user')->orderBy('created_at', 'desc')
+        
+        ->get();
+
+        return response()->json(['data' => $data]);
     }
 
 }

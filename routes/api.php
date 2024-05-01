@@ -29,10 +29,13 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::post('buyerposting', [PostController::class, 'buyerposting']);
     Route::post('realtorposting', [PostController::class, 'realtorposting']);
     Route::post('postcommit', [PostController::class, 'postcommit']);
+    Route::post('poststory', [PostController::class, 'poststory']);
+
 
 
 
     Route::get('pastpost', [PostController::class, 'pastpost']);
+    Route::get('getstory', [PostController::class, 'getstory']);
     Route::get('pastlisting', [PostController::class, 'pastlisting']);
     Route::get('getposts', [PostController::class, 'getposts']);
     Route::get('getlisting', [PostController::class, 'getlisting']);
