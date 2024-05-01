@@ -86,7 +86,7 @@ Top Listing’s
 
             <div class="type-input">
               <select name="cars" id="cars">
-  <option value="volvo">type</option>
+  <option value="volvo">Type</option>
   <option value="saab">Saab</option>
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
@@ -124,39 +124,41 @@ Top Listing’s
 
             <div class="George-card facebook-card">
               <div class="facebook-dp">
-                <img src="/images/cardbg.png" alt="">
+                <!-- <img src="/images/cardbg.png" alt=""> -->
+                <img  v-if="!imageUrl" :src="'/profile/' + user.profile"/>
+                <img v-if="imageUrl" :src="imageUrl" >
             </div>
-              <button>
+              <button @click="openFileDialog" v-if="!imageUrl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
               </button>
+
+              <button @click="poststories(user.id)" v-if="imageUrl">
+                <svg  xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512" style="fill: rgb(222, 212, 162); height: 20px; width: 20px;"><path data-v-0a6bebac="" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
+              </button>
               <div class="facebook-paa">
-                <p style="color: #202d46;">George Walker</p>
+                <p style="color: #202d46;">{{ user.username }}</p>
               </div>
             </div>
 
-     <div class="George-card">
-              <img src="/images/exportimg.png" alt="" class="Walker">
-              <img src="/images/cardbg.png" alt="" class="George">
+            <input type="file" id="file-input" style="position: absolute; bottom: 0; left: 0; opacity: 0; width: 0%;" @change="handleFileChange" accept="image/*">
+
+     <div class="George-card" v-for="store in stories">
+              <!-- <img src="/images/exportimg.png" alt="" class="Walker"> -->
+              <div style="border-radius: 50px;">
+
+                <img :src="'/profile/' + store.user.profile" alt="" class="Walker">
+              </div>
+
+              <!-- <img src="/images/cardbg.png" alt="" class="George"> -->
+              <img :src="'/story/' + store.story" alt="" class="George">
 
 
-              <p>George Walker</p>
+
+              <p>{{ store.user.username }}</p>
             </div>
 
-     <div class="George-card">
-              <img src="/images/exportimg.png" alt="" class="Walker">
-              <img src="/images/cardbg.png" alt="" class="George">
 
-
-              <p>George Walker</p>
-            </div>
-
-     <div class="George-card">
-              <img src="/images/exportimg.png" alt="" class="Walker">
-              <img src="/images/cardbg.png" alt="" class="George">
-
-
-              <p>George Walker</p>
-            </div>
+    
 
 
 
@@ -585,6 +587,8 @@ export default {
         key_index:0,
         form:{},
         method:'POST',
+        imageUrl: '',
+        stories:[]
 
     };
   },
@@ -604,12 +608,86 @@ export default {
 
                this.Getposting();
                this.Getlisting();
+               this.getstories();
            
          }, 
  
 
 
   methods:{
+
+
+    getstories(){
+
+      get('/getstory')
+               .then((res) => {
+                Vue.set(this.$data, 'stories', res.data.data)
+                 
+ 
+               })
+
+    },
+
+    handleFileChange(event) {
+      this.file = event.target.files[0];
+    this.imageUrl = URL.createObjectURL(this.file);
+  },
+  openFileDialog() {
+    document.getElementById('file-input').click();
+  },
+     
+
+
+                  poststories(e){
+
+                const formData = new FormData();
+
+                formData.append('image', this.file); 
+
+                formData.append('user_id', e);
+               
+
+                console.log(formData);
+
+
+
+                            
+                byMethod(this.method, '/poststory' , formData)
+                                .then((res) => {
+                                
+                                    console.log(res)
+                                    if(res.data && res.data.saved) {
+                                        this.imageUrl  ='';
+                                      
+
+                                        let message =
+                "Successfully Post Stories.";
+                let toast = Vue.toasted.show(message, {
+                theme: "toasted-primary",
+                position: "top-right",
+                duration: 5000,
+                });
+
+
+                get('/getstory')
+               .then((res) => {
+                Vue.set(this.$data, 'stories', res.data.data)
+                 
+ 
+               })
+
+               
+                                    
+                                    }
+                                })
+                                .catch((error) => {
+                                    if(error.response.status === 422) {
+                                        this.errors = error.response.data.errors
+                                    }
+                                    this.isProcessing = false
+                                })
+
+                },
 
 
     postcomments(e, user){
@@ -685,14 +763,14 @@ export default {
     return hoursDifference
   }
 
-  if(hoursDifference < 0  ){
+  if(hoursDifference < 1 ){
 
-return remainingMinutes
-}
-else {
-  return formattedDate
+    return remainingMinutes
+    }
+    else {
+      return formattedDate
 
-}
+    }
    
   
             },
@@ -879,6 +957,11 @@ img.Walker {
     position: absolute;
     top: 10px;
 }
+
+.George-card {
+    border: 4px solid #202d46 !important;
+    border-radius: 10px ;
+}
 .George-card p {
     z-index: 1;
     position: absolute;
@@ -891,6 +974,14 @@ img.George {
     height: 100%;
 }
 
+
+.George-box {  
+    display: flex !important;
+    
+   
+    justify-content: flex-start !important;
+    gap: 20px !important;
+}
 
 .facebook-card {
     /* width: 24%;
@@ -926,6 +1017,7 @@ img.George {
     min-width: 100%;
     max-height: 100%;
     min-height: 100%;
+    object-fit: none;
 }
 
 .facebook-card button {
