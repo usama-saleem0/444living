@@ -1030,7 +1030,17 @@ ul.ul-3 {
   transition: 0.3s ease-out;
 }
 
+.hello-buddy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;  
+}
 
+.hello-buddy svg {
+    position: absolute !important;
+    right: 24px !important; 
+}
 
 button{
     position: relative;

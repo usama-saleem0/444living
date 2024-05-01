@@ -47,6 +47,10 @@
     </div>
     </header>
   
+
+
+<salider/>
+
     <section class="TopListing">
         <div class="contanirz">
 
@@ -821,6 +825,17 @@ p.godashborad {
     font-weight: 400;
     line-height: 24px;
     cursor: pointer !important;
+}
+.hello-buddy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;  
+}
+
+.hello-buddy svg {
+    position: absolute !important;
+    right: 24px !important; 
 }
 .zerowidth{
   width: 0%;

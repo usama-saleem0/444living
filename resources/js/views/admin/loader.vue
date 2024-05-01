@@ -59,7 +59,7 @@ export default {
   height: 20em;
 }
 
-.loader__eye1,
+  .loader__eye1,
   .loader__eye2,
   .loader__mouth1,
   .loader__mouth2 {

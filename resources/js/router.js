@@ -52,6 +52,14 @@ let router = new Router({
         },
 
 
+        {
+            path: "/black",
+            name: "register",
+            component: () => import("./views/admin/black.vue")
+        },
+
+
+
      
         // {
         //     path: "/profile",
