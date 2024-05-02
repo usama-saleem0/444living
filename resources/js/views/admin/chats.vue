@@ -1525,7 +1525,7 @@
  
  .page-1 {
      width: 100%;
-     background-color: #F5F3EA;
+     background-color: #293857;
      padding: 30px;
      height: 110vh
     
@@ -1535,7 +1535,7 @@
      .id-box h3 {color: #000;font-family: sans-serif;font-size: 10px;font-style: normal;font-weight: 500;line-height: normal;}
    .page-1 {
      width: 100%;
-     background-color: #F5F3EA;
+     background-color: #293857;
      padding: 40px;
      height: 190vh;
  }
@@ -1620,13 +1620,14 @@
      padding: 30px 20px;
  }
  }
- @media screen and (max-width: 425px){
+ @media screen and (max-width: 600px){
      .id-box h3 {color: #000;font-family: sans-serif;font-size: 8px;font-style: normal;font-weight: 500;line-height: normal;}
    .page-1 {
      width: 100%;
-     background-color: #F5F3EA;
-     padding: 20px;
+     background-color: #293857 !important;
+     padding: 20px 0px;
      height: 250vh;
+
  }
  .yes {
      width: 50%;
@@ -1709,7 +1710,7 @@
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-     width: 90%;
+     width: 90% !important;
  }
  .id-box {
      width: 100%;
@@ -1718,5 +1719,15 @@
      align-items: center;
      padding: 20px 0px 25px 0px;
  }
+
+ button.buttonsss {
+    position: absolute;
+    margin: 0px !important;
+    right: 10px;
+}
+
+.inps {
+    position: relative !important;
+}
  }
  </style>

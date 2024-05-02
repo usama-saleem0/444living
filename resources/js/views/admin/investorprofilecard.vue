@@ -417,7 +417,7 @@ p.pragraph {
 }
 .page-1 {
    width: 100%;
-   background-color: #F5F3EA;
+   background-color: #293857 !important;
    padding: 30px;
 }
 
@@ -1214,6 +1214,8 @@ button::after{
    margin: 0px;
    padding-top: 20px;
 }
+
+
 @media screen and (max-width: 1600px){
    .box-2 {
    height: 100%;
@@ -2078,7 +2080,7 @@ p.pragraphok {
 @media screen and (max-width: 1024px){
  .page-1 {
    width: 100%;
-   background-color: #F5F3EA;
+   background-color: #293857;
    padding: 40px;
 }
 .main {
@@ -2194,7 +2196,7 @@ p.pragraph {
 }
 
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
    .short-card h3 {
    color: #000;
    font-family: sans-serif;
@@ -2241,8 +2243,8 @@ p.pragraph {
 
  .page-1 {
    width: 100%;
-   background-color: #F5F3EA;
-   padding: 20px;
+   background-color: #293857;
+   padding: 20px 0px;
 }
 .rol-card svg {
    width: 20px;
@@ -2329,7 +2331,7 @@ p.pragraph {
    border-radius: 20px;
    background: #FFF;
    box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-   width: 90%;
+   width: 90% !important;
 }
 .id-box {
    width: 100%;
@@ -2463,7 +2465,6 @@ p.pragraph {
    border-radius: 20px;
 }
 }
-
 
 @media screen and (max-width: 375px){
    .id-box h2{

@@ -117,11 +117,13 @@ Top Listing’s
         <div class="main-George">
           <div class="George-search">
             <input type="text" placeholder="What are you looking for...">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" viewBox="0 0 30 28" fill="none">
   <path d="M29.9997 2.70113C29.9997 7.57531 29.9997 12.4495 29.9997 17.3242C29.985 17.3484 29.9621 17.3714 29.9568 17.3979C29.5962 19.0905 28.4296 20.0396 26.6972 20.0402C20.564 20.0414 14.4307 20.0414 8.29746 20.039C8.06392 20.039 7.82626 20.0361 7.59742 19.9942C6.01617 19.7047 4.99318 18.432 4.992 16.753C4.98965 12.2703 4.98965 7.78813 4.992 3.30539C4.99318 1.34346 6.33207 0.00111571 8.28216 0.000526186C10.5676 -0.00065286 12.853 0.000526186 15.1378 0.000526186C19.0245 0.000526186 22.9117 -0.00124238 26.7984 0.00170523C28.2343 0.00288428 29.4144 0.84885 29.845 2.17587C29.9021 2.3486 29.9485 2.52604 29.9997 2.70113ZM7.49624 14.9384C7.61742 14.8247 7.69508 14.7563 7.76743 14.6838C8.78278 13.6674 9.79753 12.6493 10.8129 11.633C11.8535 10.5913 13.1312 10.5866 14.1707 11.6253C14.6266 12.081 15.0713 12.5468 15.5431 13.0302C16.0655 12.4029 16.5579 11.811 17.0508 11.2186C18.0821 9.97879 19.1121 8.73726 20.1451 7.49926C20.7181 6.81246 21.4393 6.51475 22.3299 6.69338C22.8582 6.7989 23.2764 7.08423 23.6241 7.49218C24.8406 8.92119 26.0636 10.3449 27.2814 11.7733C27.3343 11.8358 27.359 11.9224 27.3972 11.9979C27.4296 11.9714 27.462 11.9449 27.4943 11.9183C27.4943 11.8211 27.4943 11.7244 27.4943 11.6271C27.4943 8.86754 27.4943 6.10857 27.4943 3.34902C27.4943 2.69406 27.3119 2.51072 26.6613 2.51013C20.5487 2.51013 14.4366 2.51013 8.32393 2.51013C7.69213 2.51013 7.49683 2.70408 7.49624 3.32838C7.49624 7.086 7.49624 10.843 7.49624 14.6007C7.49624 14.6944 7.49624 14.7875 7.49624 14.9384Z" fill="#293857"/>
   <path d="M25.9573 21.9194C25.5679 23.1657 25.1979 24.3583 24.822 25.5491C24.4784 26.6362 23.7384 27.3083 22.626 27.5005C22.2077 27.5724 21.7395 27.5429 21.3277 27.4332C14.9397 25.7372 8.55763 24.0223 2.17437 22.3079C0.54017 21.8687 -0.349286 20.2947 0.128973 18.6877C1.07843 15.496 2.03554 12.3067 2.99029 9.11618C3.00912 9.0531 3.03265 8.9912 3.10265 8.92871C3.10736 9.02598 3.11559 9.12384 3.11559 9.22111C3.11618 11.8533 3.1103 14.485 3.11795 17.1172C3.12442 19.4228 4.63037 21.3317 6.82754 21.8074C7.22403 21.8935 7.64053 21.9141 8.04819 21.9147C13.8773 21.9212 19.7064 21.9194 25.535 21.9194C25.6603 21.9194 25.7856 21.9194 25.9573 21.9194Z" fill="#293857"/>
   <path d="M11.2509 8.76159C9.87435 8.76395 8.75312 7.65152 8.74371 6.27381C8.7343 4.8955 9.87436 3.75419 11.2568 3.75831C12.6263 3.76244 13.7504 4.89373 13.7487 6.26496C13.7469 7.63973 12.6268 8.75923 11.2509 8.76159Z" fill="#293857"/>
-</svg>
+</svg> -->
+
+<svg data-v-870f84ce="" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path da d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
           </div>
 
           <div class="George-box">
@@ -147,6 +149,19 @@ Top Listing’s
               <div class="facebook-paa">
                 <p style="color: #202d46;">{{ user.username }}</p>
               </div>
+
+              <div class="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+</div>
             </div>
 
 
@@ -193,7 +208,13 @@ Top Listing’s
               <div class="detail-card-box" v-for="posting in getposter">
 
                 <div class="id-list-1">
-                  <span><img src="/images/detaillogo.png" alt=""><p>{{posting.user ? posting.user.username:''}} ({{posting.user ? posting.user.type:''}})<br>{{ dated(posting.created_at) }}</p></span>
+                  <span><img src="/images/detaillogo.png" alt=""><p>
+                    <span style="padding-bottom: 10px; gap: 5px;">{{posting.user ? posting.user.username:''}} <span style="color: #a2a2a4;
+    font-size: 18px;">
+                    "{{posting.user ? posting.user.type:''}}"
+                  </span>
+                </span> <span class="hero-black" style="    font-size: 15px;
+    color: #A2A2A4;">{{ dated(posting.created_at) }}</span></p></span>
 
                   <span>
 
@@ -946,6 +967,117 @@ export default {
 
 
 <style scoped>
+.spinner {
+  position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 67px;
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: gray;
+  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+.George-search svg {
+    fill: rgb(41, 56, 87);
+    height: 35px !important;
+    width: 35px !important;
+    cursor: pointer !important;
+}
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ahtishamchoro{
  width: 100%;
     display: flex;
@@ -1690,7 +1822,7 @@ header.header nav {
 
 svg.setsvgleft {
     position: absolute;
-    right: 60px;
+    right: 35px;
 }
 
   .ahtishamchoro{
@@ -1804,6 +1936,16 @@ img {}
 @media screen and (max-width: 600px){
   .logo img {
     width: 90%;
+}
+.George-search svg {
+    fill: rgb(41, 56, 87);
+    height: 15px !important;
+    width: 15px !important;
+    cursor: pointer !important;
+}
+section {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
 }
 
 .zerowidth {
