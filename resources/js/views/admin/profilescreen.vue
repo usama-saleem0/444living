@@ -151,7 +151,8 @@
                         </div>
                         <div class="col text-right">
                             <span class="since">
-                                Since:19 oct 2024
+                                <!-- Since:19 oct 2024 -->
+                                Since: {{ dateformat(user.created_at) }}
                             </span>
                         </div>
                     </div>
@@ -377,7 +378,19 @@ export default {
         }, 
 
         methods:{
+            dateformat(e){
 
+                const createdAt = e;
+                const date = new Date(createdAt);
+
+                const year = date.getFullYear();
+                const month = date.toLocaleString('default', { month: 'long' });
+                const day = date.getDate();
+
+                const formattedDate = `${year}, ${month} ${day}`;
+            return formattedDate
+
+            },
 
             realtorprofile(e){
                 this.$router.push(`/realtorprofile/${e.id}`)

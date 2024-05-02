@@ -2,8 +2,12 @@
 
 
 <template>
+  <div>
 
-<div>
+ 
+
+<div v-if="showing">
+  
       
     <header class="header">
     <div class="contanair">
@@ -124,9 +128,14 @@ Top Listing’s
 
             <div class="George-card facebook-card">
               <div class="facebook-dp">
-                <!-- <img src="/images/cardbg.png" alt=""> -->
+               
                 <img  v-if="!imageUrl" :src="'/profile/' + user.profile"/>
-                <img v-if="imageUrl" :src="imageUrl" >
+                <!-- <img v-if="imageUrl" :src="imageUrl" > -->
+
+                <img v-if="fileType === 'image'" :src="imageUrl" alt="Selected Image">
+            <video v-else-if="fileType === 'video'" :src="imageUrl" controls autoplay loop muted style="width: 100%;">
+              Your browser does not support the video tag.
+            </video>
             </div>
               <button @click="openFileDialog" v-if="!imageUrl">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
@@ -140,9 +149,12 @@ Top Listing’s
               </div>
             </div>
 
-            <input type="file" id="file-input" style="position: absolute; bottom: 0; left: 0; opacity: 0; width: 0%;" @change="handleFileChange" accept="image/*">
 
-     <div class="George-card" v-for="store in stories">
+            <input id="file-input" type="file" accept="image/*, video/*" @change="handleFileChange" style="position: absolute; bottom: 0; left: 0; opacity: 0; width: 0%;">
+
+            <!-- <input type="file" id="file-input" style="position: absolute; bottom: 0; left: 0; opacity: 0; width: 0%;" @change="handleFileChange" accept="image/*"> -->
+
+     <div class="George-card" v-for="store in stories" @click="showstory(store)" style="cursor: pointer;">
               <!-- <img src="/images/exportimg.png" alt="" class="Walker"> -->
               <div style="border-radius: 50px;">
 
@@ -150,7 +162,11 @@ Top Listing’s
               </div>
 
               <!-- <img src="/images/cardbg.png" alt="" class="George"> -->
-              <img :src="'/story/' + store.story" alt="" class="George">
+              <video v-if="store.file_type === 'mp4'" :src="'/story/' + store.story" controls autoplay loop muted  style="max-width: 100%; max-height: 100%;">
+      Your browser does not support the video tag.
+    </video>
+              <img v-else  :src="'/story/' + store.story" alt="" class="George">
+
 
 
 
@@ -543,9 +559,16 @@ Top Listing’s
         </div>
       </div>
     </footer>
+
+
   
 </div>
 
+
+<div v-if="storys">
+  <Stories :storyData ="storyData" @cancel="closeModal"/>
+</div>
+</div>
 </template>
 
 
@@ -554,6 +577,7 @@ Top Listing’s
 import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
 import dashboard from './dashboard.vue';
+import Stories from './black.vue';
 import { mapGetters } from "vuex";
 import { get , byMethod} from '../lib/api';
 
@@ -561,7 +585,8 @@ export default {
   name: "Home",
   components: {
     Menu,
-    Slider
+    Slider,
+    Stories
   
   
   },
@@ -588,7 +613,11 @@ export default {
         form:{},
         method:'POST',
         imageUrl: '',
-        stories:[]
+        stories:[],
+        showing:true,
+        storys:false,
+        story_data:"",
+        fileType: null,
 
     };
   },
@@ -617,6 +646,25 @@ export default {
   methods:{
 
 
+    closeModal(){
+
+      this.showing = true;
+      this.storys = false
+
+    },
+
+
+    showstory(e){
+
+
+      this.storyData = e;
+
+      this.showing = false;
+      this.storys = true
+
+    },
+
+
     getstories(){
 
       get('/getstory')
@@ -628,10 +676,25 @@ export default {
 
     },
 
+
     handleFileChange(event) {
-      this.file = event.target.files[0];
-    this.imageUrl = URL.createObjectURL(this.file);
+    const file = event.target.files[0];
+    const type = file.type.split('/')[0]; // Get the type of file (image or video)
+
+    if (type === 'image' || type === 'video') {
+      this.file = file;
+      this.imageUrl = URL.createObjectURL(file);
+      this.fileType = type;
+    } else {
+      // Handle invalid file type
+      alert('Please select an image or a video file.');
+    }
   },
+
+  //   handleFileChange(event) {
+  //     this.file = event.target.files[0];
+  //   this.imageUrl = URL.createObjectURL(this.file);
+  // },
   openFileDialog() {
     document.getElementById('file-input').click();
   },
@@ -658,6 +721,7 @@ export default {
                                     console.log(res)
                                     if(res.data && res.data.saved) {
                                         this.imageUrl  ='';
+                                        this.fileType = null;
                                       
 
                                         let message =
@@ -760,12 +824,12 @@ export default {
   
   if(hoursDifference > 0 && hoursDifference < 24){
 
-    return hoursDifference
+    return hoursDifference + ' hours ago'
   }
 
   if(hoursDifference < 1 ){
 
-    return remainingMinutes
+    return remainingMinutes + ' minutes ago'
     }
     else {
       return formattedDate

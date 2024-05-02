@@ -152,6 +152,8 @@ class PostController extends Controller
 
     public function poststory(Request $request){
 
+        // dd($request->all());
+
        $exist = Story::where('user_id' , auth()->user()->id)->first();
 
        if($exist){
@@ -159,7 +161,8 @@ class PostController extends Controller
         $exist->delete();
 
        }
-      
+
+       $fileExtension = $request->file('image')->getClientOriginalExtension();
         $filename = $request->file('image')->getClientOriginalName();
         $imagePath =  $request->file('image')->move(public_path('story'), $filename);
        
@@ -169,6 +172,7 @@ class PostController extends Controller
         $data->user_id = $request->user_id;
 
         $data->story = $filename;
+        $data->file_type = $fileExtension;
         
         $data->save();
 

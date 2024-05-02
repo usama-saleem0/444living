@@ -2,7 +2,7 @@
   <div>
     <section class="black-screen">
 
-    <div class="cloce-icon"  @click="goja">
+    <div class="cloce-icon"  @click="$emit('cancel')">
       <svg xmlns="http://www.w3.org/2000/svg" width="27" height="50" viewBox="0 0 27 50" fill="none">
   <g clip-path="url(#clip0_13_2454)">
     <path d="M-0.691245 0.813965C-0.691245 3.37764 1.84133 7.20588 4.40501 10.4191C7.70116 14.5652 11.64 18.1827 16.1558 20.9433C19.5418 23.0129 23.6464 24.9996 26.9495 24.9996C23.6464 24.9996 19.5383 26.9863 16.1558 29.0559C11.64 31.8199 7.70116 35.4374 4.40501 39.5766C1.84133 42.7933 -0.691245 46.6285 -0.691245 49.1852" stroke="#DED4A2" stroke-width="6"/>
@@ -29,16 +29,25 @@
 
         <div class="black-id-tital">
         <div class="black-id-dp">
-          <img src="/images/alexprofile.png" alt="">
+          <!-- <img src="/images/alexprofile.png" alt=""> -->
+          <img :src="'/profile/' + storyData.user.profile" alt="" >
         </div>
         <div class="black-id-h2">
-          <h2>Alexander</h2>
+          <h2>{{ storyData.user.username }}</h2>
 
           <p>12h</p>
         </div>
       </div>
 
-        <img src="/images/salider.png" alt="">
+    
+        <!-- <img :src="'/story/' + storyData.story" alt="" > -->
+
+        <video v-if="storyData.file_type === 'mp4'" :src="'/story/' + storyData.story" controls autoplay loop muted  style="width: 100%; height: 100%;">
+      Your browser does not support the video tag.
+    </video>
+              <img v-else  :src="'/story/' + storyData.story" alt="" class="George">
+
+        
 
 
         
@@ -52,6 +61,25 @@
 
 
 export default {
+
+
+  props: {
+    storyData: {
+      type: Object,
+      required: true,
+    },
+  },
+
+
+
+  data () {
+             return {
+                
+                
+       
+               
+             }
+         },
 methods: {
 
 
