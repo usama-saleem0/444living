@@ -36,7 +36,12 @@
           </div>
 
 
-          <div class="header-menu" @click="menus" style="z-index: 1;" >
+         
+     
+        <div class="header-menu" @click="menus" style="z-index: 1;"    
+          id="userDropdown"
+          
+          data-toggle="dropdown">
             <label class="hamburger">
   <input type="checkbox">
   <svg viewBox="0 0 32 32">
@@ -45,6 +50,55 @@
   </svg>
 </label>
           </div>
+          
+       
+       
+       
+      
+        <div
+          class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+          style="background-color: #ded4a2;"
+          aria-labelledby="userDropdown"
+        >
+
+
+        <a
+            class="dropdown-item"
+            href="javascript:void(0)"
+           
+            data-toggle="modal"
+            data-target="#logoutModal"
+          >
+          <i class="fas fa-heart fa-sm fa-fw mr-2 text-black"></i>
+            Favorites
+          </a>
+          <hr>
+       
+         
+          <a
+            class="dropdown-item"
+            href="javascript:void(0)"
+           @click="logout"
+            data-toggle="modal"
+            data-target="#logoutModal"
+          >
+            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-black"></i>
+            Logout
+          </a>
+        </div>
+      
+    
+
+
+          <!-- <div class="header-menu" @click="menus" style="z-index: 1;" >
+            <label class="hamburger">
+  <input type="checkbox">
+  <svg viewBox="0 0 32 32">
+    <path class="line line-top-bottom" style="stroke: #293857;" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+    <path class="line" style="stroke: #293857;" d="M7 16 27 16"></path>
+  </svg>
+</label>
+          </div> -->
          
         </div>
       </nav>
@@ -79,26 +133,33 @@ Top Listing’s
           
         <div class="TopListing-boxing">
             <div class="Looking-input">
-              <input type="text" placeholder="What Are You Looking For">
-            </div>
-
-
-            <div class="Location-input">
-              <input type="text" placeholder="Location">
+              <input type="text" placeholder="What Are You Looking For" v-model="form.looking">
             </div>
 
 
             <div class="type-input">
-              <select name="cars" id="cars">
-  <option value="volvo">Type</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+              <select name="cars" id="cars"  v-model="form.selectedlocation">
+  <option value="" disabled>Location</option>
+  <option v-for="(option, index) in locations" :key="index" :value="option">{{ option }}</option>
+  
+  <!-- <option value="audi">Buyers</option>
+  <option value="saab">Investors</option>
+  <option value="mercedes">Realtors</option> -->
+</select>
+            </div>
+
+
+            <div class="type-input">
+              <select name="cars" id="cars"  v-model="form.types">
+  <option value="" disabled>Type</option>
+  <option value="Buyers">Buyers</option>
+  <option value="Investors">Investors</option>
+  <option value="Realtors">Realtors</option>
 </select>
             </div>
 
             <div class="Explore-btn">
-              <button>Explore Now </button>
+              <button @click="explorenow">Explore Now </button>
             </div>
           </div>
         </div>
@@ -137,10 +198,10 @@ Top Listing’s
                 <svg  xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512" style="fill: rgb(222, 212, 162); height: 20px; width: 20px;"><path data-v-0a6bebac="" d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
               </button>
               <div class="facebook-paa">
-                <p style="color: #202d46;">{{ user.username }}</p>
+                <p style="color: #202d46;" v-if="!imageUrl">{{ user.username }}</p>
               </div>
 
-              <div class="spinner">
+              <div class="spinner" v-if="loaders">
   <div></div>   
   <div></div>    
   <div></div>    
@@ -198,10 +259,13 @@ Top Listing’s
               <div class="detail-card-box" v-for="posting in getposter">
 
                 <div class="id-list-1">
-                  <span><img src="/images/detaillogo.png" alt=""><p>
-                    <span style="padding-bottom: 10px; gap: 5px;">{{posting.user ? posting.user.username:''}} <span style="color: #a2a2a4;
-    font-size: 18px;">
-                    "{{posting.user ? posting.user.type:''}}"
+                  <span>
+                    <img :src="'/profile/' + posting.user.profile" alt="" style="max-width: 70px; cursor: pointer;
+    min-width: 70px;" @click="profilepage(posting.user.id)" >
+                    <p>
+                    <span style="padding-bottom: 10px; gap: 5px; cursor: pointer" @click="profilepage(posting.user.id)">{{posting.user ? posting.user.username:''}} <span style="color: #a2a2a4;
+    font-size: 15px;">
+                    {{posting.user ? posting.user.type:''}}
                   </span>
                 </span> <span class="hero-black" style="    font-size: 15px;
     color: #A2A2A4;">{{ dated(posting.created_at) }}</span></p></span>
@@ -209,16 +273,11 @@ Top Listing’s
                   <span>
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" @click="favourite(posting.id)" style="cursor: pointer;">
   <path d="M15.9998 28.4667L14.0665 26.7067C7.19984 20.48 2.6665 16.36 2.6665 11.3333C2.6665 7.21333 5.89317 4 9.99984 4C12.3198 4 14.5465 5.08 15.9998 6.77333C17.4532 5.08 19.6798 4 21.9998 4C26.1065 4 29.3332 7.21333 29.3332 11.3333C29.3332 16.36 24.7998 20.48 17.9332 26.7067L15.9998 28.4667Z" fill="#DED4A2"/>
                     </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="25" viewBox="0 0 7 25" fill="none">
-  <circle cx="3.05557" cy="3.05557" r="3.05557" fill="#DED4A2"/>
-  <circle cx="3.05557" cy="12.4999" r="3.05557" fill="#DED4A2"/>
-  <circle cx="3.05557" cy="21.9442" r="3.05557" fill="#DED4A2"/>
-                    </svg>
-
+                  
 
                   </span>
                 </div>
@@ -237,15 +296,15 @@ Top Listing’s
           
 
                 <div class="id-list-5">
-                <p>10 Comments</p>
+                <p>{{ posting.counts }} Comments</p>
               </div>
 
               <div class="id-list-6" style="cursor: pointer;">
-                <div class="favourites-card">
+                <div class="favourites-card" @click="favourite(posting.id)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
   <path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
 </svg>
-<p>Add To favourites</p>
+<p >Add To favourites</p>
                 </div>
 
                 <div class="favourites-card  add-border" @click="showcomments(posting.id)" >
@@ -409,7 +468,7 @@ Top Listing’s
                 </div>
 
                 <div class="Realtor-3-list">
-                  <button @click="contact(item2)">Contact Realtor</button>
+                  <button @click="contact(item2)">Contact Investor</button>
                   <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
@@ -591,6 +650,8 @@ import dashboard from './dashboard.vue';
 import Stories from './black.vue';
 import { mapGetters } from "vuex";
 import { get , byMethod} from '../lib/api';
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 export default {
   name: "Home",
@@ -629,6 +690,8 @@ export default {
         storys:false,
         story_data:"",
         fileType: null,
+        loaders:false,
+        locations:[]
 
     };
   },
@@ -649,12 +712,65 @@ export default {
                this.Getposting();
                this.Getlisting();
                this.getstories();
+               this.getlocation();
            
          }, 
  
 
 
   methods:{
+
+    logout() {
+      localStorage.removeItem("token");
+      this.$store.dispatch("user", null);
+      this.$router.push("/");
+    },
+
+
+    profilepage(e){
+      this.$router.push(`/profile/${e}`)
+
+    },
+
+
+    explorenow(){
+
+      
+
+      console.log(this.form)
+
+
+      byMethod(this.method, '/filterpost' , this.form)
+                                .then((res) => {
+                                
+                                    console.log(res)
+                                    if(res.data) {
+                                      Vue.set(this.$data, 'getposter', res.data.data)
+                                      
+                                    }
+                                })
+                                .catch((error) => {
+                                    if(error.response.status === 422) {
+                                        this.errors = error.response.data.errors
+                                    }
+                                    this.isProcessing = false
+                                })
+
+    },
+
+
+    getlocation(){
+
+      get('/listlocation')
+               .then((res) => {
+
+                //  console.log(res.data.data)
+                Vue.set(this.$data, 'locations', res.data.data)
+ 
+               })
+
+
+    },
 
 
     closeModal(){
@@ -672,6 +788,32 @@ export default {
 
       this.showing = false;
       this.storys = true
+
+    },
+
+    favourite(e){
+
+
+      get('/addfavorite?post_id=' + e)
+               .then((res) => {
+                
+                Swal.fire({
+      title: "Successfully Add to you Favorite list",
+      width: 600,
+      padding: "3em",
+      color: "#202d46",
+      background: "#ded4a2",
+      backdrop: `
+      rgb(0 0 0 / 84%)
+
+    
+      `
+    });
+ 
+               })
+
+
+     
 
     },
 
@@ -713,6 +855,7 @@ export default {
 
 
                   poststories(e){
+                    this.loaders = true
 
                 const formData = new FormData();
 
@@ -733,6 +876,7 @@ export default {
                                     if(res.data && res.data.saved) {
                                         this.imageUrl  ='';
                                         this.fileType = null;
+                                        this.loaders = false;
                                       
 
                                         let message =
@@ -774,6 +918,7 @@ export default {
                             
                                 console.log(res)
                                 if(res.data && res.data.saved) {
+                                   this.Getposting()
                                     
                                     this.form = {};
                                     this.comment_section = false
@@ -801,6 +946,7 @@ export default {
     showcomments(e){
       this.key_index = e
       this.comment_section = ! this.comment_section
+    
 
     },
 
