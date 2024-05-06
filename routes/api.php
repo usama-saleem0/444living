@@ -30,6 +30,8 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::post('realtorposting', [PostController::class, 'realtorposting']);
     Route::post('postcommit', [PostController::class, 'postcommit']);
     Route::post('poststory', [PostController::class, 'poststory']);
+    Route::get('listlocation', [PostController::class, 'listlocation']);
+
 
 
 
@@ -39,6 +41,10 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('pastlisting', [PostController::class, 'pastlisting']);
     Route::get('getposts', [PostController::class, 'getposts']);
     Route::get('getlisting', [PostController::class, 'getlisting']);
+    Route::get('addfavorite', [PostController::class, 'addfavorite']);
+    Route::post('filterpost', [PostController::class, 'filterpost']);
+
+
 
 
 
