@@ -124,6 +124,26 @@ let router = new Router({
             name: "forgot",
             component: () => import("./views/forgot/index.vue")
         },
+
+
+        {
+            path: "/reset",
+            name: "forgot",
+            component: () => import("./views/forgot/reset.vue")
+        },
+        {
+            path: "/forget",
+            name: "forgot",
+            component: () => import("./views/forgot/forget.vue")
+        },
+
+       
+
+        {
+            path: "/email",
+            name: "forgot",
+            component: () => import("./views/forgot/email.vue")
+        },
         {
             path: "/reset/:token",
             name: "reset",
@@ -154,6 +174,18 @@ let router = new Router({
             }
         },
 
+
+        {
+            path: "/comment",
+            name: "forgot",
+            component: () => import("./views/admin/comment.vue"),
+            meta: {
+                requiresAuth: true,
+                
+               
+            }
+        },
+         
 
         {
             path: "/profilescreen",
