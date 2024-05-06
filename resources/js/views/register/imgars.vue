@@ -251,6 +251,8 @@
 
   </div>
 </template>
+
+
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
@@ -390,6 +392,8 @@ export default {
   },
 };
 </script>
+
+
 <style scoped>
 
 .disk{
@@ -804,8 +808,45 @@ ol.carousel-indicators {
 }
 
 
+.image-preview {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
 
+.image-preview img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.btn-loging-long button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
 
+.loging-close-btn button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
 
 
 @media screen and (max-width: 1600px){
