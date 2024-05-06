@@ -2166,7 +2166,7 @@ button{
  @media screen and (max-width: 1024px){
    .page-1 {
      width: 100%;
-     background-color: #F5F3EA;
+     background-color: #293857 !important;
      padding: 40px;
  }
  .main {
@@ -2363,8 +2363,8 @@ button{
  
    .page-1 {
      width: 100%;
-     background-color: #F5F3EA;
-     padding: 20px;
+     background-color: #293857 !important;
+     padding: 20px 0px;
  }
  .rol-card svg {
      width: 20px;
@@ -2451,7 +2451,7 @@ button{
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0px 10px 54px 0px rgba(0, 0, 0, 0.25);
-     width: 90%;
+     width: 90% !important;
  }
  .id-box {
      width: 100%;

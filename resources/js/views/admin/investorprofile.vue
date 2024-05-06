@@ -570,11 +570,11 @@ line-height: normal;
 }
 .page-1 {
     width: 100%;
-    background-color: #293857;
+    background-color: #293857 !important;
     padding: 30px;
 }
 
-.contanir {
+.contanir { 
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -1847,7 +1847,7 @@ div#carouselExampleControls {
 }
 .page-1 {
     width: 100%;
-    background-color: #F5F3EA;
+    background-color: #293857 !important;
     padding: 0px 15px;
 }
 .roll-2 {
@@ -1995,7 +1995,7 @@ div#carouselExampleControls {
 }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 600px){
     .more-card{
     width: 100%;
     display: flex;
@@ -2004,7 +2004,9 @@ div#carouselExampleControls {
     align-items: center;
     gap: 20px;
 }
-
+.carder {
+  width: 100%;
+}
 .list-titel{
     width: 100%;
     padding-top: 18px;

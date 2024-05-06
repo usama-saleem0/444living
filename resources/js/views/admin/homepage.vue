@@ -139,6 +139,19 @@ Top Listing’s
               <div class="facebook-paa">
                 <p style="color: #202d46;">{{ user.username }}</p>
               </div>
+
+              <div class="spinner">
+  <div></div>   
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+  <div></div>    
+</div>
             </div>
 
 
@@ -185,7 +198,13 @@ Top Listing’s
               <div class="detail-card-box" v-for="posting in getposter">
 
                 <div class="id-list-1">
-                  <span><img src="/images/detaillogo.png" alt=""><p>{{posting.user ? posting.user.username:''}} ({{posting.user ? posting.user.type:''}})<br>{{ dated(posting.created_at) }}</p></span>
+                  <span><img src="/images/detaillogo.png" alt=""><p>
+                    <span style="padding-bottom: 10px; gap: 5px;">{{posting.user ? posting.user.username:''}} <span style="color: #a2a2a4;
+    font-size: 18px;">
+                    "{{posting.user ? posting.user.type:''}}"
+                  </span>
+                </span> <span class="hero-black" style="    font-size: 15px;
+    color: #A2A2A4;">{{ dated(posting.created_at) }}</span></p></span>
 
                   <span>
 
@@ -938,6 +957,117 @@ export default {
 
 
 <style scoped>
+.spinner {
+  position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 67px;
+}
+
+.spinner div {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background: gray;
+  transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
+}
+.George-search svg {
+    fill: rgb(41, 56, 87);
+    height: 35px !important;
+    width: 35px !important;
+    cursor: pointer !important;
+}
+.spinner div:nth-child(1) {
+  --delay: 0.1;
+  --rotation: 36;
+  --translation: 150;
+}
+
+.spinner div:nth-child(2) {
+  --delay: 0.2;
+  --rotation: 72;
+  --translation: 150;
+}
+
+.spinner div:nth-child(3) {
+  --delay: 0.3;
+  --rotation: 108;
+  --translation: 150;
+}
+
+.spinner div:nth-child(4) {
+  --delay: 0.4;
+  --rotation: 144;
+  --translation: 150;
+}
+
+.spinner div:nth-child(5) {
+  --delay: 0.5;
+  --rotation: 180;
+  --translation: 150;
+}
+
+.spinner div:nth-child(6) {
+  --delay: 0.6;
+  --rotation: 216;
+  --translation: 150;
+}
+
+.spinner div:nth-child(7) {
+  --delay: 0.7;
+  --rotation: 252;
+  --translation: 150;
+}
+
+.spinner div:nth-child(8) {
+  --delay: 0.8;
+  --rotation: 288;
+  --translation: 150;
+}
+
+.spinner div:nth-child(9) {
+  --delay: 0.9;
+  --rotation: 324;
+  --translation: 150;
+}
+
+.spinner div:nth-child(10) {
+  --delay: 1;
+  --rotation: 360;
+  --translation: 150;
+}
+
+@keyframes spinner-fzua35 {
+  0%, 10%, 20%, 30%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
+  }
+
+  50% {
+    transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1.5%));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ahtishamchoro{
  width: 100%;
     display: flex;
@@ -1682,7 +1812,7 @@ header.header nav {
 
 svg.setsvgleft {
     position: absolute;
-    right: 60px;
+    right: 35px;
 }
 
   .ahtishamchoro{
@@ -1796,6 +1926,16 @@ img {}
 @media screen and (max-width: 600px){
   .logo img {
     width: 90%;
+}
+.George-search svg {
+    fill: rgb(41, 56, 87);
+    height: 15px !important;
+    width: 15px !important;
+    cursor: pointer !important;
+}
+section {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
 }
 
 .zerowidth {
