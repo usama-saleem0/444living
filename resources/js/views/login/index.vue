@@ -54,11 +54,11 @@
     <div class="form-LogIn">
       <h2>Log In </h2>
 
-      <div class="Login-btn-box">
+      <!-- <div class="Login-btn-box">
         <button :style="{ backgroundColor: buttonColor,   color:textcolor }" @click="setcolor(1)">As  Buyer</button>
         <button :style="{ backgroundColor: buttonColor1,   color:textcolor1 }" @click="setcolor(2)">As Realtor</button>
         <button :style="{ backgroundColor: buttonColor2,   color:textcolor2 }" @click="setcolor(3)">As Investor</button>
-      </div>
+      </div> -->
 
       <div class="loging-input-group">
         <input type="email" placeholder="Email *" v-model="email">
@@ -69,18 +69,18 @@
       </div>
 
       <div class="Forgot-box">
-        <button>Forgot Password ?</button>
+        <button @click="forgot">Forgot Password ?</button>
       </div>
 
       <div class="btn-loging-long">
         <button @click="login">Log In</button>
       </div>
 
-      <div class="OR-list">
+      <!-- <div class="OR-list">
         <p>OR</p>
-      </div>
+      </div> -->
 
-
+<!-- 
       <div class="Google-btn">
         <button>    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
   <g clip-path="url(#clip0_265_483)">
@@ -97,10 +97,10 @@
   </defs>
 </svg>
 Sign In With Google</button>
-      </div>
+      </div> -->
 
 
-      <p>New to 444Living ?<span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
+      <p>New to 444Living?<span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
 
 
 
@@ -185,6 +185,10 @@ export default {
   },
 
   methods: {
+
+    forgot(){
+      this.$router.push('/forget')
+    },
 
     setcolor(e){
       if(e == 1){

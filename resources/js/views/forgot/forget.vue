@@ -48,17 +48,20 @@
     </header>
 
 <section class="loging-page fade-in">
+
+
+
+  <div v-if="emailSent">
+                      <span class="h4">
+                        <i class="far fa-check-circle text-success"></i> Check
+                        your email!
+                      </span>
+                    </div>
   
     <div class="main-loging">
   <div class="loging-form">
     <div class="form-LogIn">
       <h2>Forgot Password?</h2>
-
-      <!-- <div class="Login-btn-box">
-        <button :style="{ backgroundColor: buttonColor,   color:textcolor }" @click="setcolor(1)">As  Buyer</button>
-        <button :style="{ backgroundColor: buttonColor1,   color:textcolor1 }" @click="setcolor(2)">As Realtor</button>
-        <button :style="{ backgroundColor: buttonColor2,   color:textcolor2 }" @click="setcolor(3)">As Investor</button>
-      </div> -->
 
       <div class="loging-input-group">
         <input type="email" placeholder="Enter your Email *" v-model="email">
@@ -68,39 +71,15 @@
 
     
 
-      <!-- <div class="Forgot-box">
-        <button>Forgot Password ?</button>
-      </div> -->
-
       <div class="btn-loging-long">
-        <button @click="login">Forgot Password?</button>
+        <button @click="forgot">Forgot Password?</button>
       </div>
 
-      <!-- <div class="OR-list">
-        <p>OR</p>
-      </div> -->
-
-<!-- 
-      <div class="Google-btn">
-        <button>    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-  <g clip-path="url(#clip0_265_483)">
-    <path d="M10.4508 0.986913C7.45335 2.02676 4.86834 4.00043 3.07548 6.61801C1.28262 9.23559 0.376419 12.3591 0.489976 15.5298C0.603533 18.7005 1.73087 21.7512 3.70638 24.2338C5.6819 26.7164 8.40148 28.5001 11.4657 29.3229C13.9499 29.9639 16.5526 29.992 19.05 29.4049C21.3125 28.8967 23.4042 27.8096 25.1203 26.2502C26.9065 24.5776 28.2029 22.4498 28.8703 20.0955C29.5955 17.5353 29.7246 14.843 29.2477 12.2252H15.2977V18.0119H23.3766C23.2151 18.9349 22.8691 19.8157 22.3593 20.6018C21.8495 21.3879 21.1863 22.0631 20.4094 22.5869C19.423 23.2397 18.3109 23.6788 17.1446 23.876C15.9749 24.0935 14.7752 24.0935 13.6055 23.876C12.4199 23.6311 11.2984 23.1418 10.3125 22.4393C8.72851 21.318 7.53912 19.725 6.9141 17.8877C6.27868 16.0159 6.27868 13.9868 6.9141 12.115C7.359 10.803 8.09449 9.60848 9.06566 8.62051C10.177 7.46913 11.5841 6.64612 13.1324 6.24178C14.6808 5.83743 16.3106 5.86738 17.843 6.32832C19.0402 6.69564 20.1349 7.33772 21.0399 8.20332C21.9508 7.29707 22.8602 6.38848 23.768 5.47754C24.2368 4.98769 24.7477 4.52129 25.2094 4.01973C23.8278 2.73422 22.2063 1.73388 20.4375 1.07598C17.2165 -0.0935799 13.6922 -0.125011 10.4508 0.986913Z" fill="#293857"/>
-    <path d="M10.4504 0.986587C13.6915 -0.126092 17.2158 -0.0954888 20.4371 1.07331C22.2062 1.73568 23.827 2.74084 25.2066 4.03112C24.7379 4.53268 24.2434 5.00143 23.7652 5.48893C22.8559 6.39674 21.9473 7.30143 21.0395 8.20299C20.1345 7.3374 19.0398 6.69531 17.8426 6.32799C16.3106 5.86543 14.6809 5.83376 13.1322 6.23645C11.5834 6.63914 10.1755 7.46064 9.06289 8.61081C8.09172 9.59878 7.35623 10.7933 6.91133 12.1053L2.05273 8.34362C3.79182 4.89493 6.80293 2.25696 10.4504 0.986587Z" fill="#E33629"/>
-    <path d="M0.764007 12.0703C1.02496 10.776 1.45852 9.52264 2.05307 8.34375L6.91166 12.1148C6.27625 13.9866 6.27625 16.0157 6.91166 17.8875C5.29291 19.1375 3.67338 20.3938 2.05307 21.6563C0.565141 18.6945 0.111349 15.3199 0.764007 12.0703Z" fill="#F8BD00"/>
-    <path d="M15.2979 12.2227H29.2479C29.7248 14.8405 29.5958 17.5328 28.8706 20.093C28.2032 22.4472 26.9067 24.575 25.1206 26.2477C23.5526 25.0242 21.9776 23.8102 20.4096 22.5867C21.187 22.0624 21.8505 21.3865 22.3604 20.5995C22.8702 19.8126 23.216 18.9308 23.3768 18.007H15.2979C15.2956 16.0805 15.2979 14.1516 15.2979 12.2227Z" fill="#587DBD"/>
-    <path d="M2.05078 21.6564C3.67109 20.4064 5.29062 19.1502 6.90937 17.8877C7.53564 19.7257 8.72673 21.3187 10.3125 22.4393C11.3014 23.1386 12.4254 23.6239 13.6125 23.8643C14.7822 24.0818 15.9819 24.0818 17.1516 23.8643C18.3179 23.6671 19.43 23.228 20.4164 22.5752C21.9844 23.7986 23.5594 25.0127 25.1273 26.2361C23.4115 27.7964 21.3197 28.8843 19.057 29.3932C16.5596 29.9803 13.9569 29.9521 11.4727 29.3111C9.50789 28.7865 7.67268 27.8617 6.08203 26.5947C4.39858 25.2579 3.02352 23.5734 2.05078 21.6564Z" fill="#319F43"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_265_483">
-      <rect width="30" height="30" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
-Sign In With Google</button>
-      </div> -->
 
 
-      <p>New to 444Living?<span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
+
+
+      <p>New to 444Living?<span style="cursor: pointer;" @click="registering"> Sign Up</span> </p>
 
 
 
@@ -171,12 +150,9 @@ export default {
         second:false,
         email:'',
         password:'',
-        buttonColor:'#ded4a2',
-        textcolor:'#293857',
-        buttonColor1:'#ded4a2',
-        textcolor1:'#293857',
-        buttonColor2:'#ded4a2',
-        textcolor2:'#293857'
+        isLoading: false,
+      emailSent: false,
+   
       
     };
   },
@@ -191,82 +167,25 @@ export default {
 
   methods: {
 
-    setcolor(e){
-      if(e == 1){
-        this.buttonColor = '#293857'
-        this.textcolor = '#ded4a2'
 
-        this.buttonColor1 = '#ded4a2'
-        this.textcolor1 = '#293857'
-
-        this.buttonColor2 = '#ded4a2'
-        this.textcolor2 = '#293857'
-
-      }
-
-
-      if(e == 2){
-        this.buttonColor1 = '#293857'
-        this.textcolor1 = '#ded4a2'
-
-        this.buttonColor = '#ded4a2'
-        this.textcolor = '#293857'
-
-        this.buttonColor2 = '#ded4a2'
-        this.textcolor2 = '#293857'
-
-      }
-
-
-      if(e == 3){
-        this.buttonColor2 = '#293857'
-        this.textcolor2 = '#ded4a2'
-
-        this.buttonColor = '#ded4a2'
-        this.textcolor = '#293857'
-
-        this.buttonColor1 = '#ded4a2'
-        this.textcolor1 = '#293857'
-
-      }
-    },
-
-    mainpage(){
-      this.first = false
-        this.second = true
-      setTimeout(() => {
-       
-
-         
-        this.$router.push('/homepages')
-        }, 3000);
-
-    },
-    
-    async login() {
-      // console.log('ghemdy');
+    async forgot() {
+      this.isLoading = true;
       try {
-        const response = await axios.post("login", {
+        await axios.post("forgot", {
           email: this.email,
-          password: this.password,
         });
-        localStorage.setItem("token", response.data.token);
-        this.$store.dispatch("user", response.data.user);
-        this.first = false
-        this.second = true
-        // this.$router.push("/homepages");
-        setTimeout(() => {
-       
-
-         
-       this.$router.push('/homepages').then(() => {
-    window.location.reload();
-});
-       }, 3000);
+        this.isLoading = false;
+        this.emailSent = true;
       } catch (error) {
         notify.authError(error);
+        this.isLoading = false;
       }
     },
+
+
+   
+    
+   
     startImageSlideshow() {
       setInterval(() => {
         const totalImages = this.images.length;
@@ -282,9 +201,7 @@ export default {
       }, 8000);
     },
 
-    backhome(){
-        this.$router.push('/')
-    },
+   
     registering(){
       this.$router.push('/register')
     }

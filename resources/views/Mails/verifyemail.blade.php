@@ -1,4 +1,8 @@
 
+
+
+
+
 <div>
 
 <section class="email-sine">
@@ -22,12 +26,12 @@
 </defs>
 </svg></span>
 
-<h2>Reset your Password</h2>
+<h2>Confirm Your Email</h2>
 
-<p>If you want to reset your password please click on Reset Passsword button.</p>
+<p>Verifying your email give you acess to more features on unlayer, Click the button <br> bellow to join our worldwide community of learners.</p>
 
 <button>
-<a href="{{ url('/') }}/reset/{{ $token }}" style="text-decoration: none;">Change your Password </a>
+<a href="{{ url('/') }}/setup/{{ $userId }}" style="text-decoration: none;">Verify your Email </a>
 </button>
   </div>
 </div>

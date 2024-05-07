@@ -34,6 +34,12 @@ let router = new Router({
             name: "home",
             component: () => import("./views/home/slider.vue")
         },
+
+        {
+            path: "/loader",
+            name: "home",
+            component: () => import("./views/loader/loader.vue")
+        },
         {
             path: "/login/:user_id?",
             name: "login",
@@ -147,7 +153,7 @@ let router = new Router({
         {
             path: "/reset/:token",
             name: "reset",
-            component: () => import("./views/reset/index.vue")
+            component: () => import("./views/forgot/reset.vue")
         },
         /**
          * Admin routes

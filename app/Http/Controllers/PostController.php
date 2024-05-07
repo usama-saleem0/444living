@@ -77,7 +77,7 @@ class PostController extends Controller
 
     public function realtorposting(Request $request){
 
-      
+    //   dd($request->all());
         $filename = $request->file('image')->getClientOriginalName();
         $imagePath =  $request->file('image')->move(public_path('post'), $filename);
 
@@ -87,6 +87,10 @@ class PostController extends Controller
         $data->postdetails = $request->postdetails;
         $data->posttitle = $request->posttitle;
         $data->user_id = auth()->user()->id;
+        $data->location = $request->location;
+        $data->type = $request->types;
+
+
 
         $data->postpic = $filename;
         

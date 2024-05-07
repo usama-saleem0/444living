@@ -1,5 +1,6 @@
 <template>
-  <div class="fade-in">
+    <div>
+  <div class="fade-in" v-if="showing">
     <header class="loging-header">
     <div class="contanir">
       <nav class="logaing-nav">
@@ -89,7 +90,7 @@
 
 
 
-      <p>New to 444Living ? <span style="cursor: pointer;" @click="logins">
+      <p>New to 444Living? <span style="cursor: pointer;" @click="logins">
         Sign In
       </span></p>
 
@@ -133,15 +134,26 @@
 
 
   </div>
+
+  <Loader v-if="loader"/>
+</div>
 </template>
 
 
 <script>
 import axios from "axios";
 import * as notify from "../../utils/notify.js";
+import Loader from "../loader/loader.vue";
 
 import { get , byMethod} from '../lib/api';
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
+
 export default {
+
+    components: {
+        Loader
+  },
 
     data() {
     return {
@@ -160,7 +172,9 @@ export default {
         buttonColor1:'#ded4a2',
         textcolor1:'#293857',
         buttonColor2:'#ded4a2',
-        textcolor2:'#293857'
+        textcolor2:'#293857',
+        loader:false,
+        showing:true
     };
   },
   methods: {
@@ -270,6 +284,8 @@ export default {
 
     save(){
 
+        this.loader = true
+        this.showing = false
 
 this.form.username = this.username;
 this.form.number = this.number;
@@ -279,7 +295,7 @@ this.form.password = this.password;
 this.form.password_confirm = this.password_confirm;
 
 
-// console.log(this.form);
+
 
 
 
@@ -290,10 +306,28 @@ this.form.password_confirm = this.password_confirm;
 
 
                 if(res.data && res.data.saved) {
-                    this.$router.push(`/setup/${res.data.user.id}`);
+                    this.loader = false
+                    this.showing = true
+
+                    Swal.fire({
+                    title: "Verification email sent to your email please verify your email first",
+                    width: 600,
+                    padding: "3em",
+                    color: "#202d46",
+                    background: "#ded4a2",
+                    backdrop: `
+                    rgb(0 0 0 / 84%)
+
+                    
+                    `
+                    });
+ 
+                    // this.$router.push(`/setup/${res.data.user.id}`);
                 }
             })
             .catch((error) => {
+                this.loader = false
+        this.showing = true
                 if(error.response.status === 422) {
                     this.errors = error.response.data.errors
                 }

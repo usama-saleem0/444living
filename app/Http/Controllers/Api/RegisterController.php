@@ -8,6 +8,11 @@ use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\RegisterRequest;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Mail\Message;
+use App\Mail\WelcomeEmail;
+
 
 
 class RegisterController extends Controller
@@ -28,6 +33,23 @@ class RegisterController extends Controller
             if (config('auth.must_verify_email')) {
                 event(new Registered($user));
             }
+
+
+            $token = Str::random(10);
+
+            $email = $request->email;
+            $userId = $user->id;
+
+            Mail::to($email)->send(new WelcomeEmail($email, $userId, $token));
+
+
+
+            // Mail::send('Mails.verifyemail', ['token' => $token], function(Message $message) use ($email){
+            //     $message->to($email);
+            //     $message->subject('Verify Your Email');
+            // });
+
+
 
             // return response()->json($user);
 

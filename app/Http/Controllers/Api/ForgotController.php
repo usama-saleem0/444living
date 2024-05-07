@@ -44,7 +44,7 @@ class ForgotController extends Controller
             ]);
         } catch (\Exception $e) {
             return response([
-                'message' => 'Internal error, please try again later.' //$e->getMessage()
+                'message' => 'Internal error, please try again later.' 
             ], 400);
         }
     }
