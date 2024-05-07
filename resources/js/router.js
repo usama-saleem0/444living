@@ -191,6 +191,17 @@ let router = new Router({
                
             }
         },
+
+        {
+            path: "/add",
+            name: "forgot",
+            component: () => import("./views/admin/add.vue"),
+            meta: {
+                requiresAuth: true,
+                
+               
+            }
+        },
          
 
         {

@@ -53,9 +53,10 @@
       <h2>Sign Up</h2>
 
       <div class="Login-btn-box">
+       
         <button @click="accountype('Buyer' , 1)" :style="{ backgroundColor: buttonColor,   color:textcolor }" >As  Buyer</button>
-        <button @click="accountype('Realtor' , 2)" :style="{ backgroundColor: buttonColor1,   color:textcolor1 }">As Realtor</button>
         <button @click="accountype('Investor' , 3)" :style="{ backgroundColor: buttonColor2,   color:textcolor2 }">As Investor</button>
+        <button @click="accountype('Realtor' , 2)" :style="{ backgroundColor: buttonColor1,   color:textcolor1 }">As Realtor</button>
 
 
       
@@ -559,7 +560,16 @@ section.loging-page {
     padding: 18px;
     border: 1px solid #293857;
 }
-
+.Login-btn-box button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0px;
+    bottom: 0px;
+    background: #DED4A2;
+    height: 2px;
+    transition: 0.3s ease-out;
+}
 .btn-loging-long button::after {
     position: absolute;
     content: "";
