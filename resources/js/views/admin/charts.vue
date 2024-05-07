@@ -1,4 +1,5 @@
 <template>
+
   <div>
     <h1 class="h3 mb-2 text-gray-800">Charts</h1>
     <p class="mb-4">
@@ -64,12 +65,17 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+
 import chartAreaDemo from "../../chart/demo/chart-area-demo";
 import chartPieDemo from "../../chart/demo/chart-pie-demo";
 import chartBarDemo from "../../chart/demo/chart-bar-demo";
+
+
+
 
 export default {
   name: "Charts",
@@ -79,4 +85,5 @@ export default {
     chartBarDemo();
   },
 };
+
 </script>
