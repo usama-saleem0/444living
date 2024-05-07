@@ -61,6 +61,48 @@
                 
                     </div>
 
+
+                    <div  v-if="morefeild || imageUrl" style="width: 100%;
+            
+            position: relative;
+            display: flex;
+            align-content: center;
+            align-items: center;">
+            <div style="width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;">
+
+                <input type="text" placeholder="Enter How Many Bedrooms" class="inputclass" v-model="form.bedroom"/>
+                <input type="text" placeholder="Enter How Many Bathrooms" class="inputclass" v-model="form.bathroom"/>
+
+               
+
+            </div>
+
+                
+                    </div>
+
+
+                    <div  v-if="morefeild" style="width: 100%;
+            
+            position: relative;
+            display: flex;
+            align-content: center;
+            align-items: center;">
+          
+
+                <input type="text" placeholder="Enter Details" class="inputclass" v-model="form.postdetials"/>
+             
+
+            
+
+                
+                    </div>
+
+
+                    
+
 <div v-if="imageUrl" style="    width: 100%;
     border: 1px solid beige;
     padding: 10px;
@@ -344,6 +386,10 @@
                 formData.append('posttitle', this.form.posttitle);
                 formData.append('types', this.form.types);
                 formData.append('location', this.form.location);
+                formData.append('bedroom', this.form.bedroom);
+                formData.append('bathroom', this.form.bathroom);
+
+
 
 
 
@@ -359,6 +405,7 @@
                                     if(res.data && res.data.saved) {
                                         this.imageUrl  ='';
                                         this.form = {};
+                                        this.morefeild = false
 
                                         let message =
                 "Successfully Create Post.";

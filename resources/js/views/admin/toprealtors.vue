@@ -1,7 +1,7 @@
 <template>
  
     <div class="page-1">
-        <!-- <Header/> -->
+       
      <div class="contanir" >
         <div class="main">
         <div class="box-1">
@@ -36,7 +36,7 @@
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
                     
-                    <!-- <img src="/images/alex.png" alt=""> -->
+                   
                     <img :src="'/profile/' + item.profile" alt="">
 
                   </div>
@@ -111,12 +111,11 @@
  
  <script>
  import Vue from 'vue'
- import chartBarDemo from "../../chart/demo/chart-bar-demo";
 
- import Tables from "../admin/simpletable.vue"
+
 
  import Profile from "./investorprofilecard.vue";
- import Header from "../admin/components/Topbar.vue";
+
  import { get , byMethod} from '../lib/api';
  export default {
      name: 'admin',
@@ -124,14 +123,10 @@
      components: {
     
     Profile,
-    Header,
-    Tables
+   
+   
  },
  
-     mounted() {
-    
-     chartBarDemo();
-   },
  
  
      data () {
@@ -181,7 +176,7 @@
                
               
  
-             //   console.log(res.data)
+            
            },
  
              profile(){

@@ -17,8 +17,8 @@
         </div>
 
         <div class="maxwidths">
-            <input type="text" placeholder="What are you looking for..."class="inputtype"/>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="setsvgleft">
+            <input type="text" placeholder="What are you looking for..."class="inputtype" v-model="form.looking"/>
+            <svg @click="explorenow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="setsvgleft" style="cursor: pointer;">
   <path d="M30.0518 27.6952L37.1902 34.8318L34.8318 37.1902L27.6952 30.0518C25.0397 32.1805 21.7368 33.3383 18.3335 33.3335C10.0535 33.3335 3.3335 26.6135 3.3335 18.3335C3.3335 10.0535 10.0535 3.3335 18.3335 3.3335C26.6135 3.3335 33.3335 10.0535 33.3335 18.3335C33.3383 21.7368 32.1805 25.0397 30.0518 27.6952ZM26.7085 26.4585C28.8237 24.2833 30.0049 21.3675 30.0002 18.3335C30.0002 11.8885 24.7785 6.66683 18.3335 6.66683C11.8885 6.66683 6.66683 11.8885 6.66683 18.3335C6.66683 24.7785 11.8885 30.0002 18.3335 30.0002C21.3675 30.0049 24.2833 28.8237 26.4585 26.7085L26.7085 26.4585Z" fill="#293857"/>
 </svg>
           </div>
@@ -65,7 +65,7 @@
         <a
             class="dropdown-item"
             href="javascript:void(0)"
-           
+           @click="$router.push('/comment')"
             data-toggle="modal"
             data-target="#logoutModal"
           >
@@ -273,7 +273,7 @@ Top Listing’s
                   <span>
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" @click="favourite(posting.id)" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" @click="favourite(posting)" style="cursor: pointer;">
   <path d="M15.9998 28.4667L14.0665 26.7067C7.19984 20.48 2.6665 16.36 2.6665 11.3333C2.6665 7.21333 5.89317 4 9.99984 4C12.3198 4 14.5465 5.08 15.9998 6.77333C17.4532 5.08 19.6798 4 21.9998 4C26.1065 4 29.3332 7.21333 29.3332 11.3333C29.3332 16.36 24.7998 20.48 17.9332 26.7067L15.9998 28.4667Z" fill="#DED4A2"/>
                     </svg>
 
@@ -286,7 +286,7 @@ Top Listing’s
                 </p>
 
 
-                <div class="id-list-3">
+                <div class="id-list-3" @click="openModal(posting)" style="cursor: pointer">
                   <!-- <img src="/images/manigar.png" alt=""> -->
                   <img :src="'/post/' + posting.postpic" alt="">
 
@@ -300,7 +300,7 @@ Top Listing’s
               </div>
 
               <div class="id-list-6" style="cursor: pointer;">
-                <div class="favourites-card" @click="favourite(posting.id)">
+                <div class="favourites-card" @click="favourite(posting)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
   <path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
 </svg>
@@ -630,7 +630,15 @@ Top Listing’s
       </div>
     </footer>
 
+    <div id="popup-box" class="modal" v-if="isModalOpen" >
+      <div style="display: flex;
+    padding-left: 0px;
+    justify-content: space-evenly;">
 
+        <Add :Feeds="Feeds"   @cancel="closeModals"/>
+      </div>
+      
+    </div>
   
 </div>
 
@@ -648,6 +656,7 @@ import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
 import dashboard from './dashboard.vue';
 import Stories from './black.vue';
+import Add from '../admin/add.vue'
 import { mapGetters } from "vuex";
 import { get , byMethod} from '../lib/api';
 import Swal from 'sweetalert2/dist/sweetalert2.js'
@@ -658,7 +667,8 @@ export default {
   components: {
     Menu,
     Slider,
-    Stories
+    Stories,
+    Add
   
   
   },
@@ -691,7 +701,9 @@ export default {
         story_data:"",
         fileType: null,
         loaders:false,
-        locations:[]
+        locations:[],
+        isModalOpen:true,
+        Feeds:{}
 
     };
   },
@@ -719,6 +731,22 @@ export default {
 
 
   methods:{
+
+    openModal(e) {
+      this.Feeds = e
+      console.log(e);
+     
+     $('#popup-box').modal('show');
+     
+   },
+   closeModals() {
+   console.log('avcd');
+
+   this.shows = false;
+   $('#popup-box').modal('hide');
+     
+    
+   },
 
     logout() {
       localStorage.removeItem("token");
@@ -792,9 +820,10 @@ export default {
     },
 
     favourite(e){
+      console.log(e)
 
 
-      get('/addfavorite?post_id=' + e)
+      get('/addfavorite?post_id=' + e.id + '&user_id=' + e.user_id)
                .then((res) => {
                 
                 Swal.fire({

@@ -8,7 +8,7 @@
         <div class="box-1">
             <div class="toppadds">
                 <span class="overviews">
-                Post Something  so Buyers and Realtor can reach you!
+                Post Something  so Investor and Realtor can reach you!
              </span>
             </div>
             
@@ -24,8 +24,47 @@
   <path d="M11.2514 8.76159C9.87484 8.76395 8.75361 7.65152 8.7442 6.27381C8.73479 4.8955 9.87484 3.75419 11.2573 3.75831C12.6267 3.76244 13.7509 4.89373 13.7492 6.26496C13.7474 7.63973 12.6273 8.75923 11.2514 8.76159Z" fill="#DED4A2"/>
 </svg>
             </div>
+
+            <div class="col text-right"><p style="margin: auto 0;
+    color: #DED4A2;
+    font-family: sans-serif;
+  
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;"
+    @click="MoreF" >More</p></div>
+
             <input type="file" id="file-input" style="position: absolute; bottom: 0; left: 0; opacity: 0; width: 0%;" @change="handleFileChange" accept="image/*">
 
+ <div  v-if="imageUrl || morefeild" style="width: 100%;
+            
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;">
+                <input type="text" placeholder="Enter location" class="inputclass" v-model="form.location"/>
+        
+            </div>
+
+
+         
+
+                    <div  v-if="morefeild" style="width: 100%;
+            
+            position: relative;
+            display: flex;
+            align-content: center;
+            align-items: center;">
+          
+
+                <input type="text" placeholder="Enter Details" class="inputclass" v-model="form.postdetials"/>
+             
+
+            
+
+                
+                    </div>
 
 <div v-if="imageUrl" style="    width: 100%;
     border: 1px solid beige;
@@ -38,7 +77,7 @@
     <input type="text" placeholder="Add Details" class="inputclass" v-model="form.postdetials"/>
     
 </div>
-<div class="col text-right btn-post" v-if="imageUrl">
+<div class="col text-right btn-post" v-if="imageUrl || morefeild ">
     <button>
         <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
@@ -164,6 +203,7 @@
                  model:'',
                  imageUrl: '',
                  form:{},
+                 morefeild:false
   
                
                
@@ -181,6 +221,12 @@
          }, 
  
          methods:{
+
+
+            MoreF(){
+                this.morefeild = !this.morefeild
+                console.log('more',this.morefeild)
+            },
 
             dated(e){
                 const moment = require('moment');
@@ -217,6 +263,7 @@
 
             formData.append('postdetails', this.form.postdetials);
             formData.append('posttitle', this.form.posttitle);
+            formData.append('location', this.form.location);
            
             console.log(formData);
 
@@ -229,6 +276,7 @@
                                 console.log(res)
                                 if(res.data && res.data.saved) {
                                     this.imageUrl  ='';
+                                    this.morefeild = false
                                     this.form = {};
 
                                     let message =

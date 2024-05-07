@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <div style="height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;">
 
-    <section class="add">
+    <section style="background: linear-gradient(90deg, rgba(3,11,28,1) 0%, rgba(41,56,87,1) 73%, rgba(49,74,115,1) 100%);">
 
-      <div class="cloce-add " @click="$router.go(-1);">
-        <img class="images" src="/images/loging-close.png"/>
-      </div>
       <div class="main-add-comment">
 
         <div class="add-comment-post">
-          <img class="images" src="/images/salider.png"/>
+          <img class="images" :src="'/post/' + Feeds.postpic"/>
         </div>
 
         <div class="add-comment-tital">
@@ -17,17 +17,45 @@
             <div class="add-cm-box">
 
 <div class="add-cm-id">
+
+  <img class="images" style="    max-width: 8%;
+    min-width: 8%; width: 8%;" :src="'/profile/' + Feeds.user.profile "/>
+   
+   
+
+      <h4>{{ Feeds.user.username }}</h4>
+
+
+<div class="hello-buddykk" style="    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;"
+    
+    @click="$emit('cancel')">
+  <img style=" object-fit: fill; cursor: pointer; min-width: 7%;"  src="/images/loging-close.png"/>
+
+</div>
+    
+</div>
+
+
+            </div>
+
+
+
+            <div class="add-cm-box" v-for="items in Feeds.comments">
+
+<div class="add-cm-id">
   <img class="images" src="/images/p3.png"/>
-  <h4>Alex</h4>
+  <h4>{{ items.user.username }}</h4>
+ 
 </div>
 
 <div class="add-cm-commment">
-  <p>hello buddy</p>
+  <p>{{ items.comments }}</p>
 </div>
 
-<div class="last-seen">
-  <p>30 min</p>
-</div>
+
 
             </div>
 
@@ -48,6 +76,12 @@ import * as notify from "../../utils/notify.js";
 import Loader from "../admin/loader.vue"
 export default {
 
+  props: {
+    Feeds: {
+      type: Object,
+      required: true,
+    },
+  },
   
   components: {
    
@@ -55,6 +89,14 @@ export default {
   
   
   },
+
+
+  // props: {
+  //   feeds: {
+  //     type: Object,
+  //     required: true,
+  //   },
+  // },
 
 
   data() {
@@ -69,7 +111,8 @@ export default {
         buttonColor1:'#ded4a2',
         textcolor1:'#293857',
         buttonColor2:'#ded4a2',
-        textcolor2:'#293857'
+        textcolor2:'#293857',
+        
       
     };
   },
@@ -216,6 +259,10 @@ section.add {
 .add-comment-post {
     width: 48%;
     height: 100%;
+    object-fit: cover;
+  
+    min-height: 500px;
+    max-height: 500px;
     object-fit: cover;
 }
 

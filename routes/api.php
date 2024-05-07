@@ -42,6 +42,8 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('getposts', [PostController::class, 'getposts']);
     Route::get('getlisting', [PostController::class, 'getlisting']);
     Route::get('addfavorite', [PostController::class, 'addfavorite']);
+    Route::get('favoritelists', [PostController::class, 'favoritelists']);
+
     Route::post('filterpost', [PostController::class, 'filterpost']);
 
 
