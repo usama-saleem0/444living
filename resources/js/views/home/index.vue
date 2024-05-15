@@ -39,9 +39,9 @@
     <div class="fade-in" v-if="end" style="z-index: 0; height: 100%;">
     <Menu/>
   </div>
-    <div   v-else>
 
-    
+  
+    <div   v-else>    
 
     <section class="hero">
       <div class="contanair">
@@ -65,7 +65,7 @@
               
 
 </svg>
-<p>Post your requirements or listings, and let us handle the rest.</p></span>
+<p>Post your dream listing, collaborate with other investors, and find great realtors.</p></span>
             <h2>Discover Your Dream Property with Ease</h2>
 
             <button>
@@ -112,7 +112,6 @@
       </div>
     </section>
 
-
     <section class="home">
       <div class="contanair">
         <div class="main-home">
@@ -125,7 +124,7 @@
 
           <div class="home-contars">
             <div class="contars-1">
-              <h2>$40B+ </h2>
+              <h2>$50M+ </h2>
               <p>Worth Of Real Estate Sold</p>
             </div>
             <div class="contars-2">
@@ -149,7 +148,6 @@
       </div>
     </section>
 
-
     <section class="Process">
         <div class="main-Process">
 
@@ -159,9 +157,12 @@
       
               <span><img src="/images/Line 7.png" alt=""> <p>How It Works</p></span>
 
-              <h2>For Buyers</h2>
-              <h2>For Buyers</h2>
-              <h2>For Realtors</h2>
+              <h2  @mouseover="handleMouseOver6"
+      @mouseleave="handleMouseLeave6" >For Buyers</h2>
+              <h2 @mouseover="handleMouseOver7"
+      @mouseleave="handleMouseLeave7">For Investors</h2>
+              <h2 @mouseover="handleMouseOver8"
+      @mouseleave="handleMouseLeave8">For Realtors</h2>
 
 
   <div class="Process-btn-box">
@@ -178,7 +179,7 @@ Sign Up
        
 
 
-          <div class="Process-img-box">
+          <div class="Process-img-box  fade-in" v-if="helloboy">
 
 <h2>Process Story</h2>
 
@@ -189,13 +190,32 @@ Sign Up
           </div>
 
 
+
+          <div class="Process-img-box   fade-in" v-if="helloboys">
+
+<h2>Process Story</h2>
+
+
+<p>Investors using the 444Living platform begin by creating an account or logging in to access the investor dashboard. They can search for lucrative investment opportunities based on their criteria, such as location, property type, investment size, and expected returns. Investors have the option to connect with other like-minded individuals to form investment groups and pool resources for larger projects. They can also post their own investment opportunities for others to join. Through the platform, investors can collaborate with partners, conduct due diligence, and make informed investment decisions. The platform facilitates communication and negotiation between investors and property owners or developers, streamlining the investment process. Investors can track their investments, monitor performance, and stay updated on market trends to maximize returns. With access to a wide range of opportunities and a supportive community, investors can achieve their financial goals efficiently and effectively on 444Living</p>
+
+<img src="/images/chatbuttonhhh.png" alt="">
+          </div>
+
+
+          <div class="Process-img-box   fade-in" v-if="helloboyss">
+
+<h2>Process Story</h2>
+
+
+<p>Realtors on the 444Living platform have access to a user-friendly dashboard upon registration or login. They can browse through buyer requirements and connect with interested clients directly through the platform. Realtors can list properties available for sale or rent, manage their listings, and communicate with buyers efficiently. They can view inquiries, schedule property viewings, and negotiate terms seamlessly within the platform. Realtors also have the opportunity to showcase their expertise and build their reputation through successful transactions and positive feedback from buyers. The platform provides tools to streamline the real estate process, empowering realtors to expand their network, close deals effectively, and grow their business.</p>
+<img src="/images/Realtorsimger1.png" alt="">
+          </div>
+
+
         </div>
     </section>
 
-    
 <Slider/>
-
-    
 
     <section class="Success">
       <div class="contanair">
@@ -208,7 +228,6 @@ Sign Up
         </div>
       </div>
     </section>
-
 
     <section class="curated">
       <div class="main-curated">
@@ -229,7 +248,6 @@ See All Properties
         </div>
       </div>
     </section>
-
 
     <section class="luxury">
       <div class="contanair">
@@ -298,14 +316,12 @@ Get To know our top Agents
         <div class="contanairz">
 <div class="slider">
   <div class="text-container">
-    <div class="text-item"><h2>"I found my dream home within days of signing up. The platform made it so easy to connect with realtors who understood exactly what I was looking for. Highly recommended!"</h2> <span><img src="/images/ej.png" alt=""><p>Emily Johnson, Happy Homeowner</p></span></div>
 
+    <div class="text-item"><h2>"I found my dream home within days of signing up. The platform made it so easy to connect with realtors who understood exactly what I was looking for. Highly recommended!"</h2> <span><img src="/images/ej.png" alt=""><p>Emily Johnson, Happy Homeowner</p>
+    </span></div>
 
-
-
-
-
-    <div class="text-item"><h2>"As a realtor, this platform has been a game-changer for my business. The ability to browse buyer requirements and connect with interested clients has significantly increased my success rate."</h2> <span><img src="/images/jj.png" alt=""><p>John Smith, Realtor</p></span></div>
+    <div class="text-item"><h2>"As a realtor, this platform has been a game-changer for my business. The ability to browse buyer requirements and connect with interested clients has significantly increased my success rate."</h2> <span><img src="/images/jj.png" alt=""><p>John Smith, Realtor</p>
+    </span></div>
 
 
 
@@ -315,9 +331,6 @@ Get To know our top Agents
 </div>
 </div>
     </section>
-
-
-
 
     <section class="contact">
         <div class="main-contact">
@@ -457,7 +470,11 @@ export default {
         cross:false,
         endicon:false,
         starticon:true,
-        logo:true
+        logo:true,
+        helloboy:true,
+        helloboys:false,
+        helloboyss:false,
+
     };
   },
   name: 'SampleComponent',
@@ -510,6 +527,7 @@ export default {
     login_page(){
         this.$router.push('login')
     },
+
     handleMouseOver1(){
         console.log('enter')
         this.first = true,
@@ -564,7 +582,59 @@ export default {
     handleMouseLeave4(){
         console.log('leave4')
         // this.fourth = false
-    }
+    },
+
+
+
+
+
+
+
+    handleMouseOver6(){
+        console.log('enter')
+        this.helloboy = true,
+        this.helloboys = false,
+        this.helloboyss = false
+        
+    },
+
+    handleMouseLeave6(){
+        console.log('leave')
+        // this.first = false
+    },
+
+    handleMouseOver7(){
+        console.log('enter2')
+        this.helloboys = true,
+        this.helloboy = false,
+        this.helloboyss = false
+    },
+
+    handleMouseLeave7(){
+        console.log('leave2')
+        // this.second = false,
+        // this.first = true
+    },
+
+    handleMouseOver8(){
+        console.log('enter3')
+        this.helloboyss = true,
+        this.helloboys = false,
+        this.helloboy = false
+     
+    },
+
+    handleMouseLeave8(){
+        console.log('leave3')
+        // this.third = false,
+        // this.first = true
+    },
+
+
+
+
+
+    
   }
 };
 </script>
@@ -3802,7 +3872,7 @@ section.Happy {
 }
 .hero-tital span p {
     line-height: 30px;
-    font-size: 12px;
+    font-size: 10px;
     font-family: sans-serif;
     margin: 0px;
     font-weight: 400;
@@ -3818,6 +3888,7 @@ section.Happy {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    flex-direction: column;
 }
 .hero-tital h2 {
     line-height: 40px;
@@ -3892,7 +3963,7 @@ section.Happy {
 .hero {
     background-image: url(/images/Background.png);
     width: 100%;
-    padding: 320px 20px 25px 20px;
+    padding: 200px 20px 25px 20px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

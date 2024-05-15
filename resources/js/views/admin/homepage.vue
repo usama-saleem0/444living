@@ -1132,6 +1132,7 @@ export default {
 
 
 <style scoped>
+
 .spinner {
   position: absolute;
     width: 15px;
@@ -1147,12 +1148,14 @@ export default {
   transform: rotate(calc(var(--rotation) * 1deg)) translate(0, calc(var(--translation) * 1%));
   animation: spinner-fzua35 1s calc(var(--delay) * 1s) infinite ease;
 }
+
 .George-search svg {
     fill: rgb(41, 56, 87);
     height: 35px !important;
     width: 35px !important;
     cursor: pointer !important;
 }
+
 .spinner div:nth-child(1) {
   --delay: 0.1;
   --rotation: 36;
@@ -1223,32 +1226,13 @@ export default {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ahtishamchoro{
  width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 input.inputtype {
     border: 1px solid #293857 !important;
     padding-top: 20px;
@@ -1256,6 +1240,7 @@ input.inputtype {
     padding-right: 70px;
     width: 90%;
 }
+
 p.godashborad {
     color: #293857;
     font-family: sans-serif;
@@ -1265,6 +1250,7 @@ p.godashborad {
     line-height: 24px;
     cursor: pointer !important;
 }
+
 .hello-buddy {
     position: relative;
     display: flex;
@@ -1276,6 +1262,7 @@ p.godashborad {
     position: absolute !important;
     right: 24px !important; 
 }
+
 .zerowidth{
   width: 0%;
   padding-top: 10px
@@ -1297,6 +1284,7 @@ svg.setsvgleft {
     position: absolute;
     right: 120px;
 }
+
 .maxwidths{
   width:65%;
   position: relative;
@@ -1313,6 +1301,7 @@ header.header {
     padding: 16px 0px 0px 0px !important;
     background-color: #DED4A2 !important;
 }
+
 img.Walker {
     z-index: 1;
     position: absolute;
@@ -1323,6 +1312,7 @@ img.Walker {
     border: 4px solid #202d46 !important;
     border-radius: 10px ;
 }
+
 .George-card p {
     z-index: 1;
     position: absolute;
@@ -1330,11 +1320,11 @@ img.Walker {
     text-align: center;
     width: 100%;
 }
+
 img.George {
     width: 100% !important;
     height: 100%;
 }
-
 
 .George-box {  
     display: flex !important;
@@ -1393,7 +1383,6 @@ img.George {
     border: 1px solid #ded4a2;
 }
 
-/* .facebook-paa p {} */
 
 .facebook-card button svg {
     font-size: 15px;
@@ -1628,6 +1617,14 @@ svg.setsvgleft {
 
 section.Townhomes {
     padding: 65px 0px;
+}
+.spinner div {
+    width: 18%;
+    height: 90%;
+}
+
+.spinner {
+    bottom: 42px;
 }
 }
 @media screen and (max-width: 1440px){
