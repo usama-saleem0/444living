@@ -7,7 +7,7 @@
         <div class="box-1">
             <div class="toppadds">
                 <span class="overviews">
-                Post Something  so Buyers and Realtor can reach you!
+                    Post so you can be noticed by other investors and realtors!
              </span>
             </div>
             
