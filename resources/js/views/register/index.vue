@@ -91,8 +91,8 @@
 
 
 
-      <p>New to 444Living? <span style="cursor: pointer;" @click="logins">
-        Sign In
+      <p>New to 444 Living? <span style="cursor: pointer;" @click="logins">
+         Sign In
       </span></p>
 
 

@@ -100,7 +100,7 @@ Sign In With Google</button>
       </div> -->
 
 
-      <p>New to 444Living?<span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
+      <p>New to 444 Living? <span style="cursor: pointer;" @click="registering">Sign Up</span> </p>
 
 
 
