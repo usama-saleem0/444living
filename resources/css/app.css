@@ -13,13 +13,6 @@ body {
 
 
 
-
-
-
- 
-
-
-
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -1726,6 +1719,12 @@ section.Townhomes {
 
 .Townhomes-img img {
     width: 100%;
+    height: 100%;
+}
+.Townhomes-img {
+    max-height: 28vh;
+    height: 28vh;
+    min-height: 28vh;
 }
 
 .ts-si {

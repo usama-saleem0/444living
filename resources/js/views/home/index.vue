@@ -184,8 +184,16 @@ Sign Up
 <h2>Process Story</h2>
 
 
-<p>Buyers on the 444Living platform start by registering or logging in to access the dashboard. They can post their specific requirements for a property, browse listings, and save favorites for future reference. When they find a property of interest, they can directly contact the listing realtor through the platform to inquire for more information or schedule viewings. Buyers manage their communication with realtors within the platform and arrange property viewings to evaluate suitability. They can make offers, negotiate terms, and proceed with the necessary steps to finalize the purchase. After completing a transaction, buyers may provide feedback to contribute to the platform's reputation. Throughout the process, buyers can continue using the platform to search for properties, post new requirements, or engage with the community.</p>
+<p>
 
+    Discover the journey of buying a property with 444Living's comprehensive platform, empowering buyers to effortlessly navigate listings, communicate with realtors, negotiate terms, and finalize transactions.
+Register/log in to access dashboard
+Post requirements, browse listings, save favorites
+Contact realtors directly for inquiries/viewings
+Manage communication and schedule viewings
+Make offers, negotiate terms, finalize purchase
+Provide feedback, continue property search, engage community
+</p>
 <img src="/images/porrose.png" alt="">
           </div>
 
@@ -196,8 +204,16 @@ Sign Up
 <h2>Process Story</h2>
 
 
-<p>Investors using the 444Living platform begin by creating an account or logging in to access the investor dashboard. They can search for lucrative investment opportunities based on their criteria, such as location, property type, investment size, and expected returns. Investors have the option to connect with other like-minded individuals to form investment groups and pool resources for larger projects. They can also post their own investment opportunities for others to join. Through the platform, investors can collaborate with partners, conduct due diligence, and make informed investment decisions. The platform facilitates communication and negotiation between investors and property owners or developers, streamlining the investment process. Investors can track their investments, monitor performance, and stay updated on market trends to maximize returns. With access to a wide range of opportunities and a supportive community, investors can achieve their financial goals efficiently and effectively on 444Living</p>
-
+<p>
+    Unlock the potential of investment success with 444Living, where investors can seamlessly explore, connect, collaborate, and track their investments while leveraging a supportive community and a wealth of opportunities.
+Create an account or log in to access the Investor dashboard.
+Search for investment opportunities based on criteria.
+Connect with like-minded investors looking for similar opportunities
+Post investment opportunities for others to join.
+Collaborate, conduct due diligence, and make informed decisions.
+Facilitate communication and negotiation with property owners/developers.
+Track investments, monitor performance, and stay updated
+</p>
 <img src="/images/chatbuttonhhh.png" alt="">
           </div>
 
@@ -205,9 +221,17 @@ Sign Up
           <div class="Process-img-box   fade-in" v-if="helloboyss">
 
 <h2>Process Story</h2>
+<p>
 
+    Experience seamless real estate transactions with 444Living, empowering realtors to efficiently connect with clients, manage listings, negotiate terms, and showcase expertise for business growth
+Access user-friendly dashboard upon registration or login.
+Browse buyer requirements and connect with interested clients.
+List properties for sale or rent, manage listings efficiently.
+View inquiries, meet with prospective clients, and negotiate terms
+Showcase expertise, build reputation through successful transactions, and positive feedback.
+Utilize platform tools to streamline processes and expand network.
+</p>
 
-<p>Realtors on the 444Living platform have access to a user-friendly dashboard upon registration or login. They can browse through buyer requirements and connect with interested clients directly through the platform. Realtors can list properties available for sale or rent, manage their listings, and communicate with buyers efficiently. They can view inquiries, schedule property viewings, and negotiate terms seamlessly within the platform. Realtors also have the opportunity to showcase their expertise and build their reputation through successful transactions and positive feedback from buyers. The platform provides tools to streamline the real estate process, empowering realtors to expand their network, close deals effectively, and grow their business.</p>
 <img src="/images/Realtorsimger1.png" alt="">
           </div>
 
