@@ -637,19 +637,20 @@ line-height: normal;
 }
 
 .list-1 img {
-    width: 12%;
-    min-width: 12%;
-    max-width: 12%;
+    width: 10%;
+    min-width: 10%;
+    max-width: 10%;
     position: relative;
     z-index: 1;
     margin-top: -125px;
     margin-left: 20px;
-   height: 150px;
+    height: 150px;
     max-height: 150px;
     min-height: 150px;
     border-radius: 0px !important;
     -o-object-fit: cover;
     object-fit: cover;
+    border-radius: 50% !important;
 }
 
 .list-titel {
@@ -1401,9 +1402,9 @@ height: 100%;object-fit: cover;
     height: 20px;
 }
 .list-1 img {
-    width: 11%;
-    min-width: 11%;
-    max-width: 11%;
+    width: 10%;
+    min-width: 10%;
+    max-width: 10%;
     position: relative;
     z-index: 1;
     margin-top: -80px;
@@ -1412,6 +1413,7 @@ height: 100%;object-fit: cover;
     border-radius: 50%;
     max-height: 120px;
     min-height: 120px;
+
     object-fit: cover;
 }
 .list-titel p {

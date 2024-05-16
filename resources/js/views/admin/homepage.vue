@@ -116,13 +116,17 @@
           <div class="main-TopListing">
           <div class="TopListing-tital">
             <div class="contact-form-btn hello-bu">
+
+
       <button>
               <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
 </svg>
 
 Top Listing’s
-            </button>
+      </button>
+
+
     </div>
 
     <h2>Explore with Us!!</h2>
@@ -624,6 +628,21 @@ Top Listing’s
                 <li>Linkedin</li>
                 
               </ul>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="boeder-footer-bottom">
+        <div class="contanair">
+          <div class="main-bottom-side">
+            <p>444living 2024,  All rights reserved</p>
+
+
+            <div class="main-list-bottom">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms And Services</a>
             </div>
           </div>
         </div>
@@ -1303,9 +1322,14 @@ header.header {
 }
 
 img.Walker {
-    z-index: 1;
+  z-index: 1;
     position: absolute;
     top: 10px;
+    width: 20%;
+    min-width: 20%;
+    max-width: 20%;
+    border-radius: 50px;
+    object-fit: cover;
 }
 
 .George-card {
@@ -1389,6 +1413,46 @@ img.George {
     fill: #ded4a2;
     width: 22px;
     height: 22px;
+}
+
+
+.boeder-footer-bottom {
+    width: 100%;
+    border-top: 1px solid #DED4A2;
+}
+
+.main-bottom-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0px;
+}
+
+.main-list-bottom {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.main-bottom-side p {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-list-bottom a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
 }
 @media screen and (max-width: 1600px){
   .contanirz {
