@@ -22,8 +22,17 @@
 
     <!-- Topbar Search -->
    <img class="images" src="/images/logo.png"/>
-   <h2 class="heads">Welcome Alex!! Resume Your Buyer Journey</h2>
+
+
+   <h2 class="heads" v-if="user && user.type === 'Investor'">Welcome   <span >{{ user.username }}</span>!! Resume Your Investor Journey</h2>
+
+   <h2 class="heads" v-if="user && user.type === 'Realtor'">Welcome            <span >{{ user.username }}</span>!! Resume Your Realtor Journey</h2>
   
+
+   
+   <h2 class="heads" v-if="user && user.type === 'Buyer'">Welcome         <span >{{ user.username }}</span>!! Resume Your Buyer Journey</h2>
+
+
 
   <ul class="ul-list" >
     <li v-if="user && user.type === 'Investor'">
@@ -31,6 +40,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Dashboard</a></router-link
         >
+
       </li>
 
 
@@ -114,7 +124,6 @@
       </li>
    
       <li >
-      
       <router-link class="nav-link" to="/homepages">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Explore</a></router-link

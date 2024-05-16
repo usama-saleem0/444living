@@ -147,9 +147,11 @@ export default {
   width: 25%;
     position: absolute;
     left: 40%;
-    bottom: 5%;
+    bottom: 5%; 
 
 }
+
+
 .menu-btn button:hover svg {
   transform: translateX(140px);
   color: var(--hovered-color);

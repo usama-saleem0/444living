@@ -504,10 +504,105 @@
 
 
 
+  </div>
+  <div class="contact-form-btn">
+<div class="my-submint-btn">
+    <button>
+              <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
+</svg>
 
+Submit
+            </button>
+</div>
     </div>
 
 
+    <footer>
+      <div class="contanair">
+        <div class="main-footer-1">
+          <div class="footer-box-1">
+            <h2>Our Exclusive Properties directly to your inbox.</h2>
+
+
+
+            <div class="input-groups">
+              <input type="email" placeholder="Email">
+
+              <button><svg xmlns="http://www.w3.org/2000/svg" width="15" height="24" viewBox="0 0 15 24" fill="none">
+  <path d="M1.66667 0C1.66667 1.23667 2.88833 3.08333 4.125 4.63333C5.715 6.63333 7.615 8.37833 9.79333 9.71C11.4267 10.7083 13.4067 11.6667 15 11.6667C13.4067 11.6667 11.425 12.625 9.79333 13.6233C7.615 14.9567 5.715 16.7017 4.125 18.6983C2.88833 20.25 1.66667 22.1 1.66667 23.3333" stroke="#DED4A2" stroke-width="2"/>
+</svg></button>
+            </div>
+          </div>
+
+          <div class="footer-box-2">
+            <div class="footer-list1">
+              <div class="footer-number">
+                <a href="mailto">info@444living.com</a>
+                <a href="tel:111-222-33323233">111-222-33323233</a>
+              </div>
+
+              <div class="footer-img">
+                <img src="/images/logo.png" alt="">
+              </div>
+            </div>
+            <div class="footer-list2">
+              <ul class="ul-1">
+                <li>Listings</li>
+                <li>For Buyers</li>
+                <li>For Realtors</li>
+                <li>For Investor</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+              </ul>
+
+              <ul class="ul-2">
+                <li>Are you a buyer</li>
+                <li>Become a realtor</li>
+                <li>Become a investor</li>
+                
+              </ul>
+
+
+
+              
+              <ul class="ul-3">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Linkedin</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="boeder-footer-bottom">
+        <div class="contanair">
+          <div class="main-bottom-side">
+            <p>444living 2024,  All rights reserved</p>
+
+
+            <div class="main-list-bottom">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms And Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+   
+
+
+  
+ 
+ 
 </template>
 <script>
 
@@ -795,25 +890,13 @@ export default {
     0%,
     100% {
         transform: translateX(0);
-    }
-
-    20%,
-    40% {
-        transform: translateX(-100%);
-    }
-
-    60%,
-    80% {
-        transform: translateX(-200%);
-    }
-}
-
-section.Happy {
-    width: 100%;
-    padding: 182px 0px 130px 0px;
+    }}
+    section.Happy {
+        width: 100%;
+    padding: 94px 0px 240px 0px;
     background-color: #202D46;
     background-image: url(/images/golgol.png);
-    background-position: bottom;
+    background-position: -55px 310px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -1039,6 +1122,7 @@ section.home {
     font-family: sans-serif;
     text-align: center;
     margin: 0px;
+    text-transform: uppercase !important;
 }
 
 .home-tital h2 {
@@ -1308,7 +1392,7 @@ section.curated {
 section.luxury {
     width: 100%;
     background-color: #293857;
-    padding: 190px 0px 84px 0px;
+    padding: 190px 0px 190px 0px;
 }
 
 .main-luxury {
@@ -1520,11 +1604,14 @@ section.contact {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 50px 0px 0px 0px;
     border-top: 1px solid #ded4a2;
 }
 
+.my-submint-btn {
+    width: 90%;
+}
 footer {
     width: 100%;
     background: #202D46;
@@ -1735,7 +1822,7 @@ ul.ul-3 {
 
 .part-input-box button {
     background: transparent;
-    border: 2px solid #6F6F6F;
+    border: 2px solid #6F6F6F  ;
     padding: 16px;
     border-radius: 35px;
 }
@@ -1753,9 +1840,6 @@ ul.ul-3 {
 }
 
 
-.part-input-box button:hover {
-    border-bottom: none !important;
-}
 
 
 .part-input-box button::after {
@@ -1839,12 +1923,47 @@ button svg {
     color: var(--hovered-color);
 }
 
-button:hover {
-    border-bottom: 1px solid;
+
+
+
+.boeder-footer-bottom {
+    width: 100%;
+    border-top: 1px solid #DED4A2;
 }
 
+.main-bottom-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0px;
+}
 
+.main-list-bottom {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
 
+.main-bottom-side p {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-list-bottom a {
+    color: #DED4A2;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
 
 
 

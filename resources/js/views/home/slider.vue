@@ -154,7 +154,7 @@ export default {
 }
 
 .carousel {
-    padding: 70px 100px;
+    padding: 140px 100px  0px 100px;
     background-color: #293857;
 }
 

@@ -97,13 +97,13 @@ body {
       }
     }
     section.Happy {
-    width: 100%;
-    padding: 182px 0px 130px 0px;
-    background-color: #202D46;
-    background-image: url(/images/golgol.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+        width: 100%;
+        padding: 94px 0px 240px 0px;
+        background-color: #202D46;
+        background-image: url(/images/golgol.png);
+        background-position: -55px 310px;
+        background-repeat: no-repeat;
+        background-size: contain;
 }
 
 
@@ -336,6 +336,7 @@ section.home {
    font-family:sans-serif;
     text-align: center;
     margin: 0px;
+    text-transform: uppercase !important;
 }
 
 .home-tital h2 {
@@ -589,7 +590,7 @@ section.curated {
 section.luxury {
     width: 100%;
     background-color: #293857;
-    padding: 190px 0px 84px 0px;
+    padding: 190px 0px 190px 0px;
 }
 
 .main-luxury {
@@ -800,10 +801,13 @@ section.contact {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 50px 0px 0px 0px;
     border-top: 1px solid #ded4a2;
 }
+.my-submint-btn {
+    width: 90%;
+}s
 footer {
     width: 100%;
     background: #202D46;
@@ -999,7 +1003,7 @@ ul.ul-3 {
 
 .part-input-box button {
     background: transparent;
-    border: 2px solid #6F6F6F;
+    border: 2px solid #6F6F6F !important;
     padding: 16px;
     border-radius: 35px;
 }
@@ -1093,9 +1097,6 @@ button svg {
 
 
 
-button:hover{
-    border-bottom: 1px solid ;
-}
 
 section.TopListing {
     width: 100%;

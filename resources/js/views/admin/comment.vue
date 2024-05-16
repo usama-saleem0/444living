@@ -212,8 +212,7 @@ section.comment {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 24px 0px;
+    gap: 24px 20px;
 }
 .comment-svg-icon {
     position: absolute;
@@ -246,11 +245,13 @@ section.comment {
 .comment-card {
     width: 32%;
     position: relative;
+    height: 50vh;
 }
 
 .comment-card img {
     width: 100%;
     object-fit: cover;
+    height: 100%;
     border-radius: 8px;
 }
 
