@@ -12,6 +12,8 @@ import store from "./vuex";
 import Toasted from "vue-toasted";
 import Chart from "chart.js";
 import "../css/app.css"
+
+
 const moment = require('moment');
 
 
