@@ -393,6 +393,7 @@ div#carouselExampleIndicators {
 
 .loging-form {
     width: 40%;
+    padding-top: 6%;
 }
 
 .form-LogIn {

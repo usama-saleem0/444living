@@ -270,9 +270,11 @@
             <section class="curated">
                 <div class="main-curated">
                     <div class="curated-tital">
+                      <div class="curated-h2-list">
                         <h2>Experience <br>
                             our curated <br> properties</h2>
-
+                      </div>
+                      <div class="curated-h2-list-btn">
                         <button>
                             <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -283,6 +285,7 @@
 
                             See All Properties
                         </button>
+                    </div>
                     </div>
                     <div class="curated-img">
                         <img src="/images/curated.png" alt="">
@@ -295,7 +298,7 @@
                     <div class="main-luxury">
 
                         <div class="luxury-tital">
-                            <h2>The most trusted names in <br>luxury brreal estate.</h2>
+                            <h2>The most trusted names in <br>luxury real estate.</h2>
                             <p>444 Living members have achieved the industry’s most exceptional accolades — you can
                                 trust they will go above and beyond to offer you best-in-class service and personalized
                                 results.</p>
@@ -413,6 +416,7 @@
 
                         </div>
                         <div class="contact-form-btn">
+                            <div class="contact-form-btn-box-2">
                             <button>
                                 <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -424,6 +428,7 @@
                                 Submit
                             </button>
                         </div>
+                    </div>
                     </div>
                     <div class="contact-img">
                         <img src="/images/curated.png" alt="">
@@ -750,7 +755,7 @@ export default {
     stroke: #293857;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 3;
+    stroke-width: 1;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -889,7 +894,7 @@ export default {
     stroke: #ded4a2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 3;
+    stroke-width: 1;
     /* Define the transition for transforming the Stroke */
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
         stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1291,8 +1296,7 @@ section.curated {
 }
 
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 75px;
     margin: 0px;
@@ -1301,6 +1305,8 @@ section.curated {
     color: #fff;
     font-family: 'Saol Display';
 }
+.curated-h2-list {border-bottom: 1px solid #DED4A2;width: 100%;}
+
 
 .curated-tital button {
     background: transparent;
@@ -1523,7 +1529,9 @@ section.contact {
     line-height: 34.89px;
     color: #DED4A2;
 }
-
+.contact-form-btn-box-2 {
+    width: 90%;
+}
 .contact-form-btn button svg {
     width: 24px;
     height: 24px;
@@ -2227,8 +2235,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
-        border-bottom: 1px solid #DED4A2;
+        width: 75%;
         text-align: center;
         padding-bottom: 60px;
         margin: 0px;
@@ -2807,8 +2814,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
-        border-bottom: 1px solid #DED4A2;
+        width: 75%;
         text-align: center;
         padding-bottom: 50px;
         margin: 0px;
@@ -3239,8 +3245,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
-        border-bottom: 1px solid #DED4A2;
+        width: 75%;
         text-align: center;
         padding-bottom: 50px;
         margin: 0px;
@@ -3540,8 +3545,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
-        border-bottom: 1px solid #DED4A2;
+        width: 75%;
         text-align: center;
         padding-bottom: 45px;
         margin: 0px;
@@ -4019,8 +4023,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
-        border-bottom: 1px solid #DED4A2;
+        width: 75%;
         text-align: center;
         padding-bottom: 45px;
         margin: 0px;
@@ -4576,7 +4579,7 @@ button svg {
     }
 
     .curated-tital h2 {
-        width: 100%;
+        width: 75%;
         text-align: center;
         border: none;
         padding-bottom: 0px;
