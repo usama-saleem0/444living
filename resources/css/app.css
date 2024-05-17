@@ -4151,6 +4151,24 @@ section.Townhomes {
     text-align: center;
     margin: 0px;
 }
+
+
+
+
+.Townhomes-para {
+    height: 10vh;
+}
+
+.Townhomes-card-1 {
+    min-height: 42vh;
+    max-height: 42vh;
+}
+
+
+
+
+
+
 .home-tital h2 {
     text-align: center;
     line-height: 54.23px;
@@ -4592,6 +4610,15 @@ img {}
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
+}
+
+.Townhomes-para {
+    height: 10vh;
+}
+
+.Townhomes-card-1 {
+    min-height: 42vh;
+    max-height: 42vh;
 }
 .logo {
     width: 14%;
