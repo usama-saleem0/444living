@@ -35,7 +35,7 @@ body {
     stroke: #293857;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 3;
+    stroke-width: 1;
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -170,7 +170,7 @@ body {
   stroke: #ded4a2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 3;
+  stroke-width: 1;
   /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
               stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -560,8 +560,7 @@ section.curated {
 }
 
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 75px;
     margin: 0px;
@@ -570,6 +569,8 @@ section.curated {
     color: #fff;
     font-family: 'Saol Display';
 }
+.curated-h2-list {border-bottom: 1px solid #DED4A2;width: 100%;}
+
 
 .curated-tital button {
     background: transparent;
@@ -1696,13 +1697,13 @@ section.Townhomes {
 }
 
 .Townhomes-card-1 {
-    width: 30%;
+    width: 32%;
     background-color: #202d46;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 380px;
+    max-width: 380px;
     height: 100%;
-    min-height: 390px;
-    max-height: 390px;
+    min-height: 48vh;
+    max-height: 48vh;
 }
 
 .Townhomes-tital h2 {
@@ -1723,9 +1724,9 @@ section.Townhomes {
     height: 100%;
 }
 .Townhomes-img {
-    max-height: 28vh;
-    height: 28vh;
-    min-height: 28vh;
+    max-height: 20vh;
+    height: 20vh;
+    min-height: 20vh;
 }
 
 .ts-si {
@@ -1774,6 +1775,7 @@ section.Townhomes {
 .Townhomes-para {
     width: 100%;
     padding: 16px 0px;
+    height: 15vh;
 }
 
 .Townhomes-para h2 {
@@ -2100,8 +2102,7 @@ section.Success {
     padding: 174px 0px;
 }
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 60px;
     margin: 0px;
@@ -2858,8 +2859,7 @@ section.Success {
     padding: 150px 0px;
 }
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 50px;
     margin: 0px;
@@ -3425,8 +3425,7 @@ p.id-list-2 {
     margin: 0px;
 }
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 50px;
     margin: 0px;
@@ -3703,8 +3702,7 @@ section.Success {
     padding: 120px 0px;
 }
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 45px;
     margin: 0px;
@@ -4153,6 +4151,24 @@ section.Townhomes {
     text-align: center;
     margin: 0px;
 }
+
+
+
+
+.Townhomes-para {
+    height: 10vh;
+}
+
+.Townhomes-card-1 {
+    min-height: 42vh;
+    max-height: 42vh;
+}
+
+
+
+
+
+
 .home-tital h2 {
     text-align: center;
     line-height: 54.23px;
@@ -4303,8 +4319,7 @@ section.Success {
     padding: 102px 0px;
 }
 .curated-tital h2 {
-    width: 100%;
-    border-bottom: 1px solid #DED4A2;
+    width: 75%;
     text-align: center;
     padding-bottom: 45px;
     margin: 0px;
@@ -4596,6 +4611,15 @@ img {}
     justify-content: flex-end;
     gap: 15px;
 }
+
+.Townhomes-para {
+    height: 10vh;
+}
+
+.Townhomes-card-1 {
+    min-height: 42vh;
+    max-height: 42vh;
+}
 .logo {
     width: 14%;
 }
@@ -4874,7 +4898,7 @@ section.curated {
     gap: 44px;
 }
 .curated-tital h2 {
-    width: 100%;
+    width: 75%;
     text-align: center;
     border: none;
     padding-bottom: 0px;

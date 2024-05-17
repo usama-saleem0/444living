@@ -43,8 +43,18 @@
         </div>
       </div>
     </div>
+    <div class="Process-btn-box">
+    <button>
+                            <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668"
+                                    stroke="#DED4A2" stroke-width="2" />
+                            </svg>
 
-
+                            View All Properties
+                        </button>
+                      </div>
   </div>
 </template>
 
@@ -131,6 +141,20 @@ export default {
   left: 0;
 }
 
+
+
+.Process-btn-box button:hover svg {
+    transform: translateX(150px);
+    color: var(--hovered-color);
+}
+
+.Process-btn-box {
+    width: 100%;
+    padding-top: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+}
 .next-btn {
   right: 0;
 }
@@ -139,6 +163,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 60px;
+    
 }
 
 
@@ -151,10 +177,11 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .carousel {
-    padding: 140px 100px  0px 100px;
+    padding: 140px 100px  140px 100px;
     background-color: #293857;
 }
 
@@ -190,9 +217,21 @@ export default {
     width: 100%;
 }
 .carousel-btns {
-    border: 1px solid #ded4a2;
+  border: 1px solid #ded4a2;
     border-radius: 50%;
-    padding: 20px 30px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-btns.prev-btns svg {
+    width: 30px;
+    height: 30px;
+}
+
+.carousel-btns.next-btns svg {
+    width: 30px;
+    height: 30px;
 }
 .image-row {
     gap: 50px;
@@ -247,7 +286,7 @@ export default {
 .carousel-btns {
     border: 1px solid #ded4a2;
     border-radius: 50%;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-right: 10px;
 }
 
@@ -262,7 +301,7 @@ export default {
 
 .carousel {
     background-color: #293857;
-    padding: 60px 10px 0px 100px;
+    padding: 60px 10px 60px 100px;
 }
 }
 
@@ -278,7 +317,7 @@ svg {
 .carousel-btns {
     border: 1px solid #ded4a2;
     border-radius: 50%;
-    padding: 5px 18px;
+    padding: 18px 18px;
     margin-right: 10px;
 }
 
@@ -305,7 +344,7 @@ svg {
 .carousel-btns {
     border: 1px solid #ded4a2;
     border-radius: 50%;
-    padding: 3px 20px;
+    padding: 20px 20px;
     
 }
 
@@ -351,7 +390,7 @@ svg {
 .carousel-btns {
     border: 1px solid #ded4a2;
     border-radius: 50%;
-    padding: 3px 12px;
+    padding: 12px 12px;
 }
 .carousel-btn-list-2{
     width: 30%;
