@@ -67,4 +67,11 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('recentchat', [ChatController::class, 'recentchat']);
     Route::get('getprofile', [ProfileController::class, 'getprofile']);
 
+
+
+    Route::post('editprofile', [ProfileController::class, 'editprofile']);
+
+
+    Route::get('getusers', [ProfileController::class, 'getusers']);
+
 });

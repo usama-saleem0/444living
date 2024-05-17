@@ -15,7 +15,7 @@
          
          
        </div>
-       <div class="col text-right" style="margin-bottom: 10px;margin-top: 10px;"><p style="
+       <div class="col text-right" style="margin-bottom: 10px;margin-top: 10px;" @click="realtorprofile"><p style="
  
  
  font-size: 16px;
@@ -24,6 +24,7 @@
  line-height: normal;
  color: #ded4a2 !important;
  font-family: Saol Display !important;
+ cursor: pointer;
  ">See Profile
  
  <img src="/images/basil_settings-solid.png"/>
@@ -129,6 +130,12 @@
  
    
          methods:{
+
+
+            realtorprofile(){
+                console.log(this.chatter);
+                this.$router.push(`/realtorprofile/${this.chatter.id}`)
+             },
 
             handleDataFromChild(data){
                 console.log('id', data.id);

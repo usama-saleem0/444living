@@ -1,4 +1,7 @@
 <template>
+    <div>
+
+    
     
     <div>
         <!-- <Header/> -->
@@ -32,7 +35,7 @@
                 <div class="list-btn">
                     <div class="buttons">
        
-
+                            <img @click="openModal" src="images/edit.png"/>
                      
                         
                     </div>
@@ -307,6 +310,18 @@
     </div>
 </div>
 
+
+<div id="popup-box" class="modal" v-if="isModalOpen" >
+      <div style="display: flex;
+    padding-left: 0px;
+    justify-content: space-evenly;">
+
+        <Edit @cancel="closeModal"/>
+      </div>
+      
+    </div>
+
+</div>
   
   
  
@@ -319,13 +334,15 @@ import Vue from 'vue'
 // import Edit from "./entreform.vue";
 import { mapGetters } from "vuex";
 import { get , byMethod} from '../lib/api';
-import Header from "../admin/components/Topbar.vue"
+import Header from "../admin/components/Topbar.vue";
+import Edit from "./entreform.vue";
 
 export default {
     name: 'admin',
 
     components: {
-        Header
+        Header,
+        Edit
   },
 
    
@@ -339,7 +356,10 @@ export default {
 
                 model:'',
                 count:0,
-                one:{}
+                one:{},
+                isModalOpen:true,
+                user:{}
+               
 
                
                
@@ -349,14 +369,14 @@ export default {
             }
         },
 
-        computed: {
-    ...mapGetters(["user"]),
-  },
+//         computed: {
+//     ...mapGetters(["user"]),
+//   },
 
      
         created(){
 
-
+                    this.getuser()
          
                 get('/toprealtor')
               .then((res) => {
@@ -378,6 +398,46 @@ export default {
         }, 
 
         methods:{
+
+
+            getuser(){
+                get('/getusers')
+              .then((res) => {
+
+
+                console.log(res.data.data);
+
+
+                Vue.set(this.$data, 'user', res.data.data)
+
+
+                
+                //  this.setData(res)
+
+              });
+            },
+
+
+                 
+            openModal() {
+     
+     $('#popup-box').modal('show');
+     
+     
+   },
+
+
+   closeModal() {
+   console.log('avcd');
+
+   this.shows = false;
+   $('#popup-box').modal('hide');
+
+  this.getuser()
+     
+    
+   },
+
             dateformat(e){
 
                 const createdAt = e;
@@ -523,7 +583,17 @@ button::after{
 button{
     border:none;
 }
-
+.buttons img {
+    width: 7% !important;
+    min-width: 7% !important;
+    max-width: 7% !important;
+    height: 60px !important;
+    max-height: 60px !important;
+    min-height: 60px !important;
+    object-fit: contain !important;
+    margin-top: -24px !important;
+    cursor: pointer;
+}
 .member{
     color: #DED4A2;
 font-family: sans-serif;

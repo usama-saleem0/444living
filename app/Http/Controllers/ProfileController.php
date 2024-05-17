@@ -47,4 +47,29 @@ class ProfileController extends Controller
 
         return response()->json(['data' => $data]);
     }
+
+    public function editprofile(Request $request){
+
+            $user = User::where('id' , auth()->user()->id)->first();
+
+            $user->email = $request->email;
+            $user->first_name = $request->firstname;
+            $user->last_name = $request->lastname;
+            $user->username = $request->user_name;
+            $user->bio = $request->bio;
+            $user->save();
+
+            return response()->json(['saved' => true]);
+
+
+
+    }
+
+
+    public function getusers(){
+        
+         $data = User::where('id' , auth()->user()->id)->first();
+
+         return response()->json(['data' => $data]);
+    }
 }
