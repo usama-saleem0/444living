@@ -447,7 +447,7 @@ export default {
                 const month = date.toLocaleString('default', { month: 'long' });
                 const day = date.getDate();
 
-                const formattedDate = `${year}, ${month} ${day}`;
+                const formattedDate = ` ${month}  ${day}, ${year}`;
             return formattedDate
 
             },

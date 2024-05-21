@@ -137,7 +137,7 @@
                 <div class="contanair">
                     <div class="main-home">
                         <div class="home-tital">
-                            <h3>Welcome to 444 living your real estate partner</h3>
+                            <h3>Welcome To 444 Living Your Real Estate Partner</h3>
                             <h2>Revolutionizing Real <br> <span><img src="/images/Line 7.png" alt=""></span>Estate
                                 Connections<span><img src="/images/Line 7.png" alt=""></span></h2>
                             <p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience
@@ -156,14 +156,14 @@
 
                                 <div class="contars-list">
                                     <h2>
-                                        32
+                                        {{ realtors }}
                                     </h2>
                                     <p>Top Realtors</p>
                                 </div>
 
                                 <div class="contars-list">
                                     <h2>
-                                        160+
+                                       {{investors}}+
                                     </h2>
                                     <p>Real Investors</p>
                                 </div>
@@ -196,28 +196,40 @@
                     </div>
                     <div class="Process-img-box  fade-in" v-if="helloboy">
                         <h2>Process Story</h2>
+                        <span style="    color: #ded4a2d9;
+    font-weight: bold;">
+
+                            The Journey Of Buying A Property With 444Living's Comprehensive Platform,
+                                Empowering Buyers To Effortlessly Navigate Listings, Communicate With Realtors,
+                                Negotiate Terms, And Finalize Transactions.
+                            </span>
+                            <br>
+                            <br>
                         <ul class="process_story_points">
-                            <li> Discover the journey of buying a property with 444Living's comprehensive platform,
-                                empowering buyers to effortlessly navigate listings, communicate with realtors,
-                                negotiate terms, and finalize transactions.</li>
+                            
+                            
                             <li>Register/log in to access dashboard
                                 Post requirements, browse listings, save favorites</li>
                             <li>Contact realtors directly for inquiries/viewings
                                 Manage communication and schedule viewings
                             </li>
                             <li>Make offers, negotiate terms</li>
-                            <li>finalize purchase</li>
+                            <li>Finalize purchase</li>
                             <li>Provide feedback</li>
-                            <li>continue property search</li>
-                            <li>engage community</li>
+                            <li>Continue property search</li>
+                            <li>Engage community</li>
                         </ul>
                         <img src="/images/porrose.png" alt="">
                     </div>
                     <div class="Process-img-box   fade-in" v-if="helloboys">
                         <h2>Process Story</h2>
+                        <span  style="    color: #ded4a2d9;
+    font-weight: bold;">Unlock The Potential Of Investment Success With 444 Living, Where Investors Can
+                                Seamlessly Explore, Connect, Collaborate</span>
+                                <br>
+                                <br>
                         <ul class="process_story_points">
-                            <li>Unlock the potential of investment success with 444Living, where investors can
-                                seamlessly explore, connect, collaborate</li>
+                           
                             <li>Track their investments while leveraging a
                                 supportive community and a wealth of opportunities.</li>
                             <li>Create an account or log in to access the Investor dashboard.</li>
@@ -225,24 +237,30 @@
                             <li>Connect with like-minded investors looking for similar opportunities
                                 Post investment opportunities for others to join.</li>
                             <li>Collaborate, conduct due diligence, and make informed decisions.</li>
-                            Facilitate communication and negotiation with property owners/developers.
-                            Track investments, monitor performance, and stay updated
+                           <li>Facilitate communication and negotiation with property owners/developers.
+                            Track investments, monitor performance, and stay updated</li> 
                         </ul>
                         <img src="/images/chatbuttonhhh.png" alt="">
                     </div>
                     <div class="Process-img-box   fade-in" v-if="helloboyss">
                         <h2>Process Story</h2>
+                        <span  style="    color: #ded4a2d9;
+    font-weight: bold;">
+                             Experience Seamless Real Estate Transactions With 444 Living, Empowering Realtors To
+                            
+                            Efficiently Connect With Clients, Manage Listings, Negotiate Terms, And Showcase
+                                Expertise </span>
+
+                                <br>
+                                <br>
                         <ul class="process_story_points">
-                            <li> Experience seamless real estate transactions with 444Living, empowering realtors to
-                            </li>
-                            <li>efficiently connect with clients, manage listings, negotiate terms, and showcase
-                                expertise</li>
-                            <li>for business growth</li>
+                           
+                            <li>For business growth</li>
                             <li>Access user-friendly dashboard upon registration or login.</li>
                             <li>Browse buyer requirements and connect with interested clients.</li>
                             <li>List properties for sale or rent</li>
-                            <li>manage listings efficiently. View inquiries</li>
-                            <li>meet with prospective clients, and negotiate terms
+                            <li>Manage listings efficiently. View inquiries</li>
+                            <li>Meet with prospective clients, and negotiate terms
                                 Showcase expertise, build reputation through successful transactions, and positive
                                 feedback.</li>
                             <li>Utilize platform tools to streamline processes and expand network.</li>
@@ -272,7 +290,7 @@
                     <div class="curated-tital">
                       <div class="curated-h2-list">
                         <h2>Experience <br>
-                            our curated <br> properties</h2>
+                            Our Curated <br> Properties</h2>
                       </div>
                       <div class="curated-h2-list-btn">
                         <button>
@@ -298,7 +316,7 @@
                     <div class="main-luxury">
 
                         <div class="luxury-tital">
-                            <h2>The most trusted names in <br>luxury real estate.</h2>
+                            <h2>The Most Trusted Names In <br>Luxury Real Estate.</h2>
                             <p>444 Living members have achieved the industry’s most exceptional accolades — you can
                                 trust they will go above and beyond to offer you best-in-class service and personalized
                                 results.</p>
@@ -456,7 +474,7 @@
       <div class="contanair">
         <div class="main-footer-1">
           <div class="footer-box-1">
-            <h2>Our Exclusive Properties directly to your inbox.</h2>
+            <h2>Our Exclusive Properties Directly To Your Inbox.</h2>
 
 
 
@@ -542,6 +560,7 @@
 
 import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
+import { get , byMethod} from '../lib/api'
 
 export default {
     name: "Home",
@@ -566,10 +585,28 @@ export default {
             helloboy: true,
             helloboys: false,
             helloboyss: false,
+            investors:0,
+            realtors:0
 
         };
     },
     name: 'SampleComponent',
+
+
+
+    created(){
+         
+         get('/total')
+               .then((res) => {
+                 
+                  console.log(res.data)
+
+                  this.investors = res.data.investors
+                  this.realtors = res.data.realtors
+ 
+               })
+           
+         }, 
 
     methods: {
 
@@ -1056,7 +1093,7 @@ section.home {
     font-family: sans-serif;
     text-align: center;
     margin: 0px;
-    text-transform: uppercase !important;
+    
 }
 
 .home-tital h2 {

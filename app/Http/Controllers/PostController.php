@@ -39,6 +39,8 @@ class PostController extends Controller
         $data->posttitle = $request->posttitle;
         $data->user_id = auth()->user()->id;
         $data->location = $request->location ?? '';
+        $data->state = $request->state ?? '';
+
         if( $request->file('image')){
         $data->postpic = $filename;
         }
@@ -66,6 +68,7 @@ class PostController extends Controller
         $data->postdetails = $request->postdetails;
         $data->posttitle = $request->posttitle;
         $data->location = $request->location ?? '';
+        $data->state = $request->state ?? '';
 
         $data->user_id = auth()->user()->id;
 
@@ -101,6 +104,7 @@ class PostController extends Controller
         $data->location = $request->location;
         $data->bedroom = $request->bedroom ?? '';
         $data->bathroom = $request->bathroom ?? '';
+        $data->state = $request->state ?? '';
 
 
         $data->type = $request->types;
@@ -161,7 +165,7 @@ class PostController extends Controller
     public function filterpost(Request $request){
         
       
-        // dd(request('types'));
+   
         if(request('types') == 'Buyers'){
 
        
@@ -185,6 +189,17 @@ class PostController extends Controller
               
                
         })
+
+
+        ->when(request('selectedstate'), function ($q) {
+                
+             $q->Where('state', request('selectedstate') )
+           
+          ;
+              
+               
+        })
+
 
        
         
@@ -213,6 +228,15 @@ class PostController extends Controller
             ->when(request('selectedlocation'), function ($q) {
                     
                 $q->Where('location', request('selectedlocation') )
+               
+              ;
+                  
+                   
+            })
+
+            ->when(request('selectedstate'), function ($q) {
+                
+                 $q->Where('state', request('selectedstate') )
                
               ;
                   
@@ -252,6 +276,16 @@ class PostController extends Controller
                       
                        
                 })
+
+
+                ->when(request('selectedstate'), function ($q) {
+                
+                     $q->Where('state', request('selectedstate') )
+                   
+                  ;
+                      
+                       
+                })
         
                
                 
@@ -263,6 +297,7 @@ class PostController extends Controller
 
 
                 else{
+                   
 
        
                     $data1 = Realtorpost::with('User')
@@ -280,6 +315,16 @@ class PostController extends Controller
                     ->when(request('selectedlocation'), function ($q) {
                             
                         $q->Where('location', request('selectedlocation') )
+                       
+                      ;
+                          
+                           
+                    })
+
+                    ->when(request('selectedstate'), function ($q) {
+                        
+                
+                         $q->Where('state', request('selectedstate') )
                        
                       ;
                           
@@ -315,6 +360,15 @@ class PostController extends Controller
                           
                            
                     })
+
+                    ->when(request('selectedstate'), function ($q) {
+                
+                         $q->Where('state', request('selectedstate') )
+                       
+                      ;
+                          
+                           
+                    })
             
                    
                     
@@ -339,6 +393,16 @@ class PostController extends Controller
                     ->when(request('selectedlocation'), function ($q) {
                             
                         $q->Where('location', request('selectedlocation') )
+                       
+                      ;
+                          
+                           
+                    })
+
+
+                    ->when(request('selectedstate'), function ($q) {
+                
+                         $q->Where('state', request('selectedstate') )
                        
                       ;
                           

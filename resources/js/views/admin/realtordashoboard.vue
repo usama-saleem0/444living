@@ -56,6 +56,14 @@
               
                 </select>
 
+
+                <select name="select2-state-container" id="select2-state-container" class="inputclass" @change="handleChange1">
+                                <option value="" disabled selected></option>
+                            <option  v-for="(state, index) in states" :key="state.id" :value="index" style="color: gray !important;"  >{{ state.name }}</option>
+
+
+                            </select>
+
             </div>
 
                 
@@ -324,7 +332,8 @@
                  imageUrl: '',
                  form:{},
                  investor:[],
-                 morefeild:false
+                 morefeild:false,
+                 states:[]
   
                
                
@@ -340,10 +349,42 @@
                })
 
                this.Investors();
+
+               this.getstate();
            
          }, 
  
          methods:{
+
+
+            handleChange1(event){
+
+            console.log(event.target.value);
+
+
+
+            const selectedIndex = event.target.value;
+            this.selectedState = this.states[selectedIndex];
+            console.log('Selected State:', this.selectedState);
+
+
+            },
+
+
+           
+
+            getstate(){
+
+            get('/state')
+            .then((res) => {
+                // this.states = res.data.data
+            
+            Vue.set(this.$data, 'states', res.data.data)
+
+            })
+
+
+            },
 
             MoreF(){
                 this.morefeild = !this.morefeild
@@ -388,6 +429,7 @@
                 formData.append('location', this.form.location);
                 formData.append('bedroom', this.form.bedroom);
                 formData.append('bathroom', this.form.bathroom);
+                formData.append('state', this.selectedState.name);
 
 
 

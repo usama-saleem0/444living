@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\State;
 
 class ProfileController extends Controller
 {
@@ -71,5 +72,24 @@ class ProfileController extends Controller
          $data = User::where('id' , auth()->user()->id)->first();
 
          return response()->json(['data' => $data]);
+    }
+
+    public function total(){
+        $total = User::where('type' , 'Realtor')->get();
+        $realtor = count($total);
+
+
+        $total2 = User::where('type' , 'Investor')->get();
+
+        $investor = count($total2);
+
+        return response()->json(['realtors' => $realtor , 'investors' => $investor]);
+    }
+
+
+    public function State(){
+        $data = State::get();
+
+        return response()->json(['data' => $data]);
     }
 }

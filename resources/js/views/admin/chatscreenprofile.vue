@@ -234,7 +234,7 @@ export default {
          },
 
          profilepage(){
-            this.$router.push('/investor')
+            this.$router.push('/profilescreen')
 
          },
            setData(res) {

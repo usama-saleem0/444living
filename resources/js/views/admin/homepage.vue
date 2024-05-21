@@ -128,7 +128,7 @@ Top Listing’s
     </div>
 
     <h2>Explore with Us!!</h2>
-    <p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive tools for posting requirements, browsing listings, and discovering lucrative investment opportunities. Join us to unlock a world of possibilities in real estate."</p>
+    <p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive tools for posting requirements, browsing listings, and discovering lucrative investment opportunities. Join us to unlock a world of possibilities in real estate.</p>
           </div>
 
 
@@ -159,6 +159,15 @@ Top Listing’s
   <option value="Realtors">Realtors</option>
 </select>
             </div>
+            <div class="type-input">
+
+            <select name="select2-state-container" id="select2-state-container" class="inputclass" v-model="form.selectedstate">
+                                <option value="" disabled selected>Select State</option>
+                            <option  v-for="(state, index) in states" :key="state.id" :value="state.name" style="color: gray !important;"  >{{ state.name }}</option>
+
+
+                            </select>
+                          </div>
 
             <div class="Explore-btn">
               <button @click="explorenow">Explore Now </button>
@@ -306,7 +315,7 @@ Top Listing’s
                   <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
   <path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
 </svg>
-<p >Add To favourites</p>
+<p >Add To Favourites</p>
                 </div>
 
                 <div class="favourites-card  add-border" @click="showcomments(posting.id)" >
@@ -720,7 +729,8 @@ export default {
         loaders:false,
         locations:[],
         isModalOpen:true,
-        Feeds:{}
+        Feeds:{},
+        states:[]
 
     };
   },
@@ -742,12 +752,26 @@ export default {
                this.Getlisting();
                this.getstories();
                this.getlocation();
+               this.getstate();
            
          }, 
  
 
 
   methods:{
+
+
+    getstate(){
+
+get('/state')
+.then((res) => {
+
+Vue.set(this.$data, 'states', res.data.data)
+
+})
+
+
+},
 
     scrollToBottom() {
       const element = document.getElementById('bottom');

@@ -16,6 +16,11 @@ Route::post('register', [Api\RegisterController::class, 'register']);
 Route::post('profileregister', [ProfileController::class, 'profileregister']);
 Route::get('emails', [RealtorController::class, 'emails']);
 
+
+Route::get('total', [ProfileController::class, 'total']);
+
+Route::get('state', [ProfileController::class, 'State']);
+
 Route::post('forgot', [Api\ForgotController::class, 'forgot']);
 Route::post('reset', [Api\ForgotController::class, 'reset']);
 Route::get('email/resend/{user}', [Api\VerifyController::class, 'resend'])->name('verification.resend');

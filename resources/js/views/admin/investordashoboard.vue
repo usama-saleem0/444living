@@ -35,16 +35,42 @@
     @click="MoreF" >More</p></div>
             <input type="file" id="file-input" style="position: absolute; bottom: 0; left: 0; opacity: 0; width:0%" @change="handleFileChange" accept="image/*">
 
-  
-            <div  v-if="imageUrl || morefeild" style="width: 100%;
+  <div class="row" style="width: 100%;">
+
+    <div class="col">
+            <div  v-if="imageUrl || morefeild" style="width:100%;
             
     position: relative;
     display: flex;
     align-content: center;
     align-items: center;">
                 <input type="text" placeholder="Enter location" class="inputclass" v-model="form.location"/>
+
+               
         
             </div>
+        </div>
+
+
+            <div class="col">
+
+            <div  v-if="imageUrl || morefeild" style="width: 100%;
+            
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;">
+
+            <select name="select2-state-container" id="select2-state-container" class="inputclass" @change="handleChange1">
+                                <option value="" disabled selected>​</option>
+                            <option  v-for="(state, index) in states" :key="state.id" :value="index" style="color: gray !important;"  >{{ state.name }}</option>
+
+
+                            </select>
+                            </div>
+                        </div>
+
+                        </div>
 
 
          
@@ -270,7 +296,9 @@
                  model:'',
                  imageUrl: '',
                  form:{},
-                 morefeild:false
+                 morefeild:false,
+                 states:[],
+                 selectedState:null
   
                
                
@@ -284,10 +312,40 @@
                   this.setData(res)
  
                })
+               this.getstate();
            
          }, 
  
          methods:{
+
+
+            handleChange1(event){
+
+            console.log(event.target.value);
+
+
+
+            const selectedIndex = event.target.value;
+            this.selectedState = this.states[selectedIndex];
+            console.log('Selected State:', this.selectedState);
+
+
+
+
+            },
+
+
+            getstate(){
+
+                get('/state')
+               .then((res) => {
+                 
+                Vue.set(this.$data, 'states', res.data.data)
+ 
+               })
+           
+
+            },
 
 
             MoreF(){
@@ -325,6 +383,7 @@ formData.append('image', this.file);
 formData.append('postdetails', this.form.postdetials);
 formData.append('posttitle', this.form.posttitle);
 formData.append('location', this.form.location);
+formData.append('state', this.selectedState.name);
 
 
 console.log(formData);
