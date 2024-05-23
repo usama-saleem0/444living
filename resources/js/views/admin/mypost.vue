@@ -325,6 +325,7 @@ line-height: normal;
     padding: 25px;
     background-color: transparent;
     border: 1px solid #DED4A2;
+    color: #fff;
  }
  .bordersbot{
     width: 100%;

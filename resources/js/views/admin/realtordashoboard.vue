@@ -124,7 +124,7 @@
 </div>
 
 <div class="col text-right my-right" v-if="imageUrl">
-    <button>
+    <button class="hello-btn">
         <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
 </svg>
@@ -713,6 +713,7 @@
     padding: 25px;
     background-color: transparent;
     border: 1px solid #DED4A2;
+    color: #ffff;
  }
 
  .bordersbot{
