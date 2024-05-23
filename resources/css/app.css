@@ -1207,13 +1207,26 @@ input {
 select#cars {}
 
 .type-input {
-    width: 21%;
+    width: 16%;
 }
 
 .input {
     width: 100%;
 }
 
+
+.inputclass OPTION {
+    color: #fff;
+    background-color: #293857;
+}
+
+button.hello-btn {
+    background: transparent;
+}
+span.overview {
+    text-decoration: none !important;
+    border-bottom: none;
+}
 input {
     width: 100%;
     outline: none;
