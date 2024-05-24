@@ -637,20 +637,21 @@ line-height: normal;
 }
 
 .list-1 img {
-    width: 10%;
-    min-width: 10%;
-    max-width: 10%;
+    width: 11%;
+    min-width: 11%;
+    max-width: 11%;
     position: relative;
     z-index: 1;
     margin-top: -125px;
     margin-left: 20px;
-    height: 150px;
-    max-height: 150px;
-    min-height: 150px;
+    height: 190px;
+    max-height: 190px;
+    min-height: 190px;
     border-radius: 0px !important;
     -o-object-fit: cover;
     object-fit: cover;
-    border-radius: 50% !important;
+    border-radius: 0px !important;
+    object-fit: cover;
 }
 
 .list-titel {
@@ -1098,12 +1099,10 @@ height: 100%;object-fit: cover;
 }
 
 .setp {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
 }
 
-.setp {
-    padding-left: 15px !important;
-}
+
 
 .imger h2 {
     color: #000;

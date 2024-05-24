@@ -266,7 +266,7 @@ h2.topreal {
 }
 
 .setp {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
 }
 
 .id-box {}

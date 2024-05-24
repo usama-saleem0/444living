@@ -337,7 +337,7 @@ padding-right: 5px;
 }
 
 .setp {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
 }
 
 .id-box {}

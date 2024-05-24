@@ -554,6 +554,7 @@ section.loging-page {
     flex-wrap: wrap;
     gap: 40px;
     align-items: center;
+    padding-top: 40px;
 }
 
 .form-LogIn h2 {

@@ -493,7 +493,7 @@ section.Process {
     padding-top: 117px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .Process-btn-box button {
@@ -561,12 +561,13 @@ section.curated {
 
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+    text-align: justify;
     padding-bottom: 75px;
     margin: 0px;
     line-height: 131px;
     font-size: 100px;
     color: #fff;
+    padding-left: 12%;
     font-family: 'Saol Display';
 }
 .curated-h2-list {border-bottom: 1px solid #DED4A2;width: 100%;}
@@ -1821,14 +1822,51 @@ button.white {
 }
 
 
+.curated-h2-list-btn {
+    width: 100%;
+    padding-left: 12% !important;
+}
+
+
+.menu-btn button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 25px;
+    bottom: 0px; 
+    background: #DED4A2;
+    height: 0px !important;
+    transition: 0.3s ease-out;
+}
+
+
+
+.part-input-box input:hover {color: #ded4a2;}
 
 
 
 
 
 
+.part-input-box button:hover {
+    border: 2px solid #ded4a2 !important;
+}
+
+.part-input-box button:hover path{
+    fill:#ded4a2;
+}
+
+.part-input-box button path{
+    transition: 0.3s;
+}
+
+.part-input-box button {
+    transition: 0.3s;
+}
 
 
+
+path {}
 
 
 
@@ -2088,7 +2126,7 @@ header.header {
     padding-top: 85px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .Process-btn-box button {
     background: transparent;
@@ -2116,7 +2154,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+   
     padding-bottom: 60px;
     margin: 0px;
     line-height: 110px;
@@ -2857,7 +2895,7 @@ section.Process {
     padding-top: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .main-Success h2 {
     font-size: 100px;
@@ -2873,7 +2911,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+
     padding-bottom: 50px;
     margin: 0px;
     line-height: 100px;
@@ -3439,7 +3477,7 @@ p.id-list-2 {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+ 
     padding-bottom: 50px;
     margin: 0px;
     line-height: 100px;
@@ -3700,7 +3738,7 @@ section.Process {
     padding-top: 44px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .main-Success h2 {
     font-size: 85px;
@@ -3716,7 +3754,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+
     padding-bottom: 45px;
     margin: 0px;
     line-height: 78px;
@@ -4333,7 +4371,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+  
     padding-bottom: 45px;
     margin: 0px;
     line-height: 60px;
@@ -4912,7 +4950,7 @@ section.curated {
 }
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+
     border: none;
     padding-bottom: 0px;
     margin: 0px;

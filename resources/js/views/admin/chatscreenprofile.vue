@@ -332,7 +332,7 @@ padding-right: 5px;
 }
 
 .setp {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
 }
 p.pragraphok {
     margin: 0px;
@@ -340,9 +340,7 @@ p.pragraphok {
     color:  #000 !important;
 }
 .id-box {}
-.setp{
-  padding-top: 15px;
-}
+
 .requesttext{
   text-align: left !important;
     color: #D9D9D9 !important;

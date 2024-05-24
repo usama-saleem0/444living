@@ -32,10 +32,7 @@
                         <div class="header-menu" @click="dropicon" style="z-index: 1;" v-if="endicon">
                             <label class="hamburger">
                                 <input>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="stroke:#293857;">
-                                    <path style="fill: #293857;"
-                                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                                </svg>
+                            <svg data-v-72911c7d="" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgsizeing"><g data-v-72911c7d="" filter="url(#filter0_d_206_2853)"><g data-v-72911c7d="" clip-path="url(#clip0_206_2853)"><path data-v-72911c7d="" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path></g> <g data-v-72911c7d="" clip-path="url(#clip1_206_2853)"><path data-v-72911c7d="" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path></g></g> <defs data-v-72911c7d=""><filter data-v-72911c7d="" id="filter0_d_206_2853" x="-0.000244141" y="0" width="77.9822" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood data-v-72911c7d="" flood-opacity="0" result="BackgroundImageFix"></feFlood> <feColorMatrix data-v-72911c7d="" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset data-v-72911c7d="" dy="4"></feOffset> <feGaussianBlur data-v-72911c7d="" stdDeviation="7"></feGaussianBlur> <feComposite data-v-72911c7d="" in2="hardAlpha" operator="out"></feComposite> <feColorMatrix data-v-72911c7d="" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix> <feBlend data-v-72911c7d="" mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_206_2853"></feBlend> <feBlend data-v-72911c7d="" mode="normal" in="SourceGraphic" in2="effect1_dropShadow_206_2853" result="shape"></feBlend></filter> <clipPath data-v-72911c7d="" id="clip0_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="matrix(0 1 -1 0 40.9495 10.123)"></rect></clipPath> <clipPath data-v-72911c7d="" id="clip1_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="translate(37.0334 60) rotate(-90.529)"></rect></clipPath></defs></svg>
 
                             </label>
                         </div>
@@ -290,7 +287,7 @@
                     <div class="curated-tital">
                       <div class="curated-h2-list">
                         <h2>Experience <br>
-                            Our Curated <br> Properties</h2>
+                            Our Curated<br>Properties</h2>
                       </div>
                       <div class="curated-h2-list-btn">
                         <button>
@@ -1258,7 +1255,7 @@ section.Process {
     padding-top: 117px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .Process-btn-box button {
@@ -1334,13 +1331,14 @@ section.curated {
 
 .curated-tital h2 {
     width: 75%;
-    text-align: center;
+    text-align: justify;
     padding-bottom: 75px;
     margin: 0px;
     line-height: 131px;
     font-size: 100px;
     color: #fff;
     font-family: 'Saol Display';
+    padding-left: 12%;
 }
 .curated-h2-list {border-bottom: 1px solid #DED4A2;width: 100%;}
 
@@ -2240,7 +2238,7 @@ button svg {
         padding-top: 85px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .Process-btn-box button {
@@ -2273,7 +2271,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+      
         padding-bottom: 60px;
         margin: 0px;
         line-height: 110px;
@@ -2833,7 +2831,7 @@ button svg {
         padding-top: 70px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .main-Success h2 {
@@ -2852,7 +2850,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+      
         padding-bottom: 50px;
         margin: 0px;
         line-height: 100px;
@@ -3283,7 +3281,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+     
         padding-bottom: 50px;
         margin: 0px;
         line-height: 100px;
@@ -3564,7 +3562,7 @@ button svg {
         padding-top: 44px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .main-Success h2 {
@@ -3583,7 +3581,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+       
         padding-bottom: 45px;
         margin: 0px;
         line-height: 78px;
@@ -4061,7 +4059,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+       
         padding-bottom: 45px;
         margin: 0px;
         line-height: 60px;
@@ -4617,7 +4615,7 @@ button svg {
 
     .curated-tital h2 {
         width: 75%;
-        text-align: center;
+      
         border: none;
         padding-bottom: 0px;
         margin: 0px;

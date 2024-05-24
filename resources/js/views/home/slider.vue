@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="Process-btn-box">
-    <button>
+    <button class="long-btn-box">
                             <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -52,7 +52,7 @@
                                     stroke="#DED4A2" stroke-width="2" />
                             </svg>
 
-                            View All Properties
+                            See All Properties
                         </button>
                       </div>
   </div>
@@ -257,6 +257,13 @@ export default {
     margin: 0px;
     padding-top: 12px;
 }
+
+
+button.long-btn-box:hover svg[data-v-77bbf362] {
+    transform: translateX(290px);
+    color: var(--hovered-color);
+}
+
 
 .image-item span p span {
     padding: 0px 10px;

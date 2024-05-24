@@ -461,7 +461,7 @@ line-height: normal;
 }
 
 .setp {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
 }
 
 
