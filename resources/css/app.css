@@ -1179,6 +1179,7 @@ section.TopListing {
     position: absolute;
     bottom: -55px;
     border: 2px solid #ded4a2;
+    gap:5px !important
 }
 
 * {
