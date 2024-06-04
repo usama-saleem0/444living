@@ -364,32 +364,31 @@
           aria-labelledby="userDropdown"
         >
 
-        <a class="dropdown-item"  @click="back"  v-if="user && user.auth_type === 'Influencer'">
-            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            Profile
+        <a
+            class="dropdown-item"
+            href="javascript:void(0)"
+            @click="logout"
+            data-toggle="modal"
+            data-target="#logoutModal"
+            style="font-weight: bold"
+          >
+            Good Afternon, {{ user.username }}
+           
           </a>
+          <br>
 
-
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item"  @click="backs"  v-if="user && user.auth_type === 'Brand'">
-            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            Profile
-          </a>
-         
-          <a class="dropdown-item"  @click="assign"  v-if="user && user.auth_type === 'Influencer'">
-            <i class="fas fa-box fa-sm fa-fw mr-2 text-gray-400"></i>
-            Assign Product
-          </a>
-          <div class="dropdown-divider"></div>
           <a
             class="dropdown-item"
             href="javascript:void(0)"
             @click="logout"
             data-toggle="modal"
             data-target="#logoutModal"
+            style="display: flex;
+    justify-content: center; font-weight: bold"
           >
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-            Logout
+            <!-- <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i> -->
+            <img src="/images/arrow.png"/>
+            Sign Out
           </a>
         </div>
       </li>
