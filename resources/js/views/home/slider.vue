@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="Process-btn-box">
-    <button class="long-btn-box">
+    <button class="long-btn-box" @click="resisteralter">
                             <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -59,6 +59,8 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 export default {
   data() {
     return {
@@ -96,6 +98,63 @@ export default {
     },
   },
   methods: {
+
+
+    resisteralter(){
+    //         Swal.fire({
+    //   title: "Successfully Add to you Favorite list",
+    //   width: 600,
+    //   padding: "3em",
+    //   color: "#202d46",
+    //   background: "#ded4a2",
+    //   backdrop: `
+    //   rgb(0 0 0 / 84%)
+
+    
+    //   `
+      
+    // });
+
+    Swal.fire({
+  title: "<strong>Please <u>Register</u></strong>",
+  icon: "info",
+  color: "#202d46",
+  background: "#ded4a2",
+  backgroundColor: "#ded4a2 !important",
+  backdrop: `
+      rgb(0 0 0 / 84%)
+
+    
+       `,
+  html: `
+    If you want Search or see more features 
+    please register first
+  `,
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText: `
+    <i class="fa fa-thumbs-up"></i> Register!
+  `,
+  confirmButtonAriaLabel: "Thumbs up, great!",
+  cancelButtonText: `
+    <i class="fa fa-thumbs-down"></i> Cancel
+  `,
+  cancelButtonAriaLabel: "Thumbs down",
+  customClass: {
+    popup: 'custom-swal-background' // Apply the custom background class
+  },
+  preConfirm: () => {
+    this.$router.push('/register'); 
+  }
+});
+
+
+
+    
+ 
+
+        },
     nextImage() {
       const totalRows = this.imageRows.length;
       this.currentIndex = (this.currentIndex + 1) % (totalRows + 1); 

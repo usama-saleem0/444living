@@ -37,9 +37,9 @@
     </div>
 
     <div class="fade-in">
-      <img v-if="img" class="first_image fade-in" src="/images/Rectangle1.png"/>
+      <img  v-if="img" class="first_image fade-in" src="/images/Rectangle1.png"/>
       <img v-if="img" class="second_image fade-in" src="/images/Rectangle2.png"/>
-      <img v-if="img" class="third_image fade-in" src="/images/Rectangle3.png"/>
+      <img  v-if="img" class="third_image fade-in" src="/images/Rectangle3.png"/>
 
 
     </div>
@@ -112,7 +112,7 @@ export default {
   width: 25%;
     position: absolute;
     right: 4%;
-    bottom: 25%;
+    bottom: 50%;
 }
 
 .fade-in {
@@ -147,7 +147,7 @@ export default {
   width: 25%;
     position: absolute;
     left: 40%;
-    bottom: 5%; 
+    bottom: 45%; 
 
 }
 

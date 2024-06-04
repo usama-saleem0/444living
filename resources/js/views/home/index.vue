@@ -32,7 +32,9 @@
                         <div class="header-menu" @click="dropicon" style="z-index: 1;" v-if="endicon">
                             <label class="hamburger">
                                 <input>
-                            <svg data-v-72911c7d="" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgsizeing"><g data-v-72911c7d="" filter="url(#filter0_d_206_2853)"><g data-v-72911c7d="" clip-path="url(#clip0_206_2853)"><path data-v-72911c7d="" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path></g> <g data-v-72911c7d="" clip-path="url(#clip1_206_2853)"><path data-v-72911c7d="" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path></g></g> <defs data-v-72911c7d=""><filter data-v-72911c7d="" id="filter0_d_206_2853" x="-0.000244141" y="0" width="77.9822" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood data-v-72911c7d="" flood-opacity="0" result="BackgroundImageFix"></feFlood> <feColorMatrix data-v-72911c7d="" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset data-v-72911c7d="" dy="4"></feOffset> <feGaussianBlur data-v-72911c7d="" stdDeviation="7"></feGaussianBlur> <feComposite data-v-72911c7d="" in2="hardAlpha" operator="out"></feComposite> <feColorMatrix data-v-72911c7d="" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix> <feBlend data-v-72911c7d="" mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_206_2853"></feBlend> <feBlend data-v-72911c7d="" mode="normal" in="SourceGraphic" in2="effect1_dropShadow_206_2853" result="shape"></feBlend></filter> <clipPath data-v-72911c7d="" id="clip0_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="matrix(0 1 -1 0 40.9495 10.123)"></rect></clipPath> <clipPath data-v-72911c7d="" id="clip1_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="translate(37.0334 60) rotate(-90.529)"></rect></clipPath></defs></svg>
+                            <svg data-v-72911c7d="" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgsizeing"><g data-v-72911c7d="" filter="url(#filter0_d_206_2853)"><g data-v-72911c7d="" clip-path="url(#clip0_206_2853)">
+                                <path data-v-72911c7d="" style=" stroke: #293857;" d="M13.3088 10.814C13.3088 13.3776 15.8413 17.2059 18.405 20.4191C21.7012 24.5652 25.64 28.1827 30.1558 30.9433C33.5418 33.0129 37.6464 34.9996 40.9495 34.9996C37.6464 34.9996 33.5383 36.9863 30.1558 39.0559C25.64 41.8199 21.7012 45.4374 18.405 49.5766C15.8413 52.7933 13.3088 56.6285 13.3088 59.1852" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path>
+                            </g> <g data-v-72911c7d="" clip-path="url(#clip1_206_2853)"><path data-v-72911c7d="" style=" stroke: #293857;" d="M64.6666 59.0539C64.643 56.4903 62.0751 52.6856 59.4819 49.4962C56.1476 45.3807 52.1756 41.7997 47.6345 39.0809C44.2295 37.0427 40.1067 35.094 36.8038 35.1245C40.1067 35.094 44.1963 33.0695 47.5596 30.9687C52.0497 28.1631 55.9549 24.5094 59.2127 20.3399C61.7465 17.0997 64.2436 13.2413 64.22 10.6847" stroke="#DED4A2" stroke-width="6" class="svgcolor"></path></g></g> <defs data-v-72911c7d=""><filter data-v-72911c7d="" id="filter0_d_206_2853" x="-0.000244141" y="0" width="77.9822" height="78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood data-v-72911c7d="" flood-opacity="0" result="BackgroundImageFix"></feFlood> <feColorMatrix data-v-72911c7d="" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix> <feOffset data-v-72911c7d="" dy="4"></feOffset> <feGaussianBlur data-v-72911c7d="" stdDeviation="7"></feGaussianBlur> <feComposite data-v-72911c7d="" in2="hardAlpha" operator="out"></feComposite> <feColorMatrix data-v-72911c7d="" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix> <feBlend data-v-72911c7d="" mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_206_2853"></feBlend> <feBlend data-v-72911c7d="" mode="normal" in="SourceGraphic" in2="effect1_dropShadow_206_2853" result="shape"></feBlend></filter> <clipPath data-v-72911c7d="" id="clip0_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="matrix(0 1 -1 0 40.9495 10.123)"></rect></clipPath> <clipPath data-v-72911c7d="" id="clip1_206_2853"><rect data-v-72911c7d="" width="49.7533" height="26.9497" fill="white" transform="translate(37.0334 60) rotate(-90.529)"></rect></clipPath></defs></svg>
 
                             </label>
                         </div>
@@ -76,9 +78,14 @@
                                 <p>Post your dream listing, collaborate with other investors, and find great realtors.
                                 </p>
                             </span>
-                            <h2>Discover Your Dream Property with Ease</h2>
+                            <!-- <h2>Discover Your Dream Property with Ease</h2> -->
+                            <h2>
+                                Revolutionizing Real Estate
+                                Connections
 
-                            <button>
+                            </h2>
+
+                            <button @click="resisteralter">
                                 <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -92,7 +99,7 @@
 
 
                         <div class="hero-part">
-                            <div class="part-list">
+                            <div class="part-list" style="opacity: 0;">
                                 <img src="/images/profie.png" alt="">
                                 <span>
 
@@ -105,7 +112,7 @@
 
                             <div class="part-input-box">
                                 <input type="text" placeholder="Search by, location, category, type...">
-                                <button>
+                                <button @click="resisteralter">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
                                         fill="none">
                                         <g clip-path="url(#clip0_2002_23)">
@@ -134,9 +141,8 @@
                 <div class="contanair">
                     <div class="main-home">
                         <div class="home-tital">
-                            <h3>Welcome To 444 Living Your Real Estate Partner</h3>
-                            <h2>Revolutionizing Real <br> <span><img src="/images/Line 7.png" alt=""></span>Estate
-                                Connections<span><img src="/images/Line 7.png" alt=""></span></h2>
+                            <h3>Welcome to 444 Living, the Real Estate Platform</h3>
+                            <h2>Discover Your Dream <br> <span><img src="/images/Line 7.png" alt=""></span>Property With Ease<span><img src="/images/Line 7.png" alt=""></span></h2>
                             <p>Your Ultimate Real Estate Hub. We're dedicated to simplifying the real estate experience
                                 by seamlessly connecting buyers, realtors, and investors. Our platform offers intuitive
                                 tools for posting requirements, browsing listings, and discovering lucrative investment
@@ -146,7 +152,7 @@
 
                         <div class="home-contars">
                             <div class="contars-1">
-                                <h2>$50M+ </h2>
+                                <h2>$50B+ </h2>
                                 <p>Worth Of Real Estate Sold</p>
                             </div>
                             <div class="contars-2">
@@ -192,75 +198,71 @@
                         </div>
                     </div>
                     <div class="Process-img-box  fade-in" v-if="helloboy">
-                        <h2>Process Story</h2>
+                        <h2>Use Cases</h2>
                         <span style="    color: #ded4a2d9;
     font-weight: bold;">
 
-                            The Journey Of Buying A Property With 444Living's Comprehensive Platform,
-                                Empowering Buyers To Effortlessly Navigate Listings, Communicate With Realtors,
-                                Negotiate Terms, And Finalize Transactions.
+                            We strive to empower home buyers and give them direct
+                        access to realtors through direct messaging and negotiation:
                             </span>
                             <br>
                             <br>
                         <ul class="process_story_points">
                             
                             
-                            <li>Register/log in to access dashboard
-                                Post requirements, browse listings, save favorites</li>
-                            <li>Contact realtors directly for inquiries/viewings
-                                Manage communication and schedule viewings
+                            <li>Register or Log-in to access the dashboard</li>
+                            <li>Post requirements, browse listings, & save favorites
                             </li>
-                            <li>Make offers, negotiate terms</li>
-                            <li>Finalize purchase</li>
-                            <li>Provide feedback</li>
-                            <li>Continue property search</li>
-                            <li>Engage community</li>
+                            <li>Contact realtors directly for inquiries/viewings</li>
+                            <li>Manage communication and schedule viewings</li>
+                            <li>Make offers & negotiate terms (new NAR requirements allow for a-la-carte realtor services!)</li>
+                            <li>Finalize purchase directly through realtor or by engaging directly on platform</li>
+                            <li>Engage with other members of community</li>
                         </ul>
                         <img src="/images/porrose.png" alt="">
                     </div>
                     <div class="Process-img-box   fade-in" v-if="helloboys">
-                        <h2>Process Story</h2>
+                        <h2>Use Cases</h2>
                         <span  style="    color: #ded4a2d9;
-    font-weight: bold;">Unlock The Potential Of Investment Success With 444 Living, Where Investors Can
-                                Seamlessly Explore, Connect, Collaborate</span>
+    font-weight: bold;">Unlock the potential of investment success with 444 Living
+- a place for investors to explore, connect, & collaborate:</span>
                                 <br>
                                 <br>
                         <ul class="process_story_points">
                            
-                            <li>Track their investments while leveraging a
-                                supportive community and a wealth of opportunities.</li>
-                            <li>Create an account or log in to access the Investor dashboard.</li>
-                            <li>Search for investment opportunities based on criteria.</li>
-                            <li>Connect with like-minded investors looking for similar opportunities
-                                Post investment opportunities for others to join.</li>
-                            <li>Collaborate, conduct due diligence, and make informed decisions.</li>
-                           <li>Facilitate communication and negotiation with property owners/developers.
-                            Track investments, monitor performance, and stay updated</li> 
+                            <li>Create an account or log-in to access the Investor dashboard</li>
+                            <li>Search for investment opportunities based on criteria or post investment opportunities for others to join</li>
+                            <li>Connect with like-minded investors looking for similar opportunities</li>
+                            <li>Track your investments and easily check in on progress</li>
+                            <li>Facilitate communication and negotiation with property owners/developers</li>
+                           
                         </ul>
                         <img src="/images/chatbuttonhhh.png" alt="">
                     </div>
                     <div class="Process-img-box   fade-in" v-if="helloboyss">
-                        <h2>Process Story</h2>
+                        <h2>Use Cases</h2>
                         <span  style="    color: #ded4a2d9;
     font-weight: bold;">
-                             Experience Seamless Real Estate Transactions With 444 Living, Empowering Realtors To
-                            
-                            Efficiently Connect With Clients, Manage Listings, Negotiate Terms, And Showcase
-                                Expertise </span>
+    We strive to help realtors connect with prospective clients,
+manage listings, negotiate terms, and showcase their talent:</span>
 
                                 <br>
                                 <br>
                         <ul class="process_story_points">
                            
-                            <li>For business growth</li>
-                            <li>Access user-friendly dashboard upon registration or login.</li>
-                            <li>Browse buyer requirements and connect with interested clients.</li>
+                            <li>Access user-friendly dashboard upon registration or login</li>
+                            <li>Browse buyer requirements and connect with buyers searching for a realtor or a home</li>
                             <li>List properties for sale or rent</li>
+                            <li>Manage listings efficiently & view inquiries</li>
                             <li>Manage listings efficiently. View inquiries</li>
-                            <li>Meet with prospective clients, and negotiate terms
-                                Showcase expertise, build reputation through successful transactions, and positive
-                                feedback.</li>
-                            <li>Utilize platform tools to streamline processes and expand network.</li>
+                            <li>Meet with prospective clients, and negotiate terms based on a full suite of services or a-la-carte</li>
+                            <li>
+                                Showcase expertise through posts and past transactions
+                            </li>
+                            <li>
+                                Utilize platform tools to streamline processes and expand network
+                            </li>
+                            
                         </ul>
                         <img src="/images/Realtorsimger1.png" alt="">
                     </div>
@@ -290,7 +292,7 @@
                             Our Curated<br>Properties</h2>
                       </div>
                       <div class="curated-h2-list-btn">
-                        <button>
+                        <button @click="resisteralter">
                             <svg width="13" height="25" viewBox="0 0 13 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -558,6 +560,8 @@
 import Menu from '../home/menu.vue'
 import Slider from '../home/slider.vue'
 import { get , byMethod} from '../lib/api'
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import 'sweetalert2/src/sweetalert2.scss'
 
 export default {
     name: "Home",
@@ -606,6 +610,63 @@ export default {
          }, 
 
     methods: {
+
+
+        resisteralter(){
+    //         Swal.fire({
+    //   title: "Successfully Add to you Favorite list",
+    //   width: 600,
+    //   padding: "3em",
+    //   color: "#202d46",
+    //   background: "#ded4a2",
+    //   backdrop: `
+    //   rgb(0 0 0 / 84%)
+
+    
+    //   `
+      
+    // });
+
+    Swal.fire({
+  title: "<strong>Please <u>Register</u></strong>",
+  icon: "info",
+  color: "#202d46",
+  background: "#ded4a2",
+  backgroundColor: "#ded4a2 !important",
+  backdrop: `
+      rgb(0 0 0 / 84%)
+
+    
+       `,
+  html: `
+    If you want Search or see more features 
+    please register first
+  `,
+  showCloseButton: true,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonText: `
+    <i class="fa fa-thumbs-up"></i> Register!
+  `,
+  confirmButtonAriaLabel: "Thumbs up, great!",
+  cancelButtonText: `
+    <i class="fa fa-thumbs-down"></i> Cancel
+  `,
+  cancelButtonAriaLabel: "Thumbs down",
+  customClass: {
+    popup: 'custom-swal-background' // Apply the custom background class
+  },
+  preConfirm: () => {
+    this.$router.push('/register'); 
+  }
+});
+
+
+
+    
+ 
+
+        },
 
 
         singupage() {
@@ -766,6 +827,33 @@ export default {
 </script>
 
 <style scoped>
+
+
+/* .swal2-popup.swal2-modal.custom-swal-background.swal2-icon-info.swal2-show {
+    background-color: #ded4a2 !important;
+}
+
+
+.custom-swal-background {
+  background-color: #272525 !important; 
+} */
+
+
+div:where(.swal2-container) div:where(.swal2-popup) {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    grid-template-columns: minmax(0, 100%);
+    width: 32em;
+    max-width: 100%;
+    padding: 0 0 1.25em;
+    border: none;
+    border-radius: 5px;
+    background: #ded4a2 !important;
+    color: #545454;
+    font-family: inherit;
+    font-size: 1rem;
+}
 ::-webkit-scrollbar {
     width: 0px;
 }

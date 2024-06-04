@@ -1,8 +1,8 @@
 <template>
     <div>
 
-    
-    
+
+
     <div>
         <!-- <Header/> -->
         <hr style="    width: 85%;
@@ -12,10 +12,10 @@
     margin: auto;
     background-color: #DED4A2;">
 
-  
- 
+
+
    <div class="page-1">
-   
+
     <div class="contanir">
        <div class="main">
         <div class="roll-1"></div>
@@ -24,7 +24,7 @@
                 <!-- <img src="/images/user.png" alt=""> -->
                 <img :src="'/profile/' + user.profile" alt="">
 
-              
+
                 <div class="list-titel">
                    <span><h2>{{ user.username ?  user.username :'Profile' }}</h2></span>
 <div class="list-id">
@@ -34,14 +34,14 @@
                 </div>
                 <div class="list-btn">
                     <div class="buttons">
-       
+
                             <img @click="openModal" src="images/edit.png"/>
-                     
-                        
+
+
                     </div>
 
 
-                   
+
                     <div class="btn-ides">
                         <span><h2>Profile Type: {{ user.type ? user.type :'' }}</h2></span>
                         <span>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="list-2">
-                
+
                 <div class="more-card" >
                     <div  class="cards" >
                 <div class="pox-1">
@@ -75,7 +75,7 @@
 </svg>
 </button>
                   </div>
-                 
+
                 </div>
                 <hr style="    width: 95%;
     display: flex;
@@ -86,9 +86,9 @@
                 <div class="pox-2">
                   <p>Bio:</p>
                  <p class="ptag">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi justo odio, pretium eget tincidunt a, sollicitudin a mi. Praesent odio dui, porttitor nec massa ut, dapibus volutpat enim. Vivamus id velit eros. Cras pellentesque elit posuere tempor lacinia. Vivamus viverra leo a metus vehicula, vitae laoreet justo pellentesque. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi justo odio, pretium eget tincidunt a, sollicitudin a mi. Praesent odio dui, porttitor nec massa ut, dapibus volutpat enim. Vivamus id velit eros. Cras pellentesque elit posuere tempor lacinia. Vivamus viverra leo a metus vehicula, vitae laoreet justo pellentesque.
                  </p>
-                
+
                  <hr style="    width: 100%;
     display: flex;
     justify-content: center;
@@ -99,46 +99,46 @@
     <div class="row">
         <div class="col tops">
 
-      
 
-  
+
+
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-       
+
  <p class="newp">First Name: {{ user.first_name ? user.first_name : ''}}</p>
                     </div>
-                  
-                  
+
+
                   </div>
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-       
+
 <p class="newp">Last: {{ user.last_name ? user.last_name : ''}}</p>
                     </div>
-                  
-                  
+
+
                   </div>
-                
+
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-      
+
  <p class="newp">Email: {{ user.email ?  user.email : ''}}</p>
                     </div>
-                    
-                  
+
+
                   </div>
-                
+
 
                   <div class="pox-box" style="padding-bottom: 1%;">
                     <div class="yes">
-     
+
  <p class="newp">Phone: {{ user.number ? user.number: '' }}</p>
                     </div>
-                    
-                  
+
+
                   </div>
                 </div>
 
@@ -146,7 +146,7 @@
                     <div class="carder ">
                         <div class="row">
 
-                        
+
                         <div class="col">
                             <span class="member">
                                 Membership Type:
@@ -175,7 +175,7 @@
                             </button>
                         </div>
                     </div>
-                        
+
                         </div>
 
                 </div>
@@ -183,12 +183,12 @@
                 </div>
                     </div>
 
-                  
 
-                   
+
+
                 </div>
-            
-                
+
+
                 <div class="salider-card">
                     <div class="col">
                         <span class="trust">Preferred Location</span>
@@ -196,8 +196,8 @@
                     </div>
                     <div class="mine-card">
                         <img class="imgss" src="/images/map.png"/>
-                       
-                       
+
+
                     </div>
                     <div class="col pt-2" v-if="user.type === 'Investor' || user.type === 'Buyer'">
                         <span class="trust">Trusted Realtors</span>
@@ -210,7 +210,7 @@
                     </div>
 
                     <div  class="run-card">
-                       
+
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" style="    display: flex;
     flex-direction: row;">
@@ -226,11 +226,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4  sharo-bhai">
 
-           
+
 <div class="col-7">
     <button class="contac" @click="contact(one)">
     Contact Realtor
@@ -245,9 +245,9 @@
 </div>
         </div>
 
-        
 
-        
+
+
     </div>
 
     <div class="carousel-item " v-for="item in model">
@@ -262,11 +262,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4  sharo-bhai">
 
-           
+
 <div class="col-7">
     <button class="contac" @click="contact(item)">
     Contact Realtor
@@ -279,29 +279,29 @@
 </svg>
 </div>
 </div>
-           
-           
+
+
         </div>
 
-        
 
-        
-    </div>
+
 
     </div>
 
-    
+    </div>
 
 
-    
+
+
+
   </div>
- 
+
                     </div>
 
 
-                 
 
-               
+
+
                     </div>
                 </div>
             </div>
@@ -318,13 +318,13 @@
 
         <Edit @cancel="closeModal"/>
       </div>
-      
+
     </div>
 
 </div>
-  
-  
- 
+
+
+
 </template>
 
 <script>
@@ -345,7 +345,7 @@ export default {
         Edit
   },
 
-   
+
 
     data () {
             return {
@@ -359,13 +359,13 @@ export default {
                 one:{},
                 isModalOpen:true,
                 user:{}
-               
 
-               
-               
-              
-              
-              
+
+
+
+
+
+
             }
         },
 
@@ -373,14 +373,14 @@ export default {
 //     ...mapGetters(["user"]),
 //   },
 
-     
+
         created(){
 
                     this.getuser()
-         
+
                 get('/toprealtor')
               .then((res) => {
-                
+
                  this.setData(res)
 
               })
@@ -390,12 +390,12 @@ export default {
               this.ontrealtor()
 
 
-              
-         
-        
-       
-          
-        }, 
+
+
+
+
+
+        },
 
         methods:{
 
@@ -411,19 +411,19 @@ export default {
                 Vue.set(this.$data, 'user', res.data.data)
 
 
-                
+
                 //  this.setData(res)
 
               });
             },
 
 
-                 
+
             openModal() {
-     
+
      $('#popup-box').modal('show');
-     
-     
+
+
    },
 
 
@@ -434,8 +434,8 @@ export default {
    $('#popup-box').modal('hide');
 
   this.getuser()
-     
-    
+
+
    },
 
             dateformat(e){
@@ -460,12 +460,12 @@ export default {
             contact(e){
                 console.log(e);
 
-                
+
                 this.$router.push({
-            name: 'chats', 
+            name: 'chats',
             params: { id: JSON.stringify(e) },
             });
-            
+
 
             },
 
@@ -474,24 +474,24 @@ export default {
                 get('/onerealtor')
               .then((res) => {
                 Vue.set(this.$data, 'one', res.data.data)
-                
-                
+
+
 
               })
-         
+
 
             },
 
             setData(res) {
-        
+
               Vue.set(this.$data, 'model', res.data.data)
-      
-             
-            
-            
+
+
+
+
           },
 
-          
+
 
         }
     }
@@ -858,7 +858,7 @@ button.Hire {
     font-size: 35px;
     font-style: normal;
     font-weight: 400 !important;
-    line-height: normal; 
+    line-height: normal;
     margin: 0px;
     padding: 0px;
 }
@@ -1201,15 +1201,15 @@ button.llo {
 @media screen and (max-width: 1600px){
 
     .member {
-   
+
     font-size: 23px;
- 
+
 }
 
 .basic {
- 
+
     font-size: 60px;
-   
+
 }
 
 .newp {
@@ -1415,7 +1415,7 @@ button.llo {
     font-weight: 500;
     line-height: normal;
     margin: 0px;
-    
+
 }
     .contanir {
     width: 100%;
@@ -1733,12 +1733,12 @@ div#carouselExampleControls {
 
 @media screen and (max-width: 1366px){
     .upgardebutton {
-  
+
     width: 160px;
     height: 40px;
     padding: 9px 7px;
     font-size: 14px;
-   
+
 }
 
     .carder{
@@ -1763,14 +1763,14 @@ div#carouselExampleControls {
     font-size: 45px;
 }
     .ptag {
-  
+
     font-size: 15px !important;
- 
+
 }
 .since {
-   
+
     font-size: 13px;
-   
+
 }
 .member {
     font-size: 17px;

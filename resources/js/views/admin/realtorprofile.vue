@@ -1,7 +1,7 @@
 <template>
-    
+
     <div>
-       
+
         <hr style="    width: 85%;
     display: flex;
     justify-content: center;
@@ -9,10 +9,10 @@
     margin: auto;
     background-color: #DED4A2;">
 
-  
- 
+
+
    <div class="page-1">
-   
+
     <div class="contanir">
        <div class="main">
         <div class="roll-1"></div>
@@ -30,13 +30,13 @@
                 </div>
                 <div class="list-btn">
                     <div class="buttons">
-      
-                     
-                        
+
+
+
                     </div>
 
 
-                   
+
                     <div class="btn-ides">
                         <span><h2>Profile Type: {{ model.type }}</h2></span>
                         <span>
@@ -54,15 +54,15 @@
                 </div>
             </div>
             <div class="list-2">
-                
+
                 <div class="more-card" >
                     <div  class="cards" >
                 <div class="pox-1">
                   <h2>Profile Information</h2>
                   <div>
-                    <button class="godashboard" @click="dashboard">
+                    <button class="godashboard" @click="contact(model)">
                         <span class="pr-2">
-                            Go to dashboard
+                            Chat with {{ model.username }}
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
   <path d="M1.76254 5.42269C2.30034 5.41318 2.78631 5.3856 3.26895 5.46881C3.31983 5.47737 3.37879 5.44932 3.43253 5.43315C3.69738 5.35326 3.96319 5.34233 4.2328 5.41128C4.46723 5.47119 4.70642 5.41983 4.9437 5.43743C5.30983 5.46453 5.67408 5.36563 6.03785 5.38417C6.33408 5.39939 6.63366 5.39463 6.928 5.44076C7.07731 5.46406 7.21852 5.47214 7.37116 5.43363C7.53711 5.39226 7.70164 5.49164 7.87378 5.49164C8.06304 5.49164 8.24943 5.53919 8.43108 5.5934C8.63459 5.65379 8.68594 5.83828 8.53759 5.98807C8.31124 6.21679 8.01549 6.31712 7.70926 6.36182C7.45581 6.39891 7.19713 6.4203 6.94178 6.43362C6.67169 6.44741 6.3997 6.54061 6.1258 6.45026C6.07873 6.43457 6.02025 6.43124 5.97269 6.44408C5.6541 6.53158 5.32268 6.47261 5.00171 6.53538C4.90281 6.55487 4.79438 6.54822 4.69357 6.53253C4.55377 6.51065 4.41968 6.51446 4.28654 6.5582C4.11631 6.61431 3.94704 6.54299 3.77632 6.54631C3.60371 6.54964 3.43253 6.55582 3.26895 6.59719C3.0117 6.66281 2.75588 6.6262 2.50528 6.59957C2.27894 6.5758 2.06068 6.59577 1.83767 6.60147C1.62702 6.60718 1.40686 6.62525 1.19954 6.58864C0.964165 6.54679 0.861929 6.33186 0.775862 6.13547C0.698829 5.95954 0.807247 5.82972 0.925648 5.70324C1.10015 5.51636 1.30129 5.4165 1.56045 5.4341C1.64509 5.4398 1.73116 5.42411 1.76397 5.42221L1.76254 5.42269Z" fill="#DED4A2"/>
@@ -70,7 +70,7 @@
 </svg>
 </button>
                   </div>
-                 
+
                 </div>
                 <hr style="    width: 95%;
     display: flex;
@@ -81,9 +81,9 @@
                 <div class="pox-2">
                   <p>Bio:</p>
                  <p class="ptag">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi justo odio, pretium eget tincidunt a, sollicitudin a mi. Praesent odio dui, porttitor nec massa ut, dapibus volutpat enim. Vivamus id velit eros. Cras pellentesque elit posuere tempor lacinia. Vivamus viverra leo a metus vehicula, vitae laoreet justo pellentesque. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi justo odio, pretium eget tincidunt a, sollicitudin a mi. Praesent odio dui, porttitor nec massa ut, dapibus volutpat enim. Vivamus id velit eros. Cras pellentesque elit posuere tempor lacinia. Vivamus viverra leo a metus vehicula, vitae laoreet justo pellentesque.
                  </p>
-                
+
                  <hr style="    width: 100%;
     display: flex;
     justify-content: center;
@@ -94,46 +94,46 @@
     <div class="row">
         <div class="col tops">
 
-      
 
-  
+
+
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-       
+
  <p class="newp">First Name: {{ model.first_name }}</p>
                     </div>
-                  
-                  
+
+
                   </div>
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-       
+
 <p class="newp">Last Name: {{ model.last_name }}</p>
                     </div>
-                  
-                  
+
+
                   </div>
-                
+
 
                   <div class="pox-box" style="padding-bottom: 3%;">
                     <div class="yes">
-      
+
  <p class="newp">Email: {{ model.email }}</p>
                     </div>
-                    
-                  
+
+
                   </div>
-                
+
 
                   <div class="pox-box" style="padding-bottom: 1%;">
                     <div class="yes">
-     
+
  <p class="newp">Phone: {{ model.number }}</p>
                     </div>
-                    
-                  
+
+
                   </div>
                 </div>
 
@@ -141,7 +141,7 @@
                     <div class="carder ">
                         <div class="row">
 
-                        
+
                         <div class="col">
                             <span class="member">
                                 Membership Type:
@@ -169,7 +169,7 @@
                             </button>
                         </div>
                     </div>
-                        
+
                         </div>
 
                 </div>
@@ -177,12 +177,12 @@
                 </div>
                     </div>
 
-                  
 
-                   
+
+
                 </div>
-            
-                
+
+
                 <div class="salider-card">
                     <div class="col">
                         <span class="trust">Preferred Location</span>
@@ -190,18 +190,18 @@
                     </div>
                     <div class="mine-card">
                         <img class="imgss" src="/images/map.png"/>
-                       
-                       
+
+
                     </div>
                     <div class="col pt-2">
                         <span class="trust">{{user.type === 'Investor' ? 'Top Realtors' :'Top Listings'}}</span>
 
                     </div>
 
-                 
+
 
                     <div class="run-card">
-                       
+
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" style="    display: flex;
     flex-direction: row;">
@@ -216,11 +216,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4  sharo-bhai">
 
-           
+
 <div class="col-7">
     <button class="contac" @click=contact(one)>
     Contact Realtor
@@ -235,9 +235,9 @@
 </div>
         </div>
 
-        
 
-        
+
+
     </div>
 
     <div class="carousel-item " v-for="items in top">
@@ -252,11 +252,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4  sharo-bhai">
 
-           
+
 <div class="col-7">
     <button class="contac" @click=contact(items)>
     Contact Realtor
@@ -269,22 +269,22 @@
 </svg>
 </div>
 </div>
-           
+
         </div>
 
-        
 
-        
-    </div>
+
 
     </div>
 
-    
+    </div>
 
 
-    
+
+
+
   </div>
- 
+
 </div>
                     </div>
                 </div>
@@ -294,9 +294,9 @@
     </div>
 </div>
 
-  
-  
- 
+
+
+
 </template>
 
 <script>
@@ -313,7 +313,7 @@ export default {
         Header
   },
 
-   
+
 
     data () {
             return {
@@ -327,11 +327,11 @@ export default {
                 top:[],
                 one:{}
 
-               
-               
-              
-              
-              
+
+
+
+
+
             }
         },
 
@@ -339,17 +339,17 @@ export default {
     ...mapGetters(["user"]),
   },
 
-     
+
         created(){
 
 
-            
+
 
             this.id = this.$route.params.id;
-         
+
                 get('/getprofile?id='+this.id)
               .then((res) => {
-                
+
                  this.setData(res)
 
               });
@@ -359,28 +359,41 @@ export default {
 
 
 
-         
-        
-          
-        }, 
+
+
+
+        },
 
         methods:{
+
+
+            // contact(e){
+            //     console.log(e);
+
+
+            //     this.$router.push({
+            // name: 'chats',
+            // params: { id: JSON.stringify(e) },
+            // });
+
+
+            // },
 
 
             realtorprofile(e){
                 this.$router.push(`/profile/${e.id}`)
              },
- 
+
 
           contact(e){
                 console.log(e);
 
-                
+
                 this.$router.push({
-            name: 'chats', 
+            name: 'chats',
             params: { id: JSON.stringify(e) },
             });
-            
+
 
             },
 
@@ -389,9 +402,9 @@ export default {
                 get('/onerealtor')
               .then((res) => {
                 Vue.set(this.$data, 'one', res.data.data)
-                
+
               })
-        
+
 
             },
 
@@ -399,14 +412,14 @@ export default {
             toprealtor(){
                 get('/toprealtor')
                .then((res) => {
-                 
+
                 Vue.set(this.$data, 'top', res.data.data)
- 
+
                })
-           
-         }, 
- 
-          
+
+         },
+
+
 
 
 
@@ -423,20 +436,20 @@ export default {
                     this.$router.push('/investordashoard');
                     }
 
-                
+
             },
 
-       
-            setData(res) {
-        
-              Vue.set(this.$data, 'model', res.data.data)
-             
 
-           
-            
+            setData(res) {
+
+              Vue.set(this.$data, 'model', res.data.data)
+
+
+
+
           },
 
-          
+
 
         }
     }
@@ -794,7 +807,7 @@ button.Hire {
     font-size: 35px;
     font-style: normal;
     font-weight: 400 !important;
-    line-height: normal; 
+    line-height: normal;
     margin: 0px;
     padding: 0px;
 }
@@ -1135,15 +1148,15 @@ height: 100%;object-fit: cover;
 @media screen and (max-width: 1600px){
 
     .member {
-   
+
     font-size: 23px;
- 
+
 }
 
 .basic {
- 
+
     font-size: 60px;
-   
+
 }
 
 .newp {
@@ -1348,7 +1361,7 @@ height: 100%;object-fit: cover;
     font-weight: 500;
     line-height: normal;
     margin: 0px;
-    
+
 }
     .contanir {
     width: 100%;
@@ -1665,12 +1678,12 @@ div#carouselExampleControls {
 }
 @media screen and (max-width: 1366px){
     .upgardebutton {
-  
+
     width: 160px;
     height: 40px;
     padding: 9px 7px;
     font-size: 14px;
-   
+
 }
 
     .carder{
@@ -1695,14 +1708,14 @@ div#carouselExampleControls {
     font-size: 45px;
 }
     .ptag {
-  
+
     font-size: 15px !important;
- 
+
 }
 .since {
-   
+
     font-size: 13px;
-   
+
 }
 .member {
     font-size: 17px;

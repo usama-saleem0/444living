@@ -1714,8 +1714,8 @@ section.Townhomes {
 .Townhomes-card-1 {
     width: 32%;
     background-color: #202d46;
-    min-width: 380px;
-    max-width: 380px;
+    min-width: 420px;
+    max-width: 420px;
     height: 100%;
     min-height: 48vh;
     max-height: 48vh;

@@ -4,11 +4,11 @@
 <template>
   <div>
 
- 
+
 
 <div v-if="showing">
-  
-      
+
+
     <header class="header">
     <div class="contanair">
       <nav>
@@ -16,7 +16,7 @@
           <img src="/images/logo-header.png"  alt=""/>
         </div>
 
-        <div class="maxwidths">
+        <div class="maxwidths" style="opacity:0">
             <input type="text" placeholder="What are you looking for..."class="inputtype" v-model="form.looking"/>
             <svg @click="explorenow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" class="setsvgleft" style="cursor: pointer;">
   <path d="M30.0518 27.6952L37.1902 34.8318L34.8318 37.1902L27.6952 30.0518C25.0397 32.1805 21.7368 33.3383 18.3335 33.3335C10.0535 33.3335 3.3335 26.6135 3.3335 18.3335C3.3335 10.0535 10.0535 3.3335 18.3335 3.3335C26.6135 3.3335 33.3335 10.0535 33.3335 18.3335C33.3383 21.7368 32.1805 25.0397 30.0518 27.6952ZM26.7085 26.4585C28.8237 24.2833 30.0049 21.3675 30.0002 18.3335C30.0002 11.8885 24.7785 6.66683 18.3335 6.66683C11.8885 6.66683 6.66683 11.8885 6.66683 18.3335C6.66683 24.7785 11.8885 30.0002 18.3335 30.0002C21.3675 30.0049 24.2833 28.8237 26.4585 26.7085L26.7085 26.4585Z" fill="#293857"/>
@@ -30,17 +30,17 @@
           </div>
 
         <div class="header-list">
-          
+
           <div class="loging-btn">
             <img src="/images/circum_login.png"  alt="" @click="login_page" style="cursor: pointer;">
           </div>
 
 
-         
-     
-        <div class="header-menu" @click="menus" style="z-index: 1;"    
+
+
+        <div class="header-menu" @click="menus" style="z-index: 1;"
           id="userDropdown"
-          
+
           data-toggle="dropdown">
             <label class="hamburger">
   <input type="checkbox">
@@ -50,11 +50,11 @@
   </svg>
 </label>
           </div>
-          
-       
-       
-       
-      
+
+
+
+
+
         <div
           class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
           style="background-color: #ded4a2;"
@@ -73,8 +73,8 @@
             Favorites
           </a>
           <hr>
-       
-         
+
+
           <a
             class="dropdown-item"
             href="javascript:void(0)"
@@ -86,8 +86,8 @@
             Logout
           </a>
         </div>
-      
-    
+
+
 
 
           <!-- <div class="header-menu" @click="menus" style="z-index: 1;" >
@@ -99,12 +99,12 @@
   </svg>
 </label>
           </div> -->
-         
+
         </div>
       </nav>
     </div>
     </header>
-  
+
 
 
 <salider/>
@@ -121,7 +121,7 @@
 <path d="M-0.333333 0.833496C-0.333333 2.07016 0.888333 3.91683 2.125 5.46683C3.715 7.46683 5.615 9.21183 7.79333 10.5435C9.42667 11.5418 11.4067 12.5002 13 12.5002C11.4067 12.5002 9.425 13.4585 7.79333 14.4568C5.615 15.7902 3.715 17.5352 2.125 19.5318C0.888333 21.0835 -0.333333 22.9335 -0.333333 24.1668" stroke="#DED4A2" stroke-width="2"/>
 </svg>
 
-Top Listing’s
+Top Listings
       </button>
 
 
@@ -132,7 +132,7 @@ Top Listing’s
           </div>
 
 
-          
+
         <div class="TopListing-boxing">
             <div class="Looking-input">
               <input type="text" placeholder="What Are You Looking For" v-model="form.looking">
@@ -140,10 +140,10 @@ Top Listing’s
 
 
             <div class="type-input">
-              <select name="cars" id="cars"  v-model="form.selectedlocation">
-  <option value="" disabled>Location</option>
-  <option v-for="(option, index) in locations" :key="index" :value="option">{{ option }}</option>
-  
+              <select name="cars" id="cars"  v-model="form.selectedlocation" class="inputclass">
+  <option value="Location" disabled style="color: gray !important;" selected>Location</option>
+  <option v-for="(option, index) in locations" :key="index" :value="option" style="color: gray !important;">{{ option }}</option>
+
   <!-- <option value="audi">Buyers</option>
   <option value="saab">Investors</option>
   <option value="mercedes">Realtors</option> -->
@@ -152,17 +152,17 @@ Top Listing’s
 
 
             <div class="type-input">
-              <select name="cars" id="cars"  v-model="form.types">
-  <option value="" disabled>Type</option>
-  <option value="Buyers">Buyers</option>
-  <option value="Investors">Investors</option>
-  <option value="Realtors">Realtors</option>
+              <select name="cars" id="cars"  v-model="form.types"  class="inputclass">
+  <option value="Type" disabled style="color: gray !important;" selected >Type</option>
+  <option value="Buyers" style="color: gray !important;" >Buyers</option>
+  <option value="Investors" style="color: gray !important;" >Investors</option>
+  <option value="Realtors" style="color: gray !important;" >Realtors</option>
 </select>
             </div>
             <div class="type-input">
 
             <select name="select2-state-container" id="select2-state-container" class="inputclass" v-model="form.selectedstate">
-                                <option value="" disabled selected>Select State</option>
+                                <option value="State" disabled selected>State</option>
                             <option  v-for="(state, index) in states" :key="state.id" :value="state.name" style="color: gray !important;"  >{{ state.name }}</option>
 
 
@@ -179,20 +179,20 @@ Top Listing’s
 
         </div>
 
-      
+
     </section>
-    
+
     <section class="George">
         <div class="contanirzs">
 
 
         <div class="main-George">
-          
+
           <div class="George-box">
 
             <div class="George-card facebook-card">
               <div class="facebook-dp">
-               
+
                 <img  v-if="!imageUrl" :src="'/profile/' + user.profile"/>
                 <!-- <img v-if="imageUrl" :src="imageUrl" > -->
 
@@ -213,16 +213,16 @@ Top Listing’s
               </div>
 
               <div class="spinner" v-if="loaders">
-  <div></div>   
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
-  <div></div>    
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
             </div>
 
@@ -251,7 +251,7 @@ Top Listing’s
             </div>
 
 
-    
+
 
 
 
@@ -266,7 +266,7 @@ Top Listing’s
           <div class="main-id-detail">
             <div class="detail-box-1">
 
-              
+
               <div class="detail-card-box" v-for="posting in getposter">
 
                 <div class="id-list-1">
@@ -288,7 +288,7 @@ Top Listing’s
   <path d="M15.9998 28.4667L14.0665 26.7067C7.19984 20.48 2.6665 16.36 2.6665 11.3333C2.6665 7.21333 5.89317 4 9.99984 4C12.3198 4 14.5465 5.08 15.9998 6.77333C17.4532 5.08 19.6798 4 21.9998 4C26.1065 4 29.3332 7.21333 29.3332 11.3333C29.3332 16.36 24.7998 20.48 17.9332 26.7067L15.9998 28.4667Z" fill="#DED4A2"/>
                     </svg>
 
-                  
+
 
                   </span>
                 </div>
@@ -304,7 +304,7 @@ Top Listing’s
                 </div>
 
 
-          
+
 
                 <div class="id-list-5">
                 <p>{{ posting.counts }} Comments</p>
@@ -315,7 +315,7 @@ Top Listing’s
                   <svg xmlns="http://www.w3.org/2000/svg" width="29" height="26" viewBox="0 0 29 26" fill="none">
   <path d="M14.5 26L12.3975 24.1297C4.93 17.5128 0 13.1346 0 7.79292C0 3.41471 3.509 0 7.975 0C10.498 0 12.9195 1.14768 14.5 2.94714C16.0805 1.14768 18.502 0 21.025 0C25.491 0 29 3.41471 29 7.79292C29 13.1346 24.07 17.5128 16.6025 24.1297L14.5 26Z" fill="#DED4A2"/>
 </svg>
-<p >Add To Favourites</p>
+<p >Add to Favorites</p>
                 </div>
 
                 <div class="favourites-card  add-border" @click="showcomments(posting.id)" >
@@ -332,7 +332,7 @@ Top Listing’s
                   <p>Share</p>
                 </div>
 
-              
+
               </div>
              <div style="width: 100%; margin-bottom: 10px;" v-if="comment_section && key_index == posting.id" class="hello-buddy">
 
@@ -349,7 +349,7 @@ Top Listing’s
 
 </div>
 
-           
+
             <div class="detail-box-2">
 
 
@@ -359,13 +359,13 @@ Top Listing’s
               </div>
 
               <div class="ahtishamchoro">
-               
+
 
 
               <div class="Realtor-card" v-for="item1 in realtor">
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
-                    
+
                     <!-- <img src="/images/alex.png" alt=""> -->
                     <img :src="'/profile/' + item1.profile" alt="" style="border-radius: 50px;">
 
@@ -418,7 +418,7 @@ Top Listing’s
 
 
 
-           
+
 
               <div class="Realtor-bt">
                 <button>Explore Now </button>
@@ -429,18 +429,18 @@ Top Listing’s
 
 
 
-              
+
               <div class="tital-2-box">
                 <h2>Top Investor</h2>
               </div>
 
               <div class="ahtishamchoro">
-                
+
 
               <div class="Realtor-card" v-for="item2 in investor">
                 <div class="Realtor-1-list">
                   <div class="Realtor-logo">
-                    
+
                     <!-- <img src="/images/alex.png" alt=""> -->
                     <img :src="'/profile/' + item2.profile" alt="">
 
@@ -493,7 +493,7 @@ Top Listing’s
 
 
 
-           
+
               <div class="Realtor-bt">
                 <button>Explore Now </button>
               </div>
@@ -502,11 +502,11 @@ Top Listing’s
           </div>
         </div>
 
-       
+
       </section>
 
 
-     
+
       <div id="bottom"></div>
     <section class="Townhomes">
         <div class="contanirzs">
@@ -573,14 +573,14 @@ Top Listing’s
 
 
 
- 
+
 
 
             </div>
           </div>
         </div>
     </section>
-    
+
     <footer>
       <div class="contanair">
         <div class="main-footer-1">
@@ -623,17 +623,17 @@ Top Listing’s
                 <li>Are you a buyer</li>
                 <li>Become a realtor</li>
                 <li>Become a investor</li>
-                
+
               </ul>
 
 
 
-              
+
               <ul class="ul-3">
                 <li>Facebook</li>
                 <li>Instagram</li>
                 <li>Linkedin</li>
-                
+
               </ul>
             </div>
           </div>
@@ -663,9 +663,9 @@ Top Listing’s
 
         <Add :Feeds="Feeds"   @cancel="closeModals"/>
       </div>
-      
+
     </div>
-  
+
 </div>
 
 
@@ -695,8 +695,8 @@ export default {
     Slider,
     Stories,
     Add
-  
-  
+
+
   },
   data() {
     return {
@@ -718,7 +718,15 @@ export default {
         addcomments:'',
         comment_section:false,
         key_index:0,
-        form:{},
+        form:{
+
+            types: 'Type',
+            selectedlocation:'Location',
+            selectedstate:'State'
+
+        },
+
+        types:'Type',
         method:'POST',
         imageUrl: '',
         stories:[],
@@ -741,8 +749,8 @@ export default {
   },
 
   created(){
-         
-       
+
+
 
                this.Investors();
 
@@ -753,9 +761,9 @@ export default {
                this.getstories();
                this.getlocation();
                this.getstate();
-           
-         }, 
- 
+
+         },
+
 
 
   methods:{
@@ -781,17 +789,17 @@ Vue.set(this.$data, 'states', res.data.data)
     openModal(e) {
       this.Feeds = e
       console.log(e);
-     
+
      $('#popup-box').modal('show');
-     
+
    },
    closeModals() {
    console.log('avcd');
 
    this.shows = false;
    $('#popup-box').modal('hide');
-     
-    
+
+
    },
 
     logout() {
@@ -809,18 +817,18 @@ Vue.set(this.$data, 'states', res.data.data)
 
     explorenow(){
 
-      
+
 
       console.log(this.form)
 
 
       byMethod(this.method, '/filterpost' , this.form)
                                 .then((res) => {
-                                
+
                                     console.log(res)
                                     if(res.data) {
                                       Vue.set(this.$data, 'getposter', res.data.data)
-                                      
+
                                     }
                                 })
                                 .catch((error) => {
@@ -840,7 +848,7 @@ Vue.set(this.$data, 'states', res.data.data)
 
                 //  console.log(res.data.data)
                 Vue.set(this.$data, 'locations', res.data.data)
- 
+
                })
 
 
@@ -871,7 +879,7 @@ Vue.set(this.$data, 'states', res.data.data)
 
       get('/addfavorite?post_id=' + e.id + '&user_id=' + e.user_id)
                .then((res) => {
-                
+
                 Swal.fire({
       title: "Successfully Add to you Favorite list",
       width: 600,
@@ -881,14 +889,14 @@ Vue.set(this.$data, 'states', res.data.data)
       backdrop: `
       rgb(0 0 0 / 84%)
 
-    
+
       `
     });
- 
+
                })
 
 
-     
+
 
     },
 
@@ -898,8 +906,8 @@ Vue.set(this.$data, 'states', res.data.data)
       get('/getstory')
                .then((res) => {
                 Vue.set(this.$data, 'stories', res.data.data)
-                 
- 
+
+
                })
 
     },
@@ -926,7 +934,7 @@ Vue.set(this.$data, 'states', res.data.data)
   openFileDialog() {
     document.getElementById('file-input').click();
   },
-     
+
 
 
                   poststories(e){
@@ -934,25 +942,25 @@ Vue.set(this.$data, 'states', res.data.data)
 
                 const formData = new FormData();
 
-                formData.append('image', this.file); 
+                formData.append('image', this.file);
 
                 formData.append('user_id', e);
-               
+
 
                 console.log(formData);
 
 
 
-                            
+
                 byMethod(this.method, '/poststory' , formData)
                                 .then((res) => {
-                                
+
                                     console.log(res)
                                     if(res.data && res.data.saved) {
                                         this.imageUrl  ='';
                                         this.fileType = null;
                                         this.loaders = false;
-                                      
+
 
                                         let message =
                 "Successfully Post Stories.";
@@ -966,12 +974,12 @@ Vue.set(this.$data, 'states', res.data.data)
                 get('/getstory')
                .then((res) => {
                 Vue.set(this.$data, 'stories', res.data.data)
-                 
- 
+
+
                })
 
-               
-                                    
+
+
                                     }
                                 })
                                 .catch((error) => {
@@ -990,11 +998,11 @@ Vue.set(this.$data, 'states', res.data.data)
 
       byMethod(this.method, '/postcommit' , this.form)
                             .then((res) => {
-                            
+
                                 console.log(res)
                                 if(res.data && res.data.saved) {
                                    this.Getposting()
-                                    
+
                                     this.form = {};
                                     this.comment_section = false
 
@@ -1006,7 +1014,7 @@ Vue.set(this.$data, 'states', res.data.data)
             duration: 5000,
           });
 
-                                
+
                                 }
                             })
                             .catch((error) => {
@@ -1021,18 +1029,18 @@ Vue.set(this.$data, 'states', res.data.data)
     showcomments(e){
       this.key_index = e
       this.comment_section = ! this.comment_section
-    
+
 
     },
 
 
     dated(e){
       // const createdAtDate = new Date(e);
-        
+
       //   const now = new Date();
-        
+
       //   const timeDiffInHours = (now - createdAtDate) / (1000 * 60 * 60);
-        
+
       //    let hoursDifference = Math.floor(timeDiffInHours);
       //           return hoursDifference
 
@@ -1053,7 +1061,7 @@ Vue.set(this.$data, 'states', res.data.data)
                 let formattedDate = moment(e).format("h:mma, DD dddd");
                 console.log(formattedDate)
   // Return an object containing the hours difference and formatted time
-  
+
   if(hoursDifference > 0 && hoursDifference < 24){
 
     return hoursDifference + ' hours ago'
@@ -1067,26 +1075,26 @@ Vue.set(this.$data, 'states', res.data.data)
       return formattedDate
 
     }
-   
-  
+
+
             },
 
 
-    
+
     investorprofile(e){
                 this.$router.push(`/profile/${e.id}`)
              },
- 
+
 
           contact(e){
                 console.log(e);
 
-                
+
                 this.$router.push({
-            name: 'chats', 
+            name: 'chats',
             params: { id: JSON.stringify(e) },
             });
-            
+
 
             },
 
@@ -1094,9 +1102,9 @@ Vue.set(this.$data, 'states', res.data.data)
       get('/getlisting')
                .then((res) => {
                 Vue.set(this.$data, 'getlistings', res.data.data)
-                 
-                 
- 
+
+
+
                })
     },
 
@@ -1104,36 +1112,36 @@ Vue.set(this.$data, 'states', res.data.data)
       get('/getposts')
                .then((res) => {
                 Vue.set(this.$data, 'getposter', res.data.data)
-                 
-                 
- 
+
+
+
                })
     },
 
     Investors(){
-      
-         
+
+
          get('/exploreinvestor')
                .then((res) => {
                 Vue.set(this.$data, 'investor', res.data.data)
-                 
-                 
- 
+
+
+
                })
 
-          
+
     },
 
 
     Realtors(){
-      
-         
+
+
       get('/explorerealtor')
             .then((res) => {
 
               Vue.set(this.$data, 'realtor', res.data.data)
-              
-              
+
+
 
             })
 
@@ -1163,15 +1171,15 @@ Vue.set(this.$data, 'states', res.data.data)
 
     investor_profile(){
 
-     
+
         this.$router.push('profilescreen')
-     
 
 
-   
+
+
     }
 
-  
+
   }
 };
 </script>
@@ -1301,12 +1309,12 @@ p.godashborad {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end ;  
+    justify-content: flex-end ;
 }
 
 .hello-buddy svg {
     position: absolute !important;
-    right: 24px !important; 
+    right: 24px !important;
 }
 
 .zerowidth{
@@ -1377,10 +1385,10 @@ img.George {
     height: 100%;
 }
 
-.George-box {  
+.George-box {
     display: flex !important;
-    
-   
+
+
     justify-content: flex-start !important;
     gap: 20px !important;
 }
@@ -2181,7 +2189,7 @@ section.George {
 .Townhomes-card-1 {
   width: 100%;
     min-width: 365px;
-    max-width: 365px 
+    max-width: 365px
 }
 
 img {}
