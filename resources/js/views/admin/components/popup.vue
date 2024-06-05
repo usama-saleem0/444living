@@ -3,7 +3,7 @@
     <div class="main-Discount">
 
       <div class="main-Discount-sv">
-      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" >
   <path d="M34.4266 37.0876L22.5016 25.1438L10.5766 37.0876L7.91406 34.4251L19.8578 22.5001L7.91406 10.5751L10.5766 7.9126L22.5016 19.8563L34.4266 7.93135L37.0703 10.5751L25.1453 22.5001L37.0703 34.4251L34.4266 37.0876Z" fill="#293857"/>
 </svg>
 </div>
