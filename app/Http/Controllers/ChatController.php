@@ -26,14 +26,14 @@ class ChatController extends Controller
      public function getinfluencer(){
       // dd(auth()->user());
         if(auth()->user()->auth_type =='Brand'){
-       
+
 
          $data = User::where('auth_type' , 'Influencer')->get();
       }
       else{
 
          $chat = Chat::where('reciever_id' , auth()->user()->id)->pluck('sender_id')->unique();
-        
+
          $data = User::whereIn('id', $chat)->get();
 
       }
@@ -43,11 +43,11 @@ class ChatController extends Controller
 
      public function getchat(){
         $user = User::where('id' , request('id'))->first();
-        
-       
+
+
         $user->chat_count = 0;
         $user->save();
-       
+
         $data = Chat::where('sender_id' , auth()->user()->id)
         ->where('reciever_id' , request('id'))
         ->orWhere('sender_id' , request('id'))
@@ -65,15 +65,15 @@ class ChatController extends Controller
     $message->sender_id = auth()->user()->id;
     $message->reciever_id = $request->reciever_id;
     $message->reciever_name = $request->reciever_name;
-    $message->room_id = $randomNumber;  
-   
+    $message->room_id = $randomNumber;
+
 
     $user = User::where('id' , auth()->user()->id)->first();
-    
+
     $counts = $user->chat_count;
     $user->chat_count = $counts +1;
     $user->save();
-    
+
 
 
 
@@ -88,14 +88,15 @@ class ChatController extends Controller
 
 
 public function recentchat(){
+    // dd(auth()->user()->id);
 
     $chat = Chat::where('reciever_id' , auth()->user()->id)->pluck('sender_id')->unique();
     $chat1 = Chat::where('sender_id' , auth()->user()->id)->pluck('reciever_id')->unique();
 
-    
+
 $mergedChats = $chat->merge($chat1)->unique();
 
-        
+
     $data = User::whereIn('id', $mergedChats)->get();
 
     return response()->json(['data' => $data]);

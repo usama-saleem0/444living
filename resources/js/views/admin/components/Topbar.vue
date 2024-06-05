@@ -35,6 +35,10 @@
 
 
   <ul class="ul-list" >
+
+
+
+
     <li v-if="user && user.type === 'Investor'">
       <router-link class="nav-link" to="/investordashoard">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
@@ -51,10 +55,9 @@
         >
       </li>
 
-      <li >
+      <li v-if="user.type != 'admin'" >
 
       <router-link class="nav-link" to="/homepages">
-          <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Explore</a></router-link
         >
       </li>
@@ -107,6 +110,34 @@
         >
 
     </li>
+
+
+
+    <li v-if="user && user.type === 'admin'">
+      <router-link class="nav-link" to="/admin">
+          <a href="#">Realtors</a></router-link
+        >
+      </li>
+
+
+      <li v-if="user && user.type === 'admin'">
+      <router-link class="nav-link" to="/admin">
+          <a href="#">Buyers</a></router-link
+        >
+      </li>
+
+      <li v-if="user && user.type === 'admin'">
+      <router-link class="nav-link" to="/admin">
+          <a href="#">Investors</a></router-link
+        >
+      </li>
+
+
+      <li v-if="user && user.type === 'admin'">
+      <router-link class="nav-link" to="/admin">
+          <a href="#">Chats</a></router-link
+        >
+      </li>
 
 
 
@@ -267,7 +298,7 @@
       </li>
 
       <!-- Nav Item - Alerts -->
-      <li class="nav-item dropdown no-arrow mx-1">
+      <li class="nav-item dropdown no-arrow mx-1" v-if="user.type != 'admin'">
         <a
           class="nav-link dropdown-toggle"
           href="#"

@@ -1,7 +1,7 @@
 <template>
     <div>
 
-   
+
   <div class="fade-in" v-if="first">
     <header class="loging-header">
     <div class="contanir">
@@ -48,7 +48,7 @@
     </header>
 
 <section class="loging-page fade-in">
-  
+
     <div class="main-loging">
   <div class="loging-form">
     <div class="form-LogIn">
@@ -80,7 +80,7 @@
         <p>OR</p>
       </div> -->
 
-<!-- 
+<!--
       <div class="Google-btn">
         <button>    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
   <g clip-path="url(#clip0_265_483)">
@@ -137,7 +137,7 @@ Sign In With Google</button>
 </div>
   </div>
 </div>
- 
+
 </section>
 
 
@@ -154,15 +154,15 @@ import * as notify from "../../utils/notify.js";
 import Loader from "../admin/loader.vue"
 export default {
   components: {
-   
+
     Loader
-  
-  
+
+
   },
   data() {
     return {
         first : true,
-      
+
         second:false,
         email:'',
         password:'',
@@ -172,12 +172,12 @@ export default {
         textcolor1:'#293857',
         buttonColor2:'#ded4a2',
         textcolor2:'#293857'
-      
+
     };
   },
 
 
-    
+
   mounted() {
     this.$nextTick(() => {
       this.$refs.fadeContainer.classList.add('fade-in');
@@ -234,14 +234,14 @@ export default {
       this.first = false
         this.second = true
       setTimeout(() => {
-       
 
-         
+
+
         this.$router.push('/homepages')
         }, 3000);
 
     },
-    
+
     async login() {
       // console.log('ghemdy');
       try {
@@ -255,12 +255,20 @@ export default {
         this.second = true
         // this.$router.push("/homepages");
         setTimeout(() => {
-       
 
-         
+            if(response.data.user.type == 'admin'){
+                this.$router.push('/admin')
+
+            }
+            else{
+
+
+
        this.$router.push('/homepages').then(() => {
     window.location.reload();
-});
+
+        });
+        }
        }, 3000);
       } catch (error) {
         notify.authError(error);
@@ -371,7 +379,7 @@ div#carouselExampleIndicators {
 }
 
 .carousel-inner {
-    height: 100% !important; 
+    height: 100% !important;
 }
 
 
@@ -507,7 +515,7 @@ div#carouselExampleIndicators {
 .OR-list {
     width: 100%;
 }
-    
+
 .OR-list p {
     width: 100%;
     text-align: center;
@@ -721,7 +729,7 @@ ol.carousel-indicators {
 }
 .loging-salider{
 
-    
+
     width: 52%;
     height: 100vh;
 }
@@ -735,7 +743,7 @@ header.loging-header{
 }
 ol.carousel-indicators{
 
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;

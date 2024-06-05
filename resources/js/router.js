@@ -161,7 +161,7 @@ let router = new Router({
         {
             path: "/admin",
             name: "admin",
-            component: () => import("./views/admin/dashboard.vue"),
+            component: () => import("./views/admin/admindashoboard.vue"),
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout

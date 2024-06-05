@@ -99,5 +99,7 @@ Route::group(['middleware' => ['auth:api']], function () {
 
 
     Route::get('getusers', [ProfileController::class, 'getusers']);
+    Route::get('allrealtors', [ProfileController::class, 'allrealtors']);
+
 
 });

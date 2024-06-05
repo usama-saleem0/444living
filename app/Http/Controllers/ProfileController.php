@@ -96,4 +96,10 @@ class ProfileController extends Controller
 
         return response()->json(['data' => $data]);
     }
+
+
+    public function allrealtors(){
+        $data = User::where('type' , 'Realtor')->get();
+        return response()->json(['data' => $data]);
+    }
 }
