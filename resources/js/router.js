@@ -105,6 +105,12 @@ let router = new Router({
             component: () => import("./views/admin/homepage.vue")
         },
 
+        {
+            path: "/pouphu",
+            name: "register",
+            component: () => import("./views/admin/components/popup.vue")
+        },
+
 
 
 
