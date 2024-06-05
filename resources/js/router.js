@@ -14,14 +14,14 @@ let router = new Router({
             name: "home",
             component: () => import("./views/home/index.vue")
         },
-        
+
 
         {
             path: "/ifram",
             name: "home",
             component: () => import("./views/admin/iframe.vue")
         },
-        
+
 
         {
             path: "/hello",
@@ -66,7 +66,7 @@ let router = new Router({
 
 
 
-     
+
         // {
         //     path: "/profile",
         //     name: "register",
@@ -79,7 +79,7 @@ let router = new Router({
         //     component: () => import("./views/admin/investordashoboard.vue")
         // },
 
-      
+
 
         // {
         //     path: "/pastpost",
@@ -88,9 +88,9 @@ let router = new Router({
         // },
 
 
-      
 
-        
+
+
         // {
         //     path: "/toprealtors",
         //     name: "register",
@@ -98,7 +98,7 @@ let router = new Router({
         // },
 
 
-        
+
         {
             path: "/homepages",
             name: "register",
@@ -143,7 +143,7 @@ let router = new Router({
             component: () => import("./views/forgot/forget.vue")
         },
 
-       
+
 
         {
             path: "/email",
@@ -175,8 +175,8 @@ let router = new Router({
             component: () => import("./views/admin/homepage.vue"),
             meta: {
                 requiresAuth: true,
-                
-               
+
+
             }
         },
 
@@ -187,8 +187,8 @@ let router = new Router({
             component: () => import("./views/admin/comment.vue"),
             meta: {
                 requiresAuth: true,
-                
-               
+
+
             }
         },
 
@@ -198,11 +198,11 @@ let router = new Router({
             component: () => import("./views/admin/add.vue"),
             meta: {
                 requiresAuth: true,
-                
-               
+
+
             }
         },
-         
+
 
         {
             path: "/profilescreen",
@@ -211,7 +211,19 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
+            }
+        },
+
+
+
+        {
+            path: "/payments",
+            name: "admin",
+            component: () => import("./views/admin/paypal.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
             }
         },
 
@@ -222,7 +234,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -234,7 +246,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -246,7 +258,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -258,7 +270,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -270,7 +282,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -281,7 +293,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -293,7 +305,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -304,7 +316,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 
@@ -316,7 +328,7 @@ let router = new Router({
             meta: {
                 requiresAuth: true,
                 layout: AdminLayout
-               
+
             }
         },
 

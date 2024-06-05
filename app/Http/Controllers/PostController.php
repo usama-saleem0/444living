@@ -19,32 +19,34 @@ class PostController extends Controller
         // dd(auth()->user()->id);
 
         // $request->validate([
-            
 
-        //     'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', 
+
+        //     'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
 
         // ]);
-    
+
         if( $request->file('image')){
 
-        
+
         $filename = $request->file('image')->getClientOriginalName();
         $imagePath =  $request->file('image')->move(public_path('post'), $filename);
     }
 
 
-     
+
         $data = new Investorpost;
         $data->postdetails = $request->postdetails;
         $data->posttitle = $request->posttitle;
         $data->user_id = auth()->user()->id;
         $data->location = $request->location ?? '';
         $data->state = $request->state ?? '';
+        $data->type = $request->types ?? '';
+
 
         if( $request->file('image')){
         $data->postpic = $filename;
         }
-        
+
         $data->save();
 
         return response()->json(['saved' => true]);
@@ -56,14 +58,14 @@ class PostController extends Controller
 
     public function buyerposting(Request $request){
 
-       
+
         if( $request->file('image')){
         $filename = $request->file('image')->getClientOriginalName();
         $imagePath =  $request->file('image')->move(public_path('post'), $filename);
         }
 
 
-     
+
         $data = new Buyerpost;
         $data->postdetails = $request->postdetails;
         $data->posttitle = $request->posttitle;
@@ -77,7 +79,7 @@ class PostController extends Controller
             $data->postpic = $filename;
         }
 
-        
+
         $data->save();
 
         return response()->json(['saved' => true]);
@@ -96,7 +98,7 @@ class PostController extends Controller
     }
 
 
-     
+
         $data = new Realtorpost;
         $data->postdetails = $request->postdetails;
         $data->posttitle = $request->posttitle;
@@ -105,6 +107,10 @@ class PostController extends Controller
         $data->bedroom = $request->bedroom ?? '';
         $data->bathroom = $request->bathroom ?? '';
         $data->state = $request->state ?? '';
+        $data->hashtag = $request->hashtag ?? '';
+        $data->content = $request->content ?? '';
+
+
 
 
         $data->type = $request->types;
@@ -114,7 +120,7 @@ class PostController extends Controller
             $data->postpic = $filename;
         }
 
-        
+
         $data->save();
 
         return response()->json(['saved' => true]);
@@ -128,7 +134,7 @@ class PostController extends Controller
         return response()->json(['data' => $data]);
     }
 
-    
+
     public function pastlisting(){
         $data = Realtorpost::where('user_id' , auth()->user()->id)->get();
         return response()->json(['data' => $data]);
@@ -136,8 +142,8 @@ class PostController extends Controller
 
 
     public function getposts(){
-        
-      
+
+
         $data = Buyerpost::with('User' , 'comments.User')->
             orderBy('created_at', 'desc')
             ->limit(9)
@@ -149,7 +155,7 @@ class PostController extends Controller
             ->limit(9)
             ->get();
 
-   
+
 
 
             $mergedData = $data->concat($data1);
@@ -161,48 +167,49 @@ class PostController extends Controller
 
 
 
-    
-    public function filterpost(Request $request){
-        
-      
-   
-        if(request('types') == 'Buyers'){
 
-       
+    public function filterpost(Request $request){
+
+
+        // dd($request->all());
+
+
+        if(request('types') == 'Buyers'){
+            // dd('adsfds');
+
         $data = Buyerpost::with('User' , 'comments')
 
 
         ->when(request('looking'), function ($q) {
-                
+
             $q->Where('postdetails', 'like', '%'.request('looking').'%' )
             ->orWhere('posttitle', 'like', '%'.request('looking').'%')
           ;
-              
-               
+
+
         })
 
         ->when(request('selectedlocation'), function ($q) {
-                
-            $q->Where('location', request('selectedlocation') )
-           
-          ;
-              
-               
+
+            // $q->Where('location', request('selectedlocation') );
+            $q->whereNotIn('location', [request('selectedlocation'), 'Location']);
+
+
         })
 
 
         ->when(request('selectedstate'), function ($q) {
-                
-             $q->Where('state', request('selectedstate') )
-           
-          ;
-              
-               
+
+            //  $q->Where('state', request('selectedstate') );
+            $q->whereNotIn('state', [request('selectedstate'), 'State']);
+
+
+
         })
 
 
-       
-        
+
+
             ->orderBy('created_at', 'desc')
             ->limit(9)
             ->get();
@@ -212,212 +219,236 @@ class PostController extends Controller
 
         if(request('types') == 'Investors'){
 
-       
+
             $data = Investorpost::with('User' , 'comments')
-    
-    
+
+
             ->when(request('looking'), function ($q) {
-                    
+
                 $q->Where('postdetails', 'like', '%'.request('looking').'%' )
                 ->orWhere('posttitle', 'like', '%'.request('looking').'%')
               ;
-                  
-                   
+
+
             })
-    
+
             ->when(request('selectedlocation'), function ($q) {
-                    
-                $q->Where('location', request('selectedlocation') )
-               
-              ;
-                  
-                   
+
+                $q->Where('location', request('selectedlocation') );
+                // $q->whereNotIn('location', [request('selectedlocation'), 'Location']);
+
+
+
             })
 
             ->when(request('selectedstate'), function ($q) {
-                
-                 $q->Where('state', request('selectedstate') )
-               
-              ;
-                  
-                   
+
+                 $q->Where('state', request('selectedstate') );
+                //  $q->whereNotIn('state', [request('selectedstate'), 'State']);
+
+
+
             })
-    
-           
-            
+
+
+
                 ->orderBy('created_at', 'desc')
                 ->limit(9)
                 ->get();
-    
+
             }
 
 
 
             if(request('types') == 'Realtors'){
+                // dd('ababd');
 
-       
+
                 $data = Realtorpost::with('User')
-        
-        
+
+
                 ->when(request('looking'), function ($q) {
-                        
+
                     $q->Where('postdetails', 'like', '%'.request('looking').'%' )
                     ->orWhere('posttitle', 'like', '%'.request('looking').'%')
                   ;
-                      
-                       
+
+
                 })
-        
+
+
                 ->when(request('selectedlocation'), function ($q) {
-                        
-                    $q->Where('location', request('selectedlocation') )
-                   
-                  ;
-                      
-                       
+
+                    // $q->Where('location', request('selectedlocation') );
+                    $q->whereNotIn('location', [request('selectedlocation'), 'Location']);
+
+
                 })
 
 
                 ->when(request('selectedstate'), function ($q) {
-                
-                     $q->Where('state', request('selectedstate') )
-                   
-                  ;
-                      
-                       
+
+                    //  $q->Where('state', request('selectedstate') );
+
+                    $q->whereNotIn('state', [request('selectedstate'), 'State']);
+
+
                 })
-        
-               
-                
+
+                ->when(request('contentpost'), function ($q) {
+
+
+                    $q->where('content', '!=', null);
+
+                 ;
+
+
+               })
+
+
+
                     ->orderBy('created_at', 'desc')
                     ->limit(9)
                     ->get();
-        
+
                 }
 
 
-                else{
-                   
+                if (!request('types')){
 
-       
+
+
+
                     $data1 = Realtorpost::with('User')
-            
-            
+
+
                     ->when(request('looking'), function ($q) {
-                            
+
                         $q->Where('postdetails', 'like', '%'.request('looking').'%' )
                         ->orWhere('posttitle', 'like', '%'.request('looking').'%')
                       ;
-                          
-                           
+
+
                     })
-            
+
                     ->when(request('selectedlocation'), function ($q) {
-                            
+
                         $q->Where('location', request('selectedlocation') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
 
                     ->when(request('selectedstate'), function ($q) {
-                        
-                
+
+
                          $q->Where('state', request('selectedstate') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
-            
-                   
-                    
+
+
+
+                    ->when(request('contentpost'), function ($q) {
+
+
+                        $q->where('content', '!=', null);
+
+                     ;
+
+
+                   })
+
+
+
                         ->orderBy('created_at', 'desc')
                         ->limit(9)
                         ->get();
 
 
 
-                        
+
                     $data2 = Buyerpost::with('User')
-            
-            
+
+
                     ->when(request('looking'), function ($q) {
-                            
+
                         $q->Where('postdetails', 'like', '%'.request('looking').'%' )
                         ->orWhere('posttitle', 'like', '%'.request('looking').'%')
                       ;
-                          
-                           
+
+
                     })
-            
+
                     ->when(request('selectedlocation'), function ($q) {
-                            
+
                         $q->Where('location', request('selectedlocation') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
 
                     ->when(request('selectedstate'), function ($q) {
-                
+
                          $q->Where('state', request('selectedstate') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
-            
-                   
-                    
+
+
+
                         ->orderBy('created_at', 'desc')
                         ->limit(9)
                         ->get();
 
 
-                        
+
                     $data3 = Investorpost::with('User')
-            
-            
+
+
                     ->when(request('looking'), function ($q) {
-                            
+
                         $q->Where('postdetails', 'like', '%'.request('looking').'%' )
                         ->orWhere('posttitle', 'like', '%'.request('looking').'%')
                       ;
-                          
-                           
+
+
                     })
-            
+
                     ->when(request('selectedlocation'), function ($q) {
-                            
+
                         $q->Where('location', request('selectedlocation') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
 
 
                     ->when(request('selectedstate'), function ($q) {
-                
+
                          $q->Where('state', request('selectedstate') )
-                       
+
                       ;
-                          
-                           
+
+
                     })
-            
-                   
-                    
+
+
+
                         ->orderBy('created_at', 'desc')
                         ->limit(9)
                         ->get();
 
 
                         $data = $data1->concat($data2)->concat($data3);
-            
+
                     }
 
 
@@ -464,15 +495,15 @@ class PostController extends Controller
        $fileExtension = $request->file('image')->getClientOriginalExtension();
         $filename = $request->file('image')->getClientOriginalName();
         $imagePath =  $request->file('image')->move(public_path('story'), $filename);
-       
-     
+
+
         $data = new Story;
-       
+
         $data->user_id = $request->user_id;
 
         $data->story = $filename;
         $data->file_type = $fileExtension;
-        
+
         $data->save();
 
         return response()->json(['saved' => true]);
@@ -483,7 +514,7 @@ class PostController extends Controller
 
     public function getstory(){
         $data = Story::with('user')->orderBy('created_at', 'desc')
-        
+
         ->get();
 
         return response()->json(['data' => $data]);
@@ -508,12 +539,12 @@ class PostController extends Controller
     }
 
     public function favoritelists(){
-        
+
         $data = Favorite::with('buyers')->where('auth_id' , auth()->user()->id)->
         orderBy('created_at', 'desc')
-       
+
         ->get();
-        
+
         $buyerid = [];
         foreach ($data as $buyers){
             $buyerid[] = $buyers->user_id;
@@ -531,7 +562,7 @@ class PostController extends Controller
 
         $data1 = Favorite::with('investors')->where('auth_id' , auth()->user()->id)->
         orderBy('created_at', 'desc')
-       
+
         ->get();
         $investorid = [];
         foreach ($data1 as $investion){
@@ -545,8 +576,8 @@ class PostController extends Controller
         ->where('auth_id', auth()->user()->id)
         ->orderBy('created_at', 'desc')
         ->get();
-    
-       
+
+
 
 
 
@@ -566,7 +597,7 @@ class PostController extends Controller
         $mergedData = $data->merge($data1)->merge($data2)->unique();
 
 
-            return response()->json(['data' => $mergedData]); 
+            return response()->json(['data' => $mergedData]);
 
     }
 

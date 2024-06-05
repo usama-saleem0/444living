@@ -10,17 +10,17 @@ class ProfileController extends Controller
 {
      public function profileregister(Request $request){
 
-        
+
 
         $request->validate([
-            
 
-            'profile' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', 
-            'cover' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', 
+
+            'profile' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'cover' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
 
         ]);
-    
-        
+
+
         $filename = $request->file('profile')->getClientOriginalName();
         $imagePath =  $request->file('profile')->move(public_path('profile'), $filename);
 
@@ -33,6 +33,10 @@ class ProfileController extends Controller
         $data->last_name = $request->lastname;
         $data->profile = $filename;
         $data->cover = $filenames;
+        if($data->membership = null){
+            $data->membership = 'Free Trail';
+
+        }
         $data->save();
 
         return response()->json(['saved' => true]);
@@ -68,7 +72,7 @@ class ProfileController extends Controller
 
 
     public function getusers(){
-        
+
          $data = User::where('id' , auth()->user()->id)->first();
 
          return response()->json(['data' => $data]);

@@ -2,11 +2,11 @@
   <div
     class="
       navbar navbar-expand navbar-light
-     
+
       topbar
-      
+
       static-top
-      
+
     "
  style="background: transparent !important;" >
     <!-- Sidebar Toggle (Topbar) -->
@@ -17,20 +17,20 @@
     >
       <i class="fa fa-bars"></i>
     </button> -->
-   
-      
+
+
 
     <!-- Topbar Search -->
    <img class="images" src="/images/logo.png"/>
 
 
-   <h2 class="heads" v-if="user && user.type === 'Investor'">Welcome   <span >{{ user.username }}</span>!! Resume Your Investor Journey</h2>
+   <h2 class="heads" v-if="user && user.type === 'Investor'">Welcome   <span >{{ user.username }}</span>! Resume Your Investor Journey</h2>
 
-   <h2 class="heads" v-if="user && user.type === 'Realtor'">Welcome            <span >{{ user.username }}</span>!! Resume Your Realtor Journey</h2>
-  
+   <h2 class="heads" v-if="user && user.type === 'Realtor'">Welcome            <span >{{ user.username }}</span>! Resume Your Realtor Journey</h2>
 
-   
-   <h2 class="heads" v-if="user && user.type === 'Buyer'">Welcome         <span >{{ user.username }}</span>!! Resume Your Buyer Journey</h2>
+
+
+   <h2 class="heads" v-if="user && user.type === 'Buyer'">Welcome         <span >{{ user.username }}</span>! Resume Your Buyer Journey</h2>
 
 
 
@@ -50,9 +50,9 @@
           <a href="#">Dashboard</a></router-link
         >
       </li>
-   
+
       <li >
-      
+
       <router-link class="nav-link" to="/homepages">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Explore</a></router-link
@@ -63,7 +63,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Realtors</a></router-link
         >
-      
+
     </li>
 
     <li  v-if="user && user.type === 'Buyer'">
@@ -71,7 +71,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Realtors</a></router-link
         >
-      
+
     </li>
 
 
@@ -80,7 +80,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Investor</a></router-link
         >
-      
+
     </li>
 
     <li v-if="user && user.type === 'Realtor'">
@@ -88,7 +88,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Listing</a></router-link
         >
-      
+
     </li>
 
     <li v-if="user && user.type === 'Buyer'">
@@ -96,7 +96,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Recent Post</a></router-link
         >
-      
+
     </li>
 
 
@@ -105,11 +105,11 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Chats</a></router-link
         >
-      
-    </li>
-   
 
-     
+    </li>
+
+
+
 
   </ul>
 
@@ -122,7 +122,7 @@
           <a href="#">Dashboard</a></router-link
         >
       </li>
-   
+
       <li >
       <router-link class="nav-link" to="/homepages">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
@@ -134,7 +134,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Top Realtors</a></router-link
         >
-      
+
     </li>
 
     <li v-if="user && user.type === 'Buyer'">
@@ -142,7 +142,7 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Recent Post</a></router-link
         >
-      
+
     </li>
 
 
@@ -151,11 +151,11 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#">Recent Post</a></router-link
         >
-      
-    </li>
-   
 
-     
+    </li>
+
+
+
 
   </ul>
     <!-- Topbar Navbar -->
@@ -188,9 +188,9 @@
           <a href="#" class="nava">Dashboard</a></router-link
         >
       </li>
-   
+
       <li >
-      
+
       <router-link class="nav-link" to="/homepages">
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#" class="nava">Explore</a></router-link
@@ -201,28 +201,28 @@
           <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
           <a href="#" class="nava">Top Realtors</a></router-link
         >
-      
+
     </li>
 
     <li   v-if="user && user.type === 'Buyer'">
       <router-link class="nav-link" to="/pastpost">
-         
+
           <a href="#" class="nava">Recent Post</a></router-link
         >
-      
+
     </li>
 
 
     <li >
       <router-link class="nav-link" to="/chats">
-         
+
           <a href="#" class="nava">Chats</a></router-link
         >
-      
-    </li>
-   
 
-     
+    </li>
+
+
+
 
   </ul>
         </div>
@@ -303,25 +303,25 @@
               </div>
             </div>
             <div>
-              
+
               <span class="font-weight-bold" @click="chats"
                 >Check Recent Chats</span
               >
             </div>
           </a>
-         
-       
+
+
           <a class="dropdown-item text-center small text-gray-500" href="#"
             >Show All Alerts</a
           >
         </div>
       </li>
 
-    
+
 
       <div class="topbar-divider d-none d-sm-block"></div>
 
-   
+
       <li class="nav-item dropdown no-arrow">
         <a
           class="nav-link dropdown-toggle"
@@ -332,17 +332,17 @@
           aria-haspopup="true"
           aria-expanded="false"
         >
-         
-          <!-- <img 
+
+          <!-- <img
           class="img-profile new_image"
-            
+
             src="/images/character.png"
           /> -->
 
 
-          <img 
+          <img
           class="img-profile new_image"
-            
+
             :src="'/profile/' + user.profile"
           />
           <div>
@@ -352,9 +352,9 @@
           <p>
             {{ user.type }}
           </p>
-          
+
           </div>
-          
+
           <img v-if="user && user.auth_type === 'Influencer'" class="img-profile rounded-circle" :src="'/uploads/' + user.image" alt="">
         </a>
         <!-- Dropdown - User Information -->
@@ -367,13 +367,13 @@
         <a
             class="dropdown-item"
             href="javascript:void(0)"
-            @click="logout"
+
             data-toggle="modal"
             data-target="#logoutModal"
             style="font-weight: bold"
           >
             Good Afternon, {{ user.username }}
-           
+
           </a>
           <br>
 
@@ -394,10 +394,10 @@
       </li>
     </ul>
 
-    
+
   </div>
-  
-  
+
+
 </template>
 
 <script>
@@ -410,7 +410,7 @@ export default {
       isTopbarVisible: false
     };
   },
- 
+
 
   computed: {
     ...mapGetters(["user"]),
@@ -500,7 +500,7 @@ line-height: 24px; /* 150% */
 }
 .topbar {
     height: 6.375rem !important;
-   
+
     padding-left: 140px !important;
     padding-right: 140px !important;
 }
@@ -517,11 +517,11 @@ ul.ul-list li {
 }
 
 ul.ul-list li a {
-   
+
     font-family: sans-serif;
-   
-    
-    
+
+
+
     padding: 0px !important; /* 150% */
 
     color: #FFF !important;
@@ -560,13 +560,13 @@ img.images {
     line-height: normal;
     margin-top: 20px;
     padding: 10px;
- 
+
 }
 
 ul.ul-list li a {
-    
+
     font-size: 15px;
-  
+
 }
 
 
@@ -583,7 +583,7 @@ ul.ul-list li a {
 }
   .topbar {
     height: 4.375rem !important;
-   
+
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
@@ -678,7 +678,7 @@ ul.ul-list li a{
    display: none;
 }
 
- 
+
 }
 
 @media screen and (max-width: 600px){

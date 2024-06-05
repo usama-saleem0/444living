@@ -1,5 +1,6 @@
 <template>
-  <div class="fade-in">
+     <div>
+  <div class="fade-in" v-if="showing">
     <header class="loging-header">
     <div class="contanir">
       <nav class="logaing-nav">
@@ -52,29 +53,29 @@
       <p>Setup your profile it will take a while....</p>
       <div class="disk">
 
-  
-      
+
+
       <div   class="col-lg-3 col-xl-3 col-md-3 col-sm-3 col-12">
         <div
         id="image-drop-area-2"
     @dragover="onDragOver2"
     @drop="onDrop2"
     @click="openFileDialog2"
-     
+
     >
     <input type="file"  id="file-input-2" ref="fileInput2" style="display: none" @change="handleFileChange2" accept="image/*">
       <div class="image-drop-zone" v-if="!imageUrl2"  >
         <!-- <i class="fas fa-plus"></i> -->
         <img class="imgsize" src="/images/plus.png"/>
         <p class="fontsizes">Upload Profile</p>
-      
+
       </div>
       <div class="image-preview" v-else>
         <img :src="imageUrl2" alt="Uploaded Image" />
       </div>
     </div>
 
-  
+
   </div>
 
   <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8 col-12" >
@@ -83,28 +84,28 @@
       @dragover="onDragOver"
       @drop="onDrop"
       @click="openFileDialog"
-     
+
     >
     <input type="file" id="file-input" ref="fileInput" style="display: none" @change="handleFileChange" accept="image/*">
       <div class="image-drop-zone" v-if="!imageUrl"  >
         <img class="imgsizes" src="/images/plus.png"/>
         <p class="fontsizes">Upload a cover photo</p>
-      
+
       </div>
       <div class="image-preview" v-else>
         <img :src="imageUrl" alt="Uploaded Image" />
       </div>
     </div>
 
- 
 
-  
+
+
   </div>
 </div>
 
 
 
-    
+
 
 
 
@@ -113,15 +114,15 @@
 
         <input type="text" placeholder="Last Name" v-model="lastname">
       </div>
-   
+
 
       <div class="faster-long">
         <p style="padding-bottom: 10px;">Select Membership Packages</p>
- 
-        <div class="faster-long-box">
 
-            <div class="faster-long-list">
-                <h2>Basic </h2>
+        <div class="faster-long-box" v-if="users.type == 'Realtor'" @click="paypal" style="cursor:pointer">
+
+            <div class="faster-long-list" >
+                <h2>Basic  $97.95 </h2>
                 <div class="faster-long-ul">
                     <div class="faster-long-li">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -160,7 +161,7 @@
 
 
             <div class="faster-long-list" style="background-color: #DED4A2; border: 1px solid #293857;">
-                <h2 style="color: #293857 !important;">Premium $20 </h2>
+                <h2 style="color: #293857 !important;">Premium $197.95 </h2>
                 <div class="faster-long-ul">
                     <div class="faster-long-li">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -199,11 +200,11 @@
         </div>
       </div>
 
-     
-      
+
+
 
       <div class="btn-loging-long">
-        <button @click="save">Next</button>
+        <button @click="save">{{ users.type == 'Buyer' ? 'Start 2 Month Free Trail' : 'Start Free' }}</button>
       </div>
 
 
@@ -250,6 +251,9 @@
 
 
   </div>
+
+  <Loader v-if="loader"/>
+</div>
 </template>
 
 
@@ -259,38 +263,114 @@ import * as notify from "../../utils/notify.js";
 
 
 import { get , byMethod} from '../lib/api';
+import Loader from "../loader/loader.vue";
 export default {
+
+
+    components: {
+        Loader
+  },
 
     data() {
     return {
         imageUrl: null,
-     
+
          file: null,
          file2: null,
     imageUrl2: null,
     lastname:'',
     firstname:'',
     method: 'POST',
-   
-      
+    users:{},
+    loader:false,
+    showing:true
+
+
     };
 
-   
+
   },
 
   created() {
     // console.log(this.$route.params.id);
     this.user_id = this.$route.params.id;
-   
-   
+
+
+
+    get('/getuser?id=' + this.user_id)
+              .then((res) => {
+
+                console.log('gagsfgsdfsdgfdfgsdgfg',res.data.data)
+                Vue.set(this.$data, 'users', res.data.data)
+
+
+
+
+              })
+
+
+
+
+
+
 
   },
   methods: {
 
+
+
+    paypal(){
+        this.showing = false
+
+        this.loader = true
+
+            get('/process-transaction?id='+ this.user_id)
+              .then((res) => {
+                if(res.data){
+                  window.open(res.data, '_blank');
+                  this.showing = true
+
+                    this.loader = false
+                }
+                console.log(res.data)
+
+
+
+              })
+          },
+
+
+
+          paypal2(){
+
+
+            this.showing = false
+
+            this.loader = true
+
+
+            get('/processTransactionpremium?id='+ this.user_id)
+            .then((res) => {
+                if(res.data){
+                window.open(res.data, '_blank');
+
+                this.showing = true
+
+                    this.loader = false
+                }
+                console.log(res.data)
+
+
+
+            })
+            },
+
+
+
     handleFileChange(event) {
       this.file = event.target.files[0];
       this.imageUrl = URL.createObjectURL(this.file);
-      
+
     },
     onDragOver(event) {
       event.preventDefault();
@@ -301,7 +381,7 @@ export default {
       this.imageUrl = URL.createObjectURL(this.file);
     },
     openFileDialog() {
-        
+
     //   document.getElementById('file-input').click();
     this.$refs.fileInput.click();
     },
@@ -325,11 +405,14 @@ export default {
 
 
 
+
+
+
   save(){
 
     const formData = new FormData();
-    formData.append('profile', this.file2); 
-    formData.append('cover', this.file); 
+    formData.append('profile', this.file2);
+    formData.append('cover', this.file);
 
     formData.append('firstname', this.firstname);
     formData.append('lastname', this.lastname);
@@ -337,14 +420,14 @@ export default {
     console.log(formData);
 
 
-    
-                
+
+
     byMethod(this.method, '/profileregister' , formData)
                      .then((res) => {
-                       
+
                          if(res.data && res.data.saved) {
                             this.$router.push('/login');
-                         
+
                          }
                      })
                      .catch((error) => {
@@ -356,7 +439,7 @@ export default {
 
   },
 
-    
+
     async login() {
       try {
         const response = await axios.post("login", {
@@ -417,7 +500,7 @@ export default {
     width: 100%;
     height: 100px;
     border: 2px dashed #293857;
-   
+
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -432,7 +515,7 @@ export default {
     width: 100%;
     height: 100px;
     border: 2px dashed #293857;
-   
+
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -446,7 +529,7 @@ export default {
     width: 100%;
     height: 100px;
     border: 2px dashed #293857;
-   
+
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -866,7 +949,7 @@ ol.carousel-indicators {
 }
 
     .part2 {
-   
+
     padding-top: 0px;
 }
   .form-LogIn h2 {
@@ -1059,7 +1142,7 @@ ol.carousel-indicators{
     width: 100%;
     height: 100px;
     border: 2px dashed #293857;
-   
+
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -1073,7 +1156,7 @@ ol.carousel-indicators{
     width: 100%;
     height: 100px;
     border: 2px dashed #293857;
-   
+
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
@@ -1261,8 +1344,8 @@ ol.carousel-indicators{
 #image-drop-area {
     width: 100%;
     height: 70px;
-  
- 
+
+
 }
 .fontsizes {
     font-size: 9px !important;
@@ -1279,8 +1362,8 @@ ol.carousel-indicators{
 #image-drop-areas {
     width: 100%;
     height: 70px;
-  
- 
+
+
 }
 
 .faster-long-li p {
@@ -1411,9 +1494,9 @@ header.loging-header[data-v-72911c7d] {
 }
 
 .form-LogIn{
-  
+
     gap: 15px;
- 
+
 }
   section.loging-page{
     width: 100%;
@@ -1465,9 +1548,9 @@ ol.carousel-indicators{
 
 .loging-close-btn svg {
     width: 40px;
-    
+
 }
-/* 
+/*
 path {
     stroke: #293857;
 } */

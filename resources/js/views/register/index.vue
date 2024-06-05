@@ -7,7 +7,7 @@
         <div class="loging-logo">
           <img src="/images/logo-header.png" alt="">
         </div>
-      
+
         <div class="loging-close-btn">
             <button @click="backhome">
             <svg class="svgsizeing" width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,23 +53,23 @@
       <h2>Sign Up</h2>
 
       <div class="Login-btn-box">
-       
+
         <button @click="accountype('Buyer' , 1)" :style="{ backgroundColor: buttonColor,   color:textcolor }" >As  Buyer</button>
         <button @click="accountype('Investor' , 3)" :style="{ backgroundColor: buttonColor2,   color:textcolor2 }">As Investor</button>
         <button @click="accountype('Realtor' , 2)" :style="{ backgroundColor: buttonColor1,   color:textcolor1 }">As Realtor</button>
 
 
-      
+
       </div>
 
 
-      
+
       <div class="loging-input-group">
         <input type="email" placeholder="Enter your email address*" v-model="email">
       </div>
 
       <div class="loging-input-groups">
-        <input type="text" placeholder="Username" v-model="username">
+        <input type="text" placeholder="Name " v-model="username">
 
         <input type="number" placeholder="Contact Number" v-model="number">
       </div>
@@ -80,7 +80,7 @@
       <div class="loging-input-group">
         <input type="password" placeholder="Re-enter your password" v-model="password_confirm">
       </div>
-      
+
 
       <div class="btn-loging-long">
         <button @click="save">Next</button>
@@ -266,7 +266,7 @@ export default {
     //     //   this.$router.push(`/verify/user/${response.data.id}`);
     //     // } else {
     //     //     console.log('abcbcbcbbc');
-            
+
     //     //   let message =
     //     //     "Your account has been created successfully. Please Log in.";
     //     //   let toast = Vue.toasted.show(message, {
@@ -319,10 +319,10 @@ this.form.password_confirm = this.password_confirm;
                     backdrop: `
                     rgb(0 0 0 / 84%)
 
-                    
+
                     `
                     });
- 
+
                     // this.$router.push(`/setup/${res.data.user.id}`);
                 }
             })

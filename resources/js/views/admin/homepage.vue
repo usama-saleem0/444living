@@ -141,8 +141,8 @@ Top Listings
 
             <div class="type-input">
               <select name="cars" id="cars"  v-model="form.selectedlocation" class="inputclass">
-  <option value="Location" disabled style="color: gray !important;" selected>Location</option>
-  <option v-for="(option, index) in locations" :key="index" :value="option" style="color: gray !important;">{{ option }}</option>
+  <option value="Location" disabled style="color: gray !important; font-size:medium" selected>Location</option>
+  <option v-for="(option, index) in locations" :key="index" :value="option" style="color: gray !important; font-size:medium">{{ option }}</option>
 
   <!-- <option value="audi">Buyers</option>
   <option value="saab">Investors</option>
@@ -168,6 +168,21 @@ Top Listings
 
                             </select>
                           </div>
+
+
+                          <div class="type-input">
+                            <!-- <input type="checkbox" v-model="form.contentpost" />
+        <p >{{ form.contentpost }}</p> -->
+
+                    <select name="select2-state-container" id="select2-state-container" class="inputclass" v-model="form.contentpost">
+                        <option value="Type" disabled style="color: gray !important;" selected >Post</option>
+                        <option value="Regular" style="color: gray !important; font-size:medium" >Regular Content</option>
+                        <option value="Without" style="color: gray !important; font-size:medium" >Without Content</option>
+
+
+
+                </select>
+              </div>
 
             <div class="Explore-btn">
               <button @click="explorenow">Explore Now </button>
@@ -272,7 +287,7 @@ Top Listings
                 <div class="id-list-1">
                   <span>
                     <img :src="'/profile/' + posting.user.profile" alt="" style="max-width: 70px; cursor: pointer;
-    min-width: 70px;" @click="profilepage(posting.user.id)" >
+    min-width: 70px;"   >
                     <p>
                     <span style="padding-bottom: 10px; gap: 5px; cursor: pointer" @click="profilepage(posting.user.id)">{{posting.user ? posting.user.username:''}} <span style="color: #a2a2a4;
     font-size: 15px;">
@@ -405,7 +420,7 @@ Top Listings
 
                 <div class="Realtor-3-list">
                   <button @click="contact(item1)">Contact Realtor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none" @click="profilepage(item1.id)"  style="cursor: pointer;">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
@@ -480,7 +495,7 @@ Top Listings
 
                 <div class="Realtor-3-list">
                   <button @click="contact(item2)">Contact Investor</button>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="34" viewBox="0 0 46 34" fill="none" @click="profilepage(item2.id)"  style="cursor: pointer;">
   <rect width="46" height="34" fill="#293857"/>
   <path d="M33 9C33 8.44772 32.5523 8 32 8L23 8C22.4477 8 22 8.44772 22 9C22 9.55229 22.4477 10 23 10L31 10L31 18C31 18.5523 31.4477 19 32 19C32.5523 19 33 18.5523 33 18L33 9ZM15.7071 26.7071L32.7071 9.70711L31.2929 8.29289L14.2929 25.2929L15.7071 26.7071Z" fill="#DED4A2"/>
 </svg>
@@ -720,9 +735,9 @@ export default {
         key_index:0,
         form:{
 
-            types: 'Type',
-            selectedlocation:'Location',
-            selectedstate:'State'
+            // types: 'Type',
+            // selectedlocation:'Location',
+            // selectedstate:'State'
 
         },
 

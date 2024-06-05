@@ -110,7 +110,7 @@ body {
 
 .slider {
     width: 100%;
-  
+
 }
 
 .text-item {
@@ -270,7 +270,7 @@ header.header nav {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    
+
 }
 
 .hero-tital span p {
@@ -336,7 +336,7 @@ section.home {
    font-family:sans-serif;
     text-align: center;
     margin: 0px;
-  
+
 }
 
 .home-tital h2 {
@@ -1034,12 +1034,12 @@ ul.ul-3 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end ;  
+    justify-content: flex-end ;
 }
 
 .hello-buddy svg {
     position: absolute !important;
-    right: 24px !important; 
+    right: 24px !important;
 }
 
 button{
@@ -1104,7 +1104,7 @@ section.TopListing {
     width: 100%;
     background-color: #DED4A2;
     padding: 70px 0px;
-    
+
 }
 
 .main-TopListing {
@@ -1195,7 +1195,7 @@ section.TopListing {
 .Location-input {
     width: 22%;
 }
-/* 
+/*
 input {
   outline: none;
 } */
@@ -1208,7 +1208,7 @@ input {
 select#cars {}
 
 .type-input {
-    width: 16%;
+    width: 12%;
 }
 
 .input {
@@ -1334,7 +1334,7 @@ section.George {
     border-bottom: 1px solid #202d46;
 }
 
-.George-card 
+.George-card
 {    display: flex;
     width: 24%;
     height: 510px;
@@ -1834,7 +1834,7 @@ button.white {
     content: "";
     width: 0;
     left: 25px;
-    bottom: 0px; 
+    bottom: 0px;
     background: #DED4A2;
     height: 0px !important;
     transition: 0.3s ease-out;
@@ -2155,7 +2155,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-   
+
     padding-bottom: 60px;
     margin: 0px;
     line-height: 110px;
@@ -2919,7 +2919,7 @@ section.Success {
     font-size: 80px;
     color: #fff;
     font-family: 'Saol Display';
-    
+
 }
 .curated-tital button {
     background: transparent;
@@ -3478,7 +3478,7 @@ p.id-list-2 {
 }
 .curated-tital h2 {
     width: 75%;
- 
+
     padding-bottom: 50px;
     margin: 0px;
     line-height: 100px;
@@ -3613,7 +3613,7 @@ section.Happy {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
+
     /* height: 100vh  */
 }
 .hero-part {
@@ -4372,7 +4372,7 @@ section.Success {
 }
 .curated-tital h2 {
     width: 75%;
-  
+
     padding-bottom: 45px;
     margin: 0px;
     line-height: 60px;
@@ -4647,7 +4647,7 @@ img {}
     font-size: 22px;
 }
 
-  
+
   header.header {
     width: 100%;
     display: flex;

@@ -1,5 +1,5 @@
 <template>
- 
+
     <div class="page-1">
         <!-- <Header/> -->
      <div class="contanir" >
@@ -10,7 +10,7 @@
                     Post so you can be noticed by other investors and realtors!
              </span>
             </div>
-            
+
             <div style="width: 100%;
     position: relative;
     display: flex;
@@ -27,7 +27,7 @@
             <div class="col text-right"><p style="margin: auto 0;
     color: #DED4A2;
     font-family: sans-serif;
-  
+
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -37,25 +37,25 @@
 
   <div class="row" style="width: 100%;">
 
-    <div class="col">
+    <div class="col-4">
             <div  v-if="imageUrl || morefeild" style="width:100%;
-            
+
     position: relative;
     display: flex;
     align-content: center;
     align-items: center;">
-                <input type="text" placeholder="Enter location" class="inputclass" v-model="form.location"/>
+                <input type="text" placeholder="Enter complete location" class="inputclass" v-model="form.location"/>
 
-               
-        
+
+
             </div>
         </div>
 
 
-            <div class="col">
+            <div class="col-4">
 
             <div  v-if="imageUrl || morefeild" style="width: 100%;
-            
+
     position: relative;
     display: flex;
     align-content: center;
@@ -70,25 +70,51 @@
                             </div>
                         </div>
 
+
+                        <div class="col-4">
+
+<div  v-if="imageUrl || morefeild" style="width: 100%;
+
+position: relative;
+display: flex;
+align-content: center;
+align-items: center;">
+
+<!-- <select name="select2-state-container" id="select2-state-container" class="inputclass" @change="handleChange1">
+                    <option value="" disabled selected>​</option>
+                <option  v-for="(state, index) in states" :key="state.id" :value="index" style="color: gray !important;"  >{{ state.name }}</option>
+
+
+                </select> -->
+
+                <select name="cars" id="cars"  v-model="form.types"  class="inputclass">
+  <option value="Type" disabled style="color: gray !important;" selected >Type</option>
+  <option value="Commercial" style="color: gray !important;" >Commercial</option>
+  <option value="Residential" style="color: gray !important;" >Residential</option>
+
+</select>
+                </div>
+            </div>
+
                         </div>
 
 
-         
+
 
                     <div  v-if="morefeild" style="width: 100%;
-            
+
             position: relative;
             display: flex;
             align-content: center;
             align-items: center;">
-          
+
 
                 <input type="text" placeholder="Enter Details" class="inputclass" v-model="form.postdetials"/>
-             
 
-            
 
-                
+
+
+
                     </div>
 
 <div v-if="imageUrl" style="    width: 100%;
@@ -100,7 +126,7 @@
     <!-- <img src="/images/Background.png" class="postimage"/> -->
     <img  :src="imageUrl" alt="Selected Image" class="postimage">
     <input type="text" placeholder="Add Details" class="inputclass" v-model="form.postdetials"/>
-    
+
 </div>
 <div class="col text-right my-right" v-if="imageUrl || morefeild">
     <button class="hello-btn">
@@ -112,7 +138,7 @@
              </span>
     </button>
 </div>
-             
+
              <div class="new-2">
                  <div class="short-card">
                      <p>Active Jobs</p>
@@ -140,8 +166,8 @@
                 Property Overview
              </span>
              </div>
-             
-          
+
+
              <div class="new-3">
                  <div class="dashbord-card">
                      <div class="chart-bar">
@@ -150,19 +176,19 @@
                             <p class="charttext">Sunset Villa, Los Angeles</p>
 
 
-                           
+
                         </div>
                <canvas class="chartsnew" id="myBarChart"></canvas>
-              
+
              </div>
                  </div>
                  <div class="conting-card">
                     <Tables/>
-                   
+
                  </div>
-                 
+
              </div>
-         </div> 
+         </div>
          <Profile/>
         </div>
         <br>
@@ -175,7 +201,7 @@
         <div style="display: flex;
     overflow-x: scroll;">
 
-            
+
     <div class="" v-for="item in model">
         <div class="slide-card">
             <div class="imger">
@@ -188,11 +214,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4">
 
-           
+
 <div class="col-8">
     <button class="contac" @click="contact(item)">
     Contact Realtor
@@ -207,10 +233,10 @@
 </div>
         </div>
 
-        
 
-        
-   
+
+
+
 
     <div class="carousel-item " >
         <div class="slide-card">
@@ -222,11 +248,11 @@
   <path d="M12.899 33.75L10.049 28.95L4.64902 27.75L5.17402 22.2L1.49902 18L5.17402 13.8L4.64902 8.25L10.049 7.05L12.899 2.25L17.999 4.425L23.099 2.25L25.949 7.05L31.349 8.25L30.824 13.8L34.499 18L30.824 22.2L31.349 27.75L25.949 28.95L23.099 33.75L17.999 31.575L12.899 33.75ZM16.424 23.325L24.899 14.85L22.799 12.675L16.424 19.05L13.199 15.9L11.099 18L16.424 23.325Z" fill="#293857"/>
 </svg>
                 </div>
-               
+
             </div>
             <div class="row pt-4">
 
-           
+
             <div class="col-8">
                 <button class="contac">
                 Contact Realtor
@@ -241,29 +267,29 @@
             </button>
             </div>
         </div>
-           
-         
+
+
         </div>
 
-        
 
-        
-    </div>
+
 
     </div>
 
-    
+    </div>
 
- 
-   
-   
+
+
+
+
+
 
         </div>
      </div>
     </div>
-  
+
  </template>
- 
+
  <script>
  import Vue from 'vue'
  import chartBarDemo from "../../chart/demo/chart-bar-demo";
@@ -275,47 +301,51 @@
  import { get , byMethod} from '../lib/api';
  export default {
      name: 'admin',
- 
+
      components: {
-    
+
     Profile,
     Header,
     Tables
  },
- 
+
      mounted() {
-    
+
      chartBarDemo();
    },
- 
- 
+
+
      data () {
              return {
                 method:'POST',
                  model:{},
                  model:'',
                  imageUrl: '',
-                 form:{},
+                 form:{
+
+
+                    types:'Type'
+                 },
                  morefeild:false,
                  states:[],
                  selectedState:null
-  
-               
-               
+
+
+
              }
          },
          created(){
-         
+
          get('/toprealtor')
                .then((res) => {
-                 
+
                   this.setData(res)
- 
+
                })
                this.getstate();
-           
-         }, 
- 
+
+         },
+
          methods:{
 
 
@@ -339,11 +369,11 @@
 
                 get('/state')
                .then((res) => {
-                 
+
                 Vue.set(this.$data, 'states', res.data.data)
- 
+
                })
-           
+
 
             },
 
@@ -356,12 +386,12 @@
             contact(e){
                 console.log(e);
 
-                
+
                 this.$router.push({
-            name: 'chats', 
+            name: 'chats',
             params: { id: JSON.stringify(e) },
             });
-            
+
 
             },
 
@@ -372,28 +402,29 @@
   openFileDialog() {
     document.getElementById('file-input').click();
   },
-       
+
 
   savepost(){
 
 const formData = new FormData();
 
-formData.append('image', this.file); 
+formData.append('image', this.file);
 
 formData.append('postdetails', this.form.postdetials);
 formData.append('posttitle', this.form.posttitle);
 formData.append('location', this.form.location);
 formData.append('state', this.selectedState.name);
+formData.append('type', this.form.types);
 
 
 console.log(formData);
 
 
 
-            
+
 byMethod(this.method, '/posting' , formData)
                 .then((res) => {
-                
+
                     console.log(res)
                     if(res.data && res.data.saved) {
                         this.imageUrl  ='';
@@ -407,7 +438,7 @@ theme: "toasted-primary",
 position: "top-right",
 duration: 5000,
 });
-                    
+
                     }
                 })
                 .catch((error) => {
@@ -419,15 +450,15 @@ duration: 5000,
 
 },
              setData(res) {
-         
+
                Vue.set(this.$data, 'model', res.data.data)
                console.log(res.data.data)
-               
-              
- 
+
+
+
              //   console.log(res.data)
            },
- 
+
              profile(){
                  this.$router.push('/admin/dashborad4')
              },
@@ -435,11 +466,11 @@ duration: 5000,
              realtorprofile(e){
                 this.$router.push(`/realtorprofile/${e.id}`)
              }
- 
+
          }
  }
  </script>
- 
+
  <style scoped>
 
 .postimage{
@@ -645,11 +676,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
  }
- 
+
  .id-box img {
      width: 47%;
      border-radius: 50%;
-    
+
      max-height: 190px;
      min-height: 190px;
      object-fit: cover;
@@ -660,13 +691,13 @@ line-height: normal;
      background-color: #293857 !important;
      padding: 30px;
  }
- 
+
  .contanir {
      width: 100%;
      max-width: 1600px;
      margin: 0 auto;
  }
- 
+
  .Sponsorship h2 {
      color: #000;
      font-family: sans-serif;
@@ -677,13 +708,13 @@ line-height: normal;
      padding-bottom: 25px;
      margin: 0px ;
  }
- 
+
  .card-box {
      width: 100%;
      display: flex;
      justify-content: space-between;
  }
- 
+
  .cards {
      border-radius: 16px;
      border: 2px solid #000;
@@ -700,9 +731,9 @@ line-height: normal;
      align-items: center !important;
      padding-top: 50px;
      gap: 24px;
-   
+
  }
- 
+
  .box-1 {
      height: 100%;
      background: transparent;
@@ -713,7 +744,7 @@ line-height: normal;
      justify-content: space-between;
      gap: 25px;
  }
- 
+
  .box-2 {
      height: 100%;
      flex-shrink: 0;
@@ -723,7 +754,7 @@ line-height: normal;
      width: 30%;
      padding: 30px;
  }
- 
+
  .Sponsorship {
      width: 100%;
      height: 100%;
@@ -740,20 +771,20 @@ line-height: normal;
      justify-content: space-between;
      padding: 30px 0px;
  }
- 
+
  .btn-2 {
      display: flex;
      width: 46%;
      justify-content: space-between;
  }
- 
+
  .btn-1 {
      width: 35%;
      display: flex;
      align-items: center;
      gap: 18px;
  }
- 
+
  .Campaign {
      display: flex;
      align-items: center;
@@ -763,7 +794,7 @@ line-height: normal;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 12px 20px;
  }
- 
+
  .Campaign h2 {
      padding: 0px;
      color: #000;
@@ -773,7 +804,7 @@ line-height: normal;
      font-weight: 500;
      line-height: normal;
  }
- 
+
  .Campaign p {
      color: #000;
      font-family: sans-serif;
@@ -783,14 +814,14 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
+
  .over-btn {
      width: 100%;
      display: flex;
      justify-content: center;
      padding: 50px 0px 0px 0px;
  }
- 
+
  .over-btn button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -809,7 +840,7 @@ line-height: normal;
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
+
  .btn-1 button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -830,7 +861,7 @@ line-height: normal;
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
+
  button.Add {
      border-radius: 6px;
      border: 1px solid #000;
@@ -838,12 +869,12 @@ line-height: normal;
      box-shadow: 2px 2px 0px 0px #1B1C1D;
      color: #000;
  }
- 
+
  .OverView {
      width: 100%;
      padding-top: 75px;
  }
- 
+
  .OverView h2 {
      color: #000;
      font-family: sans-serif;
@@ -854,12 +885,12 @@ line-height: normal;
      margin: 0px;
      padding-bottom: 30px;
  }
- 
+
  .over-box {
      width: 100%;
      display: flex;
  }
- 
+
  .Over-card h4 {
      color: #FF5757;
      font-family: sans-serif;
@@ -869,7 +900,7 @@ line-height: normal;
      line-height: 24px; /* 114.286% */
      margin: 0px;
  }
- 
+
  .Over-card h4 span {
      color: #000;
      font-family: sans-serif;
@@ -879,11 +910,11 @@ line-height: normal;
      line-height: 24px; /* 58.537% */
      padding-left: 5px;
  }
- 
+
  .Over-card {
      width: 25%;
  }
- 
+
  /* .../ */
  .pox-1 {
      width: 100%;
@@ -893,7 +924,7 @@ line-height: normal;
      padding: 20px;
      border-bottom: 1px solid #000;
  }
- 
+
  .pox-1 h2 {
      color: #000;
      text-align: center;
@@ -905,23 +936,23 @@ line-height: normal;
      margin: 0px;
      padding: 0px;
  }
- 
+
  .top-btn {
      width: 49%;
      display: flex;
      align-items: center;
  }
- 
+
  .top-btn button {
      border: none;
      background: transparent;
  }
- 
+
  .pox-2 {
      width: 100%;
      padding: 20px;
  }
- 
+
  .pox-2 p {
      color: #000;
      font-family: sans-serif;
@@ -932,7 +963,7 @@ line-height: normal;
      letter-spacing: -0.96px;
      margin: 0px;
  }
- 
+
  .pox-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -941,7 +972,7 @@ line-height: normal;
      line-height: 24px; /* 150% */
      padding: 15px 0px;
  }
- 
+
  .pox-box {
      width: 100%;
      display: flex;
@@ -950,16 +981,16 @@ line-height: normal;
      justify-content: space-between;
      gap: 10px 0px;
  }
- 
+
  .yes {
      width: 50%;
      display: flex;
      align-items: center;
      gap: 5px;
  }
- 
- 
- 
+
+
+
  .pox-3 {
      width: 100%;
      display: flex;
@@ -967,7 +998,7 @@ line-height: normal;
      align-items: flex-end;
      padding: 25px 0px 0px 0px;
  }
- 
+
  .pox-3 h2 {
      color: #000;
      font-family: sans-serif;
@@ -977,7 +1008,7 @@ line-height: normal;
      line-height: normal;
      padding: 0px 0px 0px 0px;
  }
- 
+
  .pox-3 p {
      color: #000;
      text-align: center;
@@ -988,9 +1019,9 @@ line-height: normal;
      line-height: 24px; /* 150% */
      width: 40%;
  }
- 
- 
- 
+
+
+
  .pox-3 h2 span {
      color: #000;
      font-family: sans-serif;
@@ -999,20 +1030,20 @@ line-height: normal;
      font-weight: 600;
      line-height: normal;
  }
- 
- 
+
+
  button.llo {
      color: #fff;
  }
- 
- 
- 
+
+
+
  /* .../ */
- 
- 
- 
- 
- 
+
+
+
+
+
  .box-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -1021,7 +1052,7 @@ line-height: normal;
      font-weight: 500;
      line-height: normal;
  }
- 
+
  .id-box {
      width: 100%;
      display: flex;
@@ -1029,7 +1060,7 @@ line-height: normal;
      align-items: center;
      padding: 70px 0px 120px 0px;
  }
- 
+
  .id-box h2 {
      color: #000;
      font-family: sans-serif;
@@ -1040,11 +1071,11 @@ line-height: normal;
      margin: 0px;
      padding: 20px 0px 4px 0px;
  }
- 
+
  .id-box h3 {color: #000;
      font-family: system-ui !important;
      font-size: 16px;font-style: normal;font-weight: 500;line-height: normal;}
- 
+
  .titel-box {
      width: 100%;
      display: flex;
@@ -1052,14 +1083,14 @@ line-height: normal;
      align-items: center;
      padding-bottom: 20px;
  }
- 
+
  .id-titel {
      display: flex;
      align-items: center;
      width: 30%;
      justify-content: space-between;
  }
- 
+
  .id-titel p {
      color: #000;
      font-family: system-ui !important;
@@ -1079,14 +1110,14 @@ line-height: normal;
      align-items: center;
      padding-bottom: 40px;
  }
- 
+
  .contact {
      display: flex;
      align-items: center;
      justify-content: space-between;
      gap: 15px;
  }
- 
+
  .contact p {
      color: #000;
      font-family: sans-serif;
@@ -1096,7 +1127,7 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
+
  .para-box {
      width: 100%;
      border-top: 1px solid #F96;
@@ -1106,7 +1137,7 @@ line-height: normal;
      align-items: center;
      flex-direction: column;
  }
- 
+
  .para-box p {
      color: #000;
      text-align: center;
@@ -1118,7 +1149,7 @@ line-height: normal;
      margin: 0px;
      padding: 32px 0px 44px 0px;
  }
- 
+
  .para-box button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -1134,7 +1165,7 @@ line-height: normal;
      flex-shrink: 0;
       /* 150% */
  }
- 
+
  .para-box button p {
      color: #FFF;
      text-align: center;
@@ -1145,27 +1176,27 @@ line-height: normal;
      line-height: 24px; /* 150% */
      padding: 0px;
  }
- 
+
  .new-1 {
      width: 100%;
      display: flex;
      justify-content: space-between;
  }
- 
+
  .new-2 {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
  }
- 
+
  .new-3 {
      width: 100%;
      display: flex;
      align-items: center;
      gap: 20px;
  }
- 
+
  .rol-1 {
      border-radius: 20px;
      background: #FFF;
@@ -1174,7 +1205,7 @@ line-height: normal;
      width: 36%;
      padding: 32px;
  }
- 
+
  .rol-1 p {
      color: #000;
      font-family: sans-serif;
@@ -1185,7 +1216,7 @@ line-height: normal;
      margin: 0px;
      padding-bottom: 12px;
  }
- 
+
  .rol-1 h2 {
      color: #1B1C1D;
      font-family: fantasy;
@@ -1196,14 +1227,14 @@ line-height: normal;
      letter-spacing: 3px;
      letter-spacing: 3px;
  }
- 
+
  .new-btn-lid {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-between;
  }
- 
+
  .new-btn-lid  button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -1218,7 +1249,7 @@ line-height: normal;
      gap: 7.647px;
      flex-shrink: 0;
  }
- 
+
  .new-btn-lid button p {
      margin: 0px;
      color: #FFF;
@@ -1231,7 +1262,7 @@ line-height: normal;
      margin: 0px;
      padding: 0px;
  }
- 
+
  .rol-3 {
      width: 62%;
      display: flex;
@@ -1240,7 +1271,7 @@ line-height: normal;
      justify-content: space-between;
      padding-top: 24px;
  }
- 
+
  .rol-3 p {
      margin: 0px;
      color: #000;
@@ -1251,7 +1282,7 @@ line-height: normal;
      line-height: normal;
      width: 100%;
  }
- 
+
  .rol-card {
      width: 48%;
      border-radius: 10px;
@@ -1263,7 +1294,7 @@ line-height: normal;
      padding: 10px 15px;
      flex-wrap: wrap;
  }
- 
+
  .rol-para h2 {
      color: #000;
      font-family: sans-serif;
@@ -1273,11 +1304,11 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
+
  .rol-para {
      width: 84%;
  }
- 
+
  .rol-para p {
      color: #000;
      font-family: sans-serif;
@@ -1287,14 +1318,14 @@ line-height: normal;
      line-height: normal;
      margin: 0px;
  }
- 
+
  .div-1 {
      width: 100%;
      display: flex;
      align-items: center;
      justify-content: space-around;
  }
- 
+
  .div-1 h2 {
      color: #000;
      font-family: sans-serif;
@@ -1305,11 +1336,11 @@ line-height: normal;
      margin: 0px;
      width: 80%;
  }
- 
+
  .div-1 p {
      width: 20%;
  }
- 
+
  .div-2 {
      width: 100%;
      display: flex;
@@ -1317,21 +1348,21 @@ line-height: normal;
      justify-content: space-between;
      padding-top: 15px;
  }
- 
+
  .Enrolled {
      display: flex;
      align-items: center;
      width: 58%;
  }
- 
+
  .Enrolled {}
- 
+
  .Reviews {
      width: 40%;
      display: flex;
      align-items: center;
  }
- 
+
  .short-card {
      width: 24%;
      border-radius: 0px !important;
@@ -1339,7 +1370,7 @@ line-height: normal;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 18px 25px;
  }
- 
+
  .short-card p {
      color: #000;
      font-family: sans-serif;
@@ -1349,7 +1380,7 @@ line-height: normal;
      line-height: 24px; /* 150% */
      margin: 0px;
  }
- 
+
  .short-card h2 {
     color: #1B1C1D !important;
     font-family: Saol Display !important;
@@ -1360,7 +1391,7 @@ line-height: normal;
     margin: 0px;
     padding: 12px 0px 5px 0px;
 }
- 
+
  .short-card h3 {
      color: #000;
      font-family: sans-serif;
@@ -1378,7 +1409,7 @@ line-height: normal;
      width: 30% !important;
      border-radius: 0px 0px 0px 0px !important;
  }
- 
+
  .conting-card {
      height: 417px;
      flex-shrink: 0;
@@ -1392,7 +1423,7 @@ line-height: normal;
      justify-content: space-between;
      border-radius: 0px 0px 0px 0px !important;
  }
- 
+
  .conting-card h2 {
      color: #000;
      font-family: sans-serif;
@@ -1403,11 +1434,11 @@ line-height: normal;
      width: 100%;
      margin: 0px;
  }
- 
+
  .divs {
      width: 48%;
  }
- 
+
  .divs h2 {
      color: #F96;
      font-family: sans-serif;
@@ -1417,7 +1448,7 @@ line-height: normal;
      line-height: 24px; /* 114.286% */
      margin: 0px;
  }
- 
+
  .divs h3 {
      color: #000;
      font-family: sans-serif;
@@ -1529,7 +1560,7 @@ button{
      width: 26px;
      height: 25px;
  }
- 
+
  .rol-3 p {
      margin: 0px;
      color: #000;
@@ -1616,7 +1647,7 @@ button{
      padding: 30px 20px;
  }
  .pox-3 p {
-  
+
      color: #000;
      text-align: center;
      font-family: sans-serif;
@@ -1720,7 +1751,7 @@ button{
      border-radius: 6px;
      border: 1px solid #000 !important;
      background: #F5F3EA !important;
-     box-shadow: 2px 2px 0px 0px #1B1C1D !important; 
+     box-shadow: 2px 2px 0px 0px #1B1C1D !important;
      color: #000 !important;
  }
  .box-1 {
@@ -1729,13 +1760,13 @@ button{
  }
 
  }
- 
+
  @media screen and (max-width: 1440px){
 
     .chartsnew {
     padding: 0px 0px 50px 0px;
 }
- 
+
      .id-box h3 {
      color: #000;
      font-family: sans-serif;
@@ -1768,7 +1799,7 @@ button{
      line-height: normal;
      margin: 0px;
  }
- 
+
  .rol-3 p {
      margin: 0px;
      color: #000;
@@ -2082,7 +2113,7 @@ button{
      align-items: flex-end;
      padding: 15px 0px;
  }
- 
+
  .pox-box {
      width: 100%;
      display: flex;
@@ -2171,11 +2202,11 @@ button{
  /* .id-box img {
      width: 40%;
  } */
- 
+
  .id-box img {
      width: 50%;
      border-radius: 50%;
-    
+
      max-height: 150px;
      min-height: 150px;
      object-fit: cover;
@@ -2330,7 +2361,7 @@ button{
     padding: 4px 10px 4px 10px;
     font-size: 14px;
 }
-.bordersbot { 
+.bordersbot {
     border-bottom: 1px solid #DED4A2;
     padding: 5px;
 }
@@ -2381,11 +2412,11 @@ button{
      display: flex;
      align-items: stretch;
      justify-content: space-between;
-     padding: 30px 0px 0px 0px ; 
+     padding: 30px 0px 0px 0px ;
      flex-direction: column;
      gap: 25px;
  }
- 
+
  .btn-2 {
      display: flex;
      width: 60%;
@@ -2432,7 +2463,7 @@ button{
      line-height: normal;
      margin: 0px;
  }
- 
+
  .id-titel p {
      color: #000;
      font-family: sans-serif;
@@ -2454,7 +2485,7 @@ button{
      line-height: normal;
      margin: 0px;
  }
- 
+
  .rol-1 p {
      color: #000;
      font-family: sans-serif;
@@ -2465,8 +2496,8 @@ button{
      margin: 0px;
      padding-bottom: 12px;
  }
- 
- 
+
+
    .page-1 {
      width: 100%;
      background-color: #293857 !important;

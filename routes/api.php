@@ -9,6 +9,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RealtorController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\InvestorController;
+use App\Http\Controllers\Paypalcontroller;
 
 
 
@@ -21,11 +22,30 @@ Route::get('emails', [RealtorController::class, 'emails']);
 Route::get('total', [ProfileController::class, 'total']);
 
 Route::get('state', [ProfileController::class, 'State']);
+Route::get('getuser', [ProfileController::class, 'getprofile']);
+
 
 Route::post('forgot', [Api\ForgotController::class, 'forgot']);
 Route::post('reset', [Api\ForgotController::class, 'reset']);
 Route::get('email/resend/{user}', [Api\VerifyController::class, 'resend'])->name('verification.resend');
 Route::get('email/verify/{id}', [Api\VerifyController::class, 'verify'])->name('verification.verify');; // Make sure to keep this as your route name
+
+
+
+
+
+Route::get('process-transaction', [Paypalcontroller::class, 'processTransaction'])->name('processTransaction');
+Route::get('processTransactionpremium', [Paypalcontroller::class, 'processTransactionpremium'])->name('processTransactionpremium');
+
+
+
+Route::post('create-transaction', [Paypalcontroller::class, 'createTransaction'])->name('createTransaction');
+
+Route::get('create-transaction', [Paypalcontroller::class, 'createTransaction'])->name('createTransaction');
+// Route::get('process-transaction', [Paypalcontroller::class, 'processTransaction'])->name('processTransaction');
+Route::get('success-transaction', [Paypalcontroller::class, 'successTransaction'])->name('successTransaction');
+Route::get('cancel-transaction', [Paypalcontroller::class, 'cancelTransaction'])->name('cancelTransaction');
+
 
 Route::group(['middleware' => ['auth:api']], function () {
     Route::get('user', [Api\AuthController::class, 'user']);

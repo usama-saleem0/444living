@@ -163,7 +163,7 @@
                     <div class="row">
                         <div class="col">
                             <span class="basic">
-                                Basic
+                                {{ user.membership }}
                             </span>
                         </div>
 
@@ -438,19 +438,18 @@ export default {
 
    },
 
-            dateformat(e){
+                dateformat(e) {
+                    const createdAt = e;
+                    const date = new Date(createdAt);
+                    date.setMonth(date.getMonth() + 2);
 
-                const createdAt = e;
-                const date = new Date(createdAt);
+                    const year = date.getFullYear();
+                    const month = date.toLocaleString('default', { month: 'long' });
+                    const day = date.getDate();
 
-                const year = date.getFullYear();
-                const month = date.toLocaleString('default', { month: 'long' });
-                const day = date.getDate();
-
-                const formattedDate = ` ${month}  ${day}, ${year}`;
-            return formattedDate
-
-            },
+                    const formattedDate = ` ${month}  ${day}, ${year}`;
+                    return formattedDate;
+                },
 
             realtorprofile(e){
                 this.$router.push(`/realtorprofile/${e.id}`)
@@ -606,7 +605,7 @@ line-height: normal;
 .basic{
     color: #DED4A2;
 font-family: "Saol Display";
-font-size: 65px;
+font-size: 58px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
