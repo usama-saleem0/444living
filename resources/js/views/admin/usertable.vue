@@ -31,7 +31,8 @@
                                            <td>
                                             <button style="    background-color: transparent;
                                             margin: 5px;
-                                            padding: 0px 10px 0px 10px;">
+                                            padding: 0px 10px 0px 10px;"
+                                            @click="generatevoucher(item)">
                                                 Generate Voucher
                                             </button>
 
@@ -46,6 +47,12 @@
                                 </table>
                             </div>
 
+                            <div v-if="pop" style="position: absolute;
+    top: 10%;
+    right: 35%;">
+                                <Popup :data="useremail"  @cancel="hide"/>
+                            </div>
+
     </div>
 </template>
 
@@ -55,15 +62,24 @@
 import moment from 'moment';
 import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
+import Popup  from './components/popup.vue';
 import { data } from "jquery";
 
 export default {
     name: 'Tables',
 
+    components: {
+
+        Popup,
+
+},
+
     data () {
     return {
 
-        data:[]
+        data:[],
+        pop:false,
+        useremail:''
 
 
 
@@ -79,6 +95,19 @@ export default {
         $('#dataTable').DataTable();
     },
     methods:{
+
+        hide(){
+
+
+            this.pop = false;
+        },
+
+        generatevoucher(e){
+            this.useremail = e.email
+            console.log('sggajfgfhsdg');
+            this.pop = true;
+
+        },
         dated(e){
             let formattedDate = moment(e).format("h:mma, DD dddd");
             return formattedDate

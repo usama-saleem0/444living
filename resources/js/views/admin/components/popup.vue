@@ -3,21 +3,63 @@
     <div class="main-Discount">
 
       <div class="main-Discount-sv">
-      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none" @click="$emit('cancel')">
   <path d="M34.4266 37.0876L22.5016 25.1438L10.5766 37.0876L7.91406 34.4251L19.8578 22.5001L7.91406 10.5751L10.5766 7.9126L22.5016 19.8563L34.4266 7.93135L37.0703 10.5751L25.1453 22.5001L37.0703 34.4251L34.4266 37.0876Z" fill="#293857"/>
 </svg>
 </div>
       <h2>Discount Voucher</h2>
       <div class="main-Discount-in-box">
-      <input type="email" placeholder="Enter Email">
-      <input type="text" placeholder="Discount Percentage">
+      <input type="email" placeholder="Enter Email" v-model="data">
+      <input type="text" placeholder="Discount Percentage" v-model="percent">
     </div>
-      <button>
+      <button @click="voucher">
         Generate
       </button>
     </div>
   </div>
 </template>
+
+<script>
+import { method } from 'lodash';
+import moment from 'moment';
+
+
+
+export default {
+    name: 'Tables',
+
+
+
+    data () {
+    return {
+
+        data:[],
+        percent:''
+
+
+
+
+
+             }
+            },
+
+
+    props: {
+      data: String,
+    },
+
+    methods:{
+        voucher(){
+            
+
+        }
+    }
+
+
+}
+</script>
+
+
 
 
 <style scoped>
@@ -140,12 +182,6 @@ button::after {
 }
 }
 </style>
-<script>
-
-export default {
-    name: 'Sidebar'
-}
-</script>
 
 
 
