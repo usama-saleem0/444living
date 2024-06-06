@@ -8,7 +8,7 @@ use App\Models\Email;
 
 class RealtorController extends Controller
 {
-    
+
     public function toprealtor(){
 
         if(auth()->user()->type === 'Investor' || auth()->user()->type === 'Buyer'){
@@ -25,28 +25,29 @@ class RealtorController extends Controller
             ->limit(9)
             ->get();
         }
-       
+
         return response()->json(['data' => $data]);
     }
 
 
 
-      
+
     public function explorerealtor(){
 
-     
+
             $data = User::where('type', 'Realtor')
             ->whereNotIn('id', [auth()->user()->id])
+
             ->orderBy('created_at', 'asc')
             ->limit(5)
             ->get();
-       
 
 
-       
-        
-       
-       
+
+
+
+
+
         return response()->json(['data' => $data]);
     }
 
@@ -76,6 +77,6 @@ class RealtorController extends Controller
         return response()->json(['data' => $data]);
 
 
-    
+
     }
 }

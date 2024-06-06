@@ -84,7 +84,7 @@
     </clipPath>
   </defs>
 </svg>
-                Verified Realtor
+         {{ items.type }}
   </p>
 
             </div>

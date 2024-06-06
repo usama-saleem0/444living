@@ -1332,6 +1332,7 @@ section.George {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #202d46;
+    overflow-x: scroll;
 }
 
 .George-card
@@ -1345,6 +1346,8 @@ section.George {
     justify-content: space-between;
     align-items: flex-start;
 position: relative;
+min-width: 24%;
+    max-width: 24%;
 }
 
 .George-card p {

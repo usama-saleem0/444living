@@ -3,7 +3,7 @@
 
     <section class="email-sine">
     <div class="contanir">
-    
+
     <div class="main-email">
     <div class="email-logo">
     <img class="images" src="https://peopleforliving.appssols.com/images/logo.png"/>
@@ -24,31 +24,28 @@
             </defs>
             </svg>
             </span>
-    
-    <h2>Congratulations You Received <br>10% Discount</h2>
-    
-    <p>Here is your voucher code:KrJpBWKfZKN9MB9</p>
-<!--     
-    <button>
-    <a href="{{ url('/') }}/reset/{{ $token }}" style="text-decoration: none;">Change your Password </a>
-    </button> -->
+
+    <h2>Congratulations You Received <br>{{$percent}}% Discount<br>On Membership</h2>
+
+    <p>Here is your voucher code:{{$token}}</p>
+
       </div>
     </div>
     </div>
     </section>
     </div>
-    
-    
-    
+
+
+
     <style>
-    
+
     section.email-sine {
         width: 100%;
         background: #293857;
         height: 100vh;
         padding: 0px !important;
     }
-    
+
     .main-email {
         width: 100%;
         display: flex;
@@ -56,17 +53,17 @@
         align-items: center;
         height: 100%;
     }
-    
+
     .email-logo {
         width: 85%;
         padding-bottom: 80px;
         padding-top: 20px !important;
     }
-    
+
     .email-logo img {
         width: 7%;
     }
-    
+
     .email-tital {
         width: 84%;
         background-color: #DED4A2;
@@ -75,7 +72,7 @@
         align-items: center;
         padding: 75px 0px 140px 0px;
     }
-    
+
     .email-tital span {
         background-color: #293857;
         padding: 22px 20px;
@@ -84,12 +81,12 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .email-tital span svg {
         width: 54px;
         height: 50px;
     }
-    
+
     .email-tital h2 {
         color: #293857;
         text-align: center;
@@ -100,7 +97,7 @@
         line-height: normal;
         margin: 0px;
     }
-    
+
     .email-tital p {
         color: #000;
         text-align: center;
@@ -112,11 +109,11 @@
         margin: 0px;
         padding: 30px 0px 40px 0px;
     }
-    
+
     .email-tital button {
         background: #293857;
         padding: 20px 80px;
-    
+
         border: none;
         line-height: normal;
     }
@@ -127,7 +124,7 @@
         font-style: normal;
         font-weight: 400;
     }
-    
+
     .email-tital button::after {
         position: absolute;
         content: "";
@@ -138,163 +135,163 @@
         height: 2px;
         transition: 0.3s ease-out;
     }
-    
+
     @media screen and (max-width: 1600px){
       .email-logo {
         padding-bottom: 40px;
     }
-    
+
     .email-tital {
         padding: 50px 0px 60px 0px;
     }
-    
+
     .email-tital span {
         padding: 14px 14px;
     }
-    
+
     .email-tital span svg {
         width: 38px;
         height: 38px;
     }
-    
+
     .email-tital h2 {
         font-size: 52px;
     }
-    
+
     .email-tital p {
         font-size: 18px;
         padding: 18px 0px 28px 0px;
     }
-    
+
     .email-tital button  {
         padding: 14px 60px;
         font-size: 20px;
     }
     .email-tital button a  {
-        
+
         font-size: 20px;
     }
     }
-    
+
     @media screen and (max-width: 1440px){
-      
+
       .email-tital h2 {
         font-size: 42px;
     }
-    
+
     .email-tital span svg {
         width: 32px;
         height: 32px;
     }
-    
+
     .email-tital span {
         padding: 10px 11px;
     }
-    
+
     .email-tital p {
         font-size: 16px;
         padding: 12px 0px 20px 0px;
     }
-    
+
     .email-tital {
         padding: 38px 0px 52px 0px;
     }
-    
+
     .email-tital button {
         padding: 12px 50px;
         font-size: 15px;
     }
     .email-tital button a {
-     
+
         font-size: 15px;
     }
     section.email-sine {
         padding: 0px !important;
     }
     }
-    
+
     @media screen and (max-width: 1024px){
         .email-tital h2 {
         font-size: 28px;
     }
-    
+
     .email-tital p {
         font-size: 14px;
         padding: 8px 0px 12px 0px;
     }
-    
+
     .email-tital button {
-        padding: 10px 32px; 
+        padding: 10px 32px;
         font-size: 12px;
     }
     .email-tital button a {
-        
+
         font-size: 12px;
     }
     .email-tital {
         padding: 30px 0px 32px 0px;
     }
-    
+
     section.email-sine {
         padding:0px ;
     }
-    
-    
-    
+
+
+
     .email-logo {
         padding-bottom: 30px;
     }
-    
+
     .email-tital h2 {
         font-size: 24px;
     }
-    
+
     .email-tital h2 {
         font-size: 20px;
     }
-    
+
     .email-tital button {
         padding: 8px 28px;
         font-size: 10px;
     }
-    
+
     .email-tital button a {
-       
+
         font-size: 10px;
     }
     .email-tital {
         padding: 24px 0px 28px 0px;
     }
     }
-    
+
     @media screen and (max-width: 600px){
-    
+
       .email-tital {
         width: 100%;
         padding: 20px 20px 24px 20px;
     }
-    
+
     .email-tital h2 {
         font-size: 18px;
     }
-    
+
     .email-tital p {
         font-size: 12px;
         padding: 8px 0px 12px 0px;
     }
-    
+
     .email-logo img {
         width: 14%;
     }
-    
+
     .email-tital span svg {
         width: 20px;
         height: 20px;
     }
-    
+
     .email-tital span {
         padding: 8px 8px;
     }
     }
-    
+
     </style>

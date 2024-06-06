@@ -89,6 +89,8 @@ Route::group(['middleware' => ['auth:api']], function () {
     Route::get('getchat', [ChatController::class, 'getchat']);
 
     Route::post('chats', [ChatController::class, 'chats']);
+    Route::post('generate_tokan', [ProfileController::class, 'generate_tokan']);
+
 
     Route::get('recentchat', [ChatController::class, 'recentchat']);
     Route::get('getprofile', [ProfileController::class, 'getprofile']);
@@ -100,6 +102,12 @@ Route::group(['middleware' => ['auth:api']], function () {
 
     Route::get('getusers', [ProfileController::class, 'getusers']);
     Route::get('allrealtors', [ProfileController::class, 'allrealtors']);
+    Route::get('allinvestors', [ProfileController::class, 'allinvestors']);
+
+    Route::get('allbuyers', [ProfileController::class, 'allbuyers']);
+
+    Route::get('getadmin', [ProfileController::class, 'getadmin']);
+
 
 
 });

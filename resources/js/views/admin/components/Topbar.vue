@@ -121,20 +121,20 @@
 
 
       <li v-if="user && user.type === 'admin'">
-      <router-link class="nav-link" to="/admin">
+      <router-link class="nav-link" to="/admin_buyers">
           <a href="#">Buyers</a></router-link
         >
       </li>
 
       <li v-if="user && user.type === 'admin'">
-      <router-link class="nav-link" to="/admin">
+      <router-link class="nav-link" to="/admin_investor">
           <a href="#">Investors</a></router-link
         >
       </li>
 
 
       <li v-if="user && user.type === 'admin'">
-      <router-link class="nav-link" to="/admin">
+      <router-link class="nav-link" to="/chats">
           <a href="#">Chats</a></router-link
         >
       </li>

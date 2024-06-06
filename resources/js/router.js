@@ -175,6 +175,29 @@ let router = new Router({
         },
 
 
+
+        {
+            path: "/admin_buyers",
+            name: "admin",
+            component: () => import("./views/admin/admindashoboardbuyers.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+            }
+        },
+
+
+        {
+            path: "/admin_investor",
+            name: "admin",
+            component: () => import("./views/admin/admindashoboardinvestor.vue"),
+            meta: {
+                requiresAuth: true,
+                layout: AdminLayout
+            }
+        },
+
+
         {
             path: "/homepages",
             name: "register",

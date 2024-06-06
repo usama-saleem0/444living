@@ -1,4 +1,7 @@
 <template>
+
+
+
     <div style="height: 100% !important; width: 100% !important;">
 
 
@@ -11,8 +14,10 @@
                                             <th>Email</th>
                                             <th>Phone Number</th>
                                             <th>Register Date</th>
-                                            <th>Membership</th>
-                                            <th>Discount Voucher</th>
+
+                                            <th v-if="data && data.length">{{data && data[0].type == 'Realtor' ? 'Membership': 'Profile Type'}}</th>
+                                            <th v-if="data && data.length">{{data && data[0].type == 'Realtor' ? 'Discount Voucher': '' }}</th>
+
 
 
                                         </tr>
@@ -27,8 +32,10 @@
                                             <td>{{ item.number }}</td>
                                             <td>{{ dated(item.created_at) }}</td>
 
-                                            <td>{{ item.membership == null ? 'Free Trail' :  item.membership}}</td>
-                                           <td>
+                                            <td v-if="item.type == 'Realtor'">{{ item.membership == null ? 'Free Trail' :  item.membership}}</td>
+                                            <td v-if="item.type == 'Buyer' || item.type == 'Investor' ">{{ item.type}}</td>
+
+                                           <td v-if="item.type == 'Realtor'">
                                             <button style="    background-color: transparent;
                                             margin: 5px;
                                             padding: 0px 10px 0px 10px;"
@@ -50,10 +57,14 @@
                             <div v-if="pop" style="position: absolute;
     top: 10%;
     right: 35%;">
-                                <Popup :data="useremail"  @cancel="hide"/>
+                                <Popup :data="useremail"  @cancel="hide" @loader="play"/>
                             </div>
 
-    </div>
+
+
+                        </div>
+
+
 </template>
 
 
@@ -64,6 +75,7 @@ import "datatables.net-dt/js/dataTables.dataTables"
 import "datatables.net-dt/css/jquery.dataTables.min.css"
 import Popup  from './components/popup.vue';
 import { data } from "jquery";
+import loader from './loader.vue';
 
 export default {
     name: 'Tables',
@@ -71,6 +83,8 @@ export default {
     components: {
 
         Popup,
+        loader
+
 
 },
 
@@ -79,7 +93,9 @@ export default {
 
         data:[],
         pop:false,
-        useremail:''
+        useremail:'',
+        loader:false,
+        show:true
 
 
 
@@ -92,18 +108,32 @@ export default {
       data: Array,
     },
     mounted(){
+
+
         $('#dataTable').DataTable();
     },
     methods:{
+
+
+        play(){
+            this.show = false
+
+            this.loader = true
+
+        },
 
         hide(){
 
 
             this.pop = false;
+
+            this.show = true
+
+            this.loader = false
         },
 
         generatevoucher(e){
-            this.useremail = e.email
+            this.useremail = e
             console.log('sggajfgfhsdg');
             this.pop = true;
 

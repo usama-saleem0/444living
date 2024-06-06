@@ -1,23 +1,40 @@
 <template>
- 
+
     <div class="page-1">
      <div class="contanir" >
         <div class="main">
          <div class="box-1">
          <div class="col-12 coloum">
            <div class="row cent">
-         <div class="col" style="margin-bottom: 10px;margin-top: 10px;">
-            
+         <div class="col-6" style="margin-bottom: 10px;margin-top: 10px;">
+
          <img v-if="inf_img" :src="'/profile/' + inf_img" class="imgs"/>
          <img v-else src='/images/Characters.png' class="imgs"/>
- 
+
          <span class="sp">{{ chatname }}</span>
-         
-         
+
+
        </div>
-       <div class="col text-right" style="margin-bottom: 10px;margin-top: 10px;" @click="realtorprofile"><p style="
- 
- 
+
+
+       <div class="col-4 text-right" style="margin-bottom: 10px;margin-top: 10px;" @click="expertchat" v-if="user.type != 'admin'"><p style="
+
+
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ color: #ded4a2 !important;
+ font-family: Saol Display !important;
+ cursor: pointer;
+ ">Chat with Expert
+
+ <img src="/images/basil_settings-solid.png"/>
+       </p>
+   </div>
+       <div class="col-2 text-right" style="margin-bottom: 10px;margin-top: 10px;" @click="realtorprofile" v-if="user.type != 'admin'"><p style="
+
+
  font-size: 16px;
  font-style: normal;
  font-weight: 700;
@@ -26,15 +43,33 @@
  font-family: Saol Display !important;
  cursor: pointer;
  ">See Profile
- 
+
  <img src="/images/basil_settings-solid.png"/>
        </p>
    </div>
+
+
+
+   <div class="col-6 text-right" style="margin-bottom: 10px;margin-top: 10px;" @click="realtorprofile" v-else><p style="
+
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: #ded4a2 !important;
+font-family: Saol Display !important;
+cursor: pointer;
+">See Profile
+
+<img src="/images/basil_settings-solid.png"/>
+      </p>
+  </div>
        </div>
- 
-      
+
+
      <div class="chat-box" id="chat-box">
-      
+
        <div class="col-12" v-for="message in messages" :key="message.id" >
          <div :class="{'dyncols': message.sender_id != chat_user, 'dyncol': message.sender_id == chat_user || message.user }">
            <div :class="{'message': message.sender_id == chat_user , 'messagess': message.sender_id != chat_user && !message.user, 'message':message.text }">
@@ -42,8 +77,8 @@
          </div>
        </div>
          </div>
-         
-        
+
+
      </div>
      <div class="inps">
      <input class="inp"  v-model="newMessage" @keyup.enter="sendMessage" placeholder="Write Your Message Here">
@@ -58,31 +93,32 @@
 
 
         </div>
-        
+
      </div>
-     
+
     </div>
-  
+
  </template>
- 
+
  <script>
- 
+
  import Vue from 'vue'
  import Profile from "./chatscreenprofile.vue";
- 
+ import { mapGetters } from "vuex";
+
  import { get , byMethod} from '../lib/api'
  export default {
      name: 'admin',
      components: {
-    
+
     Profile,
-   
+
  },
- 
+
      data () {
              return {
-                
-                
+
+
                userselect:false,
          form:{},
          chatname:'Christiana Adams',
@@ -97,39 +133,69 @@
          intervalId: null,
          idObject:{},
          recentchats:[],
-         
+
          // form: [],
- 
+
          newMessage: '',
- 
-               
-               
-               
+         expertid:0,
+         admin:{}
+
+
+
+
              }
          },
- 
+
+
+         computed: {
+    ...mapGetters(["user"]),
+  },
+
          created(){
-          
-         
+            this.getadmin();
+
+
          get('/getuser')
                .then((res) => {
-                 
+
                  this.influncer();
                   this.setData(res)
- 
+
                });
-               
- 
+
+
                const idObject = JSON.parse(this.$route.params.id);
- 
+
                console.log('aaaa' , idObject );
-                 this.setitem(idObject); 
-             
-           
-         }, 
- 
-   
+                 this.setitem(idObject);
+
+
+
+
+
+         },
+
+
          methods:{
+
+
+            getadmin(){
+                get('/getadmin')
+               .then((res) => {
+                this.admin = res.data.data
+
+
+
+               });
+
+            },
+
+            expertchat(){
+
+                console.log(this.admin);
+                this.setitem(this.admin)
+
+            },
 
 
             realtorprofile(){
@@ -142,62 +208,62 @@
                 this.setitem(data.id)
 
             },
- 
- 
+
+
              setitem(e){
-                 
+
                  this.reciever_id = e.id;
                  this.inf_img = e.profile;
                  this.chatname = e.username;
                  this.chatter = e;
- 
+
                  console.log(this.chatter);
- 
+
                  get('/getchat?id=' + e.id)
                  .then((res) => {
                    // console.log(res.data.camp)
- 
+
                    Vue.set(this.$data, 'messages', res.data.data)
                    Vue.set(this.$data, 'chat_user', res.data.chat_user)
                    this.influncer();
- 
+
                  })
              },
- 
+
              influncer(){
                  console.log('abbbb');
- 
+
                  get('/recentchat')
                .then((res) => {
- 
-                
+
+
                  Vue.set(this.$data, 'recentchats', res.data.data)
                  console.log(this.recentchats)
-                
- 
-                 
-                
- 
+
+
+
+
+
                })
              },
- 
+
              profile(){
                  this.$router.push('/admin/dashborad4')
              },
              sendMessage() {
-           
+
            if (this.newMessage.trim() !== '') {
              this.messages.push({ user: 'You', text: this.newMessage });
-            
+
              this.scrollChatToBottom();
-            
+
              // this.form.message = this.messages.text
- 
-          
+
+
            }
            this.form.reciever_id = this.reciever_id;
            this.form.reciever_name = this.chatname;
- 
+
            this.form.message = this.newMessage;
            console.log(this.newMessage)
            byMethod(this.method, 'chats', this.form)
@@ -206,68 +272,68 @@
                          this.influncer();
              //             get('/getuserchat')
              //   .then((res) => {
-                
-                 
-               
- 
+
+
+
+
              //   })
-                         
+
                        }
                      })
                      this.newMessage = '';
- 
+
          //   this.newMessage = '';
          },
          scrollChatToBottom() {
            const chatBox = document.getElementById('chat-box');
            chatBox.scrollTop = chatBox.scrollHeight;
          },
- 
+
          setData(res) {
-         
+
          Vue.set(this.$data, 'model', res.data.data)
          // console.log(res.data.data)
-         
-        
- 
+
+
+
        //   console.log(res.data)
      },
- 
+
          },
- 
+
          mounted() {
-    
-   
+
+
          this.setitem(this.chatter);
-         
+
          this.intervalId = setInterval(() => {
              if(this.chatter.id){
                  this.setitem(this.chatter);
- 
+
              }
-           
+
        console.log('fffffffsssssss',this.chatter);
      }, 3000);
- 
- 
-     
-     
+
+
+
+
    },
- 
+
    beforeDestroy() {
-     
+
      clearInterval(this.intervalId);
    },
  }
  </script>
- 
+
  <style scoped>
  .pos{
      position: absolute;
      left: 42px;
      bottom: -3px;
  }
- 
+
  .imges{
      width: 100%;
      max-height: 55px;
@@ -281,7 +347,7 @@
      justify-content: space-between;
      align-items: center; margin-bottom: 20px;
  }
- 
+
  .buts{
      display: flex;
      width: 102px;
@@ -304,7 +370,7 @@
      font-weight: 500;
      line-height: normal;
  }
- 
+
  .sss{
      color: #000;
      font-family: fantasy;
@@ -313,7 +379,7 @@
      font-weight: 400;
      line-height: normal;
  }
- 
+
  .cent{
    background-color: #293857 !important;
      display: flex;
@@ -321,14 +387,14 @@
      border-radius: 5px 5px 0px 0px !important;
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25) !important;
  }
- 
- 
+
+
  .dyncols{
    display: flex;
      justify-content: flex-start;
      color: #293857;
  }
- 
+
  .dyncol{
    display: flex;
      justify-content: flex-end;
@@ -345,8 +411,8 @@
     border: 2px solid #000;
     box-shadow: 4px 4px 0px 2px #1B1C1D;
  }
- 
- 
+
+
  .messagess {
   max-width: 50%;
      word-wrap: break-word;
@@ -355,37 +421,37 @@
      border-radius: 0px 10px 0px 10px !important;
      padding: 5px;
          margin-bottom: 10px;
- 
+
          border: 2px solid #000;
-  
+
   box-shadow: 4px 4px 0px 2px #1B1C1D;
  }
- 
- 
- 
+
+
+
  ::-webkit-scrollbar {
    width: 1px;
  }
- 
+
  /* Track */
  ::-webkit-scrollbar-track {
-   box-shadow: inset 0 0 5px grey; 
+   box-shadow: inset 0 0 5px grey;
    border-radius: 10px;
  }
-  
+
  /* Handle */
  ::-webkit-scrollbar-thumb {
-   background: rgb(20, 20, 20); 
+   background: rgb(20, 20, 20);
    border-radius: 10px;
  }
- 
+
  /* Handle on hover */
  ::-webkit-scrollbar-thumb:hover {
-   background: #1b1b1b; 
+   background: #1b1b1b;
  }
- 
 
- 
+
+
  .hhh{
    color: black;
      font-weight: bold;
@@ -393,16 +459,16 @@
 
  .sp{
    color: #ded4a2 !important;
-    
+
      font-size: 16px;
      font-style: normal;
      font-weight: 700;
      line-height: normal;
      font-family: Saol Display !important;
-     
+
  }
- 
- 
+
+
  .imgs{
    height: 55px;
      /* margin-left: 10px; */
@@ -416,20 +482,20 @@
      border-radius: 50%;
      object-fit: cover;
  }
- 
- 
+
+
  .blacktr{
    color: white;
      background-color: #101010;
  }
- 
+
  .orangetr{
    color: black;
-     
+
  }
- 
+
  .buttonsss{
-   
+
    border: none;
      width: 80px;
      height: 44px;
@@ -452,14 +518,14 @@
     transition: 0.3s ease-out;
 }
  .buttonss{
-   
+
    border: none;
      background-color: #e37a00;
      color: white;
      border-radius: 5px;
  }
- 
- 
+
+
  .lefts{
    font-size: x-small;
      margin-left: 10px;
@@ -470,10 +536,10 @@
 
  .rounded_image{
    /* width: 15%; */
-    
+
      margin-left: 10px;
  }
- 
+
      /* #app {
        max-width: 400px;
        margin: 0 auto;
@@ -484,7 +550,7 @@
 
 
      .chat-box {
-       
+
      height: 500px;
      overflow-y: scroll;
      overflow-x: hidden;
@@ -502,7 +568,7 @@
      border-radius: 20px;
      margin-bottom: 20px;
      }
- 
+
      .buttonsss{
        border: none;
      width: 80px;
@@ -514,42 +580,42 @@
      bottom: 0;
      margin-bottom: 12px;
      }
- 
+
      .inp{
        width: 88%;
      border-radius: 10px;
      height: 2em;
      background-color: #293857 !important;
      border: none;
- 
+
      color: #ded4a2;
      }
- 
+
      .inps{
-      
+
      height: 3em;
      background-color: #293857;
      border: none;
- 
+
      color: black;
-    
+
  border: 2px solid #000;
  padding-left: 15px;
  margin-left: 10px;
  margin-right: 10px;
- 
- 
- 
+
+
+
  box-shadow: 4px 4px 0px 2px #1B1C1D;
      }
-     
+
  .page-1 {
      width: 100%;
      background-color: #293857 !important;
      padding: 30px;
      height: 90vh;
  }
- 
+
  .contanir {
      width: 100%;
      max-width: 1600px;
@@ -566,13 +632,13 @@
      padding-bottom: 25px;
      margin: 0px ;
  }
- 
+
  .card-box {
      width: 100%;
      display: flex;
      justify-content: space-between;
  }
- 
+
  .cards {
      border-radius: 16px;
      border: 2px solid #000;
@@ -590,13 +656,13 @@
      align-items: center;
      gap: 24px;
  }
- 
+
  .box-1 {
      /* height: 871px; */
      background: transparent;
      width: 67%;
  }
- 
+
  .box-2 {
      height: 100%;
      flex-shrink: 0;
@@ -606,7 +672,7 @@
      width: 90%;
      padding: 30px;
  }
- 
+
  .Sponsorship {
      width: 100%;
      height: 871px;
@@ -624,20 +690,20 @@
      justify-content: space-between;
      padding: 30px 0px;
  }
- 
+
  .btn-2 {
      display: flex;
      width: 46%;
      justify-content: space-between;
  }
- 
+
  .btn-1 {
      width: 35%;
      display: flex;
      align-items: center;
      gap: 18px;
  }
- 
+
  .Campaign {
      display: flex;
      align-items: center;
@@ -647,7 +713,7 @@
      box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
      padding: 12px 20px;
  }
- 
+
  .Campaign h2 {
      padding: 0px;
      color: #000;
@@ -657,7 +723,7 @@
      font-weight: 500;
      line-height: normal;
  }
- 
+
  .Campaign p {
      color: #000;
      font-family: sans-serif;
@@ -667,14 +733,14 @@
      line-height: normal;
      margin: 0px;
  }
- 
+
  .over-btn {
      width: 100%;
      display: flex;
      justify-content: center;
      padding: 50px 0px 0px 0px;
  }
- 
+
  .over-btn button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -693,7 +759,7 @@
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
+
  .btn-1 button {
      border-radius: 6px;
      border: 1px solid #000;
@@ -714,7 +780,7 @@
      font-weight: 700;
      line-height: 24px; /* 150% */
  }
- 
+
  button.Add {
      border-radius: 6px;
      border: 1px solid #000;
@@ -722,12 +788,12 @@
      box-shadow: 2px 2px 0px 0px #1B1C1D;
      color: #000;
  }
- 
+
  .OverView {
      width: 100%;
      padding-top: 75px;
  }
- 
+
  .OverView h2 {
      color: #000;
      font-family: sans-serif;
@@ -738,12 +804,12 @@
      margin: 0px;
      padding-bottom: 30px;
  }
- 
+
  .over-box {
      width: 100%;
      display: flex;
  }
- 
+
  .Over-card h4 {
      color: #FF5757;
      font-family: sans-serif;
@@ -753,7 +819,7 @@
      line-height: 24px; /* 114.286% */
      margin: 0px;
  }
- 
+
  .Over-card h4 span {
      color: #000;
      font-family: sans-serif;
@@ -763,7 +829,7 @@
      line-height: 24px; /* 58.537% */
      padding-left: 5px;
  }
- 
+
  .Over-card {
      width: 25%;
  }
@@ -776,7 +842,7 @@
      padding: 20px;
      border-bottom: 1px solid #000;
  }
- 
+
  .pox-1 h2 {
      color: #000;
      text-align: center;
@@ -788,23 +854,23 @@
      margin: 0px;
      padding: 0px;
  }
- 
+
  .top-btn {
      width: 49%;
      display: flex;
      align-items: center;
  }
- 
+
  .top-btn button {
      border: none;
      background: transparent;
  }
- 
+
  .pox-2 {
      width: 100%;
      padding: 20px;
  }
- 
+
  .pox-2 p {
      color: #000;
      font-family: sans-serif;
@@ -815,7 +881,7 @@
      letter-spacing: -0.96px;
      margin: 0px;
  }
- 
+
  .pox-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -824,7 +890,7 @@
      line-height: 24px; /* 150% */
      padding: 15px 0px;
  }
- 
+
  .pox-box {
      width: 100%;
      display: flex;
@@ -833,14 +899,14 @@
      justify-content: space-between;
      gap: 10px 0px;
  }
- 
+
  .yes {
      width: 50%;
      display: flex;
      align-items: center;
      gap: 5px;
  }
- 
+
  .pox-3 {
      width: 100%;
      display: flex;
@@ -848,7 +914,7 @@
      align-items: flex-end;
      padding: 25px 0px;
  }
- 
+
  .pox-3 h2 {
      color: #000;
      font-family: sans-serif;
@@ -858,7 +924,7 @@
      line-height: normal;
      padding: 0px 0px 0px 0px;
  }
- 
+
  .pox-3 p {
      color: #000;
      text-align: center;
@@ -869,7 +935,7 @@
      line-height: 24px; /* 150% */
      width: 40%;
  }
- 
+
  .pox-3 h2 span {
      color: #000;
      font-family: sans-serif;
@@ -878,27 +944,27 @@
      font-weight: 600;
      line-height: normal;
  }
- 
- 
+
+
  button.llo {
      color: #fff;
  }
- 
+
  /* .../ */
- 
- 
+
+
  .id-box img {
      width: 80%;
      border-radius: 50%;
      max-height: 140px;
      min-height: 140px;
- 
-    
+
+
      object-fit: cover;
- 
+
  }
- 
- 
+
+
  .box-2 h2 {
      color: #000;
      font-family: sans-serif;
@@ -907,7 +973,7 @@
      font-weight: 500;
      line-height: normal;
  }
- 
+
  .id-box {
      width: 100%;
      display: flex;
@@ -924,7 +990,7 @@
      font-weight: bold;
      line-height: normal;
  }
- 
+
  .id-box h2 {
      color: #000;
      font-family: sans-serif;
@@ -935,12 +1001,12 @@
      margin: 0px;
      padding: 20px 0px 4px 0px;
  }
- 
+
  .id-box h3 {
     color: #000;font-family: sans-serif;font-size: 12px;font-style: normal;font-weight: 500;line-height: normal;
 
 }
- 
+
  .titel-box {
      width: 100%;
      display: flex;
@@ -948,14 +1014,14 @@
      align-items: center;
      padding-bottom: 20px;
  }
- 
+
  .id-titel {
      display: flex;
      align-items: center;
      width: 30%;
      justify-content: space-between;
  }
- 
+
  .id-titel p {
      color: #000;
      font-family: sans-serif;
@@ -972,14 +1038,14 @@
      align-items: center;
      padding-bottom: 40px;
  }
- 
+
  .contact {
      display: flex;
      align-items: center;
      justify-content: space-between;
      gap: 15px;
  }
- 
+
  .contact p {
      color: #000;
      font-family: sans-serif;
@@ -989,7 +1055,7 @@
      line-height: normal;
      margin: 0px;
  }
- 
+
  .para-box {
      width: 100%;
      border-top: 1px solid #F96;
@@ -998,7 +1064,7 @@
      justify-content: center;
      align-items: center;
  }
- 
+
  .para-box p {
      color: #000;
      text-align: center;
@@ -1010,7 +1076,7 @@
      margin: 0px;
      padding: 20px 0px 0px 0px;
  }
- 
+
  .buttons {
      border-radius: 6px;
      border: 1px solid #000;
@@ -1026,7 +1092,7 @@
      flex-shrink: 0;
       /* 150% */
  }
- 
+
  .buttonp {
      color: #FFF;
      text-align: center;
@@ -1034,7 +1100,7 @@
      font-size: 16px;
      font-style: normal;
      font-weight: 700;
-     line-height: 24px; 
+     line-height: 24px;
      padding-top: 15px;
  }
  @media screen and (max-width: 1600px){
@@ -1180,11 +1246,11 @@
      border-radius: 6px;
      border: 1px solid #000 !important;
      background: #F5F3EA !important;
-     box-shadow: 2px 2px 0px 0px #1B1C1D !important; 
+     box-shadow: 2px 2px 0px 0px #1B1C1D !important;
      color: #000 !important;
  }
  }
- 
+
  @media screen and (max-width: 1440px){
      .imges{
      width: 150%;
@@ -1199,7 +1265,7 @@
      justify-content: space-between;
      align-items: center; margin-bottom: 20px;
  }
- 
+
      .id-box h3 {color: #000;font-family: sans-serif;font-size: 10px;font-style: normal;font-weight: 500;line-height: normal;}
    .contanir {
      width: 100%;
@@ -1348,7 +1414,7 @@
      align-items: flex-end;
      padding: 15px 0px;
  }
- 
+
  .pox-box {
      width: 100%;
      display: flex;
@@ -1436,13 +1502,13 @@
  }
  .id-box img {
      width: 100%;
-   
+
      border-radius: 50%;
      max-height: 130px;
      min-height: 130px;
- 
+
      object-fit: cover;
- 
+
  }
  .id-box h2 {
      color: #000;
@@ -1529,13 +1595,13 @@
      width: 31% !important;
      padding: 24px;
  }
- 
+
  .page-1 {
      width: 100%;
      background-color: #293857;
      padding: 30px;
      height: 110vh
-    
+
  }
  }
  @media screen and (max-width: 1024px){
@@ -1602,7 +1668,7 @@
      flex-direction: column;
      gap: 25px;
  }
- 
+
  .btn-2 {
      display: flex;
      width: 60%;

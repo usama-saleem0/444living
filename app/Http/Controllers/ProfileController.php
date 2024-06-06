@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\State;
+use Illuminate\Support\Str;
+use App\Models\Voucher;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Mail\Message;
+use App\Mail\VoucherEmail;
 
 class ProfileController extends Controller
 {
@@ -100,6 +105,46 @@ class ProfileController extends Controller
 
     public function allrealtors(){
         $data = User::where('type' , 'Realtor')->get();
+        return response()->json(['data' => $data]);
+    }
+
+
+
+    public function allbuyers(){
+        $data = User::where('type' , 'Buyer')->get();
+        return response()->json(['data' => $data]);
+    }
+
+
+    public function allinvestors(){
+        $data = User::where('type' , 'Investor')->get();
+        return response()->json(['data' => $data]);
+    }
+
+
+
+    public function generate_tokan(Request $request){
+
+        $randomString = Str::random(10);
+        $data = new Voucher;
+        $data->voucher_code = $randomString;
+        $data->user_id = $request->id;
+        $data->user_email = $request->email;
+        $data->percent = $request->percent;
+
+
+        Mail::to($request->email)->send(new VoucherEmail($request->email, $request->id, $randomString, $request->percent ));
+
+        $data->save();
+        return response()->json(['saved' => true]);
+
+        // dd($request->all());
+
+    }
+
+
+    public function getadmin(){
+        $data = User::where('type' , 'admin')->first();
         return response()->json(['data' => $data]);
     }
 }
